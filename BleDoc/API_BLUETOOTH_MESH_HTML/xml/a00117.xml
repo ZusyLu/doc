@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00117" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_default_ttl_status</compoundname>
+    <title>sl_btmesh_evt_config_client_default_ttl_status</title>
+    <innerclass refid="a00531" prot="public">sl_btmesh_evt_config_client_default_ttl_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00117_1ga22c1a2046f60055a55f437b5247adae4" prot="public" static="no">
+        <type>struct <ref refid="a00531" kindref="compound">sl_btmesh_evt_config_client_default_ttl_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_default_ttl_status_s sl_btmesh_evt_config_client_default_ttl_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_default_ttl_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6943" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00117_1ga14a4bdf84cb4f7d4c1a739c6b5a488fd" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_default_ttl_status_id</name>
+        <initializer>0x112700a8</initializer>
+        <briefdescription>
+<para>Identifier of the default_ttl_status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6928" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6928" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Status event for <ref refid="a00099_1gaa6c77addc0def03ded7582218de1c990" kindref="member">sl_btmesh_config_client_get_default_ttl</ref> and <ref refid="a00099_1gac8c20af67085dc27c13cd2b2644bbf89" kindref="member">sl_btmesh_config_client_set_default_ttl</ref> commands. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

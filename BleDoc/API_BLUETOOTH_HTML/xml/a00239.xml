@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00239" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_gatt_characteristic_value_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00239_1a1294cf620b80558dc8408eac2be8201a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_gatt_characteristic_value_s::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3857" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3857" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00239_1a53093781de837ddfebe023f066197c33" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_gatt_characteristic_value_s::characteristic</definition>
+        <argsstring></argsstring>
+        <name>characteristic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GATT characteristic handle. This value is normally received from the gatt_characteristic event. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3858" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00239_1a8f4badacaec46e5cca6852b9141b1ca3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_gatt_characteristic_value_s::att_opcode</definition>
+        <argsstring></argsstring>
+        <name>att_opcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum <ref refid="a00059_1ga459acca869ec6d9edd49c57ff6357dd8" kindref="member">sl_bt_gatt_att_opcode_t</ref>. Attribute opcode, which indicates the GATT transaction used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3861" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3861" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00239_1a78026d629bd606189b17c1f7ac024935" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_gatt_characteristic_value_s::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value offset </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3864" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00239_1ad6f1b7fff77231090d420db97adeee3f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00107" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_bt_evt_gatt_characteristic_value_s::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Characteristic value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3865" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3865" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the characteristic_value event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="55">
+        <label>sl_bt_evt_gatt_characteristic_value_s</label>
+        <link refid="a00239"/>
+        <childnode refid="56" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="56">
+        <label>uint8array</label>
+        <link refid="a00107"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3856" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3855" bodyend="3866"/>
+    <listofallmembers>
+      <member refid="a00239_1a8f4badacaec46e5cca6852b9141b1ca3" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_characteristic_value_s</scope><name>att_opcode</name></member>
+      <member refid="a00239_1a53093781de837ddfebe023f066197c33" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_characteristic_value_s</scope><name>characteristic</name></member>
+      <member refid="a00239_1a1294cf620b80558dc8408eac2be8201a" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_characteristic_value_s</scope><name>connection</name></member>
+      <member refid="a00239_1a78026d629bd606189b17c1f7ac024935" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_characteristic_value_s</scope><name>offset</name></member>
+      <member refid="a00239_1ad6f1b7fff77231090d420db97adeee3f" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_characteristic_value_s</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

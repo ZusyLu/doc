@@ -1,0 +1,2338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00021" kind="group">
+    <compoundname>sl_btmesh_node</compoundname>
+    <title>Mesh Node</title>
+    <innergroup refid="a00022">sl_btmesh_evt_node_initialized</innergroup>
+    <innergroup refid="a00023">sl_btmesh_evt_node_provisioned</innergroup>
+    <innergroup refid="a00024">sl_btmesh_evt_node_config_get</innergroup>
+    <innergroup refid="a00025">sl_btmesh_evt_node_config_set</innergroup>
+    <innergroup refid="a00026">sl_btmesh_evt_node_display_output_oob</innergroup>
+    <innergroup refid="a00027">sl_btmesh_evt_node_input_oob_request</innergroup>
+    <innergroup refid="a00028">sl_btmesh_evt_node_provisioning_started</innergroup>
+    <innergroup refid="a00029">sl_btmesh_evt_node_provisioning_failed</innergroup>
+    <innergroup refid="a00030">sl_btmesh_evt_node_key_added</innergroup>
+    <innergroup refid="a00031">sl_btmesh_evt_node_model_config_changed</innergroup>
+    <innergroup refid="a00032">sl_btmesh_evt_node_reset</innergroup>
+    <innergroup refid="a00033">sl_btmesh_evt_node_ivrecovery_needed</innergroup>
+    <innergroup refid="a00034">sl_btmesh_evt_node_changed_ivupdate_state</innergroup>
+    <innergroup refid="a00035">sl_btmesh_evt_node_static_oob_request</innergroup>
+    <innergroup refid="a00036">sl_btmesh_evt_node_key_removed</innergroup>
+    <innergroup refid="a00037">sl_btmesh_evt_node_key_updated</innergroup>
+    <innergroup refid="a00038">sl_btmesh_evt_node_heartbeat</innergroup>
+    <innergroup refid="a00039">sl_btmesh_evt_node_heartbeat_start</innergroup>
+    <innergroup refid="a00040">sl_btmesh_evt_node_heartbeat_stop</innergroup>
+    <innergroup refid="a00041">sl_btmesh_evt_node_beacon_received</innergroup>
+    <innergroup refid="a00042">sl_btmesh_evt_node_local_dcd_data</innergroup>
+    <innergroup refid="a00043">sl_btmesh_evt_node_local_dcd_data_end</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00021_1ga389ac994e5bbb78243889781c7602f73" prot="public" static="no">
+        <name>sl_btmesh_node_auth_method_flag_t</name>
+        <enumvalue id="a00021_1gga389ac994e5bbb78243889781c7602f73aa8a5e629dc3b4b60dce6275fffd729e2" prot="public">
+          <name>sl_btmesh_node_auth_method_flag_none</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Authentication without OOB is supported </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga389ac994e5bbb78243889781c7602f73adf01d0f43ff5c9d4fd2888bcacd6c505" prot="public">
+          <name>sl_btmesh_node_auth_method_flag_static</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Static OOB data authentication is supported </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga389ac994e5bbb78243889781c7602f73a072ed9dd2a02da5800bfa629a0f6b1e9" prot="public">
+          <name>sl_btmesh_node_auth_method_flag_input</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x4) Input OOB authentication is supported </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga389ac994e5bbb78243889781c7602f73ac1efed51bf0ddad69e37d910e506c9e6" prot="public">
+          <name>sl_btmesh_node_auth_method_flag_output</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8) Output OOB authentication is supported </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Flags for supported OOB authentication methods during provisioning, which use a bitmap so that multiple methods can be supported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="188" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="187" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00021_1gaca918867f31e2f6cdbe35cdd782722b1" prot="public" static="no">
+        <name>sl_btmesh_node_oob_input_action_flag_t</name>
+        <enumvalue id="a00021_1ggaca918867f31e2f6cdbe35cdd782722b1a5e3c616ed4d689e97f3cabe7ab6d5a48" prot="public">
+          <name>sl_btmesh_node_oob_input_action_flag_push</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Push a button on the device. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1ggaca918867f31e2f6cdbe35cdd782722b1aa33d5a09f95433f8bf165e43eef3721c" prot="public">
+          <name>sl_btmesh_node_oob_input_action_flag_twist</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Twist a dial on the device. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1ggaca918867f31e2f6cdbe35cdd782722b1a0307bd8abe0d87bbab72d8bc17a59284" prot="public">
+          <name>sl_btmesh_node_oob_input_action_flag_numeric</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x4) Input a numeric authentication code. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1ggaca918867f31e2f6cdbe35cdd782722b1a3f90a0bb48b159473df4d4b1aae4ddbb" prot="public">
+          <name>sl_btmesh_node_oob_input_action_flag_alpha</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8) Input an alphanumeric authentication code. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Flags for supported input OOB actions during provisioning, which use a bitmap so that multiple actions can be supported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="203" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="202" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00021_1gad0c4eaa69364524d506105d7e6bb2e04" prot="public" static="no">
+        <name>sl_btmesh_node_oob_input_action_t</name>
+        <enumvalue id="a00021_1ggad0c4eaa69364524d506105d7e6bb2e04a092a08bac440d0efaf90b9b3b81ab178" prot="public">
+          <name>sl_btmesh_node_oob_input_action_push</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Push a button on the device. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1ggad0c4eaa69364524d506105d7e6bb2e04ad3cb74faa113bc957396ba081d0be333" prot="public">
+          <name>sl_btmesh_node_oob_input_action_twist</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Twist a dial on the device. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1ggad0c4eaa69364524d506105d7e6bb2e04ab396b2cae6c624e54660e0500b4e3fb7" prot="public">
+          <name>sl_btmesh_node_oob_input_action_numeric</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Input a numeric authentication code. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1ggad0c4eaa69364524d506105d7e6bb2e04a17d4cef27ba6c7a3df0e843f6785feb9" prot="public">
+          <name>sl_btmesh_node_oob_input_action_alpha</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x3) Input an alphanumeric authentication code. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Indicate the input OOB action selected by the Provisioner during provisioning of the device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="220" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="219" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00021_1ga0de3b582c7fe82c6c0c8ce4a2069b7a3" prot="public" static="no">
+        <name>sl_btmesh_node_oob_output_action_flag_t</name>
+        <enumvalue id="a00021_1gga0de3b582c7fe82c6c0c8ce4a2069b7a3a6e86df46b1fd07f3e70e366a492975ad" prot="public">
+          <name>sl_btmesh_node_oob_output_action_flag_blink</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Blink a light. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga0de3b582c7fe82c6c0c8ce4a2069b7a3a9f96fe27490da16ab7fd6b30849656bf" prot="public">
+          <name>sl_btmesh_node_oob_output_action_flag_beep</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Emit a sound. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga0de3b582c7fe82c6c0c8ce4a2069b7a3aaa25eb5248c9c245243c6f37d77fb1d0" prot="public">
+          <name>sl_btmesh_node_oob_output_action_flag_vibrate</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x4) Vibrate the device. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga0de3b582c7fe82c6c0c8ce4a2069b7a3af9dab1ee8910b359822326cac678fa86" prot="public">
+          <name>sl_btmesh_node_oob_output_action_flag_numeric</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8) Output a numeric authentication code. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga0de3b582c7fe82c6c0c8ce4a2069b7a3a8c936504cb58d49e71f8a6810a73fc0b" prot="public">
+          <name>sl_btmesh_node_oob_output_action_flag_alpha</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x10) Output an alphanumeric authentication code. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Flags for supported output OOB actions during provisioning, which use a bitmap so that multiple actions can be supported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="236" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="235" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00021_1ga8abf68ed1c6677d418c08aaec95a7fe4" prot="public" static="no">
+        <name>sl_btmesh_node_oob_output_action_t</name>
+        <enumvalue id="a00021_1gga8abf68ed1c6677d418c08aaec95a7fe4ac9182e4677f5c807d4fee0c9861b03ec" prot="public">
+          <name>sl_btmesh_node_oob_output_action_blink</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Blink a light. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga8abf68ed1c6677d418c08aaec95a7fe4ab73955c868695af55e0cac160e7dd346" prot="public">
+          <name>sl_btmesh_node_oob_output_action_beep</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Emit a sound. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga8abf68ed1c6677d418c08aaec95a7fe4a5224c3c3fd5f8e7a7c07e5b2bcab60ff" prot="public">
+          <name>sl_btmesh_node_oob_output_action_vibrate</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Vibrate the device. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga8abf68ed1c6677d418c08aaec95a7fe4a9e44558c53b96dad68059eb8927a73b0" prot="public">
+          <name>sl_btmesh_node_oob_output_action_numeric</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x3) Output a numeric authentication code. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga8abf68ed1c6677d418c08aaec95a7fe4a25a95ca535cb15663d49ce1e4ba1283e" prot="public">
+          <name>sl_btmesh_node_oob_output_action_alpha</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x4) Output an alphanumeric authentication code. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Indicate the output OOB action selected by the Provisioner during provisioning of the device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="257" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="256" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00021_1gabbf0c70db8c64fbd594b13f8e6b41f11" prot="public" static="no">
+        <name>sl_btmesh_node_key_type_t</name>
+        <enumvalue id="a00021_1ggabbf0c70db8c64fbd594b13f8e6b41f11a665fc31ae65be17ebf2110bc47917da5" prot="public">
+          <name>sl_btmesh_node_key_type_net</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Network key </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1ggabbf0c70db8c64fbd594b13f8e6b41f11a806449d2df99a2fb529f39600d599cd9" prot="public">
+          <name>sl_btmesh_node_key_type_app</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Application key </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Specify the type of a key in key manipulation commands. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="272" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="271" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00021_1ga1d6c07b5f18b80ebbbf8e71e7799b2ef" prot="public" static="no">
+        <name>sl_btmesh_node_config_state_t</name>
+        <enumvalue id="a00021_1gga1d6c07b5f18b80ebbbf8e71e7799b2efac46c6985cb9953625fcd0abb0f033c70" prot="public">
+          <name>sl_btmesh_node_dcd</name>
+          <initializer>= 0x8008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8008) Device Composition Data </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga1d6c07b5f18b80ebbbf8e71e7799b2efaba9332949b15a406e5c9610d1545a624" prot="public">
+          <name>sl_btmesh_node_beacon</name>
+          <initializer>= 0x8009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8009) Status of broadcasting Secure Network Beacons </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga1d6c07b5f18b80ebbbf8e71e7799b2efa12799cc5e060f80d3abe711c81d7f8b1" prot="public">
+          <name>sl_btmesh_node_default_ttl</name>
+          <initializer>= 0x800c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x800c) Default Time-To-Live for messages </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga1d6c07b5f18b80ebbbf8e71e7799b2efa9e6713d03e1dbd9a024fcea8bb29234c" prot="public">
+          <name>sl_btmesh_node_friendship</name>
+          <initializer>= 0x800f</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x800f) Friend status </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga1d6c07b5f18b80ebbbf8e71e7799b2efaf9787d78ad91e8e868da30f87d0fc6ff" prot="public">
+          <name>sl_btmesh_node_gatt_proxy</name>
+          <initializer>= 0x8012</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8012) GATT proxy status </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga1d6c07b5f18b80ebbbf8e71e7799b2efa1075a80e54e9773ea860f321bd4ca983" prot="public">
+          <name>sl_btmesh_node_key_refresh</name>
+          <initializer>= 0x8015</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8015) Key refresh status </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga1d6c07b5f18b80ebbbf8e71e7799b2efa3c883acc895951958eb6d8b5759937d6" prot="public">
+          <name>sl_btmesh_node_relay</name>
+          <initializer>= 0x8023</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8023) Relay status </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga1d6c07b5f18b80ebbbf8e71e7799b2efa4518fdad84e447980b1c78e9900721d1" prot="public">
+          <name>sl_btmesh_node_identity</name>
+          <initializer>= 0x8042</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8042) Identity status </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00021_1gga1d6c07b5f18b80ebbbf8e71e7799b2efa07d9449a72ab2fe88f26a3a9e543f069" prot="public">
+          <name>sl_btmesh_node_nettx</name>
+          <initializer>= 0x8024</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8024) Network transmit status </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Specify the state to which a Configuration Client/Server command/event applies. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="281" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="280" bodyend="293"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00021_1ga95d84b256ddb120cbd48c35648e5b00e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_init</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_node_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Bluetooth mesh stack in Node role. When initialization is complete, a <ref refid="a00022" kindref="compound">sl_btmesh_evt_node_initialized</ref> event will be generated.</para><para>This command must be issued before any other Bluetooth Mesh commands, except for <ref refid="a00021_1gaab7490b89de220f4ab50c68ec0fb10c8" kindref="member">sl_btmesh_node_set_uuid</ref> command.</para><para>Note that you may initialize a device either in the Provisioner or the Node role, but not both.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00022" kindref="compound">sl_btmesh_evt_node_initialized</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="861" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gae87cd83750a568083f7a235a8e1b0d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_start_unprov_beaconing</definition>
+        <argsstring>(uint8_t bearer)</argsstring>
+        <name>sl_btmesh_node_start_unprov_beaconing</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>bearer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start sending Unprovisioned Device Beacons.</para><para>This command makes an unprovisioned device available for provisioning. The device will start sending periodic unprovisioned device beacons containing device UUID. It will also start listening for incoming Provisioner connection attempts on the specified bearers (PB-ADV, PB-GATT, or both). For PB-GATT, the device will also begin advertising its provisioning GATT service.</para><para>At the beginning of a provisioning process, a <ref refid="a00028" kindref="compound">sl_btmesh_evt_node_provisioning_started</ref> event will be generated. When the device receives provisioning data from the Provisioner, a <ref refid="a00023" kindref="compound">sl_btmesh_evt_node_provisioned</ref> event will be generated. If provisioning fails with an error, a <ref refid="a00029" kindref="compound">sl_btmesh_evt_node_provisioning_failed</ref> event will be generated.</para><para>After it is provisioned, addresses are allocated for the node elements and a network key is deployed to the node, making the node ready for further configuration by the Provisioner. Note that, at this point, the node is not yet fully ready to communicate with other nodes on the network.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bearer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Bit mask for which bearer to use. Values are as follows:<itemizedlist>
+<listitem><para><bold>1 (bit 0):</bold> PB-ADV</para></listitem><listitem><para><bold>2 (bit 1):</bold> PB-GATT</para></listitem></itemizedlist>
+</para><para>Other bits are reserved and must not be used. </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00028" kindref="compound">sl_btmesh_evt_node_provisioning_started</ref></para></listitem><listitem><para><ref refid="a00023" kindref="compound">sl_btmesh_evt_node_provisioned</ref></para></listitem><listitem><para><ref refid="a00029" kindref="compound">sl_btmesh_evt_node_provisioning_failed</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="901" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga25c3154c23ac8192590e5a018ede0228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_stop_unprov_beaconing</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_node_stop_unprov_beaconing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop sending Unprovisioned Device Beacons.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="911" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gae302577536fab537f3a2ea62b370ae29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_rssi</definition>
+        <argsstring>(int8_t *rssi)</argsstring>
+        <name>sl_btmesh_node_get_rssi</name>
+        <param>
+          <type>int8_t *</type>
+          <declname>rssi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the latest RSSI value of a provisioned Bluetooth device.</para><para>The value indicates the best signal strength received from any node within the network. The value is cleared after calling this function meaning the next call will fail if no new RSSI value is received.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">rssi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Latest RSSI value. Units: dBm. Ignore this parameter if the command fails.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="927" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga9948884e4b4fa11d192b15eb7ad2a0d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_send_input_oob_request_response</definition>
+        <argsstring>(size_t data_len, const uint8_t *data)</argsstring>
+        <name>sl_btmesh_node_send_input_oob_request_response</name>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Provide the stack with the input out-of-band authentication data which the Provisioner is displaying.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>data</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw 16-byte array containing the authentication data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="940" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga629ac06ff8fbec7f28c948d94e670cd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_uuid</definition>
+        <argsstring>(uuid_128 *uuid)</argsstring>
+        <name>sl_btmesh_node_get_uuid</name>
+        <param>
+          <type><ref refid="a00211" kindref="compound">uuid_128</ref> *</type>
+          <declname>uuid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the device UUID.</para><para>Every mesh device has a 128-bit UUID identifying the device. It is used primarily during provisioning, because it is broadcast in Unprovisioned Device Beacons to indicate that the device is ready to be provisioned.</para><para>This command is used for debugging purposes. During provisioning, the stack automatically uses the UUID of the device, which does not need to be explicitly specified when <ref refid="a00021_1gae87cd83750a568083f7a235a8e1b0d7d" kindref="member">sl_btmesh_node_start_unprov_beaconing</ref> is started.</para><para>If get uuid is used before <ref refid="a00021_1ga95d84b256ddb120cbd48c35648e5b00e" kindref="member">sl_btmesh_node_init</ref>, the uuid will be read from the nvme if it was manually set by <ref refid="a00021_1gaab7490b89de220f4ab50c68ec0fb10c8" kindref="member">sl_btmesh_node_set_uuid</ref>. If get uuid is used without a prior <ref refid="a00021_1ga95d84b256ddb120cbd48c35648e5b00e" kindref="member">sl_btmesh_node_init</ref> or <ref refid="a00021_1gaab7490b89de220f4ab50c68ec0fb10c8" kindref="member">sl_btmesh_node_set_uuid</ref>, SL_STATUS_BT_MESH_DOES_NOT_EXIST will be returned.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">uuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 16-byte UUID of the device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="966" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gae57746b683cba799cded9e83d9ecf0fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_set_provisioning_data</definition>
+        <argsstring>(aes_key_128 device_key, aes_key_128 network_key, uint16_t netkey_index, uint32_t iv_index, uint16_t address, uint8_t kr_in_progress)</argsstring>
+        <name>sl_btmesh_node_set_provisioning_data</name>
+        <param>
+          <type><ref refid="a00215" kindref="compound">aes_key_128</ref></type>
+          <declname>device_key</declname>
+        </param>
+        <param>
+          <type><ref refid="a00215" kindref="compound">aes_key_128</ref></type>
+          <declname>network_key</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>netkey_index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iv_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>kr_in_progress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Provision devices completely out-of-band. Populate the Provisioner&apos;s device database with the corresponding values to make the device reachable and configurable in the Provisioner&apos;s network.</para><para>See also the Provisioner command for <ref refid="a00044_1gafab73afa0dabc2b21828ecd51bbbb857" kindref="member">sl_btmesh_prov_add_ddb_entry</ref> to Provisioner&apos;s device database.</para><para><bold>NOTE</bold> : The device must be reset after this command has been issued.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">device_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device Key for this Device, shared by the Provisioner </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">network_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network key that the Provisioner has selected for this device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">netkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the Network Key the Provisioner has selected for this device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">iv_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current IV Index used in the network </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address the Provisioner has allocated for this device&apos;s primary element </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">kr_in_progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to 1 if key refresh is currently in progress, otherwise 0.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="993" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gad78cc7c6418b35449ab72056385897eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_init_oob</definition>
+        <argsstring>(uint8_t public_key, uint8_t auth_methods, uint16_t output_actions, uint8_t output_size, uint16_t input_actions, uint8_t input_size, uint16_t oob_location)</argsstring>
+        <name>sl_btmesh_node_init_oob</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>public_key</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>auth_methods</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>output_actions</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>output_size</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>input_actions</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>input_size</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>oob_location</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Bluetooth mesh stack in the Node role. When initialization is complete, a <ref refid="a00022" kindref="compound">sl_btmesh_evt_node_initialized</ref> event is generated.</para><para>This command is the same as the <ref refid="a00021_1ga95d84b256ddb120cbd48c35648e5b00e" kindref="member">sl_btmesh_node_init</ref> command except for parameters defining whether OOB authentication data stored on the device can be used during provisioning.</para><para>This command must be issued before any other Bluetooth mesh commands, except for <ref refid="a00021_1gaab7490b89de220f4ab50c68ec0fb10c8" kindref="member">sl_btmesh_node_set_uuid</ref> command.</para><para>Note that you may initialize a device either in the Provisioner or the Node role, but not both.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">public_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, use the ECC key stored in the persistent store during provisioning instead of an ephemeral key. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">auth_methods</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00021_1ga389ac994e5bbb78243889781c7602f73" kindref="member">sl_btmesh_node_auth_method_flag_t</ref>. Allowed OOB authentication methods. The value is a bitmap so that multiple methods can be supported. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">output_actions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00021_1ga0de3b582c7fe82c6c0c8ce4a2069b7a3" kindref="member">sl_btmesh_node_oob_output_action_flag_t</ref>. Allowed OOB Output Action types </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">output_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum Output OOB size Valid values range from 0 (feature not supported) to 8. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">input_actions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00021_1gaca918867f31e2f6cdbe35cdd782722b1" kindref="member">sl_btmesh_node_oob_input_action_flag_t</ref>. Allowed OOB Input Action types </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">input_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum Input OOB size. Valid values range from 0 (feature not supported) to 8. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">oob_location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the OOB data location bitmask. See <ref refid="a00045" kindref="compound">OOB Capabilities</ref>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00022" kindref="compound">sl_btmesh_evt_node_initialized</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1037" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga2cf647adb3961ae02c964226fe0f03c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_set_ivrecovery_mode</definition>
+        <argsstring>(uint8_t mode)</argsstring>
+        <name>sl_btmesh_node_set_ivrecovery_mode</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable/disable the IV index recovery mode.</para><para>If the node has not been in communication with the network for a long time (e.g., because it was turned off), it may have missed IV index updates and isn&apos;t able to communicate with other nodes. In this case, enable the IV index recovery mode.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero to disable; non-zero to enable</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1059" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga9d1eef990228049df3794a30e2134ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_ivrecovery_mode</definition>
+        <argsstring>(uint8_t *mode)</argsstring>
+        <name>sl_btmesh_node_get_ivrecovery_mode</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current IV index recovery mode state. See <ref refid="a00021_1ga2cf647adb3961ae02c964226fe0f03c0" kindref="member">sl_btmesh_node_set_ivrecovery_mode</ref> for details.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, IV recovery is enabled.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1071" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga1cebc51ce7ae33d3adc527961e84c732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_statistics</definition>
+        <argsstring>(size_t max_statistics_size, size_t *statistics_len, uint8_t *statistics)</argsstring>
+        <name>sl_btmesh_node_get_statistics</name>
+        <param>
+          <type>size_t</type>
+          <declname>max_statistics_size</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>statistics_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>statistics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">max_statistics_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of output buffer passed in <computeroutput>statistics</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">statistics_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On return, set to the length of output data written to <computeroutput>statistics</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">statistics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw statistics data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1085" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga05f67e4289da6e815b3cee213515efcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_clear_statistics</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_node_clear_statistics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1097" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga4d43e04a74692574e9c2b7847d9430c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_set_net_relay_delay</definition>
+        <argsstring>(uint8_t min_ms, uint8_t max_ms)</argsstring>
+        <name>sl_btmesh_node_set_net_relay_delay</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>min_ms</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>max_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the network relay delay interval.</para><para>This parameter determines the time a relay waits until it relays a network PDU. The value used is a random number within the specified interval.</para><para>Note that this value affects the first instance of the relayed network PDU. If relay retransmissions are enabled, the interval between retransmissions is defined by the relay state, set by the Provisioner of the network or by <ref refid="a00084_1ga6d28aacccd931e6f8747b7d0b399a1d0" kindref="member">sl_btmesh_test_set_relay</ref> test command.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">min_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum interval, in milliseconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum interval, in milliseconds, which must be equal to or greater than the minimum.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga755b45dce041edc63a7372739d4087f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_net_relay_delay</definition>
+        <argsstring>(uint8_t *min_ms, uint8_t *max_ms)</argsstring>
+        <name>sl_btmesh_node_get_net_relay_delay</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>min_ms</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>max_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get network relay delay interval. See <ref refid="a00021_1ga4d43e04a74692574e9c2b7847d9430c3" kindref="member">sl_btmesh_node_set_net_relay_delay</ref> command for details.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">min_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum interval, in milliseconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum interval, in milliseconds</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gae68b8d67dc1adadc511575f37d1b1fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_ivupdate_state</definition>
+        <argsstring>(uint32_t *iv_index, uint8_t *state)</argsstring>
+        <name>sl_btmesh_node_get_ivupdate_state</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>iv_index</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current IV index update state in the network.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">iv_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current IV index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates whether the IV index update is ongoing (1) or not (0).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gaeb0b09dd4620b91223a496217cd577c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_request_ivupdate</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_node_request_ivupdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attempt to request an IV index update in the network.</para><para>Each network layer PDU that a node sends has a 24-bit sequence number attached to it. Each node element keeps a sequence number counter, which is incremented for every PDU sent out to the network. Repeating sequence numbers for a given IV index value is not allowed. As a result, if a node determines it is about to exhaust the available sequence numbers in one of its elements, it needs to request an IV index update by issuing this command.</para><para>Determining when a node may run out of sequence numbers has to be done at the application level because the stack can&apos;t determine how often the application plans to transmit to the network, i.e., how long the remaining sequence numbers might last.</para><para>See also the <ref refid="a00021_1ga9ff86f761e6e9512818c702be9054aae" kindref="member">sl_btmesh_node_get_seq_remaining</ref> command.</para><para>Note that the call may fail for various reasons, for example if an IV index update is already ongoing, or if not enough time has passed since the previous IV index update.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga9ff86f761e6e9512818c702be9054aae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_seq_remaining</definition>
+        <argsstring>(uint16_t elem_index, uint32_t *count)</argsstring>
+        <name>sl_btmesh_node_get_seq_remaining</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of sequence numbers remaining on an element (before sequence numbers are exhausted). Note that every node element keeps a separate sequence number counter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of queried element </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Remaining sequence number count</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1188" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga24a711eb7a20d70f370d8c452f3202f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_save_replay_protection_list</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_node_save_replay_protection_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save the current replay protection list to the persistent store.</para><para>The replay protection list keeps track of the packet sequence numbers from different sources received by the node. The node will not process messages associated with already used sequence numbers and is therefore protected from replay attacks using previously recorded messages.</para><para>The replay protection list is kept in RAM during runtime. It needs to be saved to the persistent store periodically and always before the device powers off. Because the stack is not aware when this will happen, the application has to call this method while the node is getting ready to power down but is still running.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gaab7490b89de220f4ab50c68ec0fb10c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_set_uuid</definition>
+        <argsstring>(uuid_128 uuid)</argsstring>
+        <name>sl_btmesh_node_set_uuid</name>
+        <param>
+          <type><ref refid="a00211" kindref="compound">uuid_128</ref></type>
+          <declname>uuid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write device UUID into the persistent store. This command must be called before initializing the Bluetooth mesh stack (before <ref refid="a00021_1ga95d84b256ddb120cbd48c35648e5b00e" kindref="member">sl_btmesh_node_init</ref> or <ref refid="a00021_1gad78cc7c6418b35449ab72056385897eb" kindref="member">sl_btmesh_node_init_oob</ref>), otherwise the change will not take effect before a reboot.</para><para>Ensure that the UUID conforms to the format defined in <ulink url="https://tools.ietf.org/html/rfc4122">RFC 4122</ulink></para><para>Note that UUID must not be changed when the device is provisioned to a network.</para><para>Furthermore, ensure that the UUID remains constant if a device has received a firmware update, which requires reprovisioning of the device after the update has been applied (e.g., new elements are added by the update).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UUID to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gac5b1b6c388383f605dcf382908570e74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_replay_protection_list_status</definition>
+        <argsstring>(uint16_t *total_entries, uint16_t *unsaved_entries)</argsstring>
+        <name>sl_btmesh_node_get_replay_protection_list_status</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>total_entries</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>unsaved_entries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the status of the replay protection list.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">total_entries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total number of entries in use </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">unsaved_entries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of unsaved entries</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1246" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga28b3f785fb769b6167baf3c4116a55aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_element_address</definition>
+        <argsstring>(uint16_t elem_index, uint16_t *address)</argsstring>
+        <name>sl_btmesh_node_get_element_address</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the unicast address configured to an element.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the target element, 0 is the primary element </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of the element. Returns 0x0000 if the address is not configured or if an error occurs.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1261" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga1a910a1779017e93938c011e0a15fed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_send_static_oob_request_response</definition>
+        <argsstring>(size_t data_len, const uint8_t *data)</argsstring>
+        <name>sl_btmesh_node_send_static_oob_request_response</name>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Provide the stack with static out-of-band authentication data, which the stack requested.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>data</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw 16-byte array containing the authentication data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1275" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga5c2961ee5781dbcd48887b7a605c8ef7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_reset</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_node_reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Factory reset of the mesh node.</para><para>To complete procedure, the application should do its own cleanup duties and reset the hardware.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga123bd2d3afbf45fa3e7bf20989805a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_set_beacon_reporting</definition>
+        <argsstring>(uint8_t report)</argsstring>
+        <name>sl_btmesh_node_set_beacon_reporting</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>report</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set secure network beaconing on or off. When on, every received secure network beacon will generate a <ref refid="a00041" kindref="compound">sl_btmesh_evt_node_beacon_received</ref> event.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">report</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Turn reporting on (nonzero) or off (zero).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1301" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga2436e5e1e8ab649d772a829cb15d93c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_set_iv_update_age</definition>
+        <argsstring>(uint32_t age_sec)</argsstring>
+        <name>sl_btmesh_node_set_iv_update_age</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>age_sec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the time since the last IV update. After the reboot, the node doesn&apos;t know the time since the last IV update and assumes that it happened at the time of the reboot.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">age_sec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seconds since last IV update. Values from 0 to 345600 (96h)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gacb53a122602a8ed371a3fb75322b552e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_key_count</definition>
+        <argsstring>(uint8_t type, uint32_t *count)</argsstring>
+        <name>sl_btmesh_node_get_key_count</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the total number of keys in node.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00021_1gabbf0c70db8c64fbd594b13f8e6b41f11" kindref="member">sl_btmesh_node_key_type_t</ref>. 0 for network key, 1 for application key </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of keys of the given type on the device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gae0f05fe1f073f9aa956ee5e77371c74b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_key</definition>
+        <argsstring>(uint8_t type, uint32_t index, uint8_t current, uint16_t *id, uint16_t *netkey_index, aes_key_128 *key)</argsstring>
+        <name>sl_btmesh_node_get_key</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>current</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>netkey_index</declname>
+        </param>
+        <param>
+          <type><ref refid="a00215" kindref="compound">aes_key_128</ref> *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a key by position. Only current key data exits in normal mode. Old key data can be queried only during the key refresh.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00021_1gabbf0c70db8c64fbd594b13f8e6b41f11" kindref="member">sl_btmesh_node_key_type_t</ref>. 0 for network key, 1 for application key </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key position, ranging from zero to key count minus one </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1: Current key, 0: Old key </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh key index of the key </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">netkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>For application keys, the network key index of the network key this key is bound to. Ignore for other key types. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key data, 16 bytes</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1347" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga86381cc2f042d9513d7c17007b4d1fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_networks</definition>
+        <argsstring>(size_t max_networks_size, size_t *networks_len, uint8_t *networks)</argsstring>
+        <name>sl_btmesh_node_get_networks</name>
+        <param>
+          <type>size_t</type>
+          <declname>max_networks_size</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>networks_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>networks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a list of networks supported by the node.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">max_networks_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of output buffer passed in <computeroutput>networks</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">networks_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On return, set to the length of output data written to <computeroutput>networks</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">networks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of network IDs. Each ID is two bytes in little-endian format</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1367" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga598bfa198887700c4e39a843ee32dfd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_element_seqnum</definition>
+        <argsstring>(uint16_t elem_index, uint32_t *seqnum)</argsstring>
+        <name>sl_btmesh_node_get_element_seqnum</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>seqnum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current sequence number of an element.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the target element, 0 is the primary element </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">seqnum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current sequence number of the element Ignore the value if the result code indicates an error (for example, when the element index is out of bounds).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1384" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga42d915ca071f83e50566d5e5180d4452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_set_model_option</definition>
+        <argsstring>(uint16_t elem_index, uint16_t vendor_id, uint16_t model_id, uint8_t option, uint32_t value)</argsstring>
+        <name>sl_btmesh_node_set_model_option</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vendor_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>model_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a model-specific option.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the target element, 0 is the primary element </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vendor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vendor ID for vendor-specific models. Use 0xffff for Bluetooth SIG models. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Option to set. The following options are defined:<itemizedlist>
+<listitem><para><bold>0x80</bold> Generic level delta behavior. Used only with generic level models. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Value for the option.</para><para>The following values are defined for generic level delta behavior option:<itemizedlist>
+<listitem><para><bold>0x0</bold> Generic level delta behavior: pass raw delta request data to application</para></listitem><listitem><para><bold>0x1</bold> Generic level delta behavior: pass processed delta request data to application (default) </para></listitem></itemizedlist>
+</para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1412" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1ga73a683bbadf5e116f78c68eafec36340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_local_dcd</definition>
+        <argsstring>(uint8_t page)</argsstring>
+        <name>sl_btmesh_node_get_local_dcd</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the local Device Composition Data.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">page</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Composition data page to query</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00042" kindref="compound">sl_btmesh_evt_node_local_dcd_data</ref></para></listitem><listitem><para><ref refid="a00043" kindref="compound">sl_btmesh_evt_node_local_dcd_data_end</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1431" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gae5bc8f6bcaaf2965c7d794e38f562856" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SL_BGAPI_DEPRECATED sl_status_t</type>
+        <definition>SL_BGAPI_DEPRECATED sl_status_t sl_btmesh_node_erase_mesh_nvm</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_node_erase_mesh_nvm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>Deprecated</bold> . Use <ref refid="a00021_1ga5c2961ee5781dbcd48887b7a605c8ef7" kindref="member">sl_btmesh_node_reset</ref> instead.</para><para>Delete all NVM keys and their corresponding values from the Bluetooth Mesh specific NVM region.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1444" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gae49b3179adbd6cd2fd7ebdfcaabf6cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_power_off</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_node_power_off</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power off the mesh node. To be called prior power off to allow the device to save its own state.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1455" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gaa9f103b29c8dc9142ffac4a192fc5367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_set_adv_phy</definition>
+        <argsstring>(uint8_t phy)</argsstring>
+        <name>sl_btmesh_node_set_adv_phy</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>phy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1472" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00021_1gaf1d352347805220df93cff4d637242a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_node_get_adv_phy</definition>
+        <argsstring>(uint8_t *phy)</argsstring>
+        <name>sl_btmesh_node_get_adv_phy</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>phy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1489" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00021_1gaca1afa27e54f21246ee3027cdcae042b" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_init_id</name>
+        <initializer>0x00140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="111" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gad7f7c7723782dba70903e9b5f6b7ba52" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_start_unprov_beaconing_id</name>
+        <initializer>0x01140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="112" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga7f3187a9a381a3d993e31ecc09f5ca04" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_stop_unprov_beaconing_id</name>
+        <initializer>0x16140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="113" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gad781c05d9a8f80a63b920d60abf71500" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_rssi_id</name>
+        <initializer>0x17140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="114" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga9068c430b8e90f23bbc298bd7edf9831" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_send_input_oob_request_response_id</name>
+        <initializer>0x02140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="115" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga7d5c6a89cb73bb667fdef1fdf71a5ec9" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_uuid_id</name>
+        <initializer>0x03140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="116" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga1609d5c41fce4426d2f8386dc7599cfd" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_set_provisioning_data_id</name>
+        <initializer>0x04140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="117" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga229acf1928fb43d734279ff193cddc70" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_init_oob_id</name>
+        <initializer>0x05140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="118" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga8eededf8eab52058443d9912995790cb" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_set_ivrecovery_mode_id</name>
+        <initializer>0x06140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="119" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gab7e408e3334b49904cdbea3c7a8854da" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_ivrecovery_mode_id</name>
+        <initializer>0x07140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="120" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gae51689ca98bf2ac2f7d40c04bdc5e83b" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_statistics_id</name>
+        <initializer>0x09140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="121" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga82dc13c96bb31e3355e5b9a72e8b1948" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_clear_statistics_id</name>
+        <initializer>0x0a140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="122" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gae50ccca4060043e8eb0dac1433b35059" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_set_net_relay_delay_id</name>
+        <initializer>0x0b140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="123" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga6be221cf14844bfdd187b31c471b1e76" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_net_relay_delay_id</name>
+        <initializer>0x0c140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="124" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gadc50b779149ddbdff685d1827ca683aa" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_ivupdate_state_id</name>
+        <initializer>0x0d140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="125" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga6ac4f5de9206f293e83e8421a1b3d726" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_request_ivupdate_id</name>
+        <initializer>0x0e140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="126" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga269e65fa8a49c4865667a1a057432c38" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_seq_remaining_id</name>
+        <initializer>0x0f140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="127" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gaf3cff67a4a0e6318786baa05d71e8f41" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_save_replay_protection_list_id</name>
+        <initializer>0x10140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="128" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga0a2480dbd5b7406c313b0750d03c49e5" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_set_uuid_id</name>
+        <initializer>0x11140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="129" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gad4e1aa114d603d5a717da05cd915e10e" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_replay_protection_list_status_id</name>
+        <initializer>0x14140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="130" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gaba498a7f70ba2a3fd9fa51cd8fde1237" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_element_address_id</name>
+        <initializer>0x12140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="131" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga8e6c46701f1c03f3a1dbc8e6ef280fdf" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_send_static_oob_request_response_id</name>
+        <initializer>0x13140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="132" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga7bf899b2989da0c272fdeb42b4c5badf" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_reset_id</name>
+        <initializer>0x15140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="133" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gaec22ce075b295c349ad141da5a25581e" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_set_beacon_reporting_id</name>
+        <initializer>0x18140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="134" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga11ddf6085fceeb7ab5f111d3777469af" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_set_iv_update_age_id</name>
+        <initializer>0x19140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="135" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga22f461f7cb0af6fde4e0db59b9681c89" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_key_count_id</name>
+        <initializer>0x1a140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="136" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gab5cd936e65e8c67514aafa9e144a3c70" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_key_id</name>
+        <initializer>0x1b140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="137" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga5b392016f3398b395eded97f2e6a1bb7" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_networks_id</name>
+        <initializer>0x1c140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="138" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gac033b0de1a24d3314291a91f5dce1c55" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_element_seqnum_id</name>
+        <initializer>0x1d140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="139" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gae5ca6b93689f26e2a3894425f6aa581e" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_set_model_option_id</name>
+        <initializer>0x1e140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="140" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga5098c544de4631121b26bf381529c23f" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_local_dcd_id</name>
+        <initializer>0x1f140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="141" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga38751c0b44a9f431eda2ad988557980c" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_erase_mesh_nvm_id</name>
+        <initializer>0x20140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="142" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gaec545a62d4af1cd9105b85eff900fd05" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_power_off_id</name>
+        <initializer>0x21140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="143" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga6f870bf842d2fb2d3c00cc532bdc3aab" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_set_adv_phy_id</name>
+        <initializer>0x22140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="144" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gaf774f08f8ca68e4d4ba25758d7ddd160" prot="public" static="no">
+        <name>sl_btmesh_cmd_node_get_adv_phy_id</name>
+        <initializer>0x23140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="145" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga9cda7a7435678a123b982fe1380e671e" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_init_id</name>
+        <initializer>0x00140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="146" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga95b0075aea36889402f411f05bde193c" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_start_unprov_beaconing_id</name>
+        <initializer>0x01140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="147" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga5b44854905be69db88cce04b4f0fbce1" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_stop_unprov_beaconing_id</name>
+        <initializer>0x16140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="148" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga9395c087e911ea5fdcc4f61da80c338c" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_rssi_id</name>
+        <initializer>0x17140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="149" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga8ca0469a9923e3c6df0eec8f404a4a80" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_send_input_oob_request_response_id</name>
+        <initializer>0x02140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="150" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga72b467d329c3c0575a6892ad75925b62" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_uuid_id</name>
+        <initializer>0x03140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="151" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga6709eeb84d225b4377264b5b5d304b38" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_set_provisioning_data_id</name>
+        <initializer>0x04140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="152" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga6cd2a17669411189cb56a6948ffadf35" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_init_oob_id</name>
+        <initializer>0x05140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="153" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gae5693b498e1c3a264e58cac40b4a30d3" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_set_ivrecovery_mode_id</name>
+        <initializer>0x06140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="154" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga929d46c72230c1bedcda15b0f74da78f" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_ivrecovery_mode_id</name>
+        <initializer>0x07140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="155" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gaf47cd43d66ba9c268052b268a941c9a0" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_statistics_id</name>
+        <initializer>0x09140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="156" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga481227de667b03b7b501393d5028cba5" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_clear_statistics_id</name>
+        <initializer>0x0a140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="157" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga06a64e43337f07a92e906ff3b8c297f4" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_set_net_relay_delay_id</name>
+        <initializer>0x0b140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="158" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga6e5791f268b1b35f9069ad0cbc045e34" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_net_relay_delay_id</name>
+        <initializer>0x0c140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="159" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga1a409e9a0caae30917de14a513abd699" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_ivupdate_state_id</name>
+        <initializer>0x0d140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="160" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gaf0c34a02aba6f7639101c3e6d6b813e4" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_request_ivupdate_id</name>
+        <initializer>0x0e140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="161" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga6386726b8da0c20f3a06652f3a408cfe" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_seq_remaining_id</name>
+        <initializer>0x0f140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="162" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gaba24048c90d24ac4a345f105f1dbd004" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_save_replay_protection_list_id</name>
+        <initializer>0x10140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="163" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga1e21c136b88c0dfd02237d66363d4c4b" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_set_uuid_id</name>
+        <initializer>0x11140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="164" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gac950f714e6927c5947dd7d03d12021f9" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_replay_protection_list_status_id</name>
+        <initializer>0x14140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="165" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga99dca035a1c3203350f396e9f6382e01" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_element_address_id</name>
+        <initializer>0x12140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="166" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gafaf119aebdb9ffeacf735cc01c14ec99" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_send_static_oob_request_response_id</name>
+        <initializer>0x13140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="167" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gaf2568b36df0b0c402b4b2473b3405004" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_reset_id</name>
+        <initializer>0x15140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="168" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga9aefa6dae9b7af5beb5688749fe3de47" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_set_beacon_reporting_id</name>
+        <initializer>0x18140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="169" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga52986c9a3b0b0de5048764356972caca" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_set_iv_update_age_id</name>
+        <initializer>0x19140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="170" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga92afacc78c9a334e34705131f211188c" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_key_count_id</name>
+        <initializer>0x1a140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="171" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gac476f2caa64bbcb88506dd22e0846d2e" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_key_id</name>
+        <initializer>0x1b140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="172" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga9b68a484f6c6fe69c1e50bd485e4bf58" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_networks_id</name>
+        <initializer>0x1c140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="173" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gae0ff8d6b5dadeca454d1a04a2c920084" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_element_seqnum_id</name>
+        <initializer>0x1d140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="174" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga0ba7b2c7ee830548a54cf8fc53f15e77" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_set_model_option_id</name>
+        <initializer>0x1e140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="175" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga1eb5eb5a31f2491d5f371742c0f9f812" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_local_dcd_id</name>
+        <initializer>0x1f140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="176" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gaae47ec741fce93d13d6396978e648944" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_erase_mesh_nvm_id</name>
+        <initializer>0x20140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="177" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga7226c60a3b9de58f45d922b73cd5ebca" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_power_off_id</name>
+        <initializer>0x21140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="178" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1gafefafe8e44e3a30dc1ce57a33d8750f7" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_set_adv_phy_id</name>
+        <initializer>0x22140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="179" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00021_1ga342ddbc520236117c8bc6c950bf83e88" prot="public" static="no">
+        <name>sl_btmesh_rsp_node_get_adv_phy_id</name>
+        <initializer>0x23140028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="180" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SL_BTMESH_API command declarations. </para>    </briefdescription>
+    <detaileddescription>
+<para><heading level="1">License</heading>
+</para><para><bold>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</bold></para><para>The licensor of this software is Silicon Laboratories Inc. Your use of this software is governed by the terms of Silicon Labs Master Software License Agreement (MSLA) available at www.silabs.com/about-us/legal/master-software-license-agreement. This software is distributed to you in Source Code format and is governed by the sections of the MSLA applicable to Source Code.</para><para>Mesh Node</para><para>Bluetooth mesh stack API for unprovisioned devices and provisioned nodes.</para><para><bold>Initialization:</bold><itemizedlist>
+<listitem><para><ref refid="a00021_1ga95d84b256ddb120cbd48c35648e5b00e" kindref="member">sl_btmesh_node_init</ref> : Initialize node</para></listitem><listitem><para><ref refid="a00021_1gad78cc7c6418b35449ab72056385897eb" kindref="member">sl_btmesh_node_init_oob</ref> : Initialize node with out-of-band authentication</para></listitem><listitem><para><ref refid="a00022" kindref="compound">sl_btmesh_evt_node_initialized</ref> : Node initialized</para></listitem></itemizedlist>
+</para><para><bold>Provisioning a node:</bold><itemizedlist>
+<listitem><para><ref refid="a00021_1ga629ac06ff8fbec7f28c948d94e670cd4" kindref="member">sl_btmesh_node_get_uuid</ref> : Get device UUID</para></listitem><listitem><para><ref refid="a00021_1gae87cd83750a568083f7a235a8e1b0d7d" kindref="member">sl_btmesh_node_start_unprov_beaconing</ref> : Start unprovisioned device beaconing</para></listitem><listitem><para><ref refid="a00021_1ga25c3154c23ac8192590e5a018ede0228" kindref="member">sl_btmesh_node_stop_unprov_beaconing</ref> : Stop unprovisioned device beaconing</para></listitem><listitem><para><ref refid="a00028" kindref="compound">sl_btmesh_evt_node_provisioning_started</ref> : Provisioning process has started</para></listitem><listitem><para><ref refid="a00027" kindref="compound">sl_btmesh_evt_node_input_oob_request</ref> : Request to input out-of-band authentication data</para></listitem><listitem><para><ref refid="a00021_1ga9948884e4b4fa11d192b15eb7ad2a0d4" kindref="member">sl_btmesh_node_send_input_oob_request_response</ref> : Respond to input out-of-band authentication request</para></listitem><listitem><para><ref refid="a00026" kindref="compound">sl_btmesh_evt_node_display_output_oob</ref> : Request to display output out-of-band authentication data</para></listitem><listitem><para><ref refid="a00035" kindref="compound">sl_btmesh_evt_node_static_oob_request</ref> : Request for static out-of-band authentication data</para></listitem><listitem><para><ref refid="a00021_1ga1a910a1779017e93938c011e0a15fed6" kindref="member">sl_btmesh_node_send_static_oob_request_response</ref> : Respond to static out-of-band authentication request</para></listitem><listitem><para><ref refid="a00023" kindref="compound">sl_btmesh_evt_node_provisioned</ref> : Node has been provisioned</para></listitem><listitem><para><ref refid="a00029" kindref="compound">sl_btmesh_evt_node_provisioning_failed</ref> : Provisioning process has failed</para></listitem><listitem><para><ref refid="a00021_1gae57746b683cba799cded9e83d9ecf0fe" kindref="member">sl_btmesh_node_set_provisioning_data</ref> : Pre-provision a device</para></listitem></itemizedlist>
+</para><para><bold>Node Configuration:</bold><itemizedlist>
+<listitem><para><ref refid="a00030" kindref="compound">sl_btmesh_evt_node_key_added</ref> : A cryptographic key has been added to the node</para></listitem><listitem><para><ref refid="a00024" kindref="compound">sl_btmesh_evt_node_config_get</ref> : Node-wide configuration has been queried</para></listitem><listitem><para><ref refid="a00025" kindref="compound">sl_btmesh_evt_node_config_set</ref> : Node-wide configuration has been modified</para></listitem><listitem><para><ref refid="a00031" kindref="compound">sl_btmesh_evt_node_model_config_changed</ref> : Model configuration has been modified</para></listitem><listitem><para><ref refid="a00021_1ga5c2961ee5781dbcd48887b7a605c8ef7" kindref="member">sl_btmesh_node_reset</ref> : Factory reset mesh node</para></listitem></itemizedlist>
+</para><para><bold>Note on Bluetooth mesh addresses</bold></para><para>Bluetooth mesh address space is divided into sections containing ranges of addresses of various types. Different address types are used in different contexts. Some requests accept only certain address types.</para><para>The address types are as follows:<itemizedlist>
+<listitem><para><bold>0x0000 Unassigned address:</bold> represents an address that has not been set</para></listitem><listitem><para><bold>0x0001..0x7fff Unicast addresses</bold> are allocated by the Provisioner to provisioned nodes. Each element of a node has its own unicast address.</para></listitem><listitem><para><bold>0x8000..0xbfff Virtual addresses</bold> are 16-bit shorthand for 128-bit label UUIDs which are pre-allocated to specific purposes in relevant Bluetooth SIG specifications. Virtual addresses can typically be used in the same context as group addresses. Some commands require specifying the full label UUID instead of the virtual address shorthand.</para></listitem><listitem><para><bold>0xc000..0xffef Group addresses</bold> are allocated by the Provisioner for multicast communication.</para></listitem><listitem><para><bold>0xfff0..0xffff Fixed group addresses</bold> are allocated in the Mesh specification for multicast communication in a particular context. They can be used in the same context as regular group addresses. The following addresses are currently defined:<itemizedlist>
+<listitem><para>0xfffc All-proxies broadcast address</para></listitem><listitem><para>0xfffd All-friends broadcast address</para></listitem><listitem><para>0xfffe All-relays broadcast address</para></listitem><listitem><para>0xffff All-nodes broadcast address </para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

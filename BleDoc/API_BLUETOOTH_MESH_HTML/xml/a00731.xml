@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00731" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_scene_setup_server_delete_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00731_1a63a36ae89166e8f56437f87d5b3cca6b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_setup_server_delete_s::destination_address</definition>
+        <argsstring></argsstring>
+        <name>destination_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address of the server or the group address to which it was published. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11224" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00731_1afa118343df0587cce957fc239490a5c6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_setup_server_delete_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the element which received the command. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11226" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00731_1a2e566c7bf35710e9674a93a98621395c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_setup_server_delete_s::scene_id</definition>
+        <argsstring></argsstring>
+        <name>scene_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scene ID </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11228" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00731_1a268f46fdd378d62f6f258be602c01b3d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_setup_server_delete_s::client_address</definition>
+        <argsstring></argsstring>
+        <name>client_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Device which sent the request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11229" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00731_1ad71c2b58886fefd39c56d542ab0a6269" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_setup_server_delete_s::appkey_index</definition>
+        <argsstring></argsstring>
+        <name>appkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Appkey used by client_address. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11230" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the delete event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11223" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11222" bodyend="11231"/>
+    <listofallmembers>
+      <member refid="a00731_1ad71c2b58886fefd39c56d542ab0a6269" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_setup_server_delete_s</scope><name>appkey_index</name></member>
+      <member refid="a00731_1a268f46fdd378d62f6f258be602c01b3d" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_setup_server_delete_s</scope><name>client_address</name></member>
+      <member refid="a00731_1a63a36ae89166e8f56437f87d5b3cca6b" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_setup_server_delete_s</scope><name>destination_address</name></member>
+      <member refid="a00731_1afa118343df0587cce957fc239490a5c6" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_setup_server_delete_s</scope><name>elem_index</name></member>
+      <member refid="a00731_1a2e566c7bf35710e9674a93a98621395c" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_setup_server_delete_s</scope><name>scene_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

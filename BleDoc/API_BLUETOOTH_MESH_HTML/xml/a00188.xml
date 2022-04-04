@@ -1,0 +1,840 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00188" kind="group">
+    <compoundname>sl_btmesh_time_client</compoundname>
+    <title>Bluetooth Mesh Time Client</title>
+    <innergroup refid="a00189">sl_btmesh_evt_time_client_time_status</innergroup>
+    <innergroup refid="a00190">sl_btmesh_evt_time_client_time_zone_status</innergroup>
+    <innergroup refid="a00191">sl_btmesh_evt_time_client_tai_utc_delta_status</innergroup>
+    <innergroup refid="a00192">sl_btmesh_evt_time_client_time_role_status</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00188_1ga55fe69a615f88e4691ff6f279132b5d8" prot="public" static="no">
+        <name>sl_btmesh_time_client_time_roles_t</name>
+        <enumvalue id="a00188_1gga55fe69a615f88e4691ff6f279132b5d8affe8dc4321add8b60d9f693652185062" prot="public">
+          <name>sl_btmesh_time_client_time_role_none</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) The element does not participate in propagation of time information. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00188_1gga55fe69a615f88e4691ff6f279132b5d8aec4f83a3de40cf9689f4220e2dbb86c1" prot="public">
+          <name>sl_btmesh_time_client_time_role_authority</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) The element publishes Time Status messages but does not process received Time Status messages. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00188_1gga55fe69a615f88e4691ff6f279132b5d8a6c744a3a4f759474c3fe566accceebf8" prot="public">
+          <name>sl_btmesh_time_client_time_role_relay</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) The element processes received and publishes Time Status messages. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00188_1gga55fe69a615f88e4691ff6f279132b5d8a56dac71f4ef872f9c8ad48f34e99e4bb" prot="public">
+          <name>sl_btmesh_time_client_time_role_client</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x3) The element does not publish but processes received Time Status messages. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>These values define the Time Role types used by the stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12151" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12150" bodyend="12169"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00188_1ga6464c862e49113f362c0945665ac5be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_client_init</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_time_client_init</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Time Client model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12299" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00188_1gadf608d2ed07ec6536bf000925fc2b78d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_client_deinit</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_time_client_deinit</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialize the Time Client model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12310" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00188_1gaf78e995b6bfbf064311409ea9295b60b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_client_get_time</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index)</argsstring>
+        <name>sl_btmesh_time_client_get_time</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Time Get message to Time Server</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12323" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00188_1ga1a85979fc75c502322b6c652905b6956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_client_set_time</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint64_t tai_seconds, uint8_t subsecond, uint8_t uncertainty, uint8_t time_authority, int32_t tai_utc_delta, int16_t time_zone_offset)</argsstring>
+        <name>sl_btmesh_time_client_set_time</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>tai_seconds</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subsecond</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>uncertainty</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>time_authority</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>tai_utc_delta</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>time_zone_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Time Set message to Time Server</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tai_seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current TAI time in seconds since the epoch, 40-bit value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">subsecond</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-second in units of 1/256th second. Range is 0-255. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uncertainty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The estimated uncertainty in 10-milliseconds steps. Range is 0-255, representing up to 2.55 seconds. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time_authority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0: No Time Authority, the element does not have a trusted source of time such as GPS or NTP. 1: Time Authority, the element has a trusted source of time or a battery-backed properly initialized RTC. Other values are prohibited. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tai_utc_delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current difference between TAI and UTC in seconds. Range is -255 to 32512. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time_zone_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local time zone offset in 15-minute increments. Range is -64 to 191, representing -16 to 47.75 hours.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12352" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00188_1ga5a726ddc5ebc4a02a870a437e67ff5c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_client_get_time_zone</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index)</argsstring>
+        <name>sl_btmesh_time_client_get_time_zone</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Time Zone Get message to Time Server</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12373" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00188_1ga2fb10abbdd0b29655f4228c09d249ea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_client_set_time_zone</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, int16_t time_zone_offset_new, uint64_t tai_of_zone_change)</argsstring>
+        <name>sl_btmesh_time_client_set_time_zone</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>time_zone_offset_new</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>tai_of_zone_change</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Time Zone Set message to Time Server to set the Time Zone New state</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time_zone_offset_new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upcoming local time zone offset. Range is -64 to 191, representing -16 to 47.75 hours. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tai_of_zone_change</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TAI Seconds time of upcoming Time Zone offset change</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12392" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00188_1ga19d6962934f52975065ae904db72b32d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_client_get_tai_utc_delta</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index)</argsstring>
+        <name>sl_btmesh_time_client_get_tai_utc_delta</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a TAI-UTC Delta Get message to Time Server</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12409" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00188_1ga058d6548147dd55de973d33fc33d8775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_client_set_tai_utc_delta</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, int32_t tai_utc_delta_new, uint64_t tai_of_delta_change)</argsstring>
+        <name>sl_btmesh_time_client_set_tai_utc_delta</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>tai_utc_delta_new</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>tai_of_delta_change</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a TAI-UTC Delta Set message to Time Server, which responds with a TAI-UTC Delta Status message.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tai_utc_delta_new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upcoming difference between TAI and UTC is seconds. Range is -255 to 32512. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tai_of_delta_change</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TAI Seconds time of the upcoming TAI-UTC Delta change</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12429" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00188_1ga82c2e57f9488b3949834b2351f358e57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_client_get_time_role</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index)</argsstring>
+        <name>sl_btmesh_time_client_get_time_role</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Time Role Get message to Time Server, which responds with a Time Role Status message.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12447" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00188_1ga25fdb7bee41c687b55850214cf378ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_client_set_time_role</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t time_role)</argsstring>
+        <name>sl_btmesh_time_client_set_time_role</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>time_role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send Time Role Get message to Time Server, which responds with a Time Role Status message.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time_role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Time Role for the element.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12464" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00188_1ga5c99caa8dec6c6518a7af5c0d0c38f7e" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_client_init_id</name>
+        <initializer>0x00530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12126" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga19392daccd230d84c05ea0bfae91b007" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_client_deinit_id</name>
+        <initializer>0x01530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12127" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1gaff06801f9b5ebde0979868118035d2b9" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_client_get_time_id</name>
+        <initializer>0x02530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12128" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1gafe6be960ade39a2483c7480264ceed81" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_client_set_time_id</name>
+        <initializer>0x03530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12129" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga3bf0eee8446a8358b6b22bc5ea92f6fe" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_client_get_time_zone_id</name>
+        <initializer>0x04530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12130" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga773c5e125e6dc6d64614144dee3cbdf6" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_client_set_time_zone_id</name>
+        <initializer>0x05530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12131" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga7bd188dba0a38791c631c7c0f6c71064" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_client_get_tai_utc_delta_id</name>
+        <initializer>0x06530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12132" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1gaa42ee88e0117a3832398bbd37d66f701" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_client_set_tai_utc_delta_id</name>
+        <initializer>0x07530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12133" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga11bbf258bdf491ea9165738b099f7059" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_client_get_time_role_id</name>
+        <initializer>0x08530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12134" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga565670226a0db7c2fa9b60fc2cd9501b" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_client_set_time_role_id</name>
+        <initializer>0x09530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12135" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga8bde3ca38cf13c11eda01f55b88c58e6" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_client_init_id</name>
+        <initializer>0x00530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12136" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1gaff545be82c38da90929c463f822b2e91" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_client_deinit_id</name>
+        <initializer>0x01530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12137" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga8e7407fa9e839772169a06a079a2591c" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_client_get_time_id</name>
+        <initializer>0x02530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12138" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga2be77b9271e2e5a8bac53ff92381ff9e" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_client_set_time_id</name>
+        <initializer>0x03530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12139" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga937bd12fe77a35b10314578c8a7208ee" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_client_get_time_zone_id</name>
+        <initializer>0x04530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12140" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga0f42611815ed0ae5f843588f27b37148" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_client_set_time_zone_id</name>
+        <initializer>0x05530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12141" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga5c6f88554e2ec970b57e6ebd8a31252d" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_client_get_tai_utc_delta_id</name>
+        <initializer>0x06530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12142" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1gab01bcc9b50a6b50348cb8e92aeee9069" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_client_set_tai_utc_delta_id</name>
+        <initializer>0x07530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12143" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga0a58bfcab390842d743f3060cdcb1148" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_client_get_time_role_id</name>
+        <initializer>0x08530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12144" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00188_1ga7159a67da1de05d71c88431e6e9cc7fd" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_client_set_time_role_id</name>
+        <initializer>0x09530028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12145" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Time Client. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class provides the commands and messages to interface with the Time Client model </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

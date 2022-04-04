@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00097" kind="group">
+    <compoundname>sl_btmesh_proxy_client</compoundname>
+    <title>Bluetooth Mesh GATT Proxy Client</title>
+    <briefdescription>
+<para>Bluetooth Mesh GATT Proxy Client. </para>    </briefdescription>
+    <detaileddescription>
+<para>Initialize the GATT Proxy client-side functionality. Mesh proxy commands are in the mesh_proxy class. This class allows the linker to drop the GATT Proxy client code if it is not needed. It is enough to initialize this BGAPI class. It contains no commands or events. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

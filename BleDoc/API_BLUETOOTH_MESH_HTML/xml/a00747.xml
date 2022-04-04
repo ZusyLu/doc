@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00747" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_scheduler_server_action_changed_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00747_1ab5b396a6f24ba0933e70c9557c448a6c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scheduler_server_action_changed_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scheduler server model element index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11636" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1ac91f7265128e38b4c7559f8a94fdea49" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_scheduler_server_action_changed_s::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the Scheduler Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11637" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1add20bfc501159d05c114cfe61154f9fd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_scheduler_server_action_changed_s::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scheduled year for the action </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11638" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1a63040ca8820d582d0694bfc79aacf811" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scheduler_server_action_changed_s::month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scheduled month for the action </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11639" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1a93c675ad5a0de17d183afbf05d134945" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_scheduler_server_action_changed_s::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scheduled day of the month for the action </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11640" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11640" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1ae3d7f1c23e56c8006265e0059906fb12" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_scheduler_server_action_changed_s::hour</definition>
+        <argsstring></argsstring>
+        <name>hour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scheduled hour for the action </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11641" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1af9c29d50af83439739548721bbd19326" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_scheduler_server_action_changed_s::minute</definition>
+        <argsstring></argsstring>
+        <name>minute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scheduled minute for the action </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11642" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11642" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1acfda4112ce81d3c49ae1392764bfc27c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_scheduler_server_action_changed_s::second</definition>
+        <argsstring></argsstring>
+        <name>second</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scheduled second for the action </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11643" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11643" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1a248f4a4552da2dbf7dc40e3bf8a92111" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_scheduler_server_action_changed_s::day_of_week</definition>
+        <argsstring></argsstring>
+        <name>day_of_week</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scheduled days of the week for the action </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11644" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1a17f39cbd3e20e6cb73f65e5937516300" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_scheduler_server_action_changed_s::action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Action to be performed at the scheduled time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11645" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1abb5d66948657e38a3dff4b02e0601565" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_scheduler_server_action_changed_s::transition_time_ms</definition>
+        <argsstring></argsstring>
+        <name>transition_time_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transition time for this action </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11646" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00747_1ad513e61d0eff51f0fa174c9c8ce50ac6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scheduler_server_action_changed_s::scene_number</definition>
+        <argsstring></argsstring>
+        <name>scene_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scene number to be used for some actions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11647" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11647" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the action_changed event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11635" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11634" bodyend="11648"/>
+    <listofallmembers>
+      <member refid="a00747_1a17f39cbd3e20e6cb73f65e5937516300" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>action</name></member>
+      <member refid="a00747_1a93c675ad5a0de17d183afbf05d134945" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>day</name></member>
+      <member refid="a00747_1a248f4a4552da2dbf7dc40e3bf8a92111" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>day_of_week</name></member>
+      <member refid="a00747_1ab5b396a6f24ba0933e70c9557c448a6c" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>elem_index</name></member>
+      <member refid="a00747_1ae3d7f1c23e56c8006265e0059906fb12" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>hour</name></member>
+      <member refid="a00747_1ac91f7265128e38b4c7559f8a94fdea49" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>index</name></member>
+      <member refid="a00747_1af9c29d50af83439739548721bbd19326" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>minute</name></member>
+      <member refid="a00747_1a63040ca8820d582d0694bfc79aacf811" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>month</name></member>
+      <member refid="a00747_1ad513e61d0eff51f0fa174c9c8ce50ac6" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>scene_number</name></member>
+      <member refid="a00747_1acfda4112ce81d3c49ae1392764bfc27c" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>second</name></member>
+      <member refid="a00747_1abb5d66948657e38a3dff4b02e0601565" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>transition_time_ms</name></member>
+      <member refid="a00747_1add20bfc501159d05c114cfe61154f9fd" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scheduler_server_action_changed_s</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

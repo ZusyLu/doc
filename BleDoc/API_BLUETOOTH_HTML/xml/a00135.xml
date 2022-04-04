@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00135" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_dfu_boot_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00135_1a7161b93fea756f62fd1c51b5caad8a57" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_bt_evt_dfu_boot_s::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The version of the bootloader </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="108" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the boot event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="107" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="106" bodyend="109"/>
+    <listofallmembers>
+      <member refid="a00135_1a7161b93fea756f62fd1c51b5caad8a57" prot="public" virt="non-virtual"><scope>sl_bt_evt_dfu_boot_s</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

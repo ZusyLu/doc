@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00135" kind="group">
+    <compoundname>sl_btmesh_evt_sensor_setup_server_set_cadence_request</compoundname>
+    <title>sl_btmesh_evt_sensor_setup_server_set_cadence_request</title>
+    <innerclass refid="a00595" prot="public">sl_btmesh_evt_sensor_setup_server_set_cadence_request_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00135_1ga57ce34988e93a205d21b97e36ed94cc6" prot="public" static="no">
+        <type>struct <ref refid="a00595" kindref="compound">sl_btmesh_evt_sensor_setup_server_set_cadence_request_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_sensor_setup_server_set_cadence_request_s sl_btmesh_evt_sensor_setup_server_set_cadence_request_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_sensor_setup_server_set_cadence_request_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8779" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8894" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00135_1gaf0e6e710cdb6156fc34efd81d50b4995" prot="public" static="no">
+        <name>sl_btmesh_evt_sensor_setup_server_set_cadence_request_id</name>
+        <initializer>0x014800a8</initializer>
+        <briefdescription>
+<para>Identifier of the set_cadence_request event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8853" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8853" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicate an incoming Sensor Cadence Set request, which can be replied to by sending a Sensor Cadence Status message. </para>    </briefdescription>
+    <detaileddescription>
+<para>Only Sensor Cadence Set (acknowledged) request results in a direct reply. In addition, configuration changes must be reported by publishing the updated cadence state according to model configuration. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00053" kind="group">
+    <compoundname>sl_btmesh_evt_prov_oob_auth_request</compoundname>
+    <title>sl_btmesh_evt_prov_oob_auth_request</title>
+    <innerclass refid="a00335" prot="public">sl_btmesh_evt_prov_oob_auth_request_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00053_1gad5c7a909dc2c34d41ff15cceebf576b1" prot="public" static="no">
+        <type>struct <ref refid="a00335" kindref="compound">sl_btmesh_evt_prov_oob_auth_request_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_prov_oob_auth_request_s sl_btmesh_evt_prov_oob_auth_request_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_prov_oob_auth_request_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1489" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1911" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00053_1ga4f3eda67ac8beee6fe300239a90b36f2" prot="public" static="no">
+        <name>sl_btmesh_evt_prov_oob_auth_request_id</name>
+        <initializer>0x071500a8</initializer>
+        <briefdescription>
+<para>Identifier of the oob_auth_request event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1897" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1897" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provide the Provisioner with the device&apos;s output or static data using prov_oob_auth_rsp. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

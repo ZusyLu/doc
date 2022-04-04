@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00115" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_heartbeat_sub_status</compoundname>
+    <title>sl_btmesh_evt_config_client_heartbeat_sub_status</title>
+    <innerclass refid="a00523" prot="public">sl_btmesh_evt_config_client_heartbeat_sub_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00115_1gab477963ff312962ed92c7c9d812ff7bf" prot="public" static="no">
+        <type>struct <ref refid="a00523" kindref="compound">sl_btmesh_evt_config_client_heartbeat_sub_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_heartbeat_sub_status_s sl_btmesh_evt_config_client_heartbeat_sub_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_heartbeat_sub_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6887" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00115_1ga472b45cbbd87535f19ba0b3821ee1f3f" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_heartbeat_sub_status_id</name>
+        <initializer>0x0f2700a8</initializer>
+        <briefdescription>
+<para>Identifier of the heartbeat_sub_status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6864" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6864" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Status event for <ref refid="a00099_1ga4f1816e58cd46924ac8a152e27dcb973" kindref="member">sl_btmesh_config_client_get_heartbeat_sub</ref> and <ref refid="a00099_1ga14bb9c2ca5965a308777d2d7689c26c0" kindref="member">sl_btmesh_config_client_set_heartbeat_sub</ref> commands. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00069" kind="group">
+    <compoundname>sl_btmesh_health_client</compoundname>
+    <title>Bluetooth Mesh Health Client Model</title>
+    <innergroup refid="a00070">sl_btmesh_evt_health_client_server_status</innergroup>
+    <innergroup refid="a00071">sl_btmesh_evt_health_client_server_status_period</innergroup>
+    <innergroup refid="a00072">sl_btmesh_evt_health_client_server_status_attention</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00069_1ga89ad95f4a97dec81ce8e420d846d9c6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_health_client_get</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint16_t vendor_id)</argsstring>
+        <name>sl_btmesh_health_client_get</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vendor_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the registered fault status of a Health Server model or models in the network.</para><para>Besides the immediate result code, the response or responses (if the destination server address is a group address) from the network will generate <ref refid="a00070" kindref="compound">sl_btmesh_evt_health_client_server_status</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. May be a unicast address or a group address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index. Identifies the client model used for sending the request. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use in encrypting the request </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vendor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bluetooth vendor ID used in the request</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3394" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00069_1gab0d83c2bcf0743aed915fe4f059fa6a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_health_client_clear</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint16_t vendor_id, uint8_t reliable)</argsstring>
+        <name>sl_btmesh_health_client_clear</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vendor_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reliable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear the fault status of a Health Server model or models in the network.</para><para>Besides the immediate result code, the response or responses (if the destination server address is a group address) from the network will generate <ref refid="a00070" kindref="compound">sl_btmesh_evt_health_client_server_status</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. May be a unicast address or a group address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index. Identifies the client model used for sending the request. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use in encrypting the request </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vendor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bluetooth vendor ID used in the request </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reliable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, a reliable model message is used.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3419" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00069_1ga3c5973c5b3d727a83831423fe5d788cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_health_client_test</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t test_id, uint16_t vendor_id, uint8_t reliable)</argsstring>
+        <name>sl_btmesh_health_client_test</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>test_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vendor_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reliable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute a self test on a server model or models in the network.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. May be a unicast address or a group address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index. Identifies the client model used for sending the request. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use in encrypting the request </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">test_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Test ID used in the request </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vendor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bluetooth vendor ID used in the request </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reliable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, a reliable model message is used.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3442" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00069_1ga0d08cb4b4555eab090e32bd1250a93ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_health_client_get_period</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index)</argsstring>
+        <name>sl_btmesh_health_client_get_period</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the health period log of a Health Server model or models in the network.</para><para>Except for the immediate result code, the response or responses (if the destination server address is a group address) from the network will generate <ref refid="a00070" kindref="compound">sl_btmesh_evt_health_client_server_status</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address, which may be a unicast address or a group address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index. Identifies the client model used for sending the request. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use in encrypting the request</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3467" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00069_1ga35ee8e700974bd68067db6144fd12e23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_health_client_set_period</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t period, uint8_t reliable)</argsstring>
+        <name>sl_btmesh_health_client_set_period</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>period</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reliable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the health period divisor of a Health Server model or models in the network.</para><para>Except for the immediate result code, the response or responses (if the destination server address is a group address) from the network will generate <ref refid="a00070" kindref="compound">sl_btmesh_evt_health_client_server_status</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. May be a unicast address or a group address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index, which identifies the client model used for sending the request. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use in encrypting the request </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Health period divisor value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reliable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, a reliable model message is used.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3492" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00069_1gaf6e333f31aee299bc4db9cb5ac3d5ccf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_health_client_get_attention</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index)</argsstring>
+        <name>sl_btmesh_health_client_get_attention</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the attention timer value of a Health Server model or models in the network.</para><para>Besides the immediate result code, the response or responses (if the destination server address is a group address) from the network will generate <ref refid="a00070" kindref="compound">sl_btmesh_evt_health_client_server_status</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. May be a unicast address or a group address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index. Identifies the client model used for sending the request. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use in encrypting the request</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3517" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00069_1gae1e286a8084c3b98fa3bd6273182eb44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_health_client_set_attention</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t attention_sec, uint8_t reliable)</argsstring>
+        <name>sl_btmesh_health_client_set_attention</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>attention_sec</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reliable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the attention timer value of a Health Server model or models in the network.</para><para>Except for the immediate result code, the response or responses (if the destination server address is a group address) from the network will generate <ref refid="a00070" kindref="compound">sl_btmesh_evt_health_client_server_status</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. May be a unicast address or a group address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index. Identifies the client model used for sending the request. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use in encrypting the request </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attention_sec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attention timer period in seconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reliable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, a reliable model message is used.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3542" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00069_1gaba487643782cc25ab3175c84c827608d" prot="public" static="no">
+        <name>sl_btmesh_cmd_health_client_get_id</name>
+        <initializer>0x001a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3254" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1gab7d573e5b8befac868dd8a6664a73211" prot="public" static="no">
+        <name>sl_btmesh_cmd_health_client_clear_id</name>
+        <initializer>0x011a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3255" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1ga55593bc9650ce29b7dc4409dedd6fe73" prot="public" static="no">
+        <name>sl_btmesh_cmd_health_client_test_id</name>
+        <initializer>0x021a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3256" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1gaee3981dab2382d89be5d866cb9a9171e" prot="public" static="no">
+        <name>sl_btmesh_cmd_health_client_get_period_id</name>
+        <initializer>0x031a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3257" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1gaebf443a65e9fdbacda2a8fa190ee175e" prot="public" static="no">
+        <name>sl_btmesh_cmd_health_client_set_period_id</name>
+        <initializer>0x041a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3258" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1gaa4946625a52581f116e8d8baf8eefdf8" prot="public" static="no">
+        <name>sl_btmesh_cmd_health_client_get_attention_id</name>
+        <initializer>0x051a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3259" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1ga87118fff5b9495e4e252acb56629dfa3" prot="public" static="no">
+        <name>sl_btmesh_cmd_health_client_set_attention_id</name>
+        <initializer>0x061a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3260" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1ga6118a1d20f99029b56e96e80b1c74592" prot="public" static="no">
+        <name>sl_btmesh_rsp_health_client_get_id</name>
+        <initializer>0x001a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3261" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1gaae39fe96548e2778a84051c5bb121411" prot="public" static="no">
+        <name>sl_btmesh_rsp_health_client_clear_id</name>
+        <initializer>0x011a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3262" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1ga73525c3eea736e6a429b2aebc16bf7e8" prot="public" static="no">
+        <name>sl_btmesh_rsp_health_client_test_id</name>
+        <initializer>0x021a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3263" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1gadd70d7404397f3275031b33404d99ff8" prot="public" static="no">
+        <name>sl_btmesh_rsp_health_client_get_period_id</name>
+        <initializer>0x031a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3264" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1ga7f5370666d7b184c5ab38f1eba5d323e" prot="public" static="no">
+        <name>sl_btmesh_rsp_health_client_set_period_id</name>
+        <initializer>0x041a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3265" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1gadb24482d801406b2685178280fff599f" prot="public" static="no">
+        <name>sl_btmesh_rsp_health_client_get_attention_id</name>
+        <initializer>0x051a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3266" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00069_1gab7a9e9a58783d81d80ef1880e704c51d" prot="public" static="no">
+        <name>sl_btmesh_rsp_health_client_set_attention_id</name>
+        <initializer>0x061a0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3267" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Health Client Model. </para>    </briefdescription>
+    <detaileddescription>
+<para>Bluetooth mesh health client model functionality </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

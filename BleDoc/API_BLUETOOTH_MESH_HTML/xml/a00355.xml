@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00355" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_prov_key_refresh_node_update_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00355_1a2eadde9cbf85cc48585f2c8949c03738" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_prov_key_refresh_node_update_s::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Network key index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2034" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2034" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00355_1af5df6311c7acbc41aa47c26e19509743" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_prov_key_refresh_node_update_s::phase</definition>
+        <argsstring></argsstring>
+        <name>phase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Phase moved into </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2035" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2035" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00355_1aea16a0471aa597e3a208360ab917fb3b" prot="public" static="no" mutable="no">
+        <type><ref refid="a00211" kindref="compound">uuid_128</ref></type>
+        <definition>uuid_128 sl_btmesh_evt_prov_key_refresh_node_update_s::uuid</definition>
+        <argsstring></argsstring>
+        <name>uuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>16-byte UUID of the node. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2036" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2036" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the key_refresh_node_update event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="198">
+        <label>uuid_128</label>
+        <link refid="a00211"/>
+      </node>
+      <node id="197">
+        <label>sl_btmesh_evt_prov_key_refresh_node_update_s</label>
+        <link refid="a00355"/>
+        <childnode refid="198" relation="usage">
+          <edgelabel>uuid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2033" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2032" bodyend="2037"/>
+    <listofallmembers>
+      <member refid="a00355_1a2eadde9cbf85cc48585f2c8949c03738" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_key_refresh_node_update_s</scope><name>key</name></member>
+      <member refid="a00355_1af5df6311c7acbc41aa47c26e19509743" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_key_refresh_node_update_s</scope><name>phase</name></member>
+      <member refid="a00355_1aea16a0471aa597e3a208360ab917fb3b" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_key_refresh_node_update_s</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

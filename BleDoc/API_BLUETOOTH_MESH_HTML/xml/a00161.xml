@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00161" kind="group">
+    <compoundname>sl_btmesh_evt_lc_server_state_updated</compoundname>
+    <title>sl_btmesh_evt_lc_server_state_updated</title>
+    <innerclass refid="a00687" prot="public">sl_btmesh_evt_lc_server_state_updated_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00161_1ga76fdb912e93f6320a792fd3ce577522c" prot="public" static="no">
+        <type>struct <ref refid="a00687" kindref="compound">sl_btmesh_evt_lc_server_state_updated_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_lc_server_state_updated_s sl_btmesh_evt_lc_server_state_updated_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_lc_server_state_updated_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10096" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10455" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00161_1gaba18da7c5d8c1db3b63881cd35d20e7e" prot="public" static="no">
+        <name>sl_btmesh_evt_lc_server_state_updated_id</name>
+        <initializer>0x064d00a8</initializer>
+        <briefdescription>
+<para>Identifier of the state_updated event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10442" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10442" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LC state machine state has been updated. </para>    </briefdescription>
+    <detaileddescription>
+<para>The update is triggered by LC mode switching on or off and transitions between phases. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_fd1f39ae185d502bd9610a3406931710" kind="dir">
+    <compoundname>/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release</compoundname>
+    <innerdir refid="dir_430de9960484722c1a5629a1493f3ea0">/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/"/>
+  </compounddef>
+</doxygen>

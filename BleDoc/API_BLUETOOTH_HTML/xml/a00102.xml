@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00102" kind="group">
+    <compoundname>sl_bt_evt_user_message_to_host</compoundname>
+    <title>sl_bt_evt_user_message_to_host</title>
+    <innerclass refid="a00323" prot="public">sl_bt_evt_user_message_to_host_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00102_1ga2ffbc5acdd5b39465923b837f0d8b5a4" prot="public" static="no">
+        <type>struct <ref refid="a00323" kindref="compound">sl_bt_evt_user_message_to_host_s</ref></type>
+        <definition>typedef struct sl_bt_evt_user_message_to_host_s sl_bt_evt_user_message_to_host_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_user_message_to_host_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8484" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8720" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00102_1gadd310ebdbcb3d3ac74037754e5818852" prot="public" static="no">
+        <name>sl_bt_evt_user_message_to_host_id</name>
+        <initializer>0x00ff00a0</initializer>
+        <briefdescription>
+<para>Identifier of the message_to_host event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8710" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8710" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used by the target application on a device to initiate communication and send a message to the NCP host. </para>    </briefdescription>
+    <detaileddescription>
+<para>Do not send event messages in the context of the user command handling. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

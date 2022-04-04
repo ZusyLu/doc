@@ -1,0 +1,888 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00183" kind="group">
+    <compoundname>sl_btmesh_time_server</compoundname>
+    <title>Bluetooth Mesh Time Server</title>
+    <innergroup refid="a00184">sl_btmesh_evt_time_server_time_updated</innergroup>
+    <innergroup refid="a00185">sl_btmesh_evt_time_server_time_zone_offset_updated</innergroup>
+    <innergroup refid="a00186">sl_btmesh_evt_time_server_tai_utc_delta_updated</innergroup>
+    <innergroup refid="a00187">sl_btmesh_evt_time_server_time_role_updated</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00183_1ga1e92cd52232b7e9bd544a4ecc98869b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_init</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_time_server_init</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the Time Server model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11928" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00183_1ga749f0561873feb6055068034c674199e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_deinit</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_time_server_deinit</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialize the Time Server model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11939" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00183_1gacbfd0299130038c505aeacd8fc9b0fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_get_time</definition>
+        <argsstring>(uint16_t elem_index, uint64_t *tai_seconds, uint8_t *subsecond, uint8_t *uncertainty, uint8_t *time_authority, int16_t *time_zone_offset, int32_t *tai_utc_delta)</argsstring>
+        <name>sl_btmesh_time_server_get_time</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint64_t *</type>
+          <declname>tai_seconds</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>subsecond</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>uncertainty</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>time_authority</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>time_zone_offset</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>tai_utc_delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current time from Time Server&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">tai_seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current TAI time in seconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">subsecond</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-second time in units of 1/256th second </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">uncertainty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The estimated uncertainty in 10 millisecond steps </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">time_authority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 = No Time Authority, 1 = Time Authority </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">time_zone_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current local time zone offset. Range is -64 to 191, representing -16 to 47.75 hours. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">tai_utc_delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current difference between TAI and UTC in seconds. Range is -255 to 32512.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11958" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00183_1gab8926bff98b462efa9bd494e98844c2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_set_time</definition>
+        <argsstring>(uint16_t elem_index, uint64_t tai_seconds, uint8_t subsecond, uint8_t uncertainty, uint8_t time_authority, int16_t time_zone_offset, int32_t tai_utc_delta)</argsstring>
+        <name>sl_btmesh_time_server_set_time</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>tai_seconds</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subsecond</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>uncertainty</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>time_authority</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>time_zone_offset</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>tai_utc_delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the current time for the element.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tai_seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current TAI time in seconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">subsecond</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-second time in units of 1/256th second </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uncertainty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The estimated uncertainty in 10 millisecond steps </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time_authority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 = No Time Authority, 1 = Time Authority </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time_zone_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current local time zone offset. Range is -64 to 191, representing -16 to 47.75 hours. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tai_utc_delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current difference between TAI and UTC in seconds. Range is -255 to 32512.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11983" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00183_1ga935570886b74ff1c8c21aa0152366ac3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_get_time_zone_offset_new</definition>
+        <argsstring>(uint16_t elem_index, int16_t *new_offset, uint64_t *tai_of_zone_change)</argsstring>
+        <name>sl_btmesh_time_server_get_time_zone_offset_new</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>new_offset</declname>
+        </param>
+        <param>
+          <type>uint64_t *</type>
+          <declname>tai_of_zone_change</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the upcoming time zone offset from Time Server</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">new_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upcoming local time zone offset. Range is -64 to 191, representing -16 to 47.75 hours. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">tai_of_zone_change</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute TAI time when the Time Zone Offset will change from Current to New</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12004" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00183_1gae362d240f61c9f338adefabede6cb372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_set_time_zone_offset_new</definition>
+        <argsstring>(uint16_t elem_index, int16_t new_offset, uint64_t tai_of_zone_change)</argsstring>
+        <name>sl_btmesh_time_server_set_time_zone_offset_new</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>new_offset</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>tai_of_zone_change</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the upcoming time zone offset for the element</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">new_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upcoming local time zone offset. Range is -64 to 191, representing -16 to 47.75 hours. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tai_of_zone_change</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute TAI time when the Time Zone Offset will change from Current to New</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12021" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00183_1gab3d3b12516209f65164eb02cb770467a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_get_tai_utc_delta_new</definition>
+        <argsstring>(uint16_t elem_index, int32_t *new_delta, uint64_t *tai_of_delta_change)</argsstring>
+        <name>sl_btmesh_time_server_get_tai_utc_delta_new</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>new_delta</declname>
+        </param>
+        <param>
+          <type>uint64_t *</type>
+          <declname>tai_of_delta_change</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the upcoming TAI-UTC delta for the element</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">new_delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upcoming difference between TAI and UTC in seconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">tai_of_delta_change</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute TAI time when the TAI-UTC Delta will change from Current to New</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12037" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00183_1ga3fef0dce8f57712d4ac5dd3ba22fc0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_set_tai_utc_delta_new</definition>
+        <argsstring>(uint16_t elem_index, int32_t new_delta, uint64_t tai_of_delta_change)</argsstring>
+        <name>sl_btmesh_time_server_set_tai_utc_delta_new</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>new_delta</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>tai_of_delta_change</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the upcoming TAI-UTC delta for the element</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">new_delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upcoming difference between TAI and UTC in seconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tai_of_delta_change</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute TAI time when the TAI-UTC Delta will change from Current to New</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12053" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00183_1ga277bd5e3049634b2bb1c405b7ca250c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_get_time_role</definition>
+        <argsstring>(uint16_t elem_index, uint8_t *time_role)</argsstring>
+        <name>sl_btmesh_time_server_get_time_role</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>time_role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Time Role for the element</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">time_role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time Role of the element</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12067" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00183_1ga236902be405d451aac0caeb610882c27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_set_time_role</definition>
+        <argsstring>(uint16_t elem_index, uint8_t time_role)</argsstring>
+        <name>sl_btmesh_time_server_set_time_role</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>time_role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Time Role for the element</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time_role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time Role of the element</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12080" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00183_1ga6cf75178a9d53eaefc35fbfa67432ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_time_server_get_datetime</definition>
+        <argsstring>(uint16_t elem_index, uint16_t *year, uint8_t *month, uint8_t *day, uint8_t *hour, uint8_t *min, uint8_t *sec, uint16_t *ms, uint16_t *timezone, uint8_t *day_of_week)</argsstring>
+        <name>sl_btmesh_time_server_get_datetime</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>sec</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>ms</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>timezone</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>day_of_week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the date and time from the Time Server</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Server model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Year </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Month </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Day </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">hour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hour </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minutes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">sec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Milliseconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">timezone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Local time zone offset. Range is -64 to 191, representing -16 to 47.75 hours. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">day_of_week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Day of week, 0..6 represents Monday to Sunday</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12102" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00183_1gab4ec7642cb414d755150b8c25f5f631e" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_init_id</name>
+        <initializer>0x00520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11776" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1gaaa757765f0821ebdedf6a557c919c2a2" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_deinit_id</name>
+        <initializer>0x01520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11777" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga1f624fba81b980caae2803303f61f59c" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_get_time_id</name>
+        <initializer>0x02520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11778" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga44188474ee1579e3353c9deaed49c15f" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_set_time_id</name>
+        <initializer>0x03520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11779" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga7e3dff6b3c8548553fa5a0d2d12fc3b3" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_get_time_zone_offset_new_id</name>
+        <initializer>0x04520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11780" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1gae668f98b4319565d1646e39a9c8f08a3" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_set_time_zone_offset_new_id</name>
+        <initializer>0x05520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11781" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11781" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga6c3b1d4acf8614bdaf90f7786429db95" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_get_tai_utc_delta_new_id</name>
+        <initializer>0x06520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11782" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga9bc2da4bc476649dce878c3c6ca752a3" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_set_tai_utc_delta_new_id</name>
+        <initializer>0x07520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11783" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga7fcb3bd457e617eaa811d6058ba70a56" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_get_time_role_id</name>
+        <initializer>0x08520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11784" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1gade3a3695d20d4ae9b56eb0a87b21c310" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_set_time_role_id</name>
+        <initializer>0x09520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11785" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga2ecda94befc18d0e90a174fa050ff778" prot="public" static="no">
+        <name>sl_btmesh_cmd_time_server_get_datetime_id</name>
+        <initializer>0x0a520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11786" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga6b960a875bef3035899b2febde5b427d" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_init_id</name>
+        <initializer>0x00520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11787" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga1cb7a8925fbfdddf4f87ec608feea2ee" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_deinit_id</name>
+        <initializer>0x01520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11788" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1gaccfda85d6aae3bce05d142df87df6499" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_get_time_id</name>
+        <initializer>0x02520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11789" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11789" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga9b4f76866fe277e4fda658d2c50ff836" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_set_time_id</name>
+        <initializer>0x03520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11790" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11790" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga39b7bd90c150ed5d628c75b3d09a0897" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_get_time_zone_offset_new_id</name>
+        <initializer>0x04520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11791" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1gaafd87ef9f97d2749bf6d3a79aa55a788" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_set_time_zone_offset_new_id</name>
+        <initializer>0x05520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11792" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga0058932bb32f9dc6fa498760c5c300b3" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_get_tai_utc_delta_new_id</name>
+        <initializer>0x06520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11793" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1gae5b4f4c36e6526e6eca71ca6cea3a19b" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_set_tai_utc_delta_new_id</name>
+        <initializer>0x07520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11794" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11794" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1ga6bfc58a91f0e9051d20d8940fd760a8e" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_get_time_role_id</name>
+        <initializer>0x08520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11795" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1gad93f805d499699b9ef8ecc72f644ff82" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_set_time_role_id</name>
+        <initializer>0x09520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11796" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00183_1gab6c69683596aa393912a3d65b890808d" prot="public" static="no">
+        <name>sl_btmesh_rsp_time_server_get_datetime_id</name>
+        <initializer>0x0a520028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11797" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11797" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Time Server. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class provides the commands and messages to interface with the Time Server model </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

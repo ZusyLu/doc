@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00087" kind="group">
+    <compoundname>sl_bt_evt_sm_confirm_passkey</compoundname>
+    <title>sl_bt_evt_sm_confirm_passkey</title>
+    <innerclass refid="a00287" prot="public">sl_bt_evt_sm_confirm_passkey_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00087_1ga558b6665b8113dda18f70261f5554b55" prot="public" static="no">
+        <type>struct <ref refid="a00287" kindref="compound">sl_bt_evt_sm_confirm_passkey_s</ref></type>
+        <definition>typedef struct sl_bt_evt_sm_confirm_passkey_s sl_bt_evt_sm_confirm_passkey_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_sm_confirm_passkey_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6316" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6524" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00087_1ga5bb7bc4454ab192c7172712047fe9475" prot="public" static="no">
+        <name>sl_bt_evt_sm_confirm_passkey_id</name>
+        <initializer>0x020f00a0</initializer>
+        <briefdescription>
+<para>Identifier of the confirm_passkey event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6508" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6508" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates a request for passkey display and confirmation by the user. </para>    </briefdescription>
+    <detaileddescription>
+<para>Use the command <ref refid="a00084_1ga56c7140cb6749a2016bbc6571d20c50d" kindref="member">sl_bt_sm_passkey_confirm</ref> to accept or reject the displayed passkey. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

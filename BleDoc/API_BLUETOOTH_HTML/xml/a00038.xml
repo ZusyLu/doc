@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00038" kind="group">
+    <compoundname>sl_bt_gap</compoundname>
+    <title>GAP</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00038_1gac8d5431d3062e47c5d51b9fb9f36c104" prot="public" static="no">
+        <name>sl_bt_gap_address_type_t</name>
+        <enumvalue id="a00038_1ggac8d5431d3062e47c5d51b9fb9f36c104a9bd23a182f82727d767972fa82a41295" prot="public">
+          <name>sl_bt_gap_public_address</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Public device address </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00038_1ggac8d5431d3062e47c5d51b9fb9f36c104a0906c9f6e28dd0d93b011d7509c3d70c" prot="public">
+          <name>sl_bt_gap_static_address</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Static device address </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00038_1ggac8d5431d3062e47c5d51b9fb9f36c104a3a0443252343b32692fe328d1d57d373" prot="public">
+          <name>sl_bt_gap_random_resolvable_address</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Private resolvable random address </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00038_1ggac8d5431d3062e47c5d51b9fb9f36c104a5f62ca6ef98136610de468f3e2e8ddf1" prot="public">
+          <name>sl_bt_gap_random_nonresolvable_address</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x3) Private non-resolvable random address </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>These values define Bluetooth device address types. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1292" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1291" bodyend="1300"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00038_1ga05ce4496a6f87de7c67a9e32d816727c" prot="public" static="no">
+        <name>sl_bt_gap_phy_t</name>
+        <enumvalue id="a00038_1gga05ce4496a6f87de7c67a9e32d816727ca3ae0bf1d99d33066af4b6eea4b55414e" prot="public">
+          <name>sl_bt_gap_phy_1m</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) 1M PHY </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00038_1gga05ce4496a6f87de7c67a9e32d816727ca3f768e221018e837d768d737d7f8a4f3" prot="public">
+          <name>sl_bt_gap_phy_2m</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) 2M PHY </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00038_1gga05ce4496a6f87de7c67a9e32d816727ca5233c0e14a2181f8094b987885086f41" prot="public">
+          <name>sl_bt_gap_phy_coded</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x4) Coded PHY, 125k (S=8) or 500k (S=2) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00038_1gga05ce4496a6f87de7c67a9e32d816727ca1d0f75e090da3301ebceff78be1b5a93" prot="public">
+          <name>sl_bt_gap_phy_any</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0xff) Any PHYs the device supports </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types of PHYs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1306" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1305" bodyend="1311"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00038_1ga1644548686ce4cbe4ff0c55b5760c24d" prot="public" static="no">
+        <name>sl_bt_gap_phy_coding_t</name>
+        <enumvalue id="a00038_1gga1644548686ce4cbe4ff0c55b5760c24dae29d662e113af1b0a63041a9de3c2651" prot="public">
+          <name>sl_bt_gap_phy_coding_1m_uncoded</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) 1M PHY </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00038_1gga1644548686ce4cbe4ff0c55b5760c24dae7d4e59097ab83b49c64b46fb697388e" prot="public">
+          <name>sl_bt_gap_phy_coding_2m_uncoded</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) 2M PHY </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00038_1gga1644548686ce4cbe4ff0c55b5760c24da86c3cfbf6d599452028c6cbed70567c8" prot="public">
+          <name>sl_bt_gap_phy_coding_125k_coded</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x4) 125k Coded PHY (S=8) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00038_1gga1644548686ce4cbe4ff0c55b5760c24dae5d379696bb79b9731422885489c5a15" prot="public">
+          <name>sl_bt_gap_phy_coding_500k_coded</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x8) 500k Coded PHY (S=2) </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>PHY types with coding schemes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1317" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1316" bodyend="1322"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00038_1gab8d65fb681a00f260f8b8c49a09ab1d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gap_set_privacy_mode</definition>
+        <argsstring>(uint8_t privacy, uint8_t interval)</argsstring>
+        <name>sl_bt_gap_set_privacy_mode</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>privacy</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable the privacy feature on all GAP roles. New privacy mode will take effect for advertising next time advertising is enabled, for scanning next time scanning is enabled, and for initiating on the next open connection command. When privacy is enabled and the device is advertising or scanning, the stack will maintain a periodic timer with the specified time interval as a timeout value. At each timeout, the stack will generate a new private resolvable address and use it in advertising data packets and scanning requests.</para><para>By default, privacy feature is disabled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">privacy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Values:<itemizedlist>
+<listitem><para><bold>0:</bold> Disable privacy</para></listitem><listitem><para><bold>1:</bold> Enable privacy </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum time interval between a private address change. This parameter is ignored if this command is issued to disable privacy mode. Values:<itemizedlist>
+<listitem><para><bold>0:</bold> Use default interval, 15 minutes</para></listitem><listitem><para><bold>others:</bold> The time interval in minutes</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1349" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00038_1gae1ee4d45283563a12394f5261e45f952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gap_set_data_channel_classification</definition>
+        <argsstring>(size_t channel_map_len, const uint8_t *channel_map)</argsstring>
+        <name>sl_bt_gap_set_data_channel_classification</name>
+        <param>
+          <type>size_t</type>
+          <declname>channel_map_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>channel_map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify a channel classification for data channels. This classification persists until overwritten with a subsequent command or until the system is reset.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel_map_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>channel_map</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>This parameter is 5 bytes and contains 37 1-bit fields. The nth field (in the range 0 to 36) contains the value for the link layer channel index n.<itemizedlist>
+<listitem><para><bold>0:</bold> Channel n is bad.</para></listitem><listitem><para><bold>1:</bold> Channel n is unknown.</para></listitem></itemizedlist>
+</para><para>The rest of most significant bits are reserved for future use and must be set to 0. At least two channels shall be marked as unknown. </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1373" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00038_1gaa87e880e530df9263e0f78def0b0e1a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gap_enable_whitelisting</definition>
+        <argsstring>(uint8_t enable)</argsstring>
+        <name>sl_bt_gap_enable_whitelisting</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable accept list filtering. The setting will be effective the next time that scanning is enabled. To add devices to the accept list, either bond with the device or add it manually with <ref refid="a00084_1gaccfe17f4201f7e0fee8bb6c214fa8d59" kindref="member">sl_bt_sm_add_to_whitelist</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 enable, 0 disable accept list filtering.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1387" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00038_1gafe44c545af0f70ba8733013cd3d8e832" prot="public" static="no">
+        <name>sl_bt_cmd_gap_set_privacy_mode_id</name>
+        <initializer>0x01020020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1281" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00038_1gaaf8e401ac4e5ba0b8b3469d10fc17de0" prot="public" static="no">
+        <name>sl_bt_cmd_gap_set_data_channel_classification_id</name>
+        <initializer>0x02020020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1282" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00038_1gad475b7a144be100b747b407e5fe1bda0" prot="public" static="no">
+        <name>sl_bt_cmd_gap_enable_whitelisting_id</name>
+        <initializer>0x03020020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1283" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00038_1gad5ef0c0b5b41e18d5be735adaff92645" prot="public" static="no">
+        <name>sl_bt_rsp_gap_set_privacy_mode_id</name>
+        <initializer>0x01020020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1284" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00038_1ga632932216159bdf43f1b0f1f7be7d85f" prot="public" static="no">
+        <name>sl_bt_rsp_gap_set_data_channel_classification_id</name>
+        <initializer>0x02020020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1285" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00038_1ga8e251a87dd93e0b34add6033af79bef8" prot="public" static="no">
+        <name>sl_bt_rsp_gap_enable_whitelisting_id</name>
+        <initializer>0x03020020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1286" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1286" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GAP. </para>    </briefdescription>
+    <detaileddescription>
+<para>The commands and events in this class are related to the Generic Access Profile (GAP) in Bluetooth. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

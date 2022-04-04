@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00327" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_msg</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00327_1af8e8cd7ef11067996f44bb2074784319" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_bt_msg::header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>API protocol header consisting of event identifier and data length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8778" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00327_1a5b2cd22e8f6e5bed5d0bbf759093047b" prot="public" static="no" mutable="no">
+        <type>union sl_bt_msg::@0</type>
+        <definition>union sl_bt_msg::@0  sl_bt_msg::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Union of API event types </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8840" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of BT API messages. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8776" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8776" bodyend="8841"/>
+    <listofallmembers>
+      <member refid="a00327_1a5b2cd22e8f6e5bed5d0bbf759093047b" prot="public" virt="non-virtual"><scope>sl_bt_msg</scope><name>data</name></member>
+      <member refid="a00327_1af8e8cd7ef11067996f44bb2074784319" prot="public" virt="non-virtual"><scope>sl_bt_msg</scope><name>header</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

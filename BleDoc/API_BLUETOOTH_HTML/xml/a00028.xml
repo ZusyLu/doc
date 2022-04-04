@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00028" kind="group">
+    <compoundname>sl_bt_dfu</compoundname>
+    <title>Device Firmware Update</title>
+    <innergroup refid="a00029">sl_bt_evt_dfu_boot</innergroup>
+    <innergroup refid="a00030">sl_bt_evt_dfu_boot_failure</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00028_1ga1611c1f1919c75eda90a95eb2ab05615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_dfu_reset</definition>
+        <argsstring>(uint8_t dfu)</argsstring>
+        <name>sl_bt_dfu_reset</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>dfu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the system. The command does not have a response but it triggers one of the boot events (normal reset or boot to DFU mode) after re-boot.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dfu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00031_1ga3ddbb71683836007ff79c6108b60b007" kindref="member">sl_bt_system_boot_mode_t</ref>. Boot mode. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_system_boot_mode_normal (0x0):</bold> Boot to normal mode</para></listitem><listitem><para><bold>sl_bt_system_boot_mode_uart_dfu (0x1):</bold> Boot to UART DFU mode</para></listitem><listitem><para><bold>sl_bt_system_boot_mode_ota_dfu (0x2):</bold> Boot to OTA DFU mode</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00032" kindref="compound">sl_bt_evt_system_boot</ref> - Sent after the device has booted in normal mode</para></listitem><listitem><para><ref refid="a00029" kindref="compound">sl_bt_evt_dfu_boot</ref> - Sent after the device has booted in UART DFU mode </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00028_1ga66fb3a7dc1534699a77d39c0d61454ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_dfu_flash_set_address</definition>
+        <argsstring>(uint32_t address)</argsstring>
+        <name>sl_bt_dfu_flash_set_address</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>After re-booting the local device in DFU mode, this command defines the starting address on the flash where the new firmware will be written.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset in the flash where the new firmware is uploaded to. Always use the value 0x00000000.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00028_1gaae6af5fa0670bab4c6b2c35db0df8035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_dfu_flash_upload</definition>
+        <argsstring>(size_t data_len, const uint8_t *data)</argsstring>
+        <name>sl_bt_dfu_flash_upload</name>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Upload the whole firmware image file into the Bluetooth device. The passed data length must be a multiple of 4 bytes. Because the BGAPI command payload size is limited, multiple commands need to be issued one after the other until the whole firmware image file is uploaded to the device. After each command, the next address of the flash sector in memory to write to is automatically updated by the bootloader.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>data</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of data which will be written onto the flash.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00028_1ga32177d5889b6d95692a6f6321f00de43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_dfu_flash_upload_finish</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_dfu_flash_upload_finish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inform the device that the DFU file is fully uploaded. To return the device back to normal mode, issue the command <ref refid="a00028_1ga1611c1f1919c75eda90a95eb2ab05615" kindref="member">sl_bt_dfu_reset</ref>.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="195" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00028_1ga3ca80624dfe229b8f10650ec71df19cd" prot="public" static="no">
+        <name>sl_bt_cmd_dfu_reset_id</name>
+        <initializer>0x00000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="84" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00028_1gaeedd16b88626954b631a61238adb7480" prot="public" static="no">
+        <name>sl_bt_cmd_dfu_flash_set_address_id</name>
+        <initializer>0x01000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="85" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00028_1gaf38f03a671bad31215657eaac407ea4d" prot="public" static="no">
+        <name>sl_bt_cmd_dfu_flash_upload_id</name>
+        <initializer>0x02000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="86" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00028_1ga4f48c8460c380b6624ff8752e8462a09" prot="public" static="no">
+        <name>sl_bt_cmd_dfu_flash_upload_finish_id</name>
+        <initializer>0x03000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="87" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00028_1ga8479fd315a31048fbb87e7cd32dd5438" prot="public" static="no">
+        <name>sl_bt_rsp_dfu_reset_id</name>
+        <initializer>0x00000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="88" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00028_1ga2f9a8041c0f2fecfd6a22516609453a9" prot="public" static="no">
+        <name>sl_bt_rsp_dfu_flash_set_address_id</name>
+        <initializer>0x01000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="89" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00028_1ga4bfecf1e41ead09bf9d4e96ab2c050da" prot="public" static="no">
+        <name>sl_bt_rsp_dfu_flash_upload_id</name>
+        <initializer>0x02000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="90" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00028_1gad9b810310b1d8c4cf120b23aee62c715" prot="public" static="no">
+        <name>sl_bt_rsp_dfu_flash_upload_finish_id</name>
+        <initializer>0x03000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="91" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Device Firmware Update. </para>    </briefdescription>
+    <detaileddescription>
+<para>These commands and events are related to controlling firmware updates over the configured host interface and are available only when the device is booted in DFU mode. <bold>DFU process:</bold><orderedlist>
+<listitem><para>Boot device to DFU mode with <ref refid="a00028_1ga1611c1f1919c75eda90a95eb2ab05615" kindref="member">sl_bt_dfu_reset</ref> command</para></listitem><listitem><para>Wait for <ref refid="a00029" kindref="compound">sl_bt_evt_dfu_boot</ref> event</para></listitem><listitem><para>Send command <ref refid="a00028_1ga66fb3a7dc1534699a77d39c0d61454ef" kindref="member">sl_bt_dfu_flash_set_address</ref> command to start the firmware update</para></listitem><listitem><para>Upload the firmware with <ref refid="a00028_1gaae6af5fa0670bab4c6b2c35db0df8035" kindref="member">sl_bt_dfu_flash_upload</ref> commands until all data is uploaded</para></listitem><listitem><para>Send <ref refid="a00028_1ga32177d5889b6d95692a6f6321f00de43" kindref="member">sl_bt_dfu_flash_upload_finish</ref> command when all data is uploaded</para></listitem><listitem><para>Finalize DFU firmware update with <ref refid="a00028_1ga1611c1f1919c75eda90a95eb2ab05615" kindref="member">sl_bt_dfu_reset</ref> command</para></listitem></orderedlist>
+</para><para>DFU mode is using the UART baudrate set in bootloader. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

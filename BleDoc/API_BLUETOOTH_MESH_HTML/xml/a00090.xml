@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00090" kind="group">
+    <compoundname>sl_btmesh_lpn</compoundname>
+    <title>Bluetooth Mesh Low Power Node API</title>
+    <innergroup refid="a00091">sl_btmesh_evt_lpn_friendship_established</innergroup>
+    <innergroup refid="a00092">sl_btmesh_evt_lpn_friendship_failed</innergroup>
+    <innergroup refid="a00093">sl_btmesh_evt_lpn_friendship_terminated</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00090_1gab47d152c953bdacb97adb9adc072c092" prot="public" static="no">
+        <name>sl_btmesh_lpn_settings_t</name>
+        <enumvalue id="a00090_1ggab47d152c953bdacb97adb9adc072c092a8640ac8a1bec3e09e31c40fd446436e4" prot="public">
+          <name>sl_btmesh_lpn_queue_length</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Minimum queue length that the friend must support. Choose an appropriate length based on the expected message frequency and LPN sleep period because messages that do not fit into the friend queue are dropped. Note that the given value is rounded up to the nearest power of 2. Range: 2..128 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00090_1ggab47d152c953bdacb97adb9adc072c092acf10e4731f69ee00047d104086982d0a" prot="public">
+          <name>sl_btmesh_lpn_poll_timeout</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Poll timeout in milliseconds, which is the longest time that LPN sleeps in between querying its friend for queued messages. Long poll timeout allows the LPN to sleep for longer periods, at the expense of increased latency for receiving messages. Note that the given value is rounded up to the nearest 100 ms Range: 1 s to 95 h 59 min 59 s 900 ms </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00090_1ggab47d152c953bdacb97adb9adc072c092a7f42edf74385dac2dddce1d89120bcd2" prot="public">
+          <name>sl_btmesh_lpn_receive_delay</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Receive delay in milliseconds. Receive delay is the time between the LPN sending a request and listening for a response. Receive delay allows the friend node time to prepare the message and LPN to sleep. Range: 10 ms to 255 ms The default receive delay in 10 ms. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00090_1ggab47d152c953bdacb97adb9adc072c092ad6625572327d9ad1823cb04a7382989c" prot="public">
+          <name>sl_btmesh_lpn_request_retries</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x3) Request retry is the number of retry attempts to repeat e.g., the friend poll message if the friend update was not received by the LPN. Range is from 0 to 10, default is 3 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00090_1ggab47d152c953bdacb97adb9adc072c092ad8057a222ced7e9e961622bf1a87762e" prot="public">
+          <name>sl_btmesh_lpn_retry_interval</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x4) Time interval between retry attempts in milliseconds. Range is 0 to 100 ms. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Key values to identify LPN configurations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5921" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5920" bodyend="5958"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00090_1ga15866453cb9d833a3024b22cd20e617c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lpn_init</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_lpn_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Low Power node (LPN) mode. The node needs to be provisioned before calling this command. After the LPN mode is initialized, the node can&apos;t operate in the network without a Friend node. To establish a friendship with a nearby Friend node, use the <ref refid="a00090_1ga163e6dd51f57915dbb13ca702be2eb2e" kindref="member">sl_btmesh_lpn_establish_friendship</ref> command. Make this call before calling the other commands in this class.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6039" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00090_1gae955b07623f13dec310d548aed1d57f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lpn_deinit</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_lpn_deinit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialize the LPN functionality. After calling this command, a possible friendship with a Friend node is terminated and the node can operate in the network independently. After calling this command, do not call any other command in this class before the Low Power mode is <ref refid="a00090_1ga15866453cb9d833a3024b22cd20e617c" kindref="member">sl_btmesh_lpn_init</ref> again.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6053" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00090_1ga163e6dd51f57915dbb13ca702be2eb2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lpn_establish_friendship</definition>
+        <argsstring>(uint16_t netkey_index)</argsstring>
+        <name>sl_btmesh_lpn_establish_friendship</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>netkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Establish a friendship. After a friendship has been established, the node can start saving power.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">netkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network key index used in friendship request</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6065" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00090_1gace3820fc4f512b5f5a3c2c8c203cd9c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lpn_poll</definition>
+        <argsstring>(uint16_t netkey_index)</argsstring>
+        <name>sl_btmesh_lpn_poll</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>netkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Poll the Friend node for stored messages and security updates. This command may be used if the application is expecting to receive messages at a specific time. However, it is not required for correct operation, because the procedure will be performed autonomously before the poll timeout expires.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">netkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network key index used in poll</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6079" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00090_1gaab4209ba3fb7fded532908883e2cfe42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lpn_terminate_friendship</definition>
+        <argsstring>(uint16_t netkey_index)</argsstring>
+        <name>sl_btmesh_lpn_terminate_friendship</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>netkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminate an already established friendship. <ref refid="a00093" kindref="compound">sl_btmesh_evt_lpn_friendship_terminated</ref> event will be emitted when the friendship termination has been completed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">netkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network key index used in friendship request</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6092" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00090_1ga8f0fa382c33c7da57a7d073cf8ecba12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lpn_config</definition>
+        <argsstring>(uint8_t setting_id, uint32_t value)</argsstring>
+        <name>sl_btmesh_lpn_config</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>setting_id</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure the parameters for friendship establishment and LPN behavior.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">setting_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00090_1gab47d152c953bdacb97adb9adc072c092" kindref="member">sl_btmesh_lpn_settings_t</ref>. Identifies the LPN setting to be updated. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value for the given setting</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6105" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00090_1gad49d80e1e1af02b51c9f292f596a93cb" prot="public" static="no">
+        <name>sl_btmesh_cmd_lpn_init_id</name>
+        <initializer>0x00230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5904" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5904" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1ga8e63e5b9a11e8bdaa2c6745f86c7f9c2" prot="public" static="no">
+        <name>sl_btmesh_cmd_lpn_deinit_id</name>
+        <initializer>0x01230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5905" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5905" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1ga2fe588d12b0bf8cb8d4fe9ba4fdceeda" prot="public" static="no">
+        <name>sl_btmesh_cmd_lpn_establish_friendship_id</name>
+        <initializer>0x03230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5906" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5906" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1gaff5f3e8170029b442dbfdbbfc024e789" prot="public" static="no">
+        <name>sl_btmesh_cmd_lpn_poll_id</name>
+        <initializer>0x04230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5907" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5907" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1gaff0547292a43cc243b3d03f804d0add6" prot="public" static="no">
+        <name>sl_btmesh_cmd_lpn_terminate_friendship_id</name>
+        <initializer>0x05230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5908" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5908" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1gaae5f942bdfb36c6d8dcec29abb4877c7" prot="public" static="no">
+        <name>sl_btmesh_cmd_lpn_config_id</name>
+        <initializer>0x06230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5909" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5909" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1ga705290dc5ae8b2c053e81a5b3bc79030" prot="public" static="no">
+        <name>sl_btmesh_rsp_lpn_init_id</name>
+        <initializer>0x00230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5910" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5910" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1ga1a790252ac980d0dca9eb52fb107dd8a" prot="public" static="no">
+        <name>sl_btmesh_rsp_lpn_deinit_id</name>
+        <initializer>0x01230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5911" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1gad9f0913d7e1d0818287d03b71374fbea" prot="public" static="no">
+        <name>sl_btmesh_rsp_lpn_establish_friendship_id</name>
+        <initializer>0x03230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5912" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5912" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1gaf7947b646f4423b1ea1862cf80402c2c" prot="public" static="no">
+        <name>sl_btmesh_rsp_lpn_poll_id</name>
+        <initializer>0x04230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5913" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5913" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1ga6ed9ddedfc5753b05238b0b9325c2a87" prot="public" static="no">
+        <name>sl_btmesh_rsp_lpn_terminate_friendship_id</name>
+        <initializer>0x05230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5914" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5914" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00090_1gafdccbc3db9122966e35e238c2dda468e" prot="public" static="no">
+        <name>sl_btmesh_rsp_lpn_config_id</name>
+        <initializer>0x06230028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5915" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5915" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Low Power Node API. </para>    </briefdescription>
+    <detaileddescription>
+<para>These commands and events are for low-power operation, available in nodes which have the LPN feature. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

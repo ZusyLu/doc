@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00775" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_time_client_tai_utc_delta_status_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00775_1a6c99120a92b2263cf03f0c04b407b435" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_tai_utc_delta_status_s::client_address</definition>
+        <argsstring></argsstring>
+        <name>client_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Client address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12249" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00775_1a69bc7a1445bbbbc56328f98810e91682" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_tai_utc_delta_status_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Client model element index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12250" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00775_1a2b1b20b7401dfcb821930b3530401ba9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_tai_utc_delta_status_s::server_address</definition>
+        <argsstring></argsstring>
+        <name>server_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unicast address of the server </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12251" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00775_1aa22b0dad5166b4937e0994ffef8f3390" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_tai_utc_delta_status_s::appkey_index</definition>
+        <argsstring></argsstring>
+        <name>appkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>App key index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12252" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00775_1afa4a7ee0e256bac1be27b7011241b251" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t sl_btmesh_evt_time_client_tai_utc_delta_status_s::tai_utc_delta_current</definition>
+        <argsstring></argsstring>
+        <name>tai_utc_delta_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current difference between TAI and UTC. Range is -255 to 32512. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12253" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00775_1aaa0cf941e93dbddce4ccd34051ef0267" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t sl_btmesh_evt_time_client_tai_utc_delta_status_s::tai_utc_delta_new</definition>
+        <argsstring></argsstring>
+        <name>tai_utc_delta_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Upcoming difference between TAI and UTC in seconds. Range is -255 to 32512. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12255" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00775_1a3f6f6c48436640d0f43bd26955431343" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t sl_btmesh_evt_time_client_tai_utc_delta_status_s::tai_of_delta_change</definition>
+        <argsstring></argsstring>
+        <name>tai_of_delta_change</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TAI seconds time of the upcoming TAI-UTC delta change </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12257" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the tai_utc_delta_status event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12248" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12247" bodyend="12259"/>
+    <listofallmembers>
+      <member refid="a00775_1aa22b0dad5166b4937e0994ffef8f3390" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_tai_utc_delta_status_s</scope><name>appkey_index</name></member>
+      <member refid="a00775_1a6c99120a92b2263cf03f0c04b407b435" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_tai_utc_delta_status_s</scope><name>client_address</name></member>
+      <member refid="a00775_1a69bc7a1445bbbbc56328f98810e91682" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_tai_utc_delta_status_s</scope><name>elem_index</name></member>
+      <member refid="a00775_1a2b1b20b7401dfcb821930b3530401ba9" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_tai_utc_delta_status_s</scope><name>server_address</name></member>
+      <member refid="a00775_1a3f6f6c48436640d0f43bd26955431343" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_tai_utc_delta_status_s</scope><name>tai_of_delta_change</name></member>
+      <member refid="a00775_1afa4a7ee0e256bac1be27b7011241b251" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_tai_utc_delta_status_s</scope><name>tai_utc_delta_current</name></member>
+      <member refid="a00775_1aaa0cf941e93dbddce4ccd34051ef0267" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_tai_utc_delta_status_s</scope><name>tai_utc_delta_new</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00091" kind="group">
+    <compoundname>sl_bt_evt_sm_list_bonding_entry</compoundname>
+    <title>sl_bt_evt_sm_list_bonding_entry</title>
+    <innerclass refid="a00303" prot="public">sl_bt_evt_sm_list_bonding_entry_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00091_1ga3e42244e784dc29d669af00ad9df4eb3" prot="public" static="no">
+        <type>struct <ref refid="a00303" kindref="compound">sl_bt_evt_sm_list_bonding_entry_s</ref></type>
+        <definition>typedef struct sl_bt_evt_sm_list_bonding_entry_s sl_bt_evt_sm_list_bonding_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_sm_list_bonding_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6316" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6646" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00091_1gab5d21de72e06a77abb1b00a90a950ee7" prot="public" static="no">
+        <name>sl_bt_evt_sm_list_bonding_entry_id</name>
+        <initializer>0x050f00a0</initializer>
+        <briefdescription>
+<para>Identifier of the list_bonding_entry event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6629" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6629" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Triggered by the command <ref refid="a00084_1gafce3ada74bcacffae7734c037af7a584" kindref="member">sl_bt_sm_list_all_bondings</ref> if bondings exist in the local database. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

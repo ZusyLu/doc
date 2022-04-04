@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00194" kind="group">
+    <compoundname>sl_btmesh_common_types</compoundname>
+    <title>BTMESH Common Types</title>
+    <innerclass refid="a00783" prot="public">sl_btmesh_msg</innerclass>
+    <innerclass refid="a00791" prot="public">sl_btmesh_msg.data</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00194_1gaa2348bae459cb6ea9f3e68412b93fc05" prot="public" static="no">
+        <type>struct <ref refid="a00783" kindref="compound">sl_btmesh_msg</ref></type>
+        <definition>typedef struct sl_btmesh_msg sl_btmesh_msg_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_msg_t</name>
+        <briefdescription>
+<para>Type definition for the data structure of BTMESH API messages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12507" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12674" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BTMESH common types. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

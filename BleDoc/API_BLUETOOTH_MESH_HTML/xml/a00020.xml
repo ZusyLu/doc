@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00020" kind="group">
+    <compoundname>sl_bgapi_types</compoundname>
+    <title>BGAPI Types</title>
+    <innerclass refid="a00199" prot="public">uint8array</innerclass>
+    <innerclass refid="a00203" prot="public">byte_array</innerclass>
+    <innerclass refid="a00207" prot="public">bd_addr</innerclass>
+    <innerclass refid="a00211" prot="public">uuid_128</innerclass>
+    <innerclass refid="a00215" prot="public">aes_key_128</innerclass>
+    <innerclass refid="a00219" prot="public">sl_bt_uuid_16_t</innerclass>
+    <innerclass refid="a00223" prot="public">sl_bt_uuid_64_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00020_1ga267fbf80cdc6fbc7990b9dbb9ee268e2" prot="public" static="no">
+        <name>SL_BT_TYPE_UINT8ARRARY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="73" column="9" bodyfile="include/sl_bgapi.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga253166438a8eef1a0f124c0d4e666a5a" prot="public" static="no">
+        <name>SL_BT_TYPE_BYTE_ARRARY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="82" column="9" bodyfile="include/sl_bgapi.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1gaafbfd975e4108e0800b2514e4620e3fe" prot="public" static="no">
+        <name>SL_BT_TYPE_BDADDR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="91" column="9" bodyfile="include/sl_bgapi.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1gadf14f7d846c7814be79f8a8c42598c47" prot="public" static="no">
+        <name>SL_BT_TYPE_UUID128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="99" column="9" bodyfile="include/sl_bgapi.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga90a686db62e237997747ce3c801932f9" prot="public" static="no">
+        <name>SL_BT_TYPE_AES_KEY128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="107" column="9" bodyfile="include/sl_bgapi.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga07ead9236e64f2f39c2cfb0552a1780c" prot="public" static="no">
+        <name>SL_BT_TYPE_UUID16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="115" column="9" bodyfile="include/sl_bgapi.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga244785a8656dadd8c2974431fddb4a92" prot="public" static="no">
+        <name>SL_BT_TYPE_UUID64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="123" column="9" bodyfile="include/sl_bgapi.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga6bb011435286a47a9c4de1f6ef519c12" prot="public" static="no">
+        <name>SL_BGAPI_MSG_HEADER_LEN</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+<para>The length of a BGAPI message header which is 4 bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="156" column="9" bodyfile="include/sl_bgapi.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga7a3cec618d880b1644cf9fac82757ca5" prot="public" static="no">
+        <name>SL_BGAPI_MSG_ID</name>
+        <param><defname>HDR</defname></param>
+        <initializer>((HDR) &amp; 0xffff00f8)</initializer>
+        <briefdescription>
+<para>Get the identifier of a BGAPI message including device type, class ID, message type and message ID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HDR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The header of the message as a uint32_t integer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="164" column="9" bodyfile="include/sl_bgapi.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga0072fe93eccf2839b954ec5f04f17db4" prot="public" static="no">
+        <name>SL_BGAPI_MSG_LEN</name>
+        <param><defname>HDR</defname></param>
+        <initializer>((((HDR) &amp; 0x7) &lt;&lt; 8) | (((HDR) &amp; 0xff00) &gt;&gt; 8))</initializer>
+        <briefdescription>
+<para>Get the data payload length in a BGAPI message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HDR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The header of the message as a uint32_t integer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="171" column="9" bodyfile="include/sl_bgapi.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Common types in BGAPI protocol. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

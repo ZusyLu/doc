@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00193" kind="group">
+    <compoundname>sl_btmesh_migration</compoundname>
+    <title>Bluetooth Mesh Key migration</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00193_1ga6737d4092dacb27fde7d5fb9361de033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_migration_migrate_keys</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_migration_migrate_keys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ugrade keys from pre 3.2 release. Must be executed prior to to node or Provisioner initialization.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12496" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00193_1ga3aced8ba8e0d360272bd1a08160d5976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_migration_migrate_ddb</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_migration_migrate_ddb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ugrade Device Database from pre 3.2 release. This command must be executed prior to provisioner initialization. Command may not be issued twice.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12507" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00193_1ga8d2fa6fed5ab1ecc27ac83ee8232eb23" prot="public" static="no">
+        <name>sl_btmesh_cmd_migration_migrate_keys_id</name>
+        <initializer>0x01600028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12482" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00193_1ga7b89a6de8a64f17557c2ea3932a5dc4e" prot="public" static="no">
+        <name>sl_btmesh_cmd_migration_migrate_ddb_id</name>
+        <initializer>0x02600028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12483" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00193_1ga726047c7ddc357dd3ac8d1698bf1590f" prot="public" static="no">
+        <name>sl_btmesh_rsp_migration_migrate_keys_id</name>
+        <initializer>0x01600028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12484" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00193_1gac471002cabb4bd947fcec10a02b19312" prot="public" static="no">
+        <name>sl_btmesh_rsp_migration_migrate_ddb_id</name>
+        <initializer>0x02600028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12485" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12485" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Key migration. </para>    </briefdescription>
+    <detaileddescription>
+<para>These commands are meant for migration from older releases to 3.2 and later releases. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

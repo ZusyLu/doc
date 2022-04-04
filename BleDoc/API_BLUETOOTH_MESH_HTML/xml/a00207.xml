@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00207" kind="struct" language="C++" prot="public">
+    <compoundname>bd_addr</compoundname>
+    <includes refid="a00008" local="no">sl_bgapi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00207_1a47483c57b4bc71ced8f652233a3a4d43" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t bd_addr::addr[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>addr</name>
+        <briefdescription>
+<para>Bluetooth address in reverse byte order. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="94" column="1" bodyfile="include/sl_bgapi.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth address. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/sl_bgapi.h" line="93" column="1" bodyfile="include/sl_bgapi.h" bodystart="93" bodyend="95"/>
+    <listofallmembers>
+      <member refid="a00207_1a47483c57b4bc71ced8f652233a3a4d43" prot="public" virt="non-virtual"><scope>bd_addr</scope><name>addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

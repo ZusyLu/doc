@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00471" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_config_client_netkey_list_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00471_1a96e48795c1dd1752f701fe21b3392c91" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_config_client_netkey_list_s::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6505" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00471_1a31179c61888302e4a7b46427d7b90f2c" prot="public" static="no" mutable="no">
+        <type><ref refid="a00199" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_btmesh_evt_config_client_netkey_list_s::netkey_indices</definition>
+        <argsstring></argsstring>
+        <name>netkey_indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of network key indices, two bytes per entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6506" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6506" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the netkey_list event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="54">
+        <label>sl_btmesh_evt_config_client_netkey_list_s</label>
+        <link refid="a00471"/>
+        <childnode refid="55" relation="usage">
+          <edgelabel>netkey_indices</edgelabel>
+        </childnode>
+      </node>
+      <node id="55">
+        <label>uint8array</label>
+        <link refid="a00199"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6504" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6503" bodyend="6508"/>
+    <listofallmembers>
+      <member refid="a00471_1a96e48795c1dd1752f701fe21b3392c91" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_netkey_list_s</scope><name>handle</name></member>
+      <member refid="a00471_1a31179c61888302e4a7b46427d7b90f2c" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_netkey_list_s</scope><name>netkey_indices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

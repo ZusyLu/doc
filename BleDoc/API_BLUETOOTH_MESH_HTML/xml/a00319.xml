@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00319" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_prov_provisioning_failed_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00319_1a9bfebd505cb00da0f79acbb81697fdbd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_prov_provisioning_failed_s::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reason for failure. Values are as follows:<itemizedlist>
+<listitem><para><bold>0:</bold> Link closed</para></listitem><listitem><para><bold>1:</bold> Invalid PDU</para></listitem><listitem><para><bold>2:</bold> Invalid PDU format</para></listitem><listitem><para><bold>3:</bold> Unexpected PDU</para></listitem><listitem><para><bold>4:</bold> Confirmation failed</para></listitem><listitem><para><bold>5:</bold> Out of resources</para></listitem><listitem><para><bold>6:</bold> Decryption failed</para></listitem><listitem><para><bold>7:</bold> Unexpected error</para></listitem><listitem><para><bold>8:</bold> Unable to assign address </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1786" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00319_1a5877189996e0196a335abf3405610bd2" prot="public" static="no" mutable="no">
+        <type><ref refid="a00211" kindref="compound">uuid_128</ref></type>
+        <definition>uuid_128 sl_btmesh_evt_prov_provisioning_failed_s::uuid</definition>
+        <argsstring></argsstring>
+        <name>uuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UUID of the device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1796" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1796" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the provisioning_failed event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="213">
+        <label>uuid_128</label>
+        <link refid="a00211"/>
+      </node>
+      <node id="212">
+        <label>sl_btmesh_evt_prov_provisioning_failed_s</label>
+        <link refid="a00319"/>
+        <childnode refid="213" relation="usage">
+          <edgelabel>uuid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1785" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1784" bodyend="1797"/>
+    <listofallmembers>
+      <member refid="a00319_1a9bfebd505cb00da0f79acbb81697fdbd" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_provisioning_failed_s</scope><name>reason</name></member>
+      <member refid="a00319_1a5877189996e0196a335abf3405610bd2" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_provisioning_failed_s</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

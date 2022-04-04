@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00331" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_prov_oob_pkey_request_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00331_1a5a08f1ed4197c2698e2d3b7a46b8d089" prot="public" static="no" mutable="no">
+        <type><ref refid="a00211" kindref="compound">uuid_128</ref></type>
+        <definition>uuid_128 sl_btmesh_evt_prov_oob_pkey_request_s::uuid</definition>
+        <argsstring></argsstring>
+        <name>uuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UUID of the Device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1882" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1882" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the oob_pkey_request event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="209">
+        <label>sl_btmesh_evt_prov_oob_pkey_request_s</label>
+        <link refid="a00331"/>
+        <childnode refid="210" relation="usage">
+          <edgelabel>uuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="210">
+        <label>uuid_128</label>
+        <link refid="a00211"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1881" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1880" bodyend="1883"/>
+    <listofallmembers>
+      <member refid="a00331_1a5a08f1ed4197c2698e2d3b7a46b8d089" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_oob_pkey_request_s</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

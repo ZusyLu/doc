@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00112" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_subs_list</compoundname>
+    <title>sl_btmesh_evt_config_client_subs_list</title>
+    <innerclass refid="a00511" prot="public">sl_btmesh_evt_config_client_subs_list_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00112_1ga4dd3df3f15c4793cadab0fe6f4780000" prot="public" static="no">
+        <type>struct <ref refid="a00511" kindref="compound">sl_btmesh_evt_config_client_subs_list_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_subs_list_s sl_btmesh_evt_config_client_subs_list_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_subs_list_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6794" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00112_1ga0401827bef161ab636080d7d6ef8d332" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_subs_list_id</name>
+        <initializer>0x0c2700a8</initializer>
+        <briefdescription>
+<para>Identifier of the subs_list event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6783" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6783" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This event contains a list of addresses that the queried model subscribes to. </para>    </briefdescription>
+    <detaileddescription>
+<para>The list is requested using the <ref refid="a00099_1ga3faa008bf996fca47428b0039cc35522" kindref="member">sl_btmesh_config_client_list_subs</ref> command. More than one event may be generated. List contents are terminated by a <ref refid="a00113" kindref="compound">sl_btmesh_evt_config_client_subs_list_end</ref> event. Note that, if the subscription address list entry is a Label UUID (full virtual address), the corresponding virtual address hash is returned in this event. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

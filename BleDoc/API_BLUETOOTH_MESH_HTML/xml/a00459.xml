@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00459" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_friend_friendship_terminated_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00459_1a4bcf5a3fb94534e93ac87fcbad7fbea8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_friend_friendship_terminated_s::netkey_index</definition>
+        <argsstring></argsstring>
+        <name>netkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the network key used in friendship </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6162" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00459_1a66ceca5fed904921f010f6c2bd0376bc" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_friend_friendship_terminated_s::lpn_address</definition>
+        <argsstring></argsstring>
+        <name>lpn_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LPN node address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6163" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00459_1a88fbad30027f8fc067964966a459ad27" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_friend_friendship_terminated_s::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reason for friendship termination </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6164" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the friendship_terminated event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6161" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6160" bodyend="6165"/>
+    <listofallmembers>
+      <member refid="a00459_1a66ceca5fed904921f010f6c2bd0376bc" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_friend_friendship_terminated_s</scope><name>lpn_address</name></member>
+      <member refid="a00459_1a4bcf5a3fb94534e93ac87fcbad7fbea8" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_friend_friendship_terminated_s</scope><name>netkey_index</name></member>
+      <member refid="a00459_1a88fbad30027f8fc067964966a459ad27" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_friend_friendship_terminated_s</scope><name>reason</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

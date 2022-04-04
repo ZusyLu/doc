@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00061" kind="group">
+    <compoundname>sl_bt_evt_gatt_service</compoundname>
+    <title>sl_bt_evt_gatt_service</title>
+    <innerclass refid="a00227" prot="public">sl_bt_evt_gatt_service_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00061_1ga64bcd828e79491455be5cf6fd49fbc92" prot="public" static="no">
+        <type>struct <ref refid="a00227" kindref="compound">sl_bt_evt_gatt_service_s</ref></type>
+        <definition>typedef struct sl_bt_evt_gatt_service_s sl_bt_evt_gatt_service_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_gatt_service_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3611" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3770" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00061_1ga2583e2c717d419a2fd6659513a13a296" prot="public" static="no">
+        <name>sl_bt_evt_gatt_service_id</name>
+        <initializer>0x010900a0</initializer>
+        <briefdescription>
+<para>Identifier of the service event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3758" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3758" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicate that a GATT service in the remote GATT database was discovered. </para>    </briefdescription>
+    <detaileddescription>
+<para>This event is generated after issuing either the <ref refid="a00059_1gae95e41c59f0cf582b4146a9799c462ec" kindref="member">sl_bt_gatt_discover_primary_services</ref> or <ref refid="a00059_1ga3d1fb78a2633169c54a9e26482cf7d70" kindref="member">sl_bt_gatt_discover_primary_services_by_uuid</ref> command. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

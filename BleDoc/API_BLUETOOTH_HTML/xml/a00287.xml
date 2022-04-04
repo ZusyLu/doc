@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00287" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_sm_confirm_passkey_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00287_1aea35c21d37c47c70c566c954ac27c719" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_sm_confirm_passkey_s::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6515" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00287_1a174d02a46c35159a1a2124ceb2f99dee" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_bt_evt_sm_confirm_passkey_s::passkey</definition>
+        <argsstring></argsstring>
+        <name>passkey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Passkey. Range: 0 to 999999.<itemizedlist>
+<listitem><para>NOTE! When displaying the passkey to the user, prefix the number with zeros to obtain a 6 digit number</para></listitem><listitem><para>Example: Passkey value is 42</para></listitem><listitem><para>Number to display to the user is 000042 </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6516" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6516" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the confirm_passkey event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6514" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6513" bodyend="6522"/>
+    <listofallmembers>
+      <member refid="a00287_1aea35c21d37c47c70c566c954ac27c719" prot="public" virt="non-virtual"><scope>sl_bt_evt_sm_confirm_passkey_s</scope><name>connection</name></member>
+      <member refid="a00287_1a174d02a46c35159a1a2124ceb2f99dee" prot="public" virt="non-virtual"><scope>sl_bt_evt_sm_confirm_passkey_s</scope><name>passkey</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

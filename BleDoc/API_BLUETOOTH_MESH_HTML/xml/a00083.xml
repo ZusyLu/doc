@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00083" kind="group">
+    <compoundname>sl_btmesh_evt_generic_server_state_recall</compoundname>
+    <title>sl_btmesh_evt_generic_server_state_recall</title>
+    <innerclass refid="a00423" prot="public">sl_btmesh_evt_generic_server_state_recall_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00083_1gaf1316a360be63eaf40f2b38c7401f9fa" prot="public" static="no">
+        <type>struct <ref refid="a00423" kindref="compound">sl_btmesh_evt_generic_server_state_recall_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_generic_server_state_recall_s sl_btmesh_evt_generic_server_state_recall_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_generic_server_state_recall_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="4336" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="4567" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00083_1ga1614bb44346f23bcf02b29a9546d16d8" prot="public" static="no">
+        <name>sl_btmesh_evt_generic_server_state_recall_id</name>
+        <initializer>0x021f00a8</initializer>
+        <briefdescription>
+<para>Identifier of the state_recall event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="4546" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="4546" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cached model state changed due to scene recall operation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

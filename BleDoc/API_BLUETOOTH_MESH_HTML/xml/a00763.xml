@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00763" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_time_server_time_role_updated_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00763_1a45217b7b27635bef4c0a7153c882cdb5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_server_time_role_updated_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Server model element index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11911" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00763_1a3c2eebe114a02febed7c762672a565a7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_time_server_time_role_updated_s::time_role</definition>
+        <argsstring></argsstring>
+        <name>time_role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time Role </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11912" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11912" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the time_role_updated event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11910" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11909" bodyend="11913"/>
+    <listofallmembers>
+      <member refid="a00763_1a45217b7b27635bef4c0a7153c882cdb5" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_server_time_role_updated_s</scope><name>elem_index</name></member>
+      <member refid="a00763_1a3c2eebe114a02febed7c762672a565a7" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_server_time_role_updated_s</scope><name>time_role</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

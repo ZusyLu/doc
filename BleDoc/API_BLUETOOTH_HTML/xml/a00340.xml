@@ -1,0 +1,599 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00340" kind="page">
+    <compoundname>bgapi</compoundname>
+    <title>BGAPI</title>
+    <detaileddescription>
+<sect1 id="a00340_1bgapi_message_header_format">
+<title>BGAPI message header format</title>
+<para>The BGAPI message header is the first 4 bytes of a BGAPI message. It consists of device and message types, IDs, and data payload length.</para><sect2 id="a00340_1bgapi_message_header_byte1">
+<title>Byte 1</title>
+<para><itemizedlist>
+<listitem><para><bold>Bits 0 - 2</bold>: Highest 3 bits of the data payload length field</para></listitem><listitem><para><bold>Bits 3 - 5</bold>: <bold>Device type</bold><itemizedlist>
+<listitem><para>Bit value <bold>100</bold>: Bluetooth LE</para></listitem><listitem><para>Bit value <bold>101</bold>: Bluetooth Mesh</para></listitem></itemizedlist>
+</para></listitem><listitem><para><bold>Bit 6</bold>: Reserved</para></listitem><listitem><para><bold>Bit 7</bold>: <bold>Message type</bold><itemizedlist>
+<listitem><para>Bit value <bold>0</bold>: The message is a command or a response to command.</para></listitem><listitem><para>Bit value <bold>1</bold>: The message is an event.</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></sect2>
+<sect2 id="a00340_1bgapi_message_header_byte2">
+<title>Byte 2</title>
+<para>This byte is the lowest 8 bits of the data payload length field.</para></sect2>
+<sect2 id="a00340_1bgapi_message_header_byte3">
+<title>Byte 3</title>
+<para>This byte is the BGAPI <bold>class ID</bold>.</para></sect2>
+<sect2 id="a00340_1bgapi_message_header_byte4">
+<title>Byte 4</title>
+<para>This byte is the <bold>message ID</bold> of a command, response or event.</para><para>A device type, class ID, message type and message ID together construct a unique identifer of a message within the BGAPI protocol.</para></sect2>
+</sect1>
+<sect1 id="a00340_1bgapi_endianness">
+<title>Endianness</title>
+<para>BGAPI protocol stores data in little endian.</para><para><heading level="1">Concurrency</heading>
+</para><para>When the application runs in an RTOS, the Bluetooth RTOS adaptation component has a mechanism to synchronize the handling of individual BGAPI commands. Thus, individual BGAPI commands are safe to be called from multiple threads when the Bluetooth RTOS adaptation component is used.</para><para>BGAPI commands cannot be called from interrupt context. Calling a command from interrupt context may delay the radio activity. Furthermore, when commands are also called from the main event loop or an RTOS task simultaneously, concurrent BGAPI calls may cause memory issues in the stack.</para></sect1>
+<sect1 id="a00340_1bgapi_payload_length_calculation">
+<title>Payload Length Calculation</title>
+<para>Use <ref refid="a00026_1ga0072fe93eccf2839b954ec5f04f17db4" kindref="member">SL_BGAPI_MSG_LEN</ref> to calculate the payload length of a BGAPI message.</para></sect1>
+<sect1 id="a00340_1decode_bgapi_message">
+<title>Decode a BGAPI Message</title>
+<para>On an NCP host, a received API message is either a response or an event. As the message is in binary format, users may need to decode the binary to its corresponding named message definition. Following method can be used to decode a message binary received on NCP host:</para><para><itemizedlist>
+<listitem><para>Find out the device type from <ref refid="a00340_1bgapi_message_header_byte1" kindref="member">Byte 1</ref> of the message header. Go to the BGAPI message summary table according to the device type. The table may be the <ref refid="a00340_1bgapi_message_summary" kindref="member">BGAPI message summary</ref> in this document, or a table in another API reference manual. Bluetooth LE and Bluetooth Mesh APIs have separate API reference manuals.</para></listitem><listitem><para>Find out the message type of the message from bit 7 of the <ref refid="a00340_1bgapi_message_header_byte1" kindref="member">Byte 1</ref> in the message header.</para></listitem><listitem><para>Find out the class ID which is the <ref refid="a00340_1bgapi_message_header_byte3" kindref="member">Byte 3</ref> of the message header. Together with the message type, locate either the command or event message group for this class.</para></listitem><listitem><para>Locate the row in the message group according to the message ID which is the <ref refid="a00340_1bgapi_message_header_byte4" kindref="member">Byte 4</ref> of the message header.</para></listitem><listitem><para>If the row is a command, the decoded message is a response to this command. Go to the command documentation. The 5th and 6th bytes of the binary are the error code returned for the command. Rest data of the binary maps to the [out] parameters of the command in declaration order.</para></listitem><listitem><para>If the row is an event, go to the event documentation. Data starting from the 5th byte maps to the event data structure fields in declaration order.</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="a00340_1bgapi_message_summary">
+<title>BGAPI message summary</title>
+<para>The following table summarizes the class and message IDs of commands and events in the BGAPI protocol. A response message has the same class and message ID as the command it responds to.</para><para>The table also shows the minimum payload length for each message. Messages that have an array parameter can have longer payload length depending on the length of the array.</para><para><para><table rows="276" cols="5"><caption>BGAPI message header summary</caption>
+<row>
+<entry thead="yes"><para>Message Name </para></entry><entry thead="yes"><para>Class ID </para></entry><entry thead="yes"><para>Message ID </para></entry><entry thead="yes"><para>Minimum Payload Length  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00028" kindref="compound">Device Firmware Update</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00028_1ga1611c1f1919c75eda90a95eb2ab05615" kindref="member">cmd_dfu_reset</ref> </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00028_1ga66fb3a7dc1534699a77d39c0d61454ef" kindref="member">cmd_dfu_flash_set_address</ref> </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00028_1gaae6af5fa0670bab4c6b2c35db0df8035" kindref="member">cmd_dfu_flash_upload</ref> </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00028_1ga32177d5889b6d95692a6f6321f00de43" kindref="member">cmd_dfu_flash_upload_finish</ref> </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00029" kindref="compound">evt_dfu_boot</ref> </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00030" kindref="compound">evt_dfu_boot_failure</ref> </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031" kindref="compound">System</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1gaf0d6420f7a8ee4ee2875e5db834e4138" kindref="member">cmd_system_hello</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1gad9a6d5812e0c014d0eb4c86f22f216dd" kindref="member">cmd_system_start_bluetooth</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x1c </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1ga1e6a08f853b9c1d5cf05ead375589e91" kindref="member">cmd_system_stop_bluetooth</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x1d </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1gabf0e8a67a3f653335cb27920863abfaf" kindref="member">cmd_system_get_version</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1gacb06b823fc16f2630a066c72d96cd158" kindref="member">cmd_system_reset</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1ga118a2db70124acb277df27767c656618" kindref="member">cmd_system_halt</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1gab87c80f649dda1bb2d55bd43b3658782" kindref="member">cmd_system_linklayer_configure</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1gad099d114f8173c76f845098833db204e" kindref="member">cmd_system_set_max_tx_power</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x16 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1ga19566861d594376a52e2e1e7481bef68" kindref="member">cmd_system_set_tx_power</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x17 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1gae59209b1e00b51c09479b21cfabaeaf0" kindref="member">cmd_system_get_tx_power_setting</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1ga37077c3856d5b506b9ce38a94fd59bdd" kindref="member">cmd_system_set_identity_address</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x13 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1gaba752f4351afdd3134cc66c8bde9e0f4" kindref="member">cmd_system_get_identity_address</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1ga217ef759b05572071fbf0c2168c1981f" kindref="member">cmd_system_get_random_data</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1ga2e185f6632d32051b0f431ea15abcc3c" kindref="member">cmd_system_data_buffer_write</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x12 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1ga62f5f20b8f8ab750a75380745faea084" kindref="member">cmd_system_data_buffer_clear</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1ga6a5b4be087b9cfe14368a848a4414cef" kindref="member">cmd_system_get_counters</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1gad567f341a1ffcaecbf54a2f02c5318d0" kindref="member">cmd_system_set_soft_timer</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031_1ga1fb1c4dcb7b6fc9de1528eb1139ff505" kindref="member">cmd_system_set_lazy_soft_timer</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00032" kindref="compound">evt_system_boot</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00033" kindref="compound">evt_system_error</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00034" kindref="compound">evt_system_hardware_error</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00035" kindref="compound">evt_system_external_signal</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00036" kindref="compound">evt_system_awake</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00037" kindref="compound">evt_system_soft_timer</ref> </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00038" kindref="compound">GAP</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00038_1gab8d65fb681a00f260f8b8c49a09ab1d5" kindref="member">cmd_gap_set_privacy_mode</ref> </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00038_1gae1ee4d45283563a12394f5261e45f952" kindref="member">cmd_gap_set_data_channel_classification</ref> </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00038_1gaa87e880e530df9263e0f78def0b0e1a7" kindref="member">cmd_gap_enable_whitelisting</ref> </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039" kindref="compound">Advertiser</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1gaa2006031a5d5b1bfdf9417b4c82b36f7" kindref="member">cmd_advertiser_create_set</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1gaf75b70bbe86d5ce318e8e129aefb95cc" kindref="member">cmd_advertiser_set_timing</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1ga164b389d02a5aaa52ec3650afed4d0bc" kindref="member">cmd_advertiser_set_phy</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1ga72c78703b30d0a277d5ed92641a9f51b" kindref="member">cmd_advertiser_set_channel_map</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1gaa54a31f8af3b4c1d80351f038a84265f" kindref="member">cmd_advertiser_set_tx_power</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1gac6b6b84023d0433f0a5fdfec2077614b" kindref="member">cmd_advertiser_set_report_scan_request</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1gad15366970dca263ac51f7e99361d180f" kindref="member">cmd_advertiser_set_random_address</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1ga60272cbb75a1a42b59d91b1f9408f8f4" kindref="member">cmd_advertiser_clear_random_address</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x11 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1gad8b8655a767b206f788ee916ec8c678e" kindref="member">cmd_advertiser_set_configuration</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1gada85109d82a200762ccf4af77542a05a" kindref="member">cmd_advertiser_clear_configuration</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1ga706aeaf60049280fe9cc256f20ad4113" kindref="member">cmd_advertiser_set_data</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1ga8f93fed72f3787a4101c362374483a71" kindref="member">cmd_advertiser_set_long_data</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1gaf41b65ba633c6285bb5239783a516ca4" kindref="member">cmd_advertiser_start</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1ga260ccad48d454152989acc52d570ba23" kindref="member">cmd_advertiser_stop</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1ga8ca4aec79e57a264c5bbec599d1cff86" kindref="member">cmd_advertiser_start_periodic_advertising</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1ga81c61bf663c55b75618a2a4b921c236d" kindref="member">cmd_advertiser_stop_periodic_advertising</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039_1ga0da38bba08358af0f5c7f3bb402c1cd2" kindref="member">cmd_advertiser_delete_set</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00040" kindref="compound">evt_advertiser_timeout</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00041" kindref="compound">evt_advertiser_scan_request</ref> </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00042" kindref="compound">Scanner</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00042_1ga4b5ff0db2df23db10632f11940b8351f" kindref="member">cmd_scanner_set_timing</ref> </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00042_1ga149edf29b897d6bc55249ee7cdbe68a5" kindref="member">cmd_scanner_set_mode</ref> </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00042_1gac523df08a9e0ea5de94739609f27324f" kindref="member">cmd_scanner_start</ref> </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00042_1gae85f6e0223de24f598843fb9684afbfd" kindref="member">cmd_scanner_stop</ref> </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00043" kindref="compound">evt_scanner_scan_report</ref> </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044" kindref="compound">Synchronization</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga04810b05dca2fa9feb04fa1ab6f11780" kindref="member">cmd_sync_set_parameters</ref> </para></entry><entry thead="no"><para>0x42 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga31fae9594179cf055bc2d3cfaa4fc509" kindref="member">cmd_sync_open</ref> </para></entry><entry thead="no"><para>0x42 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga628b8ea37bf3347475eb01b0971981aa" kindref="member">cmd_sync_close</ref> </para></entry><entry thead="no"><para>0x42 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00045" kindref="compound">evt_sync_opened</ref> </para></entry><entry thead="no"><para>0x42 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00046" kindref="compound">evt_sync_data</ref> </para></entry><entry thead="no"><para>0x42 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00047" kindref="compound">evt_sync_closed</ref> </para></entry><entry thead="no"><para>0x42 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048" kindref="compound">Connection</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1gac2453ab6efcbfc71b3bb23b3fffce1df" kindref="member">cmd_connection_set_default_parameters</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1gaff87bb1575d6eed0271deed1eb81d92b" kindref="member">cmd_connection_set_default_preferred_phy</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1gabb952445e50f64228b279fe9969001fe" kindref="member">cmd_connection_open</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1ga322a5f4020bef878c5fb309371d1f867" kindref="member">cmd_connection_set_parameters</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>13  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1ga99cc41717415928e08b79e1cc3b1a04e" kindref="member">cmd_connection_set_preferred_phy</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1ga92c4ee2ce006445af24337077ba988e5" kindref="member">cmd_connection_disable_slave_latency</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1ga00da23bd159c6a63460fe0fc2d6e338c" kindref="member">cmd_connection_get_rssi</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1ga13b32994ecfe0e7129182bba734ff5c4" kindref="member">cmd_connection_read_channel_map</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1ga609a3741e23e5ff8eaf7a4794bc1953f" kindref="member">cmd_connection_set_power_reporting</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1gacf6622b4231baa2c3a7bb89e2022e081" kindref="member">cmd_connection_set_remote_power_reporting</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1ga3b6563e2c6cea4c88170a7716c30f094" kindref="member">cmd_connection_get_tx_power</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1ga8cadd42340a29a6e76442f7b4f085617" kindref="member">cmd_connection_get_remote_tx_power</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1ga7f55470c777dd3c65617d9493ea595c7" kindref="member">cmd_connection_close</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048_1gaa893d35e613cedf7f18971e98890757b" kindref="member">cmd_connection_read_remote_used_features</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00050" kindref="compound">evt_connection_opened</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00051" kindref="compound">evt_connection_parameters</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00052" kindref="compound">evt_connection_phy_status</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00053" kindref="compound">evt_connection_rssi</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00054" kindref="compound">evt_connection_get_remote_tx_power_completed</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00055" kindref="compound">evt_connection_tx_power</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00056" kindref="compound">evt_connection_remote_tx_power</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00057" kindref="compound">evt_connection_closed</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00058" kindref="compound">evt_connection_remote_used_features</ref> </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059" kindref="compound">GATT Client</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga8acd415ed593fb75fcf408246293852f" kindref="member">cmd_gatt_set_max_mtu</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1gae95e41c59f0cf582b4146a9799c462ec" kindref="member">cmd_gatt_discover_primary_services</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga3d1fb78a2633169c54a9e26482cf7d70" kindref="member">cmd_gatt_discover_primary_services_by_uuid</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1gaeda4d6603d8ca67959461ff68df5eb08" kindref="member">cmd_gatt_find_included_services</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga46982679201ab309b2081775f1804ec5" kindref="member">cmd_gatt_discover_characteristics</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1gae648cf008d821f5d469eb9e40176183c" kindref="member">cmd_gatt_discover_characteristics_by_uuid</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga4e78f1820bf6585294186e655b3bfcf3" kindref="member">cmd_gatt_discover_descriptors</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga7d92298836408fba164c46cdb0e32b3d" kindref="member">cmd_gatt_set_characteristic_notification</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga691b8ffe8734ea853fe9315d0767db75" kindref="member">cmd_gatt_send_characteristic_confirmation</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga875a2cfdfb8e5c6cad354b4c88846856" kindref="member">cmd_gatt_read_characteristic_value</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1gaf8ccce3c700fbfa4268ebb77dc300b78" kindref="member">cmd_gatt_read_characteristic_value_from_offset</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x12 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga1280056328305064307fee152f656623" kindref="member">cmd_gatt_read_multiple_characteristic_values</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x11 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1gaa0d581898bf4869cc80eeb040b2a8611" kindref="member">cmd_gatt_read_characteristic_value_by_uuid</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1gafd574a7a8faebb498751f3f90fb975a5" kindref="member">cmd_gatt_write_characteristic_value</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga2fb8049cafc0efc9f06bf2fae7c3c119" kindref="member">cmd_gatt_write_characteristic_value_without_response</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga11822aabde99210270f63636327ed0ee" kindref="member">cmd_gatt_prepare_characteristic_value_write</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga5d50f883c0424a733d9f5ebe1c0c6bc5" kindref="member">cmd_gatt_prepare_characteristic_value_reliable_write</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x13 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga55769ce8b00e91a6141dbb2aa09d4e77" kindref="member">cmd_gatt_execute_characteristic_value_write</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1gac154f2173eec80db460a927230214e83" kindref="member">cmd_gatt_read_descriptor_value</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059_1ga10bcb7ca88fb9244042fd812c454d68b" kindref="member">cmd_gatt_write_descriptor_value</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00060" kindref="compound">evt_gatt_mtu_exchanged</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00061" kindref="compound">evt_gatt_service</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00062" kindref="compound">evt_gatt_characteristic</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00063" kindref="compound">evt_gatt_descriptor</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00064" kindref="compound">evt_gatt_characteristic_value</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00065" kindref="compound">evt_gatt_descriptor_value</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00066" kindref="compound">evt_gatt_procedure_completed</ref> </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067" kindref="compound">GATT Database</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga33d351121d4c9ac2fef4a131c71de5e2" kindref="member">cmd_gattdb_new_session</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1gaa5ed7d70b76a59ef38a050ce030883b8" kindref="member">cmd_gattdb_add_service</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga9eb742007904140d76071699d16a19e1" kindref="member">cmd_gattdb_remove_service</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga5f748877ee2ac92e5f3c3fe82e06b1ee" kindref="member">cmd_gattdb_add_included_service</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1gabda1ed40f8d35486b6dcf2e340d02aad" kindref="member">cmd_gattdb_remove_included_service</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1gae8906f2354dfc81e0de9b37bc466ac46" kindref="member">cmd_gattdb_add_uuid16_characteristic</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1gaf7a6345dfa7305c3c30804eebcc561cd" kindref="member">cmd_gattdb_add_uuid128_characteristic</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>30  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga1909f88315c8740e578ba2bc4f733ba0" kindref="member">cmd_gattdb_remove_characteristic</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga0587a0d1003c0f1f18b78f8026111388" kindref="member">cmd_gattdb_add_uuid16_descriptor</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>15  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga56ffa16478c17e3a15bfd3df9192cf57" kindref="member">cmd_gattdb_add_uuid128_descriptor</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>29  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga17e454ff3e2a9288587a0654c1c25198" kindref="member">cmd_gattdb_remove_descriptor</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga4281249ec84b03a8df91cab507f042bf" kindref="member">cmd_gattdb_start_service</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga301a2e2219d8f761707f8561938e6835" kindref="member">cmd_gattdb_stop_service</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga255845126ea162b7f11fe19dc3ffc98c" kindref="member">cmd_gattdb_start_characteristic</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga1dd56bbbc5025f6c434ca3714a62c358" kindref="member">cmd_gattdb_stop_characteristic</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga7f3e4b0ac0c55a23499a993770d88d34" kindref="member">cmd_gattdb_commit</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga0a1120ba72b56959371357be3ea6ce4b" kindref="member">cmd_gattdb_abort</ref> </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073" kindref="compound">GATT Server</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga6b827756a80be7916589be437fc6fd2e" kindref="member">cmd_gatt_server_set_max_mtu</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga7dd6b85ba133298ddea884b8030a463f" kindref="member">cmd_gatt_server_get_mtu</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga9c1f60bb47f1d063a7bb7b7ca07be0d5" kindref="member">cmd_gatt_server_find_attribute</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1gaf64bd326873eca7e7d64c4d96cc8d966" kindref="member">cmd_gatt_server_read_attribute_value</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1gac3eeda304d9b9100f516b65d3eac518f" kindref="member">cmd_gatt_server_read_attribute_type</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1gad50a8f6e37b3fb4da9a85bd78bbbdb14" kindref="member">cmd_gatt_server_write_attribute_value</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga6f42d2ae08604321a80befe6358b9b22" kindref="member">cmd_gatt_server_send_user_read_response</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga1c459b8ea2c5b2e0efe145280fe370e0" kindref="member">cmd_gatt_server_send_user_write_response</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga1678187cd94d1c4cd447a0f42312984f" kindref="member">cmd_gatt_server_send_characteristic_notification</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1gad7728cd631dc63a5cba45da6ee4ddbe3" kindref="member">cmd_gatt_server_send_notification</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1gabbea29a7fcf973421c4e8e8b64f8ccbe" kindref="member">cmd_gatt_server_send_indication</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1gad465be360f9f372e708f583774aa3f90" kindref="member">cmd_gatt_server_notify_all</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x11 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga8341aeb456543ce6b6f39a90acd5f204" kindref="member">cmd_gatt_server_read_client_configuration</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x12 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga6a8a286eeffeab7e2bd0b42d8d0f49b0" kindref="member">cmd_gatt_server_send_user_prepare_write_response</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga6ff0b0dde112d8c15b9fd10edf112a98" kindref="member">cmd_gatt_server_set_capabilities</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga587989fa6dd4f8b0e957688e500574d4" kindref="member">cmd_gatt_server_enable_capabilities</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga0d58be34869e2eef71042474e4949b6b" kindref="member">cmd_gatt_server_disable_capabilities</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga83db1fc19f226f40fb7c55bf0ea07396" kindref="member">cmd_gatt_server_get_enabled_capabilities</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga836efcd97968a200279bb7eb41601cc0" kindref="member">cmd_gatt_server_read_client_supported_features</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00074" kindref="compound">evt_gatt_server_attribute_value</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00075" kindref="compound">evt_gatt_server_user_read_request</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076" kindref="compound">evt_gatt_server_user_write_request</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00077" kindref="compound">evt_gatt_server_characteristic_status</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00078" kindref="compound">evt_gatt_server_execute_write_completed</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00079" kindref="compound">evt_gatt_server_indication_timeout</ref> </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080" kindref="compound">NVM</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1gac35df372fed2134445476526b1049dc0" kindref="member">cmd_nvm_save</ref> </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1gaf988906c52e4612a9c2eda4151eb2198" kindref="member">cmd_nvm_load</ref> </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1gaf165765a78e2a32831290760bcfa5b3b" kindref="member">cmd_nvm_erase</ref> </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga946fae2a215deffcff105938f9f587fc" kindref="member">cmd_nvm_erase_all</ref> </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00082" kindref="compound">Testing Commands</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00082_1gae7a106369af4ba06052b491389178b9d" kindref="member">cmd_test_dtm_tx</ref> </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00082_1ga9cbb848ae0ff9dd24ba1ca5bb9c547a4" kindref="member">cmd_test_dtm_tx_v4</ref> </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00082_1gaf05ab5487716fdc835037f5febcae0d2" kindref="member">cmd_test_dtm_rx</ref> </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00082_1gae1ed3be291efaef0fcff2e5903cf5648" kindref="member">cmd_test_dtm_end</ref> </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00083" kindref="compound">evt_test_dtm_completed</ref> </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084" kindref="compound">Security Manager</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga2668706f7ffb70681ed974f1e0b46c86" kindref="member">cmd_sm_configure</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gadf5ef83084ef4651ee31bb05d5d4d8ff" kindref="member">cmd_sm_set_minimum_key_size</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga3e1f66e53987c78c7c8db7c2ce4aab36" kindref="member">cmd_sm_set_debug_mode</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaccfe17f4201f7e0fee8bb6c214fa8d59" kindref="member">cmd_sm_add_to_whitelist</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x13 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaa83c977d878b0632cec34464ef281887" kindref="member">cmd_sm_store_bonding_configuration</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga5b300b3007067d4671ecf598752d2f60" kindref="member">cmd_sm_set_bondable_mode</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga3ea16a5b602a40ba4d98030e823067e3" kindref="member">cmd_sm_set_passkey</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaa89f1afb13a333dfa0831a11dd8dcabd" kindref="member">cmd_sm_set_oob_data</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga4a8c40ee6a3546063d7ab01efd4bb939" kindref="member">cmd_sm_use_sc_oob</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x11 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gacea9f88d8df15e1e2b66c6f465714b41" kindref="member">cmd_sm_set_sc_remote_oob_data</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x12 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gadde7d3d515ab2831e5cd40898530f874" kindref="member">cmd_sm_increase_security</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaffc570a910fbacb230e207688611d83f" kindref="member">cmd_sm_enter_passkey</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga56c7140cb6749a2016bbc6571d20c50d" kindref="member">cmd_sm_passkey_confirm</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga65b9b1763034e7658ad5bb85f7c393a9" kindref="member">cmd_sm_bonding_confirm</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gafce3ada74bcacffae7734c037af7a584" kindref="member">cmd_sm_list_all_bondings</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga29ac245e23a6715698072ec631f5c457" kindref="member">cmd_sm_delete_bonding</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gade053e47bdd1842c94c1aecfb9e8f371" kindref="member">cmd_sm_delete_bondings</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga12fa739726642637a21d8b1776818659" kindref="member">cmd_sm_get_bonding_handles</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga955e0410627f3f939a493fb1894d8dc4" kindref="member">cmd_sm_get_bonding_details</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x16 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gad9331896c22adb49290ee7886ee96565" kindref="member">cmd_sm_find_bonding_by_address</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x17 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gad51863e6fcce9bc2e30a227fb185d672" kindref="member">cmd_sm_set_legacy_oob</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>17  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga3abaa98fab778f3c20fb08f1917a9f38" kindref="member">cmd_sm_set_oob</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaeeb7c8376a1b8f323f963b9a6ebd8729" kindref="member">cmd_sm_set_remote_oob</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>33  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00085" kindref="compound">evt_sm_passkey_display</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00086" kindref="compound">evt_sm_passkey_request</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00087" kindref="compound">evt_sm_confirm_passkey</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00088" kindref="compound">evt_sm_bonded</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00089" kindref="compound">evt_sm_bonding_failed</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00090" kindref="compound">evt_sm_confirm_bonding</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00091" kindref="compound">evt_sm_list_bonding_entry</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00092" kindref="compound">evt_sm_list_all_bondings_complete</ref> </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00093" kindref="compound">OTA</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00093_1ga4014311a5356b6e24be4afaad1878145" kindref="member">cmd_ota_set_device_name</ref> </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00093_1ga38a718dcecffbf33113262533c574063" kindref="member">cmd_ota_set_advertising_data</ref> </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00093_1ga2fed0d94cc58caeea76b111ab460d63a" kindref="member">cmd_ota_set_configuration</ref> </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00093_1ga67295dbe0c1eb0d2a62c054bcd23779e" kindref="member">cmd_ota_set_rf_path</ref> </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00094" kindref="compound">Coexistence</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00094_1gad09b577c4a6dfc0dce7f68488117a5a7" kindref="member">cmd_coex_set_options</ref> </para></entry><entry thead="no"><para>0x20 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00094_1ga291c66dd87fea8ad699ed560d243011b" kindref="member">cmd_coex_set_parameters</ref> </para></entry><entry thead="no"><para>0x20 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00094_1ga27efdbc15a7b36db8df86e94fa0297d4" kindref="member">cmd_coex_set_directional_priority_pulse</ref> </para></entry><entry thead="no"><para>0x20 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00094_1gac9a999d3200c7426e38be561b609bc8c" kindref="member">cmd_coex_get_counters</ref> </para></entry><entry thead="no"><para>0x20 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00095" kindref="compound">CTE Transmitter</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00095_1ga8705c768c81053b54e7e3f23d23749ad" kindref="member">cmd_cte_transmitter_set_dtm_parameters</ref> </para></entry><entry thead="no"><para>0x44 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00095_1ga2f0e897b9bba8e22a43a886a0bc702ad" kindref="member">cmd_cte_transmitter_clear_dtm_parameters</ref> </para></entry><entry thead="no"><para>0x44 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00095_1ga100e182e00da9899cc3a139e6607c97f" kindref="member">cmd_cte_transmitter_enable_connection_cte</ref> </para></entry><entry thead="no"><para>0x44 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00095_1ga56dc1dfec3171de6696854e8f789687a" kindref="member">cmd_cte_transmitter_disable_connection_cte</ref> </para></entry><entry thead="no"><para>0x44 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00095_1gacdbabf1631b58dc2d659237e3eb9fda1" kindref="member">cmd_cte_transmitter_enable_connectionless_cte</ref> </para></entry><entry thead="no"><para>0x44 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00095_1gafd5d95cd625aaa163c0f103ab86711ae" kindref="member">cmd_cte_transmitter_disable_connectionless_cte</ref> </para></entry><entry thead="no"><para>0x44 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00095_1gaac66f1e515d77503acb80471265d8726" kindref="member">cmd_cte_transmitter_enable_silabs_cte</ref> </para></entry><entry thead="no"><para>0x44 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00095_1ga49515ce07ca91c02e2ae683c1054d64d" kindref="member">cmd_cte_transmitter_disable_silabs_cte</ref> </para></entry><entry thead="no"><para>0x44 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096" kindref="compound">CTE Receiver</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096_1ga8c9ade43479e0eeddff587b18f8f5b49" kindref="member">cmd_cte_receiver_set_dtm_parameters</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096_1gaf192a0dacdc26d14dc03bce6933e423a" kindref="member">cmd_cte_receiver_clear_dtm_parameters</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096_1gab917c46b7cee63d8ccf2b2f57bb08bf5" kindref="member">cmd_cte_receiver_set_sync_cte_type</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096_1ga85a539f4ab27fa956f3f456d77738dda" kindref="member">cmd_cte_receiver_enable_connection_cte</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096_1ga5baac4de4263a7ab3f3d750f4631803b" kindref="member">cmd_cte_receiver_disable_connection_cte</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096_1ga8f7472ae5d7047fbe1d09d0d72247ece" kindref="member">cmd_cte_receiver_enable_connectionless_cte</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096_1ga39810885827b3638f54e8a29fd8976cc" kindref="member">cmd_cte_receiver_disable_connectionless_cte</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096_1ga25e401e84b119977021a8071f75c532e" kindref="member">cmd_cte_receiver_enable_silabs_cte</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096_1gab20127723f93e1e16aeaa8b139a5fcf8" kindref="member">cmd_cte_receiver_disable_silabs_cte</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00097" kindref="compound">evt_cte_receiver_dtm_iq_report</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00098" kindref="compound">evt_cte_receiver_connection_iq_report</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099" kindref="compound">evt_cte_receiver_connectionless_iq_report</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00100" kindref="compound">evt_cte_receiver_silabs_iq_report</ref> </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00101" kindref="compound">User Messaging</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00101_1ga9e644f3d526e10e3f6485e675e4e2fd8" kindref="member">cmd_user_message_to_target</ref> </para></entry><entry thead="no"><para>0xff </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00101_1gaabb7641d170c394f47f12a5d6f7594f3" kindref="member">cmd_user_manage_event_filter</ref> </para></entry><entry thead="no"><para>0xff </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00102" kindref="compound">evt_user_message_to_host</ref> </para></entry><entry thead="no"><para>0xff </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>1  </para></entry></row>
+</table>
+</para> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

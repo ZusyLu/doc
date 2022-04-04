@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00187" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_connection_opened_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00187_1ac8a4239b78d20b2ed3fb2c2a02cdaf78" prot="public" static="no" mutable="no">
+        <type><ref refid="a00115" kindref="compound">bd_addr</ref></type>
+        <definition>bd_addr sl_bt_evt_connection_opened_s::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remote device address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2777" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00187_1a6eb2e9fe1f08ed07af06ad1617506435" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_connection_opened_s::address_type</definition>
+        <argsstring></argsstring>
+        <name>address_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum <ref refid="a00038_1gac8d5431d3062e47c5d51b9fb9f36c104" kindref="member">sl_bt_gap_address_type_t</ref>. Remote device address type. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_public_address (0x0):</bold> Public device address</para></listitem><listitem><para><bold>sl_bt_gap_static_address (0x1):</bold> Static device address</para></listitem><listitem><para><bold>sl_bt_gap_random_resolvable_address (0x2):</bold> Private resolvable random address</para></listitem><listitem><para><bold>sl_bt_gap_random_nonresolvable_address (0x3):</bold> Private non-resolvable random address </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2778" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00187_1a48b55d192c63053c3c2850c491077c52" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_connection_opened_s::master</definition>
+        <argsstring></argsstring>
+        <name>master</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Device role in connection. Values:<itemizedlist>
+<listitem><para><bold>0:</bold> Peripheral</para></listitem><listitem><para><bold>1:</bold> Central </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2789" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2789" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00187_1afb5a441b26268cf865770592f4f0f550" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_connection_opened_s::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle for new connection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2792" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00187_1a765c8a73d8de7d993c3ba389e1906d3e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_connection_opened_s::bonding</definition>
+        <argsstring></argsstring>
+        <name>bonding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bonding handle. Values:<itemizedlist>
+<listitem><para><bold>SL_BT_INVALID_BONDING_HANDLE (0xff):</bold> No bonding</para></listitem><listitem><para><bold>Other:</bold> Bonding handle </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2793" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00187_1a4d8b0e79e32de5f937ce86a492d31435" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_connection_opened_s::advertiser</definition>
+        <argsstring></argsstring>
+        <name>advertiser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The local advertising set that this connection was opened to. Values:<itemizedlist>
+<listitem><para><bold>SL_BT_INVALID_ADVERTISING_SET_HANDLE (0xff):</bold> Invalid value or not applicable. Ignore this field</para></listitem><listitem><para><bold>Other:</bold> The advertising set handle </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2797" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2797" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the opened event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="19">
+        <label>sl_bt_evt_connection_opened_s</label>
+        <link refid="a00187"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>address</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>bd_addr</label>
+        <link refid="a00115"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2776" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2775" bodyend="2803"/>
+    <listofallmembers>
+      <member refid="a00187_1ac8a4239b78d20b2ed3fb2c2a02cdaf78" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_opened_s</scope><name>address</name></member>
+      <member refid="a00187_1a6eb2e9fe1f08ed07af06ad1617506435" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_opened_s</scope><name>address_type</name></member>
+      <member refid="a00187_1a4d8b0e79e32de5f937ce86a492d31435" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_opened_s</scope><name>advertiser</name></member>
+      <member refid="a00187_1a765c8a73d8de7d993c3ba389e1906d3e" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_opened_s</scope><name>bonding</name></member>
+      <member refid="a00187_1afb5a441b26268cf865770592f4f0f550" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_opened_s</scope><name>connection</name></member>
+      <member refid="a00187_1a48b55d192c63053c3c2850c491077c52" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_opened_s</scope><name>master</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

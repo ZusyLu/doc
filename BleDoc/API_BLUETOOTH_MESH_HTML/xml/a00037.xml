@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00037" kind="group">
+    <compoundname>sl_btmesh_evt_node_key_updated</compoundname>
+    <title>sl_btmesh_evt_node_key_updated</title>
+    <innerclass refid="a00279" prot="public">sl_btmesh_evt_node_key_updated_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00037_1ga3aadee775b0ab018d1cf92fdeabb4222" prot="public" static="no">
+        <type>struct <ref refid="a00279" kindref="compound">sl_btmesh_evt_node_key_updated_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_node_key_updated_s sl_btmesh_evt_node_key_updated_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_node_key_updated_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="126" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00037_1ga07d639cf1e83e4f88c7d05d12acc7285" prot="public" static="no">
+        <name>sl_btmesh_evt_node_key_updated_id</name>
+        <initializer>0x0f1400a8</initializer>
+        <briefdescription>
+<para>Identifier of the key_updated event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="679" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Received when a Configuration Client updates a network or application key of the node. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00263" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_node_model_config_changed_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00263_1a8243b9b089f8803f9d84b945dc6abae9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_node_model_config_changed_s::node_config_state</definition>
+        <argsstring></argsstring>
+        <name>node_config_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The configuration state which has changed. Values are as follows:<itemizedlist>
+<listitem><para><bold>0x00:</bold> Model application key bindings</para></listitem><listitem><para><bold>0x01:</bold> Model publication parameters</para></listitem><listitem><para><bold>0x02:</bold> Model subscription list </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="548" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00263_1ac22b78cfc320848eb18a75971c00ef48" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_node_model_config_changed_s::element_address</definition>
+        <argsstring></argsstring>
+        <name>element_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address of the element which contains the model </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="554" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00263_1a455e12fb087adac96f7b946a6032cda5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_node_model_config_changed_s::vendor_id</definition>
+        <argsstring></argsstring>
+        <name>vendor_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vendor ID of the model; value 0xffff is used for Bluetooth SIG models. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="556" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00263_1a8397126b37c26cefbfa67345a24961b5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_node_model_config_changed_s::model_id</definition>
+        <argsstring></argsstring>
+        <name>model_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Model ID of the model </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="558" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the model_config_changed event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="547" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="546" bodyend="559"/>
+    <listofallmembers>
+      <member refid="a00263_1ac22b78cfc320848eb18a75971c00ef48" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_model_config_changed_s</scope><name>element_address</name></member>
+      <member refid="a00263_1a8397126b37c26cefbfa67345a24961b5" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_model_config_changed_s</scope><name>model_id</name></member>
+      <member refid="a00263_1a8243b9b089f8803f9d84b945dc6abae9" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_model_config_changed_s</scope><name>node_config_state</name></member>
+      <member refid="a00263_1a455e12fb087adac96f7b946a6032cda5" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_model_config_changed_s</scope><name>vendor_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

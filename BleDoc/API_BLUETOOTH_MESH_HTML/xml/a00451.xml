@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00451" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_lpn_friendship_terminated_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00451_1ac0d1fce84873f57e4016002a03f97640" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lpn_friendship_terminated_s::netkey_index</definition>
+        <argsstring></argsstring>
+        <name>netkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Network key index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6019" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6019" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00451_1a21bafb5ff4f927d91895de2b1c9df083" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lpn_friendship_terminated_s::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reason for friendship termination </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6020" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6020" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the friendship_terminated event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6018" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6017" bodyend="6021"/>
+    <listofallmembers>
+      <member refid="a00451_1ac0d1fce84873f57e4016002a03f97640" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lpn_friendship_terminated_s</scope><name>netkey_index</name></member>
+      <member refid="a00451_1a21bafb5ff4f927d91895de2b1c9df083" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lpn_friendship_terminated_s</scope><name>reason</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00056" kind="group">
+    <compoundname>sl_btmesh_evt_prov_uri</compoundname>
+    <title>sl_btmesh_evt_prov_uri</title>
+    <innerclass refid="a00347" prot="public">sl_btmesh_evt_prov_uri_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00056_1ga99da7446595f3da37cd007cd3e111eaa" prot="public" static="no">
+        <type>struct <ref refid="a00347" kindref="compound">sl_btmesh_evt_prov_uri_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_prov_uri_s sl_btmesh_evt_prov_uri_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_prov_uri_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1489" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1987" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00056_1ga844c4e41b5dc68d7555678bb87e5bcab" prot="public" static="no">
+        <name>sl_btmesh_evt_prov_uri_id</name>
+        <initializer>0x0d1500a8</initializer>
+        <briefdescription>
+<para>Identifier of the uri event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1971" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1971" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>URI advertisement received from a nearby device. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

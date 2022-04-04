@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00759" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_time_server_tai_utc_delta_updated_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00759_1a470c2600beec2f24e54dbdf99f812d1d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_server_tai_utc_delta_updated_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Server model element index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11884" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11884" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00759_1aae45bacb1c751fc3cf7f5d9f3281c5c9" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t sl_btmesh_evt_time_server_tai_utc_delta_updated_s::tai_utc_delta_current</definition>
+        <argsstring></argsstring>
+        <name>tai_utc_delta_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current difference between TAI and UTC is seconds. Range is -255 to 32512. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11885" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11885" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00759_1ace5f900fd876d7bea9b7a1cd793d406f" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t sl_btmesh_evt_time_server_tai_utc_delta_updated_s::tai_utc_delta_new</definition>
+        <argsstring></argsstring>
+        <name>tai_utc_delta_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Upcoming difference between TAI and UTC is seconds. Range is -255 to 32512. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11887" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11887" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00759_1a451ac4aa40c8b2b799a20617babc8cc7" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t sl_btmesh_evt_time_server_tai_utc_delta_updated_s::tai_of_delta_change</definition>
+        <argsstring></argsstring>
+        <name>tai_of_delta_change</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TAI Seconds time of the upcoming TAI-UTC Delta change </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11889" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11889" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the tai_utc_delta_updated event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11883" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11882" bodyend="11891"/>
+    <listofallmembers>
+      <member refid="a00759_1a470c2600beec2f24e54dbdf99f812d1d" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_server_tai_utc_delta_updated_s</scope><name>elem_index</name></member>
+      <member refid="a00759_1a451ac4aa40c8b2b799a20617babc8cc7" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_server_tai_utc_delta_updated_s</scope><name>tai_of_delta_change</name></member>
+      <member refid="a00759_1aae45bacb1c751fc3cf7f5d9f3281c5c9" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_server_tai_utc_delta_updated_s</scope><name>tai_utc_delta_current</name></member>
+      <member refid="a00759_1ace5f900fd876d7bea9b7a1cd793d406f" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_server_tai_utc_delta_updated_s</scope><name>tai_utc_delta_new</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00323" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_user_message_to_host_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00323_1ac305560b2422f120fd03279c5699bc62" prot="public" static="no" mutable="no">
+        <type><ref refid="a00107" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_bt_evt_user_message_to_host_s::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8717" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8717" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the message_to_host event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="125">
+        <label>sl_bt_evt_user_message_to_host_s</label>
+        <link refid="a00323"/>
+        <childnode refid="126" relation="usage">
+          <edgelabel>message</edgelabel>
+        </childnode>
+      </node>
+      <node id="126">
+        <label>uint8array</label>
+        <link refid="a00107"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8716" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8715" bodyend="8718"/>
+    <listofallmembers>
+      <member refid="a00323_1ac305560b2422f120fd03279c5699bc62" prot="public" virt="non-virtual"><scope>sl_bt_evt_user_message_to_host_s</scope><name>message</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

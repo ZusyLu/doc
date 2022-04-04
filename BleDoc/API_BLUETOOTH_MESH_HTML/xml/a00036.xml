@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00036" kind="group">
+    <compoundname>sl_btmesh_evt_node_key_removed</compoundname>
+    <title>sl_btmesh_evt_node_key_removed</title>
+    <innerclass refid="a00275" prot="public">sl_btmesh_evt_node_key_removed_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00036_1ga9d3dccf301b76b851ca4c378471a2327" prot="public" static="no">
+        <type>struct <ref refid="a00275" kindref="compound">sl_btmesh_evt_node_key_removed_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_node_key_removed_s sl_btmesh_evt_node_key_removed_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_node_key_removed_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="126" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00036_1ga37a305296161595a7fa7a803ef6ac852" prot="public" static="no">
+        <name>sl_btmesh_evt_node_key_removed_id</name>
+        <initializer>0x0e1400a8</initializer>
+        <briefdescription>
+<para>Identifier of the key_removed event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="652" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="652" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Received when a Configuration Client removes a network or application key from the node. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

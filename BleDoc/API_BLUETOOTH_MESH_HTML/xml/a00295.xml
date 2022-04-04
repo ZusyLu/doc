@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00295" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_node_beacon_received_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00295_1a9f2417b7c57c5b76310ecdb49acf3fa6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_node_beacon_received_s::netkey_index</definition>
+        <argsstring></argsstring>
+        <name>netkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the network key used to encrypt the beacon </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="781" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="781" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00295_1abdfd4dee2e832123c3c6d5c38888f756" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_node_beacon_received_s::key_refresh</definition>
+        <argsstring></argsstring>
+        <name>key_refresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether there is an ongoing key refresh. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="783" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00295_1a2d00e1c0e8157535bfd00e5d22e242cc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_node_beacon_received_s::iv_update</definition>
+        <argsstring></argsstring>
+        <name>iv_update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether there is an ongoing IV update. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="784" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00295_1a800157b64340070782b42f2fd89c554e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_node_beacon_received_s::iv_index</definition>
+        <argsstring></argsstring>
+        <name>iv_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IV index contained in the beacon. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="785" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="785" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the beacon_received event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="780" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="779" bodyend="786"/>
+    <listofallmembers>
+      <member refid="a00295_1a800157b64340070782b42f2fd89c554e" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_beacon_received_s</scope><name>iv_index</name></member>
+      <member refid="a00295_1a2d00e1c0e8157535bfd00e5d22e242cc" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_beacon_received_s</scope><name>iv_update</name></member>
+      <member refid="a00295_1abdfd4dee2e832123c3c6d5c38888f756" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_beacon_received_s</scope><name>key_refresh</name></member>
+      <member refid="a00295_1a9f2417b7c57c5b76310ecdb49acf3fa6" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_beacon_received_s</scope><name>netkey_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

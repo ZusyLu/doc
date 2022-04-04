@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00120" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_network_transmit_status</compoundname>
+    <title>sl_btmesh_evt_config_client_network_transmit_status</title>
+    <innerclass refid="a00543" prot="public">sl_btmesh_evt_config_client_network_transmit_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00120_1gafee598cae75eec3d12fd481b1a99402c" prot="public" static="no">
+        <type>struct <ref refid="a00543" kindref="compound">sl_btmesh_evt_config_client_network_transmit_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_network_transmit_status_s sl_btmesh_evt_config_client_network_transmit_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_network_transmit_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7044" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00120_1gadcd8f3ca53db56162c07f9732cade5f5" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_network_transmit_status_id</name>
+        <initializer>0x142700a8</initializer>
+        <briefdescription>
+<para>Identifier of the network_transmit_status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7023" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7023" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Status event for <ref refid="a00099_1ga872df673dd5e7ea02cbf70b1cd41574e" kindref="member">sl_btmesh_config_client_get_network_transmit</ref> and <ref refid="a00099_1ga16957a0bdd5bc35fd00606b56b0764a1" kindref="member">sl_btmesh_config_client_set_network_transmit</ref> commands. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

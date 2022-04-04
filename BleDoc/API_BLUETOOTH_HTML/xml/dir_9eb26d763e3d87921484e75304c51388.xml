@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_9eb26d763e3d87921484e75304c51388" kind="dir">
+    <compoundname>/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi</compoundname>
+    <innerdir refid="dir_77aa84dfa71e80635d8ff9e79714ebe9">/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/"/>
+  </compounddef>
+</doxygen>

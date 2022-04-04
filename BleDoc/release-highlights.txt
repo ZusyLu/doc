@@ -1,0 +1,14 @@
+What's new in Bluetooth SDK 3.2.1.0
+* Selected quality improvements and bug fixes
+
+What's new in Bluetooth SDK 3.2.0.0
+* Bluetooth HCI support
+* Simultaneous scan on 1M and Coded-PHY
+* Dynamic GATT configuration
+* Release of pyBGAPI in pypi.org
+* New tools for Angle-of-Arrival development
+
+
+
+
+  

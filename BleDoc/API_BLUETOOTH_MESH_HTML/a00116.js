@@ -1,0 +1,9 @@
+var a00116 =
+[
+    [ "sl_btmesh_evt_config_client_beacon_status_s", "a00116.html#a00527", [
+      [ "result", "a00116.html#a8026902d131a6054dbc7451fa519fb09", null ],
+      [ "handle", "a00116.html#af883a715ad792bb93c1be504b884f27d", null ],
+      [ "value", "a00116.html#a7bd4051619ac13998217c80f34ffccd9", null ]
+    ] ],
+    [ "sl_btmesh_evt_config_client_beacon_status_id", "a00116.html#gaa6abb2104fb9868a3f50ca0fbd82718e", null ]
+];

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00131" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_uuid_64_t</compoundname>
+    <includes refid="a00008" local="no">sl_bgapi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00131_1a4b47b6b700f7c775bec3f8bb8195fb16" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_uuid_64_t::data[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>64-bit UUID </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="126" column="1" bodyfile="include/sl_bgapi.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>64-bit UUID </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/sl_bgapi.h" line="125" column="1" bodyfile="include/sl_bgapi.h" bodystart="125" bodyend="127"/>
+    <listofallmembers>
+      <member refid="a00131_1a4b47b6b700f7c775bec3f8bb8195fb16" prot="public" virt="non-virtual"><scope>sl_bt_uuid_64_t</scope><name>data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

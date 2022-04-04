@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00070" kind="group">
+    <compoundname>sl_btmesh_evt_health_client_server_status</compoundname>
+    <title>sl_btmesh_evt_health_client_server_status</title>
+    <innerclass refid="a00391" prot="public">sl_btmesh_evt_health_client_server_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00070_1gac0af8630260f872d2d105f12b15ab20d" prot="public" static="no">
+        <type>struct <ref refid="a00391" kindref="compound">sl_btmesh_evt_health_client_server_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_health_client_server_status_s sl_btmesh_evt_health_client_server_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_health_client_server_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3238" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3309" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00070_1ga8f9a3f355ebc213b5e0b062516a8fce6" prot="public" static="no">
+        <name>sl_btmesh_evt_health_client_server_status_id</name>
+        <initializer>0x001a00a8</initializer>
+        <briefdescription>
+<para>Identifier of the server_status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3284" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3284" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Receiving a Health Server fault status message generates this event. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Client model may receive a status message because:<itemizedlist>
+<listitem><para>* it made a <ref refid="a00069_1ga89ad95f4a97dec81ce8e420d846d9c6d" kindref="member">sl_btmesh_health_client_get</ref> to which a Server model responded, or</para></listitem><listitem><para>* it made a <ref refid="a00069_1gab0d83c2bcf0743aed915fe4f059fa6a9" kindref="member">sl_btmesh_health_client_clear</ref> to which a Server model responded, or</para></listitem><listitem><para>* it made a <ref refid="a00069_1ga3c5973c5b3d727a83831423fe5d788cf" kindref="member">sl_btmesh_health_client_test</ref> to which a Server model responded. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

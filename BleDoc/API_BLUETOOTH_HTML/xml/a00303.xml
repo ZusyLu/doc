@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00303" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_sm_list_bonding_entry_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00303_1ad59355d33b7ec2262a5a388da04dbddc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_sm_list_bonding_entry_s::bonding</definition>
+        <argsstring></argsstring>
+        <name>bonding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bonding handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6636" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00303_1abab25a687e9e5034d46a1e72ec095030" prot="public" static="no" mutable="no">
+        <type><ref refid="a00115" kindref="compound">bd_addr</ref></type>
+        <definition>bd_addr sl_bt_evt_sm_list_bonding_entry_s::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bluetooth address of the remote device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6637" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00303_1a58838987419ee53a5bb7468c3dc6e3d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_sm_list_bonding_entry_s::address_type</definition>
+        <argsstring></argsstring>
+        <name>address_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum <ref refid="a00038_1gac8d5431d3062e47c5d51b9fb9f36c104" kindref="member">sl_bt_gap_address_type_t</ref>. Address type. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_public_address (0x0):</bold> Public device address</para></listitem><listitem><para><bold>sl_bt_gap_static_address (0x1):</bold> Static device address </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6638" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6638" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the list_bonding_entry event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="97">
+        <label>sl_bt_evt_sm_list_bonding_entry_s</label>
+        <link refid="a00303"/>
+        <childnode refid="98" relation="usage">
+          <edgelabel>address</edgelabel>
+        </childnode>
+      </node>
+      <node id="98">
+        <label>bd_addr</label>
+        <link refid="a00115"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6635" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6634" bodyend="6644"/>
+    <listofallmembers>
+      <member refid="a00303_1abab25a687e9e5034d46a1e72ec095030" prot="public" virt="non-virtual"><scope>sl_bt_evt_sm_list_bonding_entry_s</scope><name>address</name></member>
+      <member refid="a00303_1a58838987419ee53a5bb7468c3dc6e3d8" prot="public" virt="non-virtual"><scope>sl_bt_evt_sm_list_bonding_entry_s</scope><name>address_type</name></member>
+      <member refid="a00303_1ad59355d33b7ec2262a5a388da04dbddc" prot="public" virt="non-virtual"><scope>sl_bt_evt_sm_list_bonding_entry_s</scope><name>bonding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

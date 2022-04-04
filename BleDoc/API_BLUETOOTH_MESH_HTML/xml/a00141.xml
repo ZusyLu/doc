@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00141" kind="group">
+    <compoundname>sl_btmesh_evt_sensor_client_descriptor_status</compoundname>
+    <title>sl_btmesh_evt_sensor_client_descriptor_status</title>
+    <innerclass refid="a00615" prot="public">sl_btmesh_evt_sensor_client_descriptor_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00141_1ga8d4bf7367b26f02d98ce7d86164773fc" prot="public" static="no">
+        <type>struct <ref refid="a00615" kindref="compound">sl_btmesh_evt_sensor_client_descriptor_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_sensor_client_descriptor_status_s sl_btmesh_evt_sensor_client_descriptor_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_sensor_client_descriptor_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9124" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00141_1gaf0c8f24b4b5fcc195556ef7d5f515c38" prot="public" static="no">
+        <name>sl_btmesh_evt_sensor_client_descriptor_status_id</name>
+        <initializer>0x004900a8</initializer>
+        <briefdescription>
+<para>Identifier of the descriptor_status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9176" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicate an incoming Sensor Descriptor Status message. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

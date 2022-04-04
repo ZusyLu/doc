@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00335" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_prov_oob_auth_request_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00335_1af1cdae1cd5dcfebdc319a6a505974891" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_prov_oob_auth_request_s::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Zero for static data, non-zero for output </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1904" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1904" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00335_1ab8ef8f47237bedd9af93da3e8ecf250e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_prov_oob_auth_request_s::output_action</definition>
+        <argsstring></argsstring>
+        <name>output_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum <ref refid="a00021_1ga8abf68ed1c6677d418c08aaec95a7fe4" kindref="member">sl_btmesh_node_oob_output_action_t</ref>. Output action type. Ignored for Static. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1905" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1905" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00335_1a6dfb65daa8757278be4c2c5585d82e8b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_prov_oob_auth_request_s::output_size</definition>
+        <argsstring></argsstring>
+        <name>output_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of output data. Ignored for Static. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1907" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1907" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00335_1ac3de594fbeccba2face87988c7cd9cd1" prot="public" static="no" mutable="no">
+        <type><ref refid="a00211" kindref="compound">uuid_128</ref></type>
+        <definition>uuid_128 sl_btmesh_evt_prov_oob_auth_request_s::uuid</definition>
+        <argsstring></argsstring>
+        <name>uuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UUID of the device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1908" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1908" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the oob_auth_request event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="203">
+        <label>uuid_128</label>
+        <link refid="a00211"/>
+      </node>
+      <node id="202">
+        <label>sl_btmesh_evt_prov_oob_auth_request_s</label>
+        <link refid="a00335"/>
+        <childnode refid="203" relation="usage">
+          <edgelabel>uuid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1903" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1902" bodyend="1909"/>
+    <listofallmembers>
+      <member refid="a00335_1af1cdae1cd5dcfebdc319a6a505974891" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_oob_auth_request_s</scope><name>output</name></member>
+      <member refid="a00335_1ab8ef8f47237bedd9af93da3e8ecf250e" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_oob_auth_request_s</scope><name>output_action</name></member>
+      <member refid="a00335_1a6dfb65daa8757278be4c2c5585d82e8b" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_oob_auth_request_s</scope><name>output_size</name></member>
+      <member refid="a00335_1ac3de594fbeccba2face87988c7cd9cd1" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_oob_auth_request_s</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

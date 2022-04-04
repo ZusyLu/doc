@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00101" kind="group">
+    <compoundname>sl_bt_user</compoundname>
+    <title>User Messaging</title>
+    <innergroup refid="a00102">sl_bt_evt_user_message_to_host</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00101_1ga9e644f3d526e10e3f6485e675e4e2fd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_user_message_to_target</definition>
+        <argsstring>(size_t data_len, const uint8_t *data, size_t max_response_size, size_t *response_len, uint8_t *response)</argsstring>
+        <name>sl_bt_user_message_to_target</name>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max_response_size</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>response_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used by an NCP host to send a message to the target application on device. The application on the target must send the response with <ref refid="a00103_1gafe95b5828a4899cb3eb200d20bd50f2d" kindref="member">sl_bt_send_rsp_user_message_to_target</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>data</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_response_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of output buffer passed in <computeroutput>response</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">response_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On return, set to the length of output data written to <computeroutput>response</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The response message</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8740" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00101_1gaabb7641d170c394f47f12a5d6f7594f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_user_manage_event_filter</definition>
+        <argsstring>(size_t data_len, const uint8_t *data)</argsstring>
+        <name>sl_bt_user_manage_event_filter</name>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Manage NCP event filter. When the event filter is in use, API events passing the filter will be sent to the host, and those that do not pass are discarded by the target. For functionality details, see the NCP component in the Bluetooth SDK.</para><para>By default, the NCP does not use the event filter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>data</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message for managing event filter</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8761" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00101_1gabcdf5c2163b58fa220aa90f9d65d0ed4" prot="public" static="no">
+        <name>sl_bt_cmd_user_message_to_target_id</name>
+        <initializer>0x00ff0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8695" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00101_1ga4098741446a6a8888c912a780e5c6548" prot="public" static="no">
+        <name>sl_bt_cmd_user_manage_event_filter_id</name>
+        <initializer>0x01ff0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8696" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8696" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00101_1ga5ecd50e6a4fc5a84db70ce34fdd3bf1a" prot="public" static="no">
+        <name>sl_bt_rsp_user_message_to_target_id</name>
+        <initializer>0x00ff0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8697" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00101_1gac4574aaf2e52c113a8c27e6af552a168" prot="public" static="no">
+        <name>sl_bt_rsp_user_manage_event_filter_id</name>
+        <initializer>0x01ff0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8698" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8698" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>User Messaging. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class provides one command and one event which can be used by a NCP host and target to implement a communication mechanism with a custom proprietary protocol. An application must decide whether and how the command and event are used. The stack does not produce or consume any messages belonging to this class. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

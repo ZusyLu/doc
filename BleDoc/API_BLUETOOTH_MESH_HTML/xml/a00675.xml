@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00675" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_lc_server_occupancy_updated_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00675_1a2f78e2407079d6307ce43852369db5cb" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_occupancy_updated_s::destination_address</definition>
+        <argsstring></argsstring>
+        <name>destination_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message destination address if triggered by a message, 0 otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10362" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00675_1a7e1dce4d6a6a770393c218b34b30c1f2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_occupancy_updated_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the element where the update happened </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10364" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00675_1a0de4a29d06cc090e073b7b28e765d23a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_occupancy_updated_s::source_address</definition>
+        <argsstring></argsstring>
+        <name>source_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message source address if triggered by a message, 0 otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10366" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00675_1a42286157bbdbc583e5464ea72e32205b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_occupancy_updated_s::appkey_index</definition>
+        <argsstring></argsstring>
+        <name>appkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message appkey index if triggered by a message, 0xFFFF otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10368" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00675_1a9154c801b53ba84e71f473a7e6cca079" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_lc_server_occupancy_updated_s::occupancy_value</definition>
+        <argsstring></argsstring>
+        <name>occupancy_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The updated value of the LC Occupancy state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10370" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10370" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the occupancy_updated event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10361" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10360" bodyend="10371"/>
+    <listofallmembers>
+      <member refid="a00675_1a42286157bbdbc583e5464ea72e32205b" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_occupancy_updated_s</scope><name>appkey_index</name></member>
+      <member refid="a00675_1a2f78e2407079d6307ce43852369db5cb" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_occupancy_updated_s</scope><name>destination_address</name></member>
+      <member refid="a00675_1a7e1dce4d6a6a770393c218b34b30c1f2" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_occupancy_updated_s</scope><name>elem_index</name></member>
+      <member refid="a00675_1a9154c801b53ba84e71f473a7e6cca079" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_occupancy_updated_s</scope><name>occupancy_value</name></member>
+      <member refid="a00675_1a0de4a29d06cc090e073b7b28e765d23a" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_occupancy_updated_s</scope><name>source_address</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

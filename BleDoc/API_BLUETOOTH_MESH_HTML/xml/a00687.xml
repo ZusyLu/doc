@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00687" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_lc_server_state_updated_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00687_1a5fc3f4d47fac45c2a06d71c24dc45d4b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_state_updated_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the element where the update happened </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10449" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00687_1a2c05780b7469f36a8fedcab4abdf4ef3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_lc_server_state_updated_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The updated value of the LC state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10450" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00687_1a506ff3f70c757053878c3cca6d6c403d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_lc_server_state_updated_s::transition_time</definition>
+        <argsstring></argsstring>
+        <name>transition_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transition time defined for the current LC state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10451" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10451" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the state_updated event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10448" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10447" bodyend="10453"/>
+    <listofallmembers>
+      <member refid="a00687_1a5fc3f4d47fac45c2a06d71c24dc45d4b" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_state_updated_s</scope><name>elem_index</name></member>
+      <member refid="a00687_1a2c05780b7469f36a8fedcab4abdf4ef3" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_state_updated_s</scope><name>state</name></member>
+      <member refid="a00687_1a506ff3f70c757053878c3cca6d6c403d" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_state_updated_s</scope><name>transition_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

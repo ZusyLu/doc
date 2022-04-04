@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00170" kind="group">
+    <compoundname>sl_btmesh_evt_scene_server_register_get</compoundname>
+    <title>sl_btmesh_evt_scene_server_register_get</title>
+    <innerclass refid="a00711" prot="public">sl_btmesh_evt_scene_server_register_get_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00170_1gadadbbea747035ae88ca12446af1e2a80" prot="public" static="no">
+        <type>struct <ref refid="a00711" kindref="compound">sl_btmesh_evt_scene_server_register_get_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_scene_server_register_get_s sl_btmesh_evt_scene_server_register_get_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_scene_server_register_get_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10946" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11021" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00170_1ga34b62eae1ec8fd5ed8236bf7eeb1d621" prot="public" static="no">
+        <name>sl_btmesh_evt_scene_server_register_get_id</name>
+        <initializer>0x025000a8</initializer>
+        <briefdescription>
+<para>Identifier of the register_get event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11006" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11006" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Get the status of a register. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

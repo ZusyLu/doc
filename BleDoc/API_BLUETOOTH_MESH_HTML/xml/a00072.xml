@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00072" kind="group">
+    <compoundname>sl_btmesh_evt_health_client_server_status_attention</compoundname>
+    <title>sl_btmesh_evt_health_client_server_status_attention</title>
+    <innerclass refid="a00399" prot="public">sl_btmesh_evt_health_client_server_status_attention_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00072_1gade9fd87b6f9f80950a5442cc0f38b1a0" prot="public" static="no">
+        <type>struct <ref refid="a00399" kindref="compound">sl_btmesh_evt_health_client_server_status_attention_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_health_client_server_status_attention_s sl_btmesh_evt_health_client_server_status_attention_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_health_client_server_status_attention_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3238" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3370" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00072_1ga13f52fb6f65ee4c28e5f40ff11ee9f8b" prot="public" static="no">
+        <name>sl_btmesh_evt_health_client_server_status_attention_id</name>
+        <initializer>0x021a00a8</initializer>
+        <briefdescription>
+<para>Identifier of the server_status_attention event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3351" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3351" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Receiving a Health Server attention status message generates this event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

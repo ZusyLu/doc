@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00168" kind="group">
+    <compoundname>sl_btmesh_scene_server</compoundname>
+    <title>Bluetooth Mesh Scene Server Model</title>
+    <innergroup refid="a00169">sl_btmesh_evt_scene_server_get</innergroup>
+    <innergroup refid="a00170">sl_btmesh_evt_scene_server_register_get</innergroup>
+    <innergroup refid="a00171">sl_btmesh_evt_scene_server_recall</innergroup>
+    <innergroup refid="a00172">sl_btmesh_evt_scene_server_publish</innergroup>
+    <innergroup refid="a00173">sl_btmesh_evt_scene_server_compact_recall</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00168_1gaf5088877c52d4b9a322fd2b330d954c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_scene_server_init</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_scene_server_init</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Scene Server model. Server does not have any internal configurations. The command only activates the model in the mesh stack.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the element.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00168_1gad8fe12b1c23de82422051292731ee903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_scene_server_deinit</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_scene_server_deinit</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>De-initializes the Scene Server model.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the element.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00168_1ga1ef0e1f31ca55f5ea8862aa67ff8ca2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_scene_server_reset_register</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_scene_server_reset_register</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset register value. This command should be invoked if state of a model has been modified in such a manner that it can&apos;t be in the scene, which is indicated by the scene register.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the element. This can be either element of the updated model or the element of the scene model responsible for controlling the scene of the updated model.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00168_1ga1d3ae02563f09f5daa58ed1c872545e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_scene_server_enable_compact_recall_events</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_scene_server_enable_compact_recall_events</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Switch to compact reporting for recalled states. Compact state reduces amount buffering memory needed by the scene recall and is recommended for devices with big amount of models or for devices in environment with lots of bluetooth advertisement traffic.</para><para>When compact mode is active <ref refid="a00173" kindref="compound">sl_btmesh_evt_scene_server_compact_recall</ref> is generated instead of several <ref refid="a00083" kindref="compound">sl_btmesh_evt_generic_server_state_recall</ref> events.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11166" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00168_1gadd286e9371855c54b5f82e1663913ec3" prot="public" static="no">
+        <name>sl_btmesh_cmd_scene_server_init_id</name>
+        <initializer>0x00500028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10964" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10964" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00168_1gad035cbad134668cd49c06f1b0a4ab301" prot="public" static="no">
+        <name>sl_btmesh_cmd_scene_server_deinit_id</name>
+        <initializer>0x01500028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10965" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10965" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00168_1ga4d3c33a021c491ce5574c1e4969d6924" prot="public" static="no">
+        <name>sl_btmesh_cmd_scene_server_reset_register_id</name>
+        <initializer>0x02500028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10966" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10966" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00168_1ga4ee43e9287a2685185611395e3c3abf5" prot="public" static="no">
+        <name>sl_btmesh_cmd_scene_server_enable_compact_recall_events_id</name>
+        <initializer>0x03500028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10967" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10967" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00168_1gae210cc42879734f30a765888447b6c19" prot="public" static="no">
+        <name>sl_btmesh_rsp_scene_server_init_id</name>
+        <initializer>0x00500028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10968" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10968" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00168_1gac8024bcfd3aaae6de87ed04f899a50b1" prot="public" static="no">
+        <name>sl_btmesh_rsp_scene_server_deinit_id</name>
+        <initializer>0x01500028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10969" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10969" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00168_1gadd97451d192e8771440feb065b3f07cf" prot="public" static="no">
+        <name>sl_btmesh_rsp_scene_server_reset_register_id</name>
+        <initializer>0x02500028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10970" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10970" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00168_1ga8d2aa5e1506ab3a07ba8f23ac428c61c" prot="public" static="no">
+        <name>sl_btmesh_rsp_scene_server_enable_compact_recall_events_id</name>
+        <initializer>0x03500028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10971" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10971" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Scene Server Model. </para>    </briefdescription>
+    <detaileddescription>
+<para>Bluetooth Mesh Scene model Server functionality. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

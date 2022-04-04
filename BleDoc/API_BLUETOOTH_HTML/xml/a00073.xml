@@ -1,0 +1,1488 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00073" kind="group">
+    <compoundname>sl_bt_gatt_server</compoundname>
+    <title>GATT Server</title>
+    <innergroup refid="a00074">sl_bt_evt_gatt_server_attribute_value</innergroup>
+    <innergroup refid="a00075">sl_bt_evt_gatt_server_user_read_request</innergroup>
+    <innergroup refid="a00076">sl_bt_evt_gatt_server_user_write_request</innergroup>
+    <innergroup refid="a00077">sl_bt_evt_gatt_server_characteristic_status</innergroup>
+    <innergroup refid="a00078">sl_bt_evt_gatt_server_execute_write_completed</innergroup>
+    <innergroup refid="a00079">sl_bt_evt_gatt_server_indication_timeout</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00073_1ga494b6552ef9af21dd22f79dfd4edadfd" prot="public" static="no">
+        <name>sl_bt_gatt_server_client_configuration_t</name>
+        <enumvalue id="a00073_1gga494b6552ef9af21dd22f79dfd4edadfda42950c6d59af2572b028cb80c2b6447b" prot="public">
+          <name>sl_bt_gatt_server_disable</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Disable notifications and indications. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00073_1gga494b6552ef9af21dd22f79dfd4edadfdad310d1c7d7195bb074a6d99240b5ff59" prot="public">
+          <name>sl_bt_gatt_server_notification</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) The characteristic value shall be notified. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00073_1gga494b6552ef9af21dd22f79dfd4edadfda5397df511a2936d0ff64d5d5f8c8448c" prot="public">
+          <name>sl_bt_gatt_server_indication</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) The characteristic value shall be indicated. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00073_1gga494b6552ef9af21dd22f79dfd4edadfda66bafcc24564bc9d53395d013695ae8f" prot="public">
+          <name>sl_bt_gatt_server_notification_and_indication</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x3) The characteristic value notification and indication are enabled, application decides which one to send. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>These values define whether the server is to sent notifications or indications to a remote GATT server. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5244" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5243" bodyend="5261"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00073_1gacb0e9f3923813a7c7e87e18b4f994b3f" prot="public" static="no">
+        <name>sl_bt_gatt_server_characteristic_status_flag_t</name>
+        <enumvalue id="a00073_1ggacb0e9f3923813a7c7e87e18b4f994b3fa64c1c0911d3f0119886e8dab472c0066" prot="public">
+          <name>sl_bt_gatt_server_client_config</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Characteristic client configuration has been changed. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00073_1ggacb0e9f3923813a7c7e87e18b4f994b3fa21e2d4e7e62f434c33922c44805c18d5" prot="public">
+          <name>sl_bt_gatt_server_confirmation</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Characteristic confirmation has been received. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>These values describe whether the characteristic client configuration was changed or whether a characteristic confirmation was received. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5270" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5269" bodyend="5275"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00073_1ga6b827756a80be7916589be437fc6fd2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_set_max_mtu</definition>
+        <argsstring>(uint16_t max_mtu, uint16_t *max_mtu_out)</argsstring>
+        <name>sl_bt_gatt_server_set_max_mtu</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>max_mtu</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>max_mtu_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the maximum size of ATT Message Transfer Units (MTU). The functionality is the same as <ref refid="a00059_1ga8acd415ed593fb75fcf408246293852f" kindref="member">sl_bt_gatt_set_max_mtu</ref> and this setting applies to both GATT client and server. If the given value is too large according to the maximum BGAPI payload size, the system will select the maximum possible value as the maximum ATT_MTU. If the maximum ATT_MTU is larger than 23, the GATT client in the stack will automatically send an MTU exchange request after a Bluetooth connection was established.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">max_mtu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Maximum size of Message Transfer Units (MTU) allowed<itemizedlist>
+<listitem><para>Range: 23 to 250</para></listitem></itemizedlist>
+</para><para>Default: 247 </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max_mtu_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum ATT_MTU selected by the system if this command succeeded</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5511" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga7dd6b85ba133298ddea884b8030a463f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_get_mtu</definition>
+        <argsstring>(uint8_t connection, uint16_t *mtu)</argsstring>
+        <name>sl_bt_gatt_server_get_mtu</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>mtu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the size of ATT Message Transfer Units (MTU) for a connection.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mtu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum ATT_MTU used by the connection</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5524" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga9c1f60bb47f1d063a7bb7b7ca07be0d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_find_attribute</definition>
+        <argsstring>(uint16_t start, size_t type_len, const uint8_t *type, uint16_t *attribute)</argsstring>
+        <name>sl_bt_gatt_server_find_attribute</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>type_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find attributes of a certain type from a local GATT database. The type is usually given as a 16-bit or 128-bit UUID in little endian format.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Search start handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>type</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute type UUID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5539" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1gaf64bd326873eca7e7d64c4d96cc8d966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_read_attribute_value</definition>
+        <argsstring>(uint16_t attribute, uint16_t offset, size_t max_value_size, size_t *value_len, uint8_t *value)</argsstring>
+        <name>sl_bt_gatt_server_read_attribute_value</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max_value_size</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>value_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the value of an attribute from a local GATT database. Only (maximum BGAPI payload size - 3) amount of data can be read at once. The application can continue reading with increased offset value if it receives (maximum BGAPI payload size - 3) amount of data.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value offset </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_value_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of output buffer passed in <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On return, set to the length of output data written to <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5561" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1gac3eeda304d9b9100f516b65d3eac518f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_read_attribute_type</definition>
+        <argsstring>(uint16_t attribute, size_t max_type_size, size_t *type_len, uint8_t *type)</argsstring>
+        <name>sl_bt_gatt_server_read_attribute_type</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max_type_size</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>type_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the type of an attribute from a local GATT database. The type is a UUID, usually 16 or 128 bits long in little endian format.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_type_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of output buffer passed in <computeroutput>type</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">type_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On return, set to the length of output data written to <computeroutput>type</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute type UUID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5581" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1gad50a8f6e37b3fb4da9a85bd78bbbdb14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_write_attribute_value</definition>
+        <argsstring>(uint16_t attribute, uint16_t offset, size_t value_len, const uint8_t *value)</argsstring>
+        <name>sl_bt_gatt_server_write_attribute_value</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>value_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write the value of an attribute in the local GATT database. Writing the value of a characteristic of the local GATT database will not trigger notifications or indications to the remote GATT client if the characteristic has a property to indicate or notify and the client has enabled notification or indication. Notifications and indications are sent to the remote GATT client using <ref refid="a00073_1gad7728cd631dc63a5cba45da6ee4ddbe3" kindref="member">sl_bt_gatt_server_send_notification</ref> or <ref refid="a00073_1gabbea29a7fcf973421c4e8e8b64f8ccbe" kindref="member">sl_bt_gatt_server_send_indication</ref> commands.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value offset </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5604" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga6f42d2ae08604321a80befe6358b9b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_send_user_read_response</definition>
+        <argsstring>(uint8_t connection, uint16_t characteristic, uint8_t att_errorcode, size_t value_len, const uint8_t *value, uint16_t *sent_len)</argsstring>
+        <name>sl_bt_gatt_server_send_user_read_response</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>att_errorcode</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>value_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>sent_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a response to a <ref refid="a00075" kindref="compound">sl_bt_evt_gatt_server_user_read_request</ref> event. The response needs to be sent within 30 seconds, otherwise no more GATT transactions are allowed by the remote side. If attr_errorcode is set to 0, the characteristic value is sent to the remote GATT client in the standard way. Other attr_errorcode values will cause the local GATT server to send an attribute protocol error response instead of the actual data. At most, ATT_MTU - 1 amount of data can be sent at one time. The client will continue reading by sending new read request with an increased offset value if it receives ATT_MTU - 1 amount of data.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">characteristic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GATT characteristic handle received in the <ref refid="a00075" kindref="compound">sl_bt_evt_gatt_server_user_read_request</ref> event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">att_errorcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute protocol error code<itemizedlist>
+<listitem><para><bold>0:</bold> No error</para></listitem><listitem><para><bold>Non-zero:</bold> See Bluetooth specification, Host volume, Attribute Protocol, Error Codes table. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Characteristic value to send to the GATT client. Ignored if att_errorcode is not 0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">sent_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of data sent to the remote GATT client</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5636" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga1c459b8ea2c5b2e0efe145280fe370e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_send_user_write_response</definition>
+        <argsstring>(uint8_t connection, uint16_t characteristic, uint8_t att_errorcode)</argsstring>
+        <name>sl_bt_gatt_server_send_user_write_response</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>att_errorcode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a response to a <ref refid="a00076" kindref="compound">sl_bt_evt_gatt_server_user_write_request</ref> event when parameter <computeroutput>att_opcode</computeroutput> in the event is <ref refid="a00059_1gga459acca869ec6d9edd49c57ff6357dd8a51671dfd8baa4c957c17e79106d0002d" kindref="member">sl_bt_gatt_write_request</ref> or <ref refid="a00059_1gga459acca869ec6d9edd49c57ff6357dd8adcc73fa81bc13dea5ac84383333ac136" kindref="member">sl_bt_gatt_execute_write_request</ref> (see <ref refid="a00059_1ga459acca869ec6d9edd49c57ff6357dd8" kindref="member">sl_bt_gatt_att_opcode_t</ref>). The response needs to be sent within 30 seconds, otherwise no more GATT transactions are allowed by the remote side. When responding to <ref refid="a00059_1gga459acca869ec6d9edd49c57ff6357dd8adcc73fa81bc13dea5ac84383333ac136" kindref="member">sl_bt_gatt_execute_write_request</ref>, the value of parameter <computeroutput>characteristic</computeroutput> is ignored. If attr_errorcode is set to 0, the ATT protocol&apos;s write response is sent to indicate to the remote GATT client that the write operation was processed successfully. Other values will cause the local GATT server to send an ATT protocol error response.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">characteristic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GATT characteristic handle received in the <ref refid="a00076" kindref="compound">sl_bt_evt_gatt_server_user_write_request</ref> event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">att_errorcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute protocol error code<itemizedlist>
+<listitem><para><bold>0:</bold> No error</para></listitem><listitem><para><bold>Non-zero:</bold> See Bluetooth specification, Host volume, Attribute Protocol, Error Codes table.</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5667" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga1678187cd94d1c4cd447a0f42312984f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SL_BGAPI_DEPRECATED sl_status_t</type>
+        <definition>SL_BGAPI_DEPRECATED sl_status_t sl_bt_gatt_server_send_characteristic_notification</definition>
+        <argsstring>(uint8_t connection, uint16_t characteristic, size_t value_len, const uint8_t *value, uint16_t *sent_len)</argsstring>
+        <name>sl_bt_gatt_server_send_characteristic_notification</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>value_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>sent_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>Deprecated</bold> and replaced by <ref refid="a00073_1gad7728cd631dc63a5cba45da6ee4ddbe3" kindref="member">sl_bt_gatt_server_send_notification</ref>, <ref refid="a00073_1gabbea29a7fcf973421c4e8e8b64f8ccbe" kindref="member">sl_bt_gatt_server_send_indication</ref> and <ref refid="a00073_1gad465be360f9f372e708f583774aa3f90" kindref="member">sl_bt_gatt_server_notify_all</ref> commands.</para><para>A notification or indication is sent only if the client has enabled it by setting the corresponding flag to the Client Characteristic Configuration descriptor. If the Client Characteristic Configuration descriptor supports both notifications and indications, the stack will always send a notification even when the client has enabled both.</para><para>Send notifications or indications to one or more remote GATT clients. At most, ATT_MTU - 3 amount of data can be sent one time.</para><para>A new indication to a GATT client can&apos;t be sent until an outstanding indication procedure with the same client has completed. The procedure is completed when a confirmation from the client is received. The confirmation is indicated by <ref refid="a00077" kindref="compound">sl_bt_evt_gatt_server_characteristic_status</ref>.</para><para>The error SL_STATUS_INVALID_STATE is returned if the characteristic does not have the notification property, or if the client has not enabled the notification. The same applies to the indication property, and in addition, SL_STATUS_INVALID_STATE is returned if an indication procedure with the same client is outstanding. Always check the response for this command for errors before trying to send more data.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle of the connection over which the notification or indication is sent. Values:<itemizedlist>
+<listitem><para><bold>0xff:</bold> Sends notification or indication to all connected devices.</para></listitem><listitem><para><bold>Other:</bold> Connection handle </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">characteristic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Characteristic handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be notified or indicated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">sent_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of data sent if only one connected device is the receiver; otherwise an unused value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5711" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1gad7728cd631dc63a5cba45da6ee4ddbe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_send_notification</definition>
+        <argsstring>(uint8_t connection, uint16_t characteristic, size_t value_len, const uint8_t *value)</argsstring>
+        <name>sl_bt_gatt_server_send_notification</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>value_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a notification to a remote GATT client. At most ATT_MTU - 3 amount of data can be sent in a notification. An error SL_STATUS_COMMAND_TOO_LONG is returned if the given value length exceeds ATT_MTU - 3.</para><para>A notification is sent only if the client has enabled it by setting the corresponding flag to the Client Characteristic Configuration descriptor. The error SL_STATUS_INVALID_PARAMETER is returned if the characteristic does not have the notification property. The error SL_STATUS_INVALID_STATE is returned if the client has not enabled the notification.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle of the connection over which the notification is sent. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">characteristic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Characteristic handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be notified</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5738" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1gabbea29a7fcf973421c4e8e8b64f8ccbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_send_indication</definition>
+        <argsstring>(uint8_t connection, uint16_t characteristic, size_t value_len, const uint8_t *value)</argsstring>
+        <name>sl_bt_gatt_server_send_indication</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>value_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an indication to a remote GATT client. At most, ATT_MTU - 3 amount of data can be sent in an indication. An error SL_STATUS_COMMAND_TOO_LONG is returned if the given value length exceeds ATT_MTU - 3.</para><para>An indication is sent only if the client has enabled it by setting the corresponding flag to the Client Characteristic Configuration descriptor. The error SL_STATUS_INVALID_PARAMETER is returned if the characteristic does not have the indication property. The error SL_STATUS_INVALID_STATE is returned if the client has not enabled the indication.</para><para>A new indication to a GATT client can&apos;t be sent until an outstanding indication procedure with the same client has completed. The procedure is completed when a confirmation from the client is received. The confirmation is indicated by <ref refid="a00077" kindref="compound">sl_bt_evt_gatt_server_characteristic_status</ref>.</para><para>The error SL_STATUS_IN_PROGRESS is returned if an indication procedure with the same client is outstanding. Always wait for confirmation for previous indication before sending a new indication.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle of the connection over which the indication is sent. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">characteristic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Characteristic handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be indicated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00077" kindref="compound">sl_bt_evt_gatt_server_characteristic_status</ref> - This event is triggered after the confirmation from the client is received.</para></listitem><listitem><para><ref refid="a00079" kindref="compound">sl_bt_evt_gatt_server_indication_timeout</ref> - This event indicates confirmation from the remote GATT client has not been received within 30 seconds after an indication was sent. Further GATT transactions over this connection are not allowed by the stack. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5781" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1gad465be360f9f372e708f583774aa3f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_notify_all</definition>
+        <argsstring>(uint16_t characteristic, size_t value_len, const uint8_t *value)</argsstring>
+        <name>sl_bt_gatt_server_notify_all</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>value_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send notifications or indications to all connected remote GATT clients. At most ATT_MTU - 3 amount of data can be sent in a notification or indication. If the given value length exceeds the limit, first ATT_MTU - 3 bytes will be sent without error, and rest of data will be ignored.</para><para>A notification or indication is sent only if the client has enabled it by setting the corresponding flag to the Client Characteristic Configuration descriptor. If the Client Characteristic Configuration descriptor supports both notifications and indications, the stack will always send a notification even when the client has enabled both.</para><para>A new indication to a GATT client can&apos;t be sent until an outstanding indication procedure with the same client has completed, and the operation will continue for the next client. The procedure is completed when a confirmation from the client is received. The confirmation is indicated by <ref refid="a00077" kindref="compound">sl_bt_evt_gatt_server_characteristic_status</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">characteristic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Characteristic handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be notified or indicated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5812" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga8341aeb456543ce6b6f39a90acd5f204" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_read_client_configuration</definition>
+        <argsstring>(uint8_t connection, uint16_t characteristic, uint16_t *client_config_flags)</argsstring>
+        <name>sl_bt_gatt_server_read_client_configuration</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>client_config_flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read client characteristic configuration of a remote GATT client.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle of the connection to a remote client. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">characteristic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Characteristic handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">client_config_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00073_1ga494b6552ef9af21dd22f79dfd4edadfd" kindref="member">sl_bt_gatt_server_client_configuration_t</ref>. Client characteristic configuration of a remote client.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5829" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga6a8a286eeffeab7e2bd0b42d8d0f49b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_send_user_prepare_write_response</definition>
+        <argsstring>(uint8_t connection, uint16_t characteristic, uint8_t att_errorcode, uint16_t offset, size_t value_len, const uint8_t *value)</argsstring>
+        <name>sl_bt_gatt_server_send_user_prepare_write_response</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>att_errorcode</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>value_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a response to a <ref refid="a00076" kindref="compound">sl_bt_evt_gatt_server_user_write_request</ref> event when parameter <computeroutput>att_opcode</computeroutput> in the event is <ref refid="a00059_1gga459acca869ec6d9edd49c57ff6357dd8aa83dd06123197fb0e93ab07036ba9f0a" kindref="member">sl_bt_gatt_prepare_write_request</ref> (see <ref refid="a00059_1ga459acca869ec6d9edd49c57ff6357dd8" kindref="member">sl_bt_gatt_att_opcode_t</ref>). The response needs to be sent within 30 seconds, otherwise no more GATT transactions are allowed by the remote side. If <computeroutput>att_errorcode</computeroutput> is set to 0, the ATT protocol&apos;s prepare write response is sent to indicate to the remote GATT client that the write operation was processed successfully. Other values will cause the local GATT server to send an ATT protocol error response. The application should set values of parameters <computeroutput>offset</computeroutput> and <computeroutput>value</computeroutput> to identical values from the <ref refid="a00076" kindref="compound">sl_bt_evt_gatt_server_user_write_request</ref> event, the values will be verified on the client side in case the request is a reliable write (by Bluetooth Core Specification Volume 3, Part G, 4.9.5).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">characteristic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GATT characteristic handle. This value is normally received from the gatt_characteristic event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">att_errorcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute protocol error code<itemizedlist>
+<listitem><para><bold>0:</bold> No error</para></listitem><listitem><para><bold>Non-zero:</bold> See Bluetooth specification, Host volume, Attribute Protocol, Error Codes table. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value offset </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5862" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga6ff0b0dde112d8c15b9fd10edf112a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_set_capabilities</definition>
+        <argsstring>(uint32_t caps, uint32_t reserved)</argsstring>
+        <name>sl_bt_gatt_server_set_capabilities</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>caps</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>reserved</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset capabilities that should be enabled by the GATT database. A service is visible to remote GATT clients if at least one of its capabilities is enabled. The same applies to a characteristic and its attributes. Capability identifiers and their corresponding bit flag values are in the auto-generated database header file. See UG118: Blue Gecko Bluetooth Profile Toolkit Developer&apos;s Guide for how to declare capabilities in the GATT database.</para><para>Changing the capabilities of a database effectively causes a database change (attributes being added or removed) from a remote GATT client point of view. If the database has a Generic Attribute service and Service Changed characteristic, the stack will monitor the local database change status and manage service changed indications for a GATT client that has enabled the indication configuration of the Service Changed characteristic.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">caps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit flags of capabilities to reset. Value 0 sets the default database capabilities. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reserved</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Use the value 0 on this reserved field. Do not use none-zero values because they are reserved for future use.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5893" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga587989fa6dd4f8b0e957688e500574d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_enable_capabilities</definition>
+        <argsstring>(uint32_t caps)</argsstring>
+        <name>sl_bt_gatt_server_enable_capabilities</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>caps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable additional capabilities in the local GATT database. Already enabled capabilities keep unchanged after this command. See <ref refid="a00073_1ga6ff0b0dde112d8c15b9fd10edf112a98" kindref="member">sl_bt_gatt_server_set_capabilities</ref> for more information.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">caps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capabilities to enable</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5907" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga0d58be34869e2eef71042474e4949b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_disable_capabilities</definition>
+        <argsstring>(uint32_t caps)</argsstring>
+        <name>sl_bt_gatt_server_disable_capabilities</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>caps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable the given capabilities in the local GATT database. See <ref refid="a00073_1ga6ff0b0dde112d8c15b9fd10edf112a98" kindref="member">sl_bt_gatt_server_set_capabilities</ref> for more information.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">caps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capabilities to disable</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5919" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga83db1fc19f226f40fb7c55bf0ea07396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_get_enabled_capabilities</definition>
+        <argsstring>(uint32_t *caps)</argsstring>
+        <name>sl_bt_gatt_server_get_enabled_capabilities</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>caps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get capabilities currently enabled in the local GATT database.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">caps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enabled capabilities</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5930" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00073_1ga836efcd97968a200279bb7eb41601cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_gatt_server_read_client_supported_features</definition>
+        <argsstring>(uint8_t connection, uint8_t *client_features)</argsstring>
+        <name>sl_bt_gatt_server_read_client_supported_features</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>client_features</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read client supported features of a remote GATT client.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle of the connection to a remote client. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">client_features</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit field describing client supported features of a remote client. See Bluetooth specification Vol 3, Part G, 7.2 for the values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5944" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00073_1ga7c360c8dc8ba8b0a5669b45091763730" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_set_max_mtu_id</name>
+        <initializer>0x0a0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5198" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga61925234b8cdad66e6c7014fbb0f461c" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_get_mtu_id</name>
+        <initializer>0x0b0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5199" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga3e84b68fa17a5e19a28361cbc723b037" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_find_attribute_id</name>
+        <initializer>0x060a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5200" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gac8f48f25089cc4a27684895b15f866e8" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_read_attribute_value_id</name>
+        <initializer>0x000a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5201" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gaae27132dec1740a171f5b1ac107fafb3" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_read_attribute_type_id</name>
+        <initializer>0x010a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5202" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gab71d11689e01391699f514cf79093ced" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_write_attribute_value_id</name>
+        <initializer>0x020a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5203" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gab96de9b029f335016b97ac2689f8edd5" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_send_user_read_response_id</name>
+        <initializer>0x030a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5204" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga317d020b619706e0151ea671eafa9eea" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_send_user_write_response_id</name>
+        <initializer>0x040a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5205" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga32d1fe670b5be0e2cc8afbd7370832ed" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_send_characteristic_notification_id</name>
+        <initializer>0x050a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5206" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gaa4bab23dc8777ed8ab6597fa609e9d25" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_send_notification_id</name>
+        <initializer>0x0f0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5207" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga3da593952ee7042fbca959ff52a26ed9" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_send_indication_id</name>
+        <initializer>0x100a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5208" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gaf9f088af83d95ddd854effb4cff5f513" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_notify_all_id</name>
+        <initializer>0x110a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5209" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gadfa9ff518635a0fc0a0163071c77f491" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_read_client_configuration_id</name>
+        <initializer>0x120a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5210" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga53ec88887cba47e393ff12fe08e29bc8" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_send_user_prepare_write_response_id</name>
+        <initializer>0x140a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5211" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gaca4fc5560060379d6290e5a01827b62a" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_set_capabilities_id</name>
+        <initializer>0x080a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5212" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gab76bb4f657acc98532692c9e91fd9bc9" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_enable_capabilities_id</name>
+        <initializer>0x0c0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5213" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga9dcd83cfd1db0ead3c83c082efca77da" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_disable_capabilities_id</name>
+        <initializer>0x0d0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5214" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga7e82e98033e7dda06249bf29f45df3b5" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_get_enabled_capabilities_id</name>
+        <initializer>0x0e0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5215" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga8a0c69b0d5687b44a7e286c4c85dd7ea" prot="public" static="no">
+        <name>sl_bt_cmd_gatt_server_read_client_supported_features_id</name>
+        <initializer>0x150a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5216" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga19cfeccf866d4f9e0193a1e0825d4d6f" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_set_max_mtu_id</name>
+        <initializer>0x0a0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5217" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gae6173422f1f8c478904d7b7d8a144b16" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_get_mtu_id</name>
+        <initializer>0x0b0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5218" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga2debf4b5702315bd6fba89779c281ff0" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_find_attribute_id</name>
+        <initializer>0x060a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5219" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga7b97ef926fcc662adc4669ee2f67aa02" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_read_attribute_value_id</name>
+        <initializer>0x000a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5220" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gaca69216001d3d3d7dba15cb9772faf90" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_read_attribute_type_id</name>
+        <initializer>0x010a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5221" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga6312a6b544deda63671f361697657a25" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_write_attribute_value_id</name>
+        <initializer>0x020a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5222" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga390d735aab83f409b871cfbadae53bbb" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_send_user_read_response_id</name>
+        <initializer>0x030a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5223" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gafd059ec444a10fe707aa80ce7f34a83c" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_send_user_write_response_id</name>
+        <initializer>0x040a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5224" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gad01d365c436eb57053176285e09d2014" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_send_characteristic_notification_id</name>
+        <initializer>0x050a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5225" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gab7e7385dcf0399f9c24fcb9511b85312" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_send_notification_id</name>
+        <initializer>0x0f0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5226" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga264e4474e6e331f78e52d24ec0d31a9e" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_send_indication_id</name>
+        <initializer>0x100a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5227" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gad2e56ca2d244e08dc8f26039cfa8ad0a" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_notify_all_id</name>
+        <initializer>0x110a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5228" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga570bd96769ee8f0271e85052c1e9d91d" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_read_client_configuration_id</name>
+        <initializer>0x120a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5229" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga2b53eae3554a7d490683c389bbf40101" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_send_user_prepare_write_response_id</name>
+        <initializer>0x140a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5230" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga8f3e34fccb384a96abaa54513898a96b" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_set_capabilities_id</name>
+        <initializer>0x080a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5231" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga485de38ef28106c656aa1cfb0810461b" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_enable_capabilities_id</name>
+        <initializer>0x0c0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5232" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga9d086dde2b6671eec81ec2b7bcaefd76" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_disable_capabilities_id</name>
+        <initializer>0x0d0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5233" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1gac80ddb5e05868277aa24f8218cbb8f4d" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_get_enabled_capabilities_id</name>
+        <initializer>0x0e0a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5234" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00073_1ga2519a1cda4ef1646df369a2b755d94be" prot="public" static="no">
+        <name>sl_bt_rsp_gatt_server_read_client_supported_features_id</name>
+        <initializer>0x150a0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5235" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5235" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GATT Server. </para>    </briefdescription>
+    <detaileddescription>
+<para>These commands and events are used for accessing to the local GATT server and database. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

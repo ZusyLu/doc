@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00175" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_sync_opened_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00175_1ac71bbc36681b181cf411b20f0a687aca" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_sync_opened_s::sync</definition>
+        <argsstring></argsstring>
+        <name>sync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Periodic advertising synchronization handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2471" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00175_1a40b2c6233de0c7c41480bd080da57a28" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_sync_opened_s::adv_sid</definition>
+        <argsstring></argsstring>
+        <name>adv_sid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advertising set identifier </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2472" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00175_1afe0aaf8a949a9f9db3296ff4c032dcd1" prot="public" static="no" mutable="no">
+        <type><ref refid="a00115" kindref="compound">bd_addr</ref></type>
+        <definition>bd_addr sl_bt_evt_sync_opened_s::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address of the advertiser </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2473" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00175_1a04da2c53293c6de08de07ac2e73527bc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_sync_opened_s::address_type</definition>
+        <argsstring></argsstring>
+        <name>address_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advertiser address type. Values:<itemizedlist>
+<listitem><para><bold>0:</bold> Public address</para></listitem><listitem><para><bold>1:</bold> Random address </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2474" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00175_1a3f984cc29b2bd754f951c181f863fdc5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_sync_opened_s::adv_phy</definition>
+        <argsstring></argsstring>
+        <name>adv_phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum <ref refid="a00038_1ga05ce4496a6f87de7c67a9e32d816727c" kindref="member">sl_bt_gap_phy_t</ref>. The advertiser PHY. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_phy_1m (0x1):</bold> 1M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_2m (0x2):</bold> 2M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_coded (0x4):</bold> Coded PHY, 125k (S=8) or 500k (S=2) </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2477" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00175_1a63057ef2cb098237320d751497d56a97" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_sync_opened_s::adv_interval</definition>
+        <argsstring></argsstring>
+        <name>adv_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The periodic advertising interval. Value in units of 1.25 ms<itemizedlist>
+<listitem><para>Range: 0x06 to 0xFFFF</para></listitem><listitem><para>Time range: 7.5 ms to 81.92 s </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2483" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00175_1a84f31a89f52936c211e993e2ab2108cf" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_sync_opened_s::clock_accuracy</definition>
+        <argsstring></argsstring>
+        <name>clock_accuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum <ref refid="a00044_1gacf10b05b3679bf358e10775bee5bcd60" kindref="member">sl_bt_sync_advertiser_clock_accuracy_t</ref>. The advertiser clock accuracy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2487" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00175_1ac94594aaecb2cc865bf677bb7d4814ed" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_sync_opened_s::bonding</definition>
+        <argsstring></argsstring>
+        <name>bonding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bonding handle. Values:<itemizedlist>
+<listitem><para><bold>SL_BT_INVALID_BONDING_HANDLE (0xff):</bold> No bonding</para></listitem><listitem><para><bold>Other:</bold> Bonding handle </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2490" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2490" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the opened event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="109">
+        <label>sl_bt_evt_sync_opened_s</label>
+        <link refid="a00175"/>
+        <childnode refid="110" relation="usage">
+          <edgelabel>address</edgelabel>
+        </childnode>
+      </node>
+      <node id="110">
+        <label>bd_addr</label>
+        <link refid="a00115"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2470" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2469" bodyend="2494"/>
+    <listofallmembers>
+      <member refid="a00175_1afe0aaf8a949a9f9db3296ff4c032dcd1" prot="public" virt="non-virtual"><scope>sl_bt_evt_sync_opened_s</scope><name>address</name></member>
+      <member refid="a00175_1a04da2c53293c6de08de07ac2e73527bc" prot="public" virt="non-virtual"><scope>sl_bt_evt_sync_opened_s</scope><name>address_type</name></member>
+      <member refid="a00175_1a63057ef2cb098237320d751497d56a97" prot="public" virt="non-virtual"><scope>sl_bt_evt_sync_opened_s</scope><name>adv_interval</name></member>
+      <member refid="a00175_1a3f984cc29b2bd754f951c181f863fdc5" prot="public" virt="non-virtual"><scope>sl_bt_evt_sync_opened_s</scope><name>adv_phy</name></member>
+      <member refid="a00175_1a40b2c6233de0c7c41480bd080da57a28" prot="public" virt="non-virtual"><scope>sl_bt_evt_sync_opened_s</scope><name>adv_sid</name></member>
+      <member refid="a00175_1ac94594aaecb2cc865bf677bb7d4814ed" prot="public" virt="non-virtual"><scope>sl_bt_evt_sync_opened_s</scope><name>bonding</name></member>
+      <member refid="a00175_1a84f31a89f52936c211e993e2ab2108cf" prot="public" virt="non-virtual"><scope>sl_bt_evt_sync_opened_s</scope><name>clock_accuracy</name></member>
+      <member refid="a00175_1ac71bbc36681b181cf411b20f0a687aca" prot="public" virt="non-virtual"><scope>sl_bt_evt_sync_opened_s</scope><name>sync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

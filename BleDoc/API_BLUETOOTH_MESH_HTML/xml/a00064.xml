@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00064" kind="group">
+    <compoundname>sl_btmesh_evt_proxy_connected</compoundname>
+    <title>sl_btmesh_evt_proxy_connected</title>
+    <innerclass refid="a00375" prot="public">sl_btmesh_evt_proxy_connected_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00064_1ga115ac13ed8ce83d241c7be84bc6089f6" prot="public" static="no">
+        <type>struct <ref refid="a00375" kindref="compound">sl_btmesh_evt_proxy_connected_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_proxy_connected_s sl_btmesh_evt_proxy_connected_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_proxy_connected_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2780" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2828" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00064_1ga3d8796a647fc7bc87a1ab27cbbbaef1b" prot="public" static="no">
+        <name>sl_btmesh_evt_proxy_connected_id</name>
+        <initializer>0x001800a8</initializer>
+        <briefdescription>
+<para>Identifier of the connected event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2818" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2818" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indication that a connection has been successfully formed. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00080" kind="group">
+    <compoundname>sl_bt_nvm</compoundname>
+    <title>NVM</title>
+    <innergroup refid="a00081">Defined Keys</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00080_1gac35df372fed2134445476526b1049dc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_nvm_save</definition>
+        <argsstring>(uint16_t key, size_t value_len, const uint8_t *value)</argsstring>
+        <name>sl_bt_nvm_save</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>value_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Store a value into the specified NVM key. Allowed NVM keys are in range from 0x4000 to 0x407F. At most, 56 bytes user data can be stored in one NVM key. The error code 0x018a (command_too_long) is returned if the value data is more than 56 bytes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NVM key </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to store into the specified NVM key</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6015" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00080_1gaf988906c52e4612a9c2eda4151eb2198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_nvm_load</definition>
+        <argsstring>(uint16_t key, size_t max_value_size, size_t *value_len, uint8_t *value)</argsstring>
+        <name>sl_bt_nvm_load</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max_value_size</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>value_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the value of the specified NVM key.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NVM key of the value to be retrieved </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_value_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of output buffer passed in <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On return, set to the length of output data written to <computeroutput>value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The returned value of the specified NVM key</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6032" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00080_1gaf165765a78e2a32831290760bcfa5b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_nvm_erase</definition>
+        <argsstring>(uint16_t key)</argsstring>
+        <name>sl_bt_nvm_erase</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete a single NVM key and its value from the persistent store.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NVM key to delete</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6046" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00080_1ga946fae2a215deffcff105938f9f587fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_nvm_erase_all</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_nvm_erase_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete all NVM keys and their corresponding values.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6056" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00080_1gae4dd1a7ad708634affbbdb0a3d61c69c" prot="public" static="no">
+        <name>sl_bt_cmd_nvm_save_id</name>
+        <initializer>0x020d0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5980" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5980" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00080_1ga30355b4026f3ddaec2f131ca5f856d51" prot="public" static="no">
+        <name>sl_bt_cmd_nvm_load_id</name>
+        <initializer>0x030d0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5981" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5981" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00080_1ga321beb5240d63d3bd7bdf52786b8e824" prot="public" static="no">
+        <name>sl_bt_cmd_nvm_erase_id</name>
+        <initializer>0x040d0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5982" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5982" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00080_1ga3042fb23253c22e72ab11571687d78e5" prot="public" static="no">
+        <name>sl_bt_cmd_nvm_erase_all_id</name>
+        <initializer>0x010d0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5983" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5983" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00080_1ga28f9726833418d3431b441c96f547ecb" prot="public" static="no">
+        <name>sl_bt_rsp_nvm_save_id</name>
+        <initializer>0x020d0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5984" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5984" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00080_1ga8de89507dcd2d8ee7845792cc2702bc4" prot="public" static="no">
+        <name>sl_bt_rsp_nvm_load_id</name>
+        <initializer>0x030d0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5985" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5985" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00080_1ga687ca9fc2272b73e361344f753204e5f" prot="public" static="no">
+        <name>sl_bt_rsp_nvm_erase_id</name>
+        <initializer>0x040d0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5986" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5986" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00080_1gafa4d2be9c6d3e7f223f9dd5c0768250c" prot="public" static="no">
+        <name>sl_bt_rsp_nvm_erase_all_id</name>
+        <initializer>0x010d0020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5987" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5987" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>NVM. </para>    </briefdescription>
+    <detaileddescription>
+<para>Provide an interface to manage user data objects (key/value pairs) in the flash memory. User data stored within the flash memory is persistent across reset and power cycling of the device. Because Bluetooth bondings are also stored in the flash area, in addition to the flash storage size, the space available for user data also depends on the number of bondings the device has at the time.</para><para>On EFR32[B|M]G1x devices, either PS Store or NVM3 data storage driver can be used. PS Store is supported by the Bluetooth stack only. Using NVM3 is recommended if the device needs to support Dynamic Multiple Protocol (DMP) cases. On EFR32[B|M]G2x devices, only NVM3 is supported. When NVM3 is used, applications can also use the NVM3 APIs directly.</para><para>In PS Store, the flash storage size is fixed at 2048 bytes. The maximum data object size associated to a key is 56 bytes. A Bluetooth bonding uses at maximum 138 bytes for secure connections and 174 bytes for legacy pairing.</para><para>In NVM3, the flash store size is configurable and the minimum is 3 flash pages. The maximum data object size is configurable up to 4096 bytes. A Bluetooth bonding uses maximum 110 bytes for secure connections and 138 bytes for legacy pairing. For more details, see AN1135 &quot;Using Third Generation
+NonVolatile Memory (NVM3) Data Storage&quot;. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

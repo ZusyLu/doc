@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00058" kind="group">
+    <compoundname>sl_btmesh_evt_prov_key_refresh_node_update</compoundname>
+    <title>sl_btmesh_evt_prov_key_refresh_node_update</title>
+    <innerclass refid="a00355" prot="public">sl_btmesh_evt_prov_key_refresh_node_update_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00058_1ga0107eea5551735be92b349312a0928d9" prot="public" static="no">
+        <type>struct <ref refid="a00355" kindref="compound">sl_btmesh_evt_prov_key_refresh_node_update_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_prov_key_refresh_node_update_s sl_btmesh_evt_prov_key_refresh_node_update_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_prov_key_refresh_node_update_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1489" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2039" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00058_1ga4d4efd0853c9b97318a2687e8cd14485" prot="public" static="no">
+        <name>sl_btmesh_evt_prov_key_refresh_node_update_id</name>
+        <initializer>0x151500a8</initializer>
+        <briefdescription>
+<para>Identifier of the key_refresh_node_update event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2027" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2027" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Key refresh phase change for a node has occurred. </para>    </briefdescription>
+    <detaileddescription>
+<para>This event is generated when a particular node has moved to a new key refresh phase. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

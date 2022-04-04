@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00179" kind="group">
+    <compoundname>sl_btmesh_evt_scheduler_client_status</compoundname>
+    <title>sl_btmesh_evt_scheduler_client_status</title>
+    <innerclass refid="a00739" prot="public">sl_btmesh_evt_scheduler_client_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00179_1gaabfc978936de02596f17ee2fc4e60bd4" prot="public" static="no">
+        <type>struct <ref refid="a00739" kindref="compound">sl_btmesh_evt_scheduler_client_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_scheduler_client_status_s sl_btmesh_evt_scheduler_client_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_scheduler_client_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11272" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00179_1ga2587ea2862e4e2115b98fdaba7eeb856" prot="public" static="no">
+        <name>sl_btmesh_evt_scheduler_client_status_id</name>
+        <initializer>0x005400a8</initializer>
+        <briefdescription>
+<para>Identifier of the status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11309" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11309" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Scheduler Status response message to a Scheduler Get/Set command. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00041" kind="group">
+    <compoundname>sl_btmesh_evt_node_beacon_received</compoundname>
+    <title>sl_btmesh_evt_node_beacon_received</title>
+    <innerclass refid="a00295" prot="public">sl_btmesh_evt_node_beacon_received_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00041_1gac1407322f6fa6ab0f8712df74edf92c3" prot="public" static="no">
+        <type>struct <ref refid="a00295" kindref="compound">sl_btmesh_evt_node_beacon_received_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_node_beacon_received_s sl_btmesh_evt_node_beacon_received_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_node_beacon_received_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="126" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="788" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00041_1ga5ba70d910a81aefbd42841fd9fd76a8e" prot="public" static="no">
+        <name>sl_btmesh_evt_node_beacon_received_id</name>
+        <initializer>0x131400a8</initializer>
+        <briefdescription>
+<para>Identifier of the beacon_received event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="774" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="774" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates reception of the secure network beacon. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

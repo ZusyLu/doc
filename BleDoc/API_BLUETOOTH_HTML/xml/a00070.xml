@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00070" kind="group">
+    <compoundname>sl_bt_gattdb_flags</compoundname>
+    <title>GATT Database Flags</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00070_1ga3d4d9f581a2e772fd39ead2059fbf3dc" prot="public" static="no">
+        <name>SL_BT_GATTDB_NO_AUTO_CCCD</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Do not automatically create a Client Characteristic Configuration descriptor when adding a characteristic that has the notify or indicate property. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="4642" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="4642" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This enum defines the options of GATT attribute management. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

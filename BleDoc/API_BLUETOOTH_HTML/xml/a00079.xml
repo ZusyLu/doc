@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00079" kind="group">
+    <compoundname>sl_bt_evt_gatt_server_indication_timeout</compoundname>
+    <title>sl_bt_evt_gatt_server_indication_timeout</title>
+    <innerclass refid="a00271" prot="public">sl_bt_evt_gatt_server_indication_timeout_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00079_1gace2f0ae99c1e5ea85acb9f5fed366a10" prot="public" static="no">
+        <type>struct <ref refid="a00271" kindref="compound">sl_bt_evt_gatt_server_indication_timeout_s</ref></type>
+        <definition>typedef struct sl_bt_evt_gatt_server_indication_timeout_s sl_bt_evt_gatt_server_indication_timeout_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_gatt_server_indication_timeout_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5183" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5485" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00079_1ga74b7252c605c8937bf19ad4be5d8ba3d" prot="public" static="no">
+        <name>sl_bt_evt_gatt_server_indication_timeout_id</name>
+        <initializer>0x050a00a0</initializer>
+        <briefdescription>
+<para>Identifier of the indication_timeout event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5475" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5475" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This event indicates confirmation from the remote GATT client has not been received within 30 seconds after an indication was sent. </para>    </briefdescription>
+    <detaileddescription>
+<para>Furthermore, the stack does not allow GATT transactions over this connection. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

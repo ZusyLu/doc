@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00030" kind="group">
+    <compoundname>sl_bt_evt_dfu_boot_failure</compoundname>
+    <title>sl_bt_evt_dfu_boot_failure</title>
+    <innerclass refid="a00139" prot="public">sl_bt_evt_dfu_boot_failure_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00030_1ga0608e3b4665bbbfbda6e7bad99971cde" prot="public" static="no">
+        <type>struct <ref refid="a00139" kindref="compound">sl_bt_evt_dfu_boot_failure_s</ref></type>
+        <definition>typedef struct sl_bt_evt_dfu_boot_failure_s sl_bt_evt_dfu_boot_failure_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_dfu_boot_failure_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="126" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00030_1ga8d2a4cee8ebda9b35f11a3984b6c6624" prot="public" static="no">
+        <name>sl_bt_evt_dfu_boot_failure_id</name>
+        <initializer>0x010000a0</initializer>
+        <briefdescription>
+<para>Identifier of the boot_failure event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="123" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This event indicates that an error, which prevents the device from booting, has occurred in bootloader. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

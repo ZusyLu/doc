@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00199" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_connection_rssi_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00199_1a6737a9668b86d874cd9ce646e441e49d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_connection_rssi_s::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2886" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2886" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00199_1a58ffda92715df82d261ad29f671c37b8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_connection_rssi_s::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Command complete status:<itemizedlist>
+<listitem><para><bold>0x00:</bold> The command succeeded</para></listitem><listitem><para><bold>0x01-0xFF:</bold> The command failed. See Bluetooth Core specification v5.0 [Vol 2] Part D, Error Codes </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2887" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2887" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00199_1a737c1e8e47eaf23bd55d49488dde48b9" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t sl_bt_evt_connection_rssi_s::rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The median of the last seven measured RSSI values on the connection. Units: dBm. Range: -127 to +20. Ignore this parameter if the command fails. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2892" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2892" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the rssi event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2885" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2884" bodyend="2895"/>
+    <listofallmembers>
+      <member refid="a00199_1a6737a9668b86d874cd9ce646e441e49d" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_rssi_s</scope><name>connection</name></member>
+      <member refid="a00199_1a737c1e8e47eaf23bd55d49488dde48b9" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_rssi_s</scope><name>rssi</name></member>
+      <member refid="a00199_1a58ffda92715df82d261ad29f671c37b8" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_rssi_s</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

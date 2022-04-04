@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00094" kind="group">
+    <compoundname>sl_btmesh_friend</compoundname>
+    <title>Bluetooth Mesh Friend Node API</title>
+    <innergroup refid="a00095">sl_btmesh_evt_friend_friendship_established</innergroup>
+    <innergroup refid="a00096">sl_btmesh_evt_friend_friendship_terminated</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00094_1ga617eb83352488c1071a23407d69fa9f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_friend_init</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_friend_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Friend mode. The node needs to be provisioned before calling this command. After the Friend mode is initialized, it is ready to accept friend requests from low-power nodes. This call has to be made before calling the other commands in this class.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00094_1ga83f3b895a936d4935270d27684e52b8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_friend_deinit</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_friend_deinit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialize the Friend functionality. After calling this command, a possible friendship with a Low Power node is terminated and all friendships are terminated. After calling this command, don&apos;t call other commands in this class before the Friend mode is <ref refid="a00094_1ga617eb83352488c1071a23407d69fa9f1" kindref="member">sl_btmesh_friend_init</ref> again.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00094_1gab6dad03e7b8595951c6122e6085287fb" prot="public" static="no">
+        <name>sl_btmesh_cmd_friend_init_id</name>
+        <initializer>0x00240028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6120" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00094_1ga56b3a3626c897622b74f4681d4e28060" prot="public" static="no">
+        <name>sl_btmesh_cmd_friend_deinit_id</name>
+        <initializer>0x01240028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6121" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00094_1gaa11ae4bcde64aaa0397d5f8e3da38d98" prot="public" static="no">
+        <name>sl_btmesh_rsp_friend_init_id</name>
+        <initializer>0x00240028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6122" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00094_1ga9ffbdb53616659d4fc171305c492f404" prot="public" static="no">
+        <name>sl_btmesh_rsp_friend_deinit_id</name>
+        <initializer>0x01240028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6123" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Friend Node API. </para>    </briefdescription>
+    <detaileddescription>
+<para>These commands and events are for the Friend operation, available in nodes which have the Friend feature. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

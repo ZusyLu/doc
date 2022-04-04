@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00055" kind="group">
+    <compoundname>sl_bt_evt_connection_tx_power</compoundname>
+    <title>sl_bt_evt_connection_tx_power</title>
+    <innerclass refid="a00207" prot="public">sl_bt_evt_connection_tx_power_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00055_1ga9fc63e564f22cd02e08a00f56ee4880a" prot="public" static="no">
+        <type>struct <ref refid="a00207" kindref="compound">sl_bt_evt_connection_tx_power_s</ref></type>
+        <definition>typedef struct sl_bt_evt_connection_tx_power_s sl_bt_evt_connection_tx_power_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_connection_tx_power_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2650" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3015" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00055_1gafbd46b3012c22552a029305a1b5ec18a" prot="public" static="no">
+        <name>sl_bt_evt_connection_tx_power_id</name>
+        <initializer>0x060600a0</initializer>
+        <briefdescription>
+<para>Identifier of the tx_power event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2972" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2972" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Reports a transmit power change on the local device of a connection if transmit power reporting has been enabled. </para>    </briefdescription>
+    <detaileddescription>
+<para>Enable or disable transmit power reporting using <ref refid="a00048_1ga609a3741e23e5ff8eaf7a4794bc1953f" kindref="member">sl_bt_connection_set_power_reporting</ref> command. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

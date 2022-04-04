@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00017" kind="file" language="C++">
+    <compoundname>sl_bt_ncp_host.h</compoundname>
+    <includes refid="a00011" local="yes">sl_bt_api.h</includes>
+    <incdepgraph>
+      <node id="31">
+        <label>stdbool.h</label>
+      </node>
+      <node id="32">
+        <label>sl_status.h</label>
+      </node>
+      <node id="29">
+        <label>stdint.h</label>
+      </node>
+      <node id="30">
+        <label>stddef.h</label>
+      </node>
+      <node id="33">
+        <label>sl_bgapi.h</label>
+        <link refid="a00008_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>string.h</label>
+      </node>
+      <node id="34">
+        <label>sl_bt_api_compatibility.h</label>
+        <link refid="a00014_source"/>
+      </node>
+      <node id="27">
+        <label>sl_bt_api.h</label>
+        <link refid="a00011_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h</label>
+        <link refid="a00017"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="a00335" prot="public">bgapi_device_type_queue_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00017_1a3dd49962f26f039e2de74cbb8efaf7bc" prot="public" static="no">
+        <name>SL_BT_API_QUEUE_LEN</name>
+        <initializer>30</initializer>
+        <briefdescription>
+<para>Adaptation layer between host application and SL_BT_API protocol. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="1">License</heading>
+</para><para><bold>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</bold></para><para>The licensor of this software is Silicon Laboratories Inc. Your use of this software is governed by the terms of Silicon Labs Master Software License Agreement (MSLA) available at www.silabs.com/about-us/legal/master-software-license-agreement. This software is distributed to you in Source Code format and is governed by the sections of the MSLA applicable to Source Code. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="92" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00017_1a9df08114564472e498713dcb8cbfa795" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* tx_func) (uint32_t msg_len, uint8_t *msg_data)</definition>
+        <argsstring>)(uint32_t msg_len, uint8_t *msg_data)</argsstring>
+        <name>tx_func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that sends a message to the serial port.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the message </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="120" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00017_1a5448735ba6b365dc20a8fcdfabd12cb6" prot="public" static="no">
+        <type>int32_t(*</type>
+        <definition>typedef int32_t(* rx_func) (uint32_t dataLength, uint8_t *data)</definition>
+        <argsstring>)(uint32_t dataLength, uint8_t *data)</argsstring>
+        <name>rx_func</name>
+        <briefdescription>
+<para>Function that reads data from serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dataLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of bytes to read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer used for storing the data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of bytes read or -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="129" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00017_1a6157949718fa91b831b1f7281ed3ae65" prot="public" static="no">
+        <type>int32_t(*</type>
+        <definition>typedef int32_t(* rx_peek_func) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>rx_peek_func</name>
+        <briefdescription>
+<para>Returns the number of bytes in the input buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of bytes in the input buffer or -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="135" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="a00017_1aa2bc03a087d5abe41bb3ac2ebe155b65" prot="public" static="no" mutable="no">
+        <type><ref refid="a00335" kindref="compound">bgapi_device_type_queue_t</ref></type>
+        <definition>bgapi_device_type_queue_t sl_bt_api_queue</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_api_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00017_1a536a555e0237626336ff3e3d13b15013" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* sl_bt_api_output) (uint32_t len1, uint8_t *data1)</definition>
+        <argsstring>)(uint32_t len1, uint8_t *data1)</argsstring>
+        <name>sl_bt_api_output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00017_1a257724d608feab4dbcd7e63b070d6642" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t(* sl_bt_api_input) (uint32_t len1, uint8_t *data1)</definition>
+        <argsstring>)(uint32_t len1, uint8_t *data1)</argsstring>
+        <name>sl_bt_api_input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00017_1afab00020fb30e21c3e69278a561f3ec2" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t(* sl_bt_api_peek) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>sl_bt_api_peek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="158" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00017_1ac71dcbcbcbcd2b7bddf9d4fdc2f73b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sli_bgapi_register_device</definition>
+        <argsstring>(bgapi_device_type_queue_t *queue)</argsstring>
+        <name>sli_bgapi_register_device</name>
+        <param>
+          <type><ref refid="a00335" kindref="compound">bgapi_device_type_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00017_1a5fbbe2edf75332ca47596dffd526aa2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sli_bgapi_device_queue_has_events</definition>
+        <argsstring>(bgapi_device_type_queue_t *device_queue)</argsstring>
+        <name>sli_bgapi_device_queue_has_events</name>
+        <param>
+          <type><ref refid="a00335" kindref="compound">bgapi_device_type_queue_t</ref> *</type>
+          <declname>device_queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00017_1a432799ad89741fd76857b7c348c80c15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sli_bgapi_other_events_in_queue</definition>
+        <argsstring>(enum sl_bgapi_dev_types my_device_type)</argsstring>
+        <name>sli_bgapi_other_events_in_queue</name>
+        <param>
+          <type>enum sl_bgapi_dev_types</type>
+          <declname>my_device_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00017_1aaa2773d39e49c10968432c69349cb1f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sli_bgapi_get_event</definition>
+        <argsstring>(int block, sl_bt_msg_t *event, bgapi_device_type_queue_t *device_queue)</argsstring>
+        <name>sli_bgapi_get_event</name>
+        <param>
+          <type>int</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type><ref refid="a00027_1ga4133c50f6e7679f5ed2d48ad98d3690f" kindref="member">sl_bt_msg_t</ref> *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type><ref refid="a00335" kindref="compound">bgapi_device_type_queue_t</ref> *</type>
+          <declname>device_queue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00017_1aaca3da788b31fe34a7721be7b634f88a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_api_initialize</definition>
+        <argsstring>(tx_func ofunc, rx_func ifunc)</argsstring>
+        <name>sl_bt_api_initialize</name>
+        <param>
+          <type>tx_func</type>
+          <declname>ofunc</declname>
+        </param>
+        <param>
+          <type>rx_func</type>
+          <declname>ifunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize NCP host Bluetooth API.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ofunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function for sending api messages </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ifunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function for receiving api messages </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status code </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00017_1a8a00aea3f2067914cd785b08ef85c257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_api_initialize_nonblock</definition>
+        <argsstring>(tx_func ofunc, rx_func ifunc, rx_peek_func pfunc)</argsstring>
+        <name>sl_bt_api_initialize_nonblock</name>
+        <param>
+          <type>tx_func</type>
+          <declname>ofunc</declname>
+        </param>
+        <param>
+          <type>rx_func</type>
+          <declname>ifunc</declname>
+        </param>
+        <param>
+          <type>rx_peek_func</type>
+          <declname>pfunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize NCP host Bluetooth API.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ofunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function for sending api messages </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ifunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function for receiving api messages </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pfunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function for getting the number of bytes in the input buffer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status code </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00017_1a0eee697ef05614cc46d22c7d439446d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_host_handle_command</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_host_handle_command</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00017_1ad5df0d4f514b00b4790543564dba224c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_host_handle_command_noresponse</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_host_handle_command_noresponse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00017_1a26879d17b0968b8795970bbc38fe095e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_wait_event</definition>
+        <argsstring>(sl_bt_msg_t *p)</argsstring>
+        <name>sl_bt_wait_event</name>
+        <param>
+          <type><ref refid="a00027_1ga4133c50f6e7679f5ed2d48ad98d3690f" kindref="member">sl_bt_msg_t</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00017_1a7286fac9d225410268ecfddbdae26256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00027_1ga4133c50f6e7679f5ed2d48ad98d3690f" kindref="member">sl_bt_msg_t</ref> *</type>
+        <definition>sl_bt_msg_t* sli_wait_for_bgapi_message</definition>
+        <argsstring>(sl_bt_msg_t *response_buf)</argsstring>
+        <name>sli_wait_for_bgapi_message</name>
+        <param>
+          <type><ref refid="a00027_1ga4133c50f6e7679f5ed2d48ad98d3690f" kindref="member">sl_bt_msg_t</ref> *</type>
+          <declname>response_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="163" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#ifndef<sp/>SL_BT_NCP_HOST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_NCP_HOST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>is<sp/>an<sp/>adaptation<sp/>layer<sp/>between<sp/>host<sp/>application<sp/>and<sp/>SL_BT_API<sp/>protocol.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>It<sp/>provides<sp/>synchronization<sp/>mechanism<sp/>for<sp/>SL_BT_API-protocol<sp/>that<sp/>allows</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/>using<sp/>same<sp/>application<sp/>architecture<sp/>between<sp/>application<sp/>in<sp/>mcu<sp/>and<sp/>external</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/>host.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/>Synchronization<sp/>is<sp/>done<sp/>by<sp/>waiting<sp/>for<sp/>response<sp/>after<sp/>each<sp/>command.<sp/>If</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/>any<sp/>events<sp/>are<sp/>received<sp/>during<sp/>response<sp/>waiting,<sp/>they<sp/>are<sp/>queued<sp/>and</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/>delivered<sp/>next<sp/>time<sp/>sl_bt_wait_event<sp/>is<sp/>called.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/>Queue<sp/>length<sp/>is<sp/>controlled<sp/>by<sp/>defining<sp/>macro<sp/>&quot;SL_BT_API_QUEUE_LEN&quot;,<sp/>default<sp/>is<sp/>30.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/>Queue<sp/>length<sp/>depends<sp/>on<sp/>use<sp/>cases<sp/>and<sp/>allowed<sp/>host<sp/>memory<sp/>usage.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/>SL_BT_API<sp/>usage:</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Define<sp/>library,<sp/>it<sp/>must<sp/>be<sp/>defined<sp/>globally:</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SL_BT_API_DEFINE();</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Declare<sp/>and<sp/>define<sp/>output<sp/>function,<sp/>prototype<sp/>is:</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>my_output(uint16_t<sp/>len,uint8_t*<sp/>data);</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Function<sp/>sends<sp/>&quot;len&quot;<sp/>amount<sp/>of<sp/>data<sp/>from<sp/>pointer<sp/>&quot;data&quot;<sp/>to<sp/>device.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Declare<sp/>and<sp/>define<sp/>input<sp/>function,<sp/>prototype<sp/>is:</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>my_input(uint16_t<sp/>len,uint8_t*<sp/>data);</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Function<sp/>reads<sp/>&quot;len&quot;<sp/>amount<sp/>of<sp/>data<sp/>to<sp/>pointer<sp/>&quot;data&quot;<sp/>from<sp/>device.</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Function<sp/>return<sp/>nonzero<sp/>if<sp/>it<sp/>failed.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Initialize<sp/>library,and<sp/>provide<sp/>output<sp/>and<sp/>input<sp/>function:</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SL_BT_API_INITIALIZE(my_output,my_input);</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/><sp/>Receiving<sp/>event:</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Events<sp/>are<sp/>received<sp/>by<sp/>sl_bt_wait_event-function.</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/><sp/><sp/>prototype:</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl_bt_msg_t*<sp/>sl_bt_wait_event(void)</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Event<sp/>ID<sp/>can<sp/>be<sp/>read<sp/>from<sp/>header<sp/>of<sp/>event<sp/>by<sp/>SL_BT_API_MSG_ID-macro.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Event<sp/>data<sp/>can<sp/>be<sp/>accessed<sp/>thru<sp/>returned<sp/>pointer.</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Example:</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl_bt_msg_t<sp/>*p;</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>p=sl_bt_wait_event()</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(SL_BT_API_MSG_ID(p-&gt;header)==sl_bt_evt_gatt_server_characteristic_status_id)</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c=evt-&gt;evt_gatt_server_characteristic_status.connection;//accesses<sp/>connection<sp/>field<sp/>of<sp/>event<sp/>data</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/><sp/>Sending<sp/>commands:</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/><sp/><sp/>SL_BT_API-commands<sp/>can<sp/>be<sp/>sent<sp/>by<sp/>calling<sp/>helper<sp/>functions,<sp/>that<sp/>then<sp/>build<sp/>SL_BT_API-message<sp/>and<sp/>call<sp/>output-function.</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Function<sp/>then<sp/>waits<sp/>for<sp/>response<sp/>and<sp/>return<sp/>pointer<sp/>to<sp/>that<sp/>message.</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Example:</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//Test<sp/>that<sp/>connection<sp/>to<sp/>the<sp/>device<sp/>is<sp/>working</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(sl_bt_system_hello()<sp/>==<sp/>SL_STATUS_OK)</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>{//function<sp/>call<sp/>was<sp/>successful</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_MSC_VER<sp/><sp/>//msvc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>inline<sp/>__inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sl_bt_api.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SL_BT_API_QUEUE_LEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_API_QUEUE_LEN<sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="a00335" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>sl_bgapi_dev_types<sp/>device_type;<sp/></highlight><highlight class="comment">/*&lt;<sp/>Protocol/device<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>uint32_t<sp/>write_offset;<sp/></highlight><highlight class="comment">/*&lt;<sp/>Pointer<sp/>to<sp/>the<sp/>protocol<sp/>consumer&apos;s<sp/>write<sp/>offset<sp/>counter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>uint32_t<sp/>read_offset;<sp/></highlight><highlight class="comment">/*&lt;<sp/>Pointer<sp/>to<sp/>the<sp/>protocol<sp/>consumer&apos;s<sp/>write<sp/>offset<sp/>counter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><ref refid="a00327" kindref="compound">sl_bt_msg_t</ref><sp/>*buffer;<sp/></highlight><highlight class="comment">/*&lt;<sp/>Pointer<sp/>to<sp/>the<sp/>protocol<sp/>consumer&apos;s<sp/>event<sp/>queue<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>uint32_t<sp/>len;<sp/></highlight><highlight class="comment">/*&lt;<sp/>Number<sp/>of<sp/>events<sp/>possible<sp/>to<sp/>store<sp/>in<sp/>the<sp/>queue<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<sp/><ref refid="a00335" kindref="compound">bgapi_device_type_queue_t</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="a00335" kindref="compound">bgapi_device_type_queue_t</ref><sp/>sl_bt_api_queue;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">sl_status_t<sp/>sli_bgapi_register_device(<ref refid="a00335" kindref="compound">bgapi_device_type_queue_t</ref><sp/>*queue);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sli_bgapi_device_queue_has_events(<ref refid="a00335" kindref="compound">bgapi_device_type_queue_t</ref><sp/>*device_queue);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sli_bgapi_other_events_in_queue(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>sl_bgapi_dev_types<sp/>my_device_type);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">sl_status_t<sp/>sli_bgapi_get_event(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>block,<sp/><ref refid="a00327" kindref="compound">sl_bt_msg_t</ref><sp/>*event,<sp/><ref refid="a00335" kindref="compound">bgapi_device_type_queue_t</ref><sp/>*device_queue);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*tx_func)(uint32_t<sp/>msg_len,<sp/>uint8_t*<sp/>msg_data);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t(*rx_func)(uint32_t<sp/>dataLength,<sp/>uint8_t*<sp/><ref refid="a00327_1a5b2cd22e8f6e5bed5d0bbf759093047b" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t(*rx_peek_func)(void);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">sl_status_t<sp/>sl_bt_api_initialize(tx_func<sp/>ofunc,<sp/>rx_func<sp/>ifunc);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">sl_status_t<sp/>sl_bt_api_initialize_nonblock(tx_func<sp/>ofunc,<sp/>rx_func<sp/>ifunc,<sp/>rx_peek_func<sp/>pfunc);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>void(*sl_bt_api_output)(uint32_t<sp/>len1,<sp/>uint8_t*<sp/>data1);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/>(*sl_bt_api_input)(uint32_t<sp/>len1,<sp/>uint8_t*<sp/>data1);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t(*sl_bt_api_peek)(void);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_bt_host_handle_command();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_bt_host_handle_command_noresponse();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">sl_status_t<sp/>sl_bt_wait_event(<ref refid="a00327" kindref="compound">sl_bt_msg_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><ref refid="a00327" kindref="compound">sl_bt_msg_t</ref>*<sp/>sli_wait_for_bgapi_message(<ref refid="a00327" kindref="compound">sl_bt_msg_t</ref><sp/>*response_buf);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h"/>
+  </compounddef>
+</doxygen>

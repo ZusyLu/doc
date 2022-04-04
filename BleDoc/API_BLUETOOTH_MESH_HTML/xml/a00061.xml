@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00061" kind="group">
+    <compoundname>sl_btmesh_evt_prov_delete_ddb_entry_complete</compoundname>
+    <title>sl_btmesh_evt_prov_delete_ddb_entry_complete</title>
+    <innerclass refid="a00367" prot="public">sl_btmesh_evt_prov_delete_ddb_entry_complete_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00061_1gad431d3b9826daac01cc5137403b8e362" prot="public" static="no">
+        <type>struct <ref refid="a00367" kindref="compound">sl_btmesh_evt_prov_delete_ddb_entry_complete_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_prov_delete_ddb_entry_complete_s sl_btmesh_evt_prov_delete_ddb_entry_complete_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_prov_delete_ddb_entry_complete_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1489" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00061_1ga0169e4254c3e11eeaf4d1f0fcbb5a5d1" prot="public" static="no">
+        <name>sl_btmesh_evt_prov_delete_ddb_entry_complete_id</name>
+        <initializer>0x1a1500a8</initializer>
+        <briefdescription>
+<para>Identifier of the delete_ddb_entry_complete event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2102" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Deleting a DDB entry has been completed. </para>    </briefdescription>
+    <detaileddescription>
+<para>See the result code for operation status. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00307" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_prov_initialized_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00307_1a24381f7eaab61acffda8a4fd1fd2d1a0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_prov_initialized_s::networks</definition>
+        <argsstring></argsstring>
+        <name>networks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of network keys that the Provisioner has </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1710" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00307_1ae7620987d5cbedf1c1597cc583294cd8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_prov_initialized_s::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unicast address of the primary element of the Provisioner </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1711" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00307_1a9ebc3b4ac3f4d2eee2a97062773c174f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_prov_initialized_s::iv_index</definition>
+        <argsstring></argsstring>
+        <name>iv_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IVI for network primary network (index 0) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1713" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1713" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the initialized event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1709" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1708" bodyend="1714"/>
+    <listofallmembers>
+      <member refid="a00307_1ae7620987d5cbedf1c1597cc583294cd8" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_initialized_s</scope><name>address</name></member>
+      <member refid="a00307_1a9ebc3b4ac3f4d2eee2a97062773c174f" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_initialized_s</scope><name>iv_index</name></member>
+      <member refid="a00307_1a24381f7eaab61acffda8a4fd1fd2d1a0" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_initialized_s</scope><name>networks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

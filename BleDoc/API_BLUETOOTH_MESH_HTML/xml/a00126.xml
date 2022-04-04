@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00126" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_dcd_data_end</compoundname>
+    <title>sl_btmesh_evt_config_client_dcd_data_end</title>
+    <innerclass refid="a00567" prot="public">sl_btmesh_evt_config_client_dcd_data_end_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00126_1ga5d6fd73881bedc7f5ab72bdae98c250b" prot="public" static="no">
+        <type>struct <ref refid="a00567" kindref="compound">sl_btmesh_evt_config_client_dcd_data_end_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_dcd_data_end_s sl_btmesh_evt_config_client_dcd_data_end_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_dcd_data_end_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7216" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00126_1ga0d6ee9371faee5e346cde35e62ab8740" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_dcd_data_end_id</name>
+        <initializer>0x1a2700a8</initializer>
+        <briefdescription>
+<para>Identifier of the dcd_data_end event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7203" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Terminating event for node composition data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

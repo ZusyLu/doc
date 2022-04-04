@@ -1,0 +1,1035 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00140" kind="group">
+    <compoundname>sl_btmesh_sensor_client</compoundname>
+    <title>Bluetooth Mesh Sensor Client</title>
+    <innergroup refid="a00141">sl_btmesh_evt_sensor_client_descriptor_status</innergroup>
+    <innergroup refid="a00142">sl_btmesh_evt_sensor_client_cadence_status</innergroup>
+    <innergroup refid="a00143">sl_btmesh_evt_sensor_client_settings_status</innergroup>
+    <innergroup refid="a00144">sl_btmesh_evt_sensor_client_setting_status</innergroup>
+    <innergroup refid="a00145">sl_btmesh_evt_sensor_client_status</innergroup>
+    <innergroup refid="a00146">sl_btmesh_evt_sensor_client_column_status</innergroup>
+    <innergroup refid="a00147">sl_btmesh_evt_sensor_client_series_status</innergroup>
+    <innergroup refid="a00148">sl_btmesh_evt_sensor_client_publish</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00140_1gace1470bf47a8a57bf4e7e2bc9be7ef93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_init</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_sensor_client_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Sensor Client model. Sensor Client does not have any internal configuration, it only activates the model in the Bluetooth mesh stack.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9486" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00140_1gada122a809870e517797e448d0694a479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_deinit</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btmesh_sensor_client_deinit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialize the Sensor Client model. There are no sensor-specific configurations to reset. Normally, models are initialized at boot and never deinitialized.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9498" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00140_1ga7beb20fefaa43f1288871bf71d23c9ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_get_descriptor</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint16_t property_id)</argsstring>
+        <name>sl_btmesh_sensor_client_get_descriptor</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Sensor Descriptor state of one specific sensor or all sensors within a model. Results in a Sensor Descriptor Status event</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to model configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No flags defined currently </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ProperyID for the sensor (optional). Range: 0x0001 - 0xffff for a specific device property ID or 0x0000 to get all (the value 0x0000 is prohibited as a real ID).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9517" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00140_1ga2c0412600fa128aa2f9a4a664c7fd2e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_get</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint16_t property_id)</argsstring>
+        <name>sl_btmesh_sensor_client_get</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Sensor Get message to fetch the Sensor Data state of one specific sensor given by its Property ID, results in a Sensor Status event. The Property ID 0x0000 can be used to fetch all sensor values present at a server element.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to model configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No flags defined currently </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property ID for the sensor. Range: 0x0001 - 0x0ffff for a specific device property, or 0x0000 when not used to get values for all sensors present in the element.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9542" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00140_1ga2c48088fd1fcc6825a4c69c87b6473a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_get_column</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint16_t property_id, size_t column_id_len, const uint8_t *column_id)</argsstring>
+        <name>sl_btmesh_sensor_client_get_column</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>column_id_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>column_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a Sensor Series Column state, results in a Sensor Column Status event.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to model configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No flags defined currently </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property ID for the sensor. Range: 0x0001 - 0x0ffff for a specific device property, the value 0x0000 is prohibited. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">column_id_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>column_id</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">column_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw value identifying a column</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9565" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00140_1ga831623f315c402d1834bf96221be94d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_get_series</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint16_t property_id, size_t column_ids_len, const uint8_t *column_ids)</argsstring>
+        <name>sl_btmesh_sensor_client_get_series</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>column_ids_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>column_ids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a Sensor Series Column state, which results in a Sensor Series Status event.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to model configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No flags defined currently </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property ID for the sensor. Range: 0x0001 - 0x0ffff for a specific device property, the value 0x0000 is prohibited. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">column_ids_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>column_ids</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">column_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw values identifying starting and ending columns</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9591" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00140_1gad2cc5ec56c7a86674558b09b3f11ad36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_get_cadence</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint16_t property_id)</argsstring>
+        <name>sl_btmesh_sensor_client_get_cadence</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Sensor Get Cadence message to get the Sensor Cadence state, which results in a Sensor Cadence Status message.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to model configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No flags defined currently </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property ID for the sensor. Range: 0x0001 - 0x0ffff for a specific device property, the value 0x0000 is prohibited.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9615" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00140_1ga5f2d21f60ce060848adda5efdb896351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_set_cadence</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint16_t property_id, size_t params_len, const uint8_t *params)</argsstring>
+        <name>sl_btmesh_sensor_client_set_cadence</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>params_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Sensor Cadence Set message, either acknowledged or unacknowledged, depending on the message flags. Acknowledged message results in a Cadence Status reply message and event. The server must publish its new state in any case.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to model configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit 1 (0x02) defines whether response is required. If set to 1, SET CADENCE message will be sent, zero will send SET CADENCE UNACKNOWLEDGED </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property ID for the sensor. Range: 0x0001 - 0x0ffff for a specific device property, the value 0x0000 is prohibited. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">params_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>params</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte array containing serialized fields of Sensor Cadence state, excluding the property ID<itemizedlist>
+<listitem><para>Fast Cadence Period Divisor, 7 bits</para></listitem><listitem><para>Status Trigger type, 1 bit (0 = discrete value, 1 = percentage)</para></listitem><listitem><para>Status Trigger Delta Down, variable length</para></listitem><listitem><para>Status Trigger Delta Up, variable length</para></listitem><listitem><para>Status Min Interval, 8 bits, representing a power of 2 milliseconds. Valid range is 0-26</para></listitem><listitem><para>Fast Cadence Low, variable length, lower bound for the fast cadence range</para></listitem><listitem><para>Low Cadence Low, variable length, higher bound for the fast cadence range</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9654" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00140_1ga0c2e8d16490d4e41fc27bbe96e0e9fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_get_settings</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint16_t property_id)</argsstring>
+        <name>sl_btmesh_sensor_client_get_settings</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Sensor Settings Get message to fetch the Sensor Property IDs present for the given sensor, which results in a Sensor Settings Status event.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to model configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No flags defined currently </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property ID for the sensor. Range: 0x0001 - 0x0ffff for a specific device property, the value 0x0000 is prohibited.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9678" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00140_1ga45880c69ebd1921d1949fd803e71b6d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_get_setting</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint16_t property_id, uint16_t setting_id)</argsstring>
+        <name>sl_btmesh_sensor_client_get_setting</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>setting_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Sensor Get Setting message to get the value of a specific setting for the given sensor, which results in a Sensor Setting Status event.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to model configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No flags defined currently </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property ID for the sensor. Range: 0x0001 - 0x0ffff for a specific device property, the value 0x0000 is prohibited. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">setting_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sensor Setting Property ID field identifying the device property of a setting. Range: 0x0001 - 0xffff, 0x0000 is prohibited.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9702" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00140_1ga400688802a12a543a3e579aabbcc2599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_sensor_client_set_setting</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint16_t property_id, uint16_t setting_id, size_t raw_value_len, const uint8_t *raw_value)</argsstring>
+        <name>sl_btmesh_sensor_client_set_setting</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>setting_id</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>raw_value_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>raw_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send Sensor Setting Set message to update the value of a specific setting for the given sensor, either acknowledged or unacknowledged depending on the message flags. Only acknowledged requests will have a direct Sensor Setting Status reply. The server must publish its new state in any case.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to model configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit 1 (0x02) defines whether response is required. If set to 1, SET SETTING message is sent, zero will use SET SETTING UNACKNOWLEDGED. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property ID for the sensor. Range: 0x0001 - 0x0ffff for a specific device property, the value 0x0000 is prohibited. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">setting_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sensor Setting Property ID field identifying the device property of a setting. Range: 0x0001 - 0xffff, 0x0000 is prohibited. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">raw_value_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>raw_value</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">raw_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sensor Setting raw value. Size and representation depends on the type defined by the Sensor Setting Property ID.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9734" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00140_1gaf60fa19c4ff49956ce517d9879a9ec8b" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_init_id</name>
+        <initializer>0x00490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9146" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga49da13cd3180b9b7e702d02dc92609d1" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_deinit_id</name>
+        <initializer>0x01490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9147" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga587f37e92c15048bf0977d6545a6ad34" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_get_descriptor_id</name>
+        <initializer>0x02490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9148" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga0cc86639e72f67d46e46f5b4d6eae113" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_get_id</name>
+        <initializer>0x03490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9149" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga6b9d671bffa20a60e66c3946f4287f2c" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_get_column_id</name>
+        <initializer>0x04490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9150" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga71f06e360f50f4453732d0533811b63c" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_get_series_id</name>
+        <initializer>0x05490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9151" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga3bb47a3b9aa53c2700e35f31cfeff1b5" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_get_cadence_id</name>
+        <initializer>0x06490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9152" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga769da9355961f0e80d2349cb345b39c2" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_set_cadence_id</name>
+        <initializer>0x07490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9153" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga251503cb52023be913372188cd613636" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_get_settings_id</name>
+        <initializer>0x08490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9154" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga5bd3e2a55b7059f04e8e9da9fac368dd" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_get_setting_id</name>
+        <initializer>0x09490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9155" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga57a25864b147623070250091337b90a2" prot="public" static="no">
+        <name>sl_btmesh_cmd_sensor_client_set_setting_id</name>
+        <initializer>0x0a490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9156" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga959cdcb9abf65777b50fe4b9d73757c8" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_init_id</name>
+        <initializer>0x00490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9157" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1gacf0b737a4275a84bdc9b970c1fee732b" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_deinit_id</name>
+        <initializer>0x01490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9158" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga8651be5e85fa8d78f422bdce6dbaf1d5" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_get_descriptor_id</name>
+        <initializer>0x02490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9159" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga4159ea722d85237d4ca541ab6474667f" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_get_id</name>
+        <initializer>0x03490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9160" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga25fb218df637af1de10d01929c5750de" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_get_column_id</name>
+        <initializer>0x04490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9161" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1gab9876efc2354e6794582d3b14261dc96" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_get_series_id</name>
+        <initializer>0x05490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9162" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga46b6a0ce9abe8f94db90461d47dbd1f4" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_get_cadence_id</name>
+        <initializer>0x06490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9163" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1gaee2bb3e08ea0a156a715869338364341" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_set_cadence_id</name>
+        <initializer>0x07490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9164" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1gaa36b7de839eecf58d4a88042fd7bdbdb" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_get_settings_id</name>
+        <initializer>0x08490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9165" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1gaff237b438c711344d6f3d2ccc78b559a" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_get_setting_id</name>
+        <initializer>0x09490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9166" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00140_1ga125bc8b2d7f8a4b84926c9f578be404b" prot="public" static="no">
+        <name>sl_btmesh_rsp_sensor_client_set_setting_id</name>
+        <initializer>0x0a490028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9167" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Sensor Client. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class provides the commands and messages to interface with the Sensor Client model. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

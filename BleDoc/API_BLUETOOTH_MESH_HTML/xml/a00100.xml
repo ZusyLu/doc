@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00100" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_request_modified</compoundname>
+    <title>sl_btmesh_evt_config_client_request_modified</title>
+    <innerclass refid="a00463" prot="public">sl_btmesh_evt_config_client_request_modified_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00100_1ga41b28b7b3f9a15891bfb824e6e3848b1" prot="public" static="no">
+        <type>struct <ref refid="a00463" kindref="compound">sl_btmesh_evt_config_client_request_modified_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_request_modified_s sl_btmesh_evt_config_client_request_modified_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_request_modified_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6455" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00100_1ga2859952c8c751c7b70e6cd3a9dd3fa11" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_request_modified_id</name>
+        <initializer>0x002700a8</initializer>
+        <briefdescription>
+<para>Identifier of the request_modified event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6445" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6445" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Pending request parameters have been updated. </para>    </briefdescription>
+    <detaileddescription>
+<para>The application may call <ref refid="a00099_1gafe3d51666aaa3adadfb511fbd7172440" kindref="member">sl_btmesh_config_client_get_request_status</ref> to retrieve the current status of the request. This event is generated when the timeout of a request is extended because the request is acknowledged by a Friend node on behalf of the LPN, which is the destination of the request. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

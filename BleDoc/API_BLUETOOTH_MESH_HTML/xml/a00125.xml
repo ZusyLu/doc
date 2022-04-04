@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00125" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_dcd_data</compoundname>
+    <title>sl_btmesh_evt_config_client_dcd_data</title>
+    <innerclass refid="a00563" prot="public">sl_btmesh_evt_config_client_dcd_data_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00125_1gad129983d8c4623d84275f0e414007e92" prot="public" static="no">
+        <type>struct <ref refid="a00563" kindref="compound">sl_btmesh_evt_config_client_dcd_data_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_dcd_data_s sl_btmesh_evt_config_client_dcd_data_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_dcd_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7192" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00125_1ga01b9bafe4e77a5219986a3499ae802f7" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_dcd_data_id</name>
+        <initializer>0x192700a8</initializer>
+        <briefdescription>
+<para>Identifier of the dcd_data event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7180" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Event reporting queried composition data page contents. </para>    </briefdescription>
+    <detaileddescription>
+<para>The contents are requested using the <ref refid="a00099_1ga045d778bdf48c4b9fb6f23ec8d6c989d" kindref="member">sl_btmesh_config_client_get_dcd</ref> command. More than one event may be generated. Page contents are terminated by a <ref refid="a00126" kindref="compound">sl_btmesh_evt_config_client_dcd_data_end</ref> event. Note that the interpretation of the received data is page-specific. Page 0 contains the element and model layout of the node. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

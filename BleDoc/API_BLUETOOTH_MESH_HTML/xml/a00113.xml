@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00113" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_subs_list_end</compoundname>
+    <title>sl_btmesh_evt_config_client_subs_list_end</title>
+    <innerclass refid="a00515" prot="public">sl_btmesh_evt_config_client_subs_list_end_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00113_1ga3310e4d5ebb70417c5d8765d80f956d7" prot="public" static="no">
+        <type>struct <ref refid="a00515" kindref="compound">sl_btmesh_evt_config_client_subs_list_end_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_subs_list_end_s sl_btmesh_evt_config_client_subs_list_end_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_subs_list_end_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6818" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00113_1ga2f9a4a93593d3aafbf8e72db53e5fd4f" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_subs_list_end_id</name>
+        <initializer>0x0d2700a8</initializer>
+        <briefdescription>
+<para>Identifier of the subs_list_end event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6805" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6805" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Terminating event for model subscription list. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

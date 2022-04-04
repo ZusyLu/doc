@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00023" kind="group">
+    <compoundname>sl_btmesh_evt_node_provisioned</compoundname>
+    <title>sl_btmesh_evt_node_provisioned</title>
+    <innerclass refid="a00231" prot="public">sl_btmesh_evt_node_provisioned_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00023_1ga74f2a47e13ba32ed1e8c6bac78e9ca84" prot="public" static="no">
+        <type>struct <ref refid="a00231" kindref="compound">sl_btmesh_evt_node_provisioned_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_node_provisioned_s sl_btmesh_evt_node_provisioned_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_node_provisioned_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="126" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00023_1ga46d3bb7a66b15d85ddc724d2ad11cdf8" prot="public" static="no">
+        <name>sl_btmesh_evt_node_provisioned_id</name>
+        <initializer>0x011400a8</initializer>
+        <briefdescription>
+<para>Identifier of the provisioned event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="337" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The node has received provisioning data (address allocation and a network key) from the Provisioner. </para>    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="a00030" kindref="compound">sl_btmesh_evt_node_key_added</ref> event will follow for the network key.</para><para>The node is now ready for further configuration by the Provisioner but is not yet ready for communication with other nodes in the network (it does not have any application keys and its models have not been set up). </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

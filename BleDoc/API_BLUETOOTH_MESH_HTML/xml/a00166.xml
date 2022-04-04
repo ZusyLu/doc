@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00166" kind="group">
+    <compoundname>sl_btmesh_evt_scene_client_status</compoundname>
+    <title>sl_btmesh_evt_scene_client_status</title>
+    <innerclass refid="a00699" prot="public">sl_btmesh_evt_scene_client_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00166_1ga98e99420bbe94b5676ceb8d57f42e122" prot="public" static="no">
+        <type>struct <ref refid="a00699" kindref="compound">sl_btmesh_evt_scene_client_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_scene_client_status_s sl_btmesh_evt_scene_client_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_scene_client_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10721" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10786" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00166_1gac9191cccf10f93379c0d1b1ae294fdd1" prot="public" static="no">
+        <name>sl_btmesh_evt_scene_client_status_id</name>
+        <initializer>0x004f00a8</initializer>
+        <briefdescription>
+<para>Identifier of the status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10766" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10766" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Event indicating an incoming Scene Status message. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00081" kind="group">
+    <compoundname>sl_bt_nvm_keys</compoundname>
+    <title>Defined Keys</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00081_1ga5766bebf45d2ee4fffe50c2d178680ec" prot="public" static="no">
+        <name>SL_BT_NVM_KEY_CTUNE</name>
+        <initializer>0x32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Crystal tuning value override </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5997" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5997" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Define keys </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

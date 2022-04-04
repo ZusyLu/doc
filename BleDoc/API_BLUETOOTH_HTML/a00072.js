@@ -1,0 +1,6 @@
+var a00072 =
+[
+    [ "SL_BT_GATTDB_DESCRIPTOR_READ", "a00072.html#ga36212f3baef6b4659563846c2cd0bbaf", null ],
+    [ "SL_BT_GATTDB_DESCRIPTOR_WRITE", "a00072.html#ga8175775cdc729f42df7ffbde47ba7923", null ],
+    [ "SL_BT_GATTDB_DESCRIPTOR_LOCAL_ONLY", "a00072.html#ga9fa472b104567226fc65db01d77b00e3", null ]
+];

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00043" kind="group">
+    <compoundname>sl_bt_evt_scanner_scan_report</compoundname>
+    <title>sl_bt_evt_scanner_scan_report</title>
+    <innerclass refid="a00171" prot="public">sl_bt_evt_scanner_scan_report_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00043_1ga9cd3904e92130f54ec186d97cf1c966e" prot="public" static="no">
+        <type>struct <ref refid="a00171" kindref="compound">sl_bt_evt_scanner_scan_report_s</ref></type>
+        <definition>typedef struct sl_bt_evt_scanner_scan_report_s sl_bt_evt_scanner_scan_report_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_scanner_scan_report_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2155" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2283" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00043_1ga075383f7c602d73b84128b4a227c686b" prot="public" static="no">
+        <name>sl_bt_evt_scanner_scan_report_id</name>
+        <initializer>0x010500a0</initializer>
+        <briefdescription>
+<para>Identifier of the scan_report event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2201" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Reports an advertising or scan response packet that is received by the device&apos;s radio while in scanning mode. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

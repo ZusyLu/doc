@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00047" kind="group">
+    <compoundname>sl_bt_evt_sync_closed</compoundname>
+    <title>sl_bt_evt_sync_closed</title>
+    <innerclass refid="a00183" prot="public">sl_bt_evt_sync_closed_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00047_1ga1e26c081e7729cbc5f443aae61305d3a" prot="public" static="no">
+        <type>struct <ref refid="a00183" kindref="compound">sl_bt_evt_sync_closed_s</ref></type>
+        <definition>typedef struct sl_bt_evt_sync_closed_s sl_bt_evt_sync_closed_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_sync_closed_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2419" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2561" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00047_1ga688ef2ac98e910a2388df7017a8d5ea7" prot="public" static="no">
+        <name>sl_bt_evt_sync_closed_id</name>
+        <initializer>0x014200a0</initializer>
+        <briefdescription>
+<para>Identifier of the closed event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2548" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2548" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates that periodic advertising synchronization was lost or a synchronization establishment procedure was canceled. </para>    </briefdescription>
+    <detaileddescription>
+<para>The synchronization establishment procedure can be canceled explicitly by the application by issuing command <ref refid="a00044_1ga628b8ea37bf3347475eb01b0971981aa" kindref="member">sl_bt_sync_close</ref>, or internally due to synchronization failing. Synchronization can fail for example due to incompatible sync CTE type. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00033" kind="group">
+    <compoundname>sl_bt_evt_system_error</compoundname>
+    <title>sl_bt_evt_system_error</title>
+    <innerclass refid="a00147" prot="public">sl_bt_evt_system_error_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00033_1gaf63054ad7b11697626108ade80b74729" prot="public" static="no">
+        <type>struct <ref refid="a00147" kindref="compound">sl_bt_evt_system_error_s</ref></type>
+        <definition>typedef struct sl_bt_evt_system_error_s sl_bt_evt_system_error_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_system_error_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00033_1gabb9f5887fe37a7246c9e9b1b2b47b2e4" prot="public" static="no">
+        <name>sl_bt_evt_system_error_id</name>
+        <initializer>0x060100a0</initializer>
+        <briefdescription>
+<para>Identifier of the error event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="676" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates that an error has occurred. </para>    </briefdescription>
+    <detaileddescription>
+<para>See error codes table for more information. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

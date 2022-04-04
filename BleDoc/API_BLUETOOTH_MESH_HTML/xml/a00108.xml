@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00108" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_bindings_list</compoundname>
+    <title>sl_btmesh_evt_config_client_bindings_list</title>
+    <innerclass refid="a00495" prot="public">sl_btmesh_evt_config_client_bindings_list_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00108_1gaccd2061eaa90a627cc968fb7f2045acb" prot="public" static="no">
+        <type>struct <ref refid="a00495" kindref="compound">sl_btmesh_evt_config_client_bindings_list_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_bindings_list_s sl_btmesh_evt_config_client_bindings_list_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_bindings_list_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6667" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00108_1ga05c34eeb6e36f1b18e07c46d81f06500" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_bindings_list_id</name>
+        <initializer>0x082700a8</initializer>
+        <briefdescription>
+<para>Identifier of the bindings_list event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6655" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6655" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This event contains a list of key indices for the application keys which are bound to a model. </para>    </briefdescription>
+    <detaileddescription>
+<para>The list is requested using the <ref refid="a00099_1ga033df184a3316eb016c09c0f05fa2f6f" kindref="member">sl_btmesh_config_client_list_bindings</ref> command. More than one such event may be generated; the list contents are terminated by a <ref refid="a00109" kindref="compound">sl_btmesh_evt_config_client_bindings_list_end</ref> event. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

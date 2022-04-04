@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00407" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_health_server_test_request_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00407_1aaf5d72da54cb11f2fa66fa0d79bff7de" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_health_server_test_request_s::server_address</definition>
+        <argsstring></argsstring>
+        <name>server_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destination address the message was sent to. It can be either the Server model element&apos;s unicast address, or a subscription address of the Server model. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3612" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00407_1ac024f2d748a0149f5402be5777e55413" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_health_server_test_request_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Server model element index. Identifies the Server model that received the request as well as the element on which the test is to be performed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3616" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00407_1a655fe5abd7ae3fc83de0d56b18008f7a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_health_server_test_request_s::client_address</definition>
+        <argsstring></argsstring>
+        <name>client_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address of the client model which sent the message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3620" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00407_1a09f3b998750a4ea951c6bb4bd9e135f2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_health_server_test_request_s::appkey_index</definition>
+        <argsstring></argsstring>
+        <name>appkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The application key index to use in encrypting the request. Any response sent must be encrypted using the same key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3622" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3622" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00407_1a116bc19156a41bd9a35e613efb83847b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_health_server_test_request_s::test_id</definition>
+        <argsstring></argsstring>
+        <name>test_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test ID </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3625" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3625" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00407_1a0230f573546936988dc1fe1f3cb46a3f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_health_server_test_request_s::vendor_id</definition>
+        <argsstring></argsstring>
+        <name>vendor_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bluetooth vendor ID used in the request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3626" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3626" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00407_1a92629064ef86f831c893fe3cb95d86a4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_health_server_test_request_s::response_required</definition>
+        <argsstring></argsstring>
+        <name>response_required</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Non-zero if client expects a response. The application should issue a <ref refid="a00073_1gaaaba6876271dfe06c7460072ff4f4499" kindref="member">sl_btmesh_health_server_send_test_response</ref> once it has processed the request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3627" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3627" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the test_request event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3611" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3610" bodyend="3631"/>
+    <listofallmembers>
+      <member refid="a00407_1a09f3b998750a4ea951c6bb4bd9e135f2" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_health_server_test_request_s</scope><name>appkey_index</name></member>
+      <member refid="a00407_1a655fe5abd7ae3fc83de0d56b18008f7a" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_health_server_test_request_s</scope><name>client_address</name></member>
+      <member refid="a00407_1ac024f2d748a0149f5402be5777e55413" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_health_server_test_request_s</scope><name>elem_index</name></member>
+      <member refid="a00407_1a92629064ef86f831c893fe3cb95d86a4" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_health_server_test_request_s</scope><name>response_required</name></member>
+      <member refid="a00407_1aaf5d72da54cb11f2fa66fa0d79bff7de" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_health_server_test_request_s</scope><name>server_address</name></member>
+      <member refid="a00407_1a116bc19156a41bd9a35e613efb83847b" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_health_server_test_request_s</scope><name>test_id</name></member>
+      <member refid="a00407_1a0230f573546936988dc1fe1f3cb46a3f" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_health_server_test_request_s</scope><name>vendor_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

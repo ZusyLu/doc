@@ -1,0 +1,1267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00039" kind="group">
+    <compoundname>sl_bt_advertiser</compoundname>
+    <title>Advertiser</title>
+    <innergroup refid="a00040">sl_bt_evt_advertiser_timeout</innergroup>
+    <innergroup refid="a00041">sl_bt_evt_advertiser_scan_request</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00039_1gab026dfc1026c15f4d41927eb7b94f12d" prot="public" static="no">
+        <name>sl_bt_advertiser_connectable_mode_t</name>
+        <enumvalue id="a00039_1ggab026dfc1026c15f4d41927eb7b94f12da1161c87e097d8deb50faa538dd5aecb8" prot="public">
+          <name>sl_bt_advertiser_non_connectable</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Non-connectable non-scannable. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00039_1ggab026dfc1026c15f4d41927eb7b94f12da39086de61e8095b5a86434fbb3595c97" prot="public">
+          <name>sl_bt_advertiser_directed_connectable</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Directed connectable <bold>(RESERVED, DO NOT USE)</bold> </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00039_1ggab026dfc1026c15f4d41927eb7b94f12da6cf3129bae68e5a4f0d87ff472ff10af" prot="public">
+          <name>sl_bt_advertiser_connectable_scannable</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Undirected connectable scannable. This mode can only be used in legacy advertising PDUs. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00039_1ggab026dfc1026c15f4d41927eb7b94f12da33ee16a5c3b7c3441d81023bda4b957c" prot="public">
+          <name>sl_bt_advertiser_scannable_non_connectable</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x3) Undirected scannable (Non-connectable but responds to scan requests) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00039_1ggab026dfc1026c15f4d41927eb7b94f12da4f0fa03db8f8158fb07d496b66f7671a" prot="public">
+          <name>sl_bt_advertiser_connectable_non_scannable</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x4) Undirected connectable non-scannable. This mode can only be used in extended advertising PDUs. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>These values define the available connectable modes, which indicate whether the device accepts connection requests or scan requests. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1444" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1443" bodyend="1467"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00039_1ga48e1183b45d4766eb1cd268fd30eff9c" prot="public" static="no">
+        <name>sl_bt_advertiser_discoverable_mode_t</name>
+        <enumvalue id="a00039_1gga48e1183b45d4766eb1cd268fd30eff9ca97e0f2fdb3120d6ba13160f8a58ea653" prot="public">
+          <name>sl_bt_advertiser_non_discoverable</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Not discoverable </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00039_1gga48e1183b45d4766eb1cd268fd30eff9ca4e7eef653bdd71d3bf20769c1541152b" prot="public">
+          <name>sl_bt_advertiser_limited_discoverable</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Discoverable using both limited and general discovery procedures </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00039_1gga48e1183b45d4766eb1cd268fd30eff9ca316930bccd17eee47d00789d3c8ed432" prot="public">
+          <name>sl_bt_advertiser_general_discoverable</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Discoverable using general discovery procedure </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00039_1gga48e1183b45d4766eb1cd268fd30eff9ca7644210cf513a0b48416b4fdeeeab0f5" prot="public">
+          <name>sl_bt_advertiser_broadcast</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x3) Device is not discoverable in either limited or generic discovery procedure but may be discovered using the Observation procedure. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00039_1gga48e1183b45d4766eb1cd268fd30eff9cacfb6e47c84e4b0a4c8a09910b859ad8b" prot="public">
+          <name>sl_bt_advertiser_user_data</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x4) Send advertising and/or scan response data defined by the user. The limited/general discoverable flags are defined by the user. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>These values define the available Discoverable Modes, which dictate how the device is visible to other devices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1476" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1475" bodyend="1495"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00039_1ga8627603adcd9fb1e6967e5e0e3313dcd" prot="public" static="no">
+        <name>sl_bt_advertiser_adv_address_type_t</name>
+        <enumvalue id="a00039_1gga8627603adcd9fb1e6967e5e0e3313dcda9dbeebd6eef4d695894ebbbae07c8cb3" prot="public">
+          <name>sl_bt_advertiser_identity_address</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Use public or static device address, or an identity address if privacy mode is enabled. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00039_1gga8627603adcd9fb1e6967e5e0e3313dcdaf16619b3fcb658de5406ab694f8cb5e9" prot="public">
+          <name>sl_bt_advertiser_non_resolvable</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Use non resolvable address type; advertising mode must also be non-connectable. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Address type to use for advertising. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1501" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1500" bodyend="1509"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00039_1gaa2006031a5d5b1bfdf9417b4c82b36f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_create_set</definition>
+        <argsstring>(uint8_t *handle)</argsstring>
+        <name>sl_bt_advertiser_create_set</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an advertising set. The handle of the created advertising set is returned in response.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1611" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1gaf75b70bbe86d5ce318e8e129aefb95cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_set_timing</definition>
+        <argsstring>(uint8_t handle, uint32_t interval_min, uint32_t interval_max, uint16_t duration, uint8_t maxevents)</argsstring>
+        <name>sl_bt_advertiser_set_timing</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>interval_min</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>interval_max</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>maxevents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the advertising timing parameters of the given advertising set. This setting will take effect next time that advertising is enabled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">interval_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Minimum advertising interval. Value in units of 0.625 ms<itemizedlist>
+<listitem><para>Range: 0x20 to 0xFFFF</para></listitem><listitem><para>Time range: 20 ms to 40.96 s</para></listitem></itemizedlist>
+</para><para>Default value: 100 ms </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">interval_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Maximum advertising interval. Value in units of 0.625 ms<itemizedlist>
+<listitem><para>Range: 0x20 to 0xFFFF</para></listitem><listitem><para>Time range: 20 ms to 40.96 s</para></listitem><listitem><para>Note: interval_max should be bigger than interval_min</para></listitem></itemizedlist>
+</para><para>Default value: 200 ms </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Advertising duration for this advertising set. Value 0 indicates no advertising duration limit and advertising continues until it is disabled. A non-zero value sets the duration in units of 10 ms. The duration begins at the start of the first advertising event of this advertising set.<itemizedlist>
+<listitem><para>Range: 0x0001 to 0xFFFF</para></listitem><listitem><para>Time range: 10 ms to 655.35 s</para></listitem></itemizedlist>
+</para><para>Default value: 0 </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">maxevents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>If non-zero, indicates the maximum number of advertising events to send before the advertiser is stopped. Value 0 indicates no maximum number limit.</para><para>Default value: 0 </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1655" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ga164b389d02a5aaa52ec3650afed4d0bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_set_phy</definition>
+        <argsstring>(uint8_t handle, uint8_t primary_phy, uint8_t secondary_phy)</argsstring>
+        <name>sl_bt_advertiser_set_phy</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>primary_phy</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>secondary_phy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set advertising PHYs of the given advertising set. This setting will take effect next time that advertising is enabled. The invalid parameter error is returned if a PHY value is invalid or the device does not support a given PHY.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">primary_phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Enum <ref refid="a00038_1ga05ce4496a6f87de7c67a9e32d816727c" kindref="member">sl_bt_gap_phy_t</ref>. The PHY on which the advertising packets are transmitted on the primary advertising channel. If legacy advertising PDUs are used, 1M PHY must be used. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_phy_1m (0x1):</bold> 1M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_coded (0x4):</bold> Coded PHY, 125k (S=8) or 500k (S=2)</para></listitem></itemizedlist>
+</para><para>Default value: <ref refid="a00038_1gga05ce4496a6f87de7c67a9e32d816727ca3ae0bf1d99d33066af4b6eea4b55414e" kindref="member">sl_bt_gap_phy_1m</ref> </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">secondary_phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Enum <ref refid="a00038_1ga05ce4496a6f87de7c67a9e32d816727c" kindref="member">sl_bt_gap_phy_t</ref>. The PHY on which the advertising packets are transmitted on the secondary advertising channel. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_phy_1m (0x1):</bold> 1M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_2m (0x2):</bold> 2M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_coded (0x4):</bold> Coded PHY, 125k (S=8) or 500k (S=2)</para></listitem></itemizedlist>
+</para><para>Default value: <ref refid="a00038_1gga05ce4496a6f87de7c67a9e32d816727ca3ae0bf1d99d33066af4b6eea4b55414e" kindref="member">sl_bt_gap_phy_1m</ref> </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1691" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ga72c78703b30d0a277d5ed92641a9f51b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_set_channel_map</definition>
+        <argsstring>(uint8_t handle, uint8_t channel_map)</argsstring>
+        <name>sl_bt_advertiser_set_channel_map</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel_map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the primary advertising channel map of the given advertising set. This setting will take effect next time that advertising is enabled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Advertising channel map which determines which of the three channels will be used for advertising. This value is given as a bitmask. Values:<itemizedlist>
+<listitem><para><bold>1:</bold> Advertise on CH37</para></listitem><listitem><para><bold>2:</bold> Advertise on CH38</para></listitem><listitem><para><bold>3:</bold> Advertise on CH37 and CH38</para></listitem><listitem><para><bold>4:</bold> Advertise on CH39</para></listitem><listitem><para><bold>5:</bold> Advertise on CH37 and CH39</para></listitem><listitem><para><bold>6:</bold> Advertise on CH38 and CH39</para></listitem><listitem><para><bold>7:</bold> Advertise on all channels</para></listitem></itemizedlist>
+</para><para>Recommended value: 7</para><para>Default value: 7 </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1720" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1gaa54a31f8af3b4c1d80351f038a84265f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_set_tx_power</definition>
+        <argsstring>(uint8_t handle, int16_t power, int16_t *set_power)</argsstring>
+        <name>sl_bt_advertiser_set_tx_power</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>power</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>set_power</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Limit the maximum advertising TX power on the given advertising set. If the value goes over the global value that was set using <ref refid="a00031_1gad099d114f8173c76f845098833db204e" kindref="member">sl_bt_system_set_max_tx_power</ref> command, the global value will be the maximum limit. The maximum TX power of legacy advertising is further constrained to be less than +10 dBm. Extended advertising TX power can be +10 dBm and over if Adaptive Frequency Hopping is enabled.</para><para>This setting will take effect next time advertising is enabled.</para><para>By default, maximum advertising TX power is limited by the global value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">power</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TX power in 0.1 dBm steps. For example, the value of 10 is 1 dBm and 55 is 5.5 dBm. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">set_power</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The selected maximum advertising TX power</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1744" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1gac6b6b84023d0433f0a5fdfec2077614b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_set_report_scan_request</definition>
+        <argsstring>(uint8_t handle, uint8_t report_scan_req)</argsstring>
+        <name>sl_bt_advertiser_set_report_scan_request</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>report_scan_req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable the scan request notification of a given advertising set. This setting will take effect next time that advertising is enabled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">report_scan_req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>If non-zero, enables scan request notification and scan requests will be reported as events.</para><para>Default value: 0 </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00041" kindref="compound">sl_bt_evt_advertiser_scan_request</ref> - Triggered when a scan request is received during advertising if the scan request notification is enabled by this command. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1769" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1gad15366970dca263ac51f7e99361d180f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_set_random_address</definition>
+        <argsstring>(uint8_t handle, uint8_t addr_type, bd_addr address, bd_addr *address_out)</argsstring>
+        <name>sl_bt_advertiser_set_random_address</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>addr_type</declname>
+        </param>
+        <param>
+          <type><ref refid="a00115" kindref="compound">bd_addr</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="a00115" kindref="compound">bd_addr</ref> *</type>
+          <declname>address_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the advertiser on an advertising set to use a random address. This overrides the default advertiser address which is either the public device address programmed at production or the address written into persistent storage using <ref refid="a00031_1ga37077c3856d5b506b9ce38a94fd59bdd" kindref="member">sl_bt_system_set_identity_address</ref> command. This setting is stored in RAM only and does not change the identity address in persistent storage.</para><para>When setting a resolvable random address, the address parameter is ignored. The stack generates a private resolvable random address and set it as the advertiser address. The generated address is returned in the response.</para><para>To use the default advertiser address, remove this setting using <ref refid="a00039_1ga60272cbb75a1a42b59d91b1f9408f8f4" kindref="member">sl_bt_advertiser_clear_random_address</ref> command.</para><para>Wrong state error is returned if advertising has been enabled on the advertising set. Invalid parameter error is returned if the advertising set handle is invalid or the address does not conforms to the Bluetooth specification.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">addr_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address type:<itemizedlist>
+<listitem><para><bold>1:</bold> Static device address</para></listitem><listitem><para><bold>2:</bold> Private resolvable random address</para></listitem><listitem><para><bold>3:</bold> Private non-resolvable random address. This type can only be used for non-connectable advertising. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The random address to set. Ignore this field when setting a resolvable random address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">address_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The resolvable random address set for the advetiser. Ignore this field when setting other types of random address.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1807" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ga60272cbb75a1a42b59d91b1f9408f8f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_clear_random_address</definition>
+        <argsstring>(uint8_t handle)</argsstring>
+        <name>sl_bt_advertiser_clear_random_address</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear the random address previously set for the advertiser address on an advertising set. A random address can be set using <ref refid="a00039_1gad15366970dca263ac51f7e99361d180f" kindref="member">sl_bt_advertiser_set_random_address</ref> command. The default advertiser address will be used after this operation.</para><para>The error SL_STATUS_INVALID_STATE is returned if advertising has been enabled on the advertising set. An invalid parameter error is returned if the advertising set handle is invalid.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1828" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1gad8b8655a767b206f788ee916ec8c678e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_set_configuration</definition>
+        <argsstring>(uint8_t handle, uint32_t configurations)</argsstring>
+        <name>sl_bt_advertiser_set_configuration</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>configurations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable advertising configuration flags on the given advertising set. The configuration change will take effect next time that advertising is enabled.</para><para>These configuration flags can be disabled using <ref refid="a00039_1gada85109d82a200762ccf4af77542a05a" kindref="member">sl_bt_advertiser_clear_configuration</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">configurations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Advertising configuration flags to enable. This value can be a bitmask of multiple flags. Flags:<itemizedlist>
+<listitem><para><bold>1 (Bit 0):</bold> Use legacy advertising PDUs.</para></listitem><listitem><para><bold>2 (Bit 1):</bold> Omit advertiser&apos;s address from all PDUs (anonymous advertising). This flag is effective only in extended advertising.</para></listitem><listitem><para><bold>4 (Bit 2):</bold> Use gap_non_resolvable address type. Advertising must be in non-connectable mode if this configuration is enabled.</para></listitem><listitem><para><bold>8 (Bit 3):</bold> Include TX power in advertising packets. This flag is effective only in extended advertising.</para></listitem></itemizedlist>
+</para><para>Default value: 1 </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1856" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1gada85109d82a200762ccf4af77542a05a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_clear_configuration</definition>
+        <argsstring>(uint8_t handle, uint32_t configurations)</argsstring>
+        <name>sl_bt_advertiser_clear_configuration</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>configurations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable advertising configuration flags on the given advertising set. The configuration change will take effect next time that advertising is enabled.</para><para>These configuration flags can be enabled using <ref refid="a00039_1gad8b8655a767b206f788ee916ec8c678e" kindref="member">sl_bt_advertiser_set_configuration</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">configurations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising configuration flags to disable. This value can be a bitmask of multiple flags. See <ref refid="a00039_1gad8b8655a767b206f788ee916ec8c678e" kindref="member">sl_bt_advertiser_set_configuration</ref> for possible flags.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1875" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ga706aeaf60049280fe9cc256f20ad4113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_set_data</definition>
+        <argsstring>(uint8_t handle, uint8_t packet_type, size_t adv_data_len, const uint8_t *adv_data)</argsstring>
+        <name>sl_bt_advertiser_set_data</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>packet_type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>adv_data_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>adv_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set user-defined data in advertising packets, scan response packets, or periodic advertising packets. Maximum 31 bytes of data can be set for legacy advertising. Maximum 191 bytes of data can be set for connectable extended advertising. Maximum 253 bytes of data can be set for periodic and non-connectable extended advertising. For setting longer advertising data, use command <ref refid="a00039_1ga8f93fed72f3787a4101c362374483a71" kindref="member">sl_bt_advertiser_set_long_data</ref>.</para><para>If advertising mode is currently enabled, the new advertising data will be used immediately. Advertising mode can be enabled using command <ref refid="a00039_1gaf41b65ba633c6285bb5239783a516ca4" kindref="member">sl_bt_advertiser_start</ref>. Periodic advertising mode can be enabled using command <ref refid="a00039_1ga8ca4aec79e57a264c5bbec599d1cff86" kindref="member">sl_bt_advertiser_start_periodic_advertising</ref>.</para><para>The invalid parameter error will be returned in the following situations:<itemizedlist>
+<listitem><para>Data length is more than 31 bytes but the advertiser can only advertise using legacy advertising PDUs.</para></listitem><listitem><para>Data is too long to fit into a single advertisement.</para></listitem><listitem><para>Set data of the advertising data packet when the advertiser is advertising in scannable mode using extended advertising PDUs.</para></listitem><listitem><para>Set data of the scan response data packet when the advertiser is advertising in connectable mode using extended advertising PDUs.</para></listitem></itemizedlist>
+</para><para>Note that the user-defined data may be overwritten by the system when the advertising is later enabled in a discoverable mode other than user_data.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">packet_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This value selects whether data is intended for advertising packets, scan response packets, or periodic advertising packets.<itemizedlist>
+<listitem><para><bold>0:</bold> Advertising packets</para></listitem><listitem><para><bold>1:</bold> Scan response packets</para></listitem><listitem><para><bold>8:</bold> Periodic advertising packets </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>adv_data</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to be set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1917" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ga8f93fed72f3787a4101c362374483a71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_set_long_data</definition>
+        <argsstring>(uint8_t handle, uint8_t packet_type)</argsstring>
+        <name>sl_bt_advertiser_set_long_data</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>packet_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set advertising data for a specified packet type and advertising set. Data currently in the system data buffer will be extracted as the advertising data. The buffer will be emptied after this command regardless of the completion status.</para><para>Prior to calling this command, add data to the buffer with one or multiple calls to <ref refid="a00031_1ga2e185f6632d32051b0f431ea15abcc3c" kindref="member">sl_bt_system_data_buffer_write</ref>.</para><para>Maximum 31 bytes of data can be set for legacy advertising. Maximum 191 bytes of data can be set for connectable extended advertising. Maximum 1650 bytes of data can be set for periodic and non-connectable extended advertising, but advertising parameters may limit the amount of data that can be sent in a single advertisement.</para><para>See <ref refid="a00039_1ga706aeaf60049280fe9cc256f20ad4113" kindref="member">sl_bt_advertiser_set_data</ref> for more details on advertising data.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">packet_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This value selects whether data is intended for advertising packets, scan response packets, or periodic advertising packets. Values:<itemizedlist>
+<listitem><para><bold>0:</bold> Advertising packets</para></listitem><listitem><para><bold>1:</bold> Scan response packets</para></listitem><listitem><para><bold>8:</bold> Periodic advertising packets</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1951" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1gaf41b65ba633c6285bb5239783a516ca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_start</definition>
+        <argsstring>(uint8_t handle, uint8_t discover, uint8_t connect)</argsstring>
+        <name>sl_bt_advertiser_start</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>discover</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>connect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start advertising of a given advertising set with specified discoverable and connectable modes.</para><para>The number of concurrent advertising is limited by MAX_ADVERTISERS configuration.</para><para>The number of concurrent connectable advertising is also limited by MAX_CONNECTIONS configuration. For example, only one connectable advertising can be enabled if the device has (MAX_CONNECTIONS - 1) connections when this command is called. The limitation does not apply to non-connectable advertising.</para><para>The default advertising configuration in the stack is set to using legacy advertising PDUs on 1M PHY. The stack will automatically select extended advertising PDUs if either of the following has occurred with the default configuration:<orderedlist>
+<listitem><para>The connectable mode is set to advertiser_connectable_non_scannable.</para></listitem><listitem><para>The primary advertising PHY is set to Coded PHY by <ref refid="a00039_1ga164b389d02a5aaa52ec3650afed4d0bc" kindref="member">sl_bt_advertiser_set_phy</ref>.</para></listitem><listitem><para>The user advertising data length is more than 31 bytes.</para></listitem><listitem><para>Periodic advertising is enabled.</para></listitem></orderedlist>
+</para><para>If the currently set parameters can&apos;t be used, an error is returned. Specifically, this command fails with the connection limit exceeded error if it causes the number of connections exceeding the configured MAX_CONNECTIONS value. It fails with the invalid parameter error if one of the following use cases occurs:<orderedlist>
+<listitem><para>Non-resolvable random address is used but the connectable mode is advertiser_connectable_scannable or advertiser_connectable_non_scannable.</para></listitem><listitem><para>advertiser_connectable_non_scannable is the connectable mode but using legacy advertising PDUs has been explicitly enabled with command <ref refid="a00039_1gad8b8655a767b206f788ee916ec8c678e" kindref="member">sl_bt_advertiser_set_configuration</ref>.</para></listitem><listitem><para>Coded PHY is the primary advertising PHY but using legacy advertising PDUs has been explicitly enabled with command <ref refid="a00039_1gad8b8655a767b206f788ee916ec8c678e" kindref="member">sl_bt_advertiser_set_configuration</ref>.</para></listitem><listitem><para>advertiser_connectable_scannable is the connectable mode but using extended advertising PDUs has been explicitly enabled or the primary advertising PHY is set to Coded PHY.</para></listitem></orderedlist>
+</para><para>If advertising is enabled in user_data mode, use <ref refid="a00039_1ga706aeaf60049280fe9cc256f20ad4113" kindref="member">sl_bt_advertiser_set_data</ref> to set advertising and scan response data before issuing this command. When advertising is enabled in modes other than user_data, advertising and scan response data is generated by the stack using the following procedure:<orderedlist>
+<listitem><para>Add a flags field to advertising data.</para></listitem><listitem><para>Add a TX power level field to advertising data if the TX power service exists in the local GATT database.</para></listitem><listitem><para>Add a peripheral connection interval range field to advertising data if the GAP peripheral preferred connection parameters characteristic exists in the local GATT database.</para></listitem><listitem><para>Add a list of 16-bit service UUIDs to advertising data if there are one or more 16-bit service UUIDs to advertise. The list is complete if all advertised 16-bit UUIDs are in advertising data. Otherwise, the list is incomplete.</para></listitem><listitem><para>Add a list of 128-bit service UUIDs to advertising data if there are one or more 128-bit service UUIDs to advertise and there is still free space for this field. The list is complete if all advertised 128-bit UUIDs are in advertising data. Otherwise, the list is incomplete. Note that an advertising data packet can contain at most one 128-bit service UUID.</para></listitem><listitem><para>Try to add the full local name to advertising data if the device is not in privacy mode. If the full local name does not fit into the remaining free space, the advertised name is a shortened version by cutting off the end if the free space has at least 6 bytes. Otherwise, the local name is added to scan response data.</para></listitem></orderedlist>
+</para><para>Event <ref refid="a00050" kindref="compound">sl_bt_evt_connection_opened</ref> will be received when a remote device opens a connection to the advertiser on this advertising set and also advertising on the given set stops.</para><para>Event <ref refid="a00040" kindref="compound">sl_bt_evt_advertiser_timeout</ref> will be received when the number of advertising events set by <ref refid="a00039_1gaf75b70bbe86d5ce318e8e129aefb95cc" kindref="member">sl_bt_advertiser_set_timing</ref> command is done and advertising with the current set has stopped.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">discover</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00039_1ga48e1183b45d4766eb1cd268fd30eff9c" kindref="member">sl_bt_advertiser_discoverable_mode_t</ref>. Discoverable mode. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_advertiser_non_discoverable (0x0):</bold> Not discoverable</para></listitem><listitem><para><bold>sl_bt_advertiser_limited_discoverable (0x1):</bold> Discoverable using both limited and general discovery procedures</para></listitem><listitem><para><bold>sl_bt_advertiser_general_discoverable (0x2):</bold> Discoverable using general discovery procedure</para></listitem><listitem><para><bold>sl_bt_advertiser_broadcast (0x3):</bold> Device is not discoverable in either limited or generic discovery procedure but may be discovered using the Observation procedure.</para></listitem><listitem><para><bold>sl_bt_advertiser_user_data (0x4):</bold> Send advertising and/or scan response data defined by the user. The limited/general discoverable flags are defined by the user. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">connect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00039_1gab026dfc1026c15f4d41927eb7b94f12d" kindref="member">sl_bt_advertiser_connectable_mode_t</ref>. Connectable mode. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_advertiser_non_connectable (0x0):</bold> Non-connectable non-scannable.</para></listitem><listitem><para><bold>sl_bt_advertiser_directed_connectable (0x1):</bold> Directed connectable <bold>(RESERVED, DO NOT USE)</bold></para></listitem><listitem><para><bold>sl_bt_advertiser_connectable_scannable (0x2):</bold> Undirected connectable scannable. This mode can only be used in legacy advertising PDUs.</para></listitem><listitem><para><bold>sl_bt_advertiser_scannable_non_connectable (0x3):</bold> Undirected scannable (Non-connectable but responds to scan requests)</para></listitem><listitem><para><bold>sl_bt_advertiser_connectable_non_scannable (0x4):</bold> Undirected connectable non-scannable. This mode can only be used in extended advertising PDUs.</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00040" kindref="compound">sl_bt_evt_advertiser_timeout</ref> - Triggered when the number of advertising events set by <ref refid="a00039_1gaf75b70bbe86d5ce318e8e129aefb95cc" kindref="member">sl_bt_advertiser_set_timing</ref> command is done and advertising has stopped on the given advertising set.</para></listitem><listitem><para><ref refid="a00050" kindref="compound">sl_bt_evt_connection_opened</ref> - Triggered when a remote device opens a connection to the advertiser on the specified advertising set and also advertising with the current set stops. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2069" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ga260ccad48d454152989acc52d570ba23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_stop</definition>
+        <argsstring>(uint8_t handle)</argsstring>
+        <name>sl_bt_advertiser_stop</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the advertising of the given advertising set. Counterpart with <ref refid="a00039_1gaf41b65ba633c6285bb5239783a516ca4" kindref="member">sl_bt_advertiser_start</ref>.</para><para>This command does not affect the enable state of the periodic advertising set, i.e., periodic advertising is not stopped.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2086" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ga8ca4aec79e57a264c5bbec599d1cff86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_start_periodic_advertising</definition>
+        <argsstring>(uint8_t handle, uint16_t interval_min, uint16_t interval_max, uint32_t flags)</argsstring>
+        <name>sl_bt_advertiser_start_periodic_advertising</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>interval_min</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>interval_max</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start periodic advertising on the given advertising set. The stack enables the advertising set automatically if the set was not enabled and the set can advertise using extended advertising PDUs beside the syncInfo, which is needed for the periodic advertising.</para><para>The invalid parameter error is returned if the application has configured legacy advertising PDUs or anonymous advertising, or the advertising set is enabled using legacy advertising PDUs.</para><para>To stop periodic advertising, use <ref refid="a00039_1ga81c61bf663c55b75618a2a4b921c236d" kindref="member">sl_bt_advertiser_stop_periodic_advertising</ref> command with the handle received in response from this command.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">interval_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Minimum periodic advertising interval. Value in units of 1.25 ms<itemizedlist>
+<listitem><para>Range: 0x06 to 0xFFFF</para></listitem><listitem><para>Time range: 7.5 ms to 81.92 s</para></listitem></itemizedlist>
+</para><para>Default value: 100 ms </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">interval_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Maximum periodic advertising interval. Value in units of 1.25 ms<itemizedlist>
+<listitem><para>Range: 0x06 to 0xFFFF</para></listitem><listitem><para>Time range: 7.5 ms to 81.92 s</para></listitem><listitem><para>Note: interval_max should be bigger than interval_min</para></listitem></itemizedlist>
+</para><para>Default value: 200 ms </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Periodic advertising configurations. Bitmask of the following:<itemizedlist>
+<listitem><para><bold>Bit 0:</bold> Include TX power in advertising PDU</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ga81c61bf663c55b75618a2a4b921c236d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_stop_periodic_advertising</definition>
+        <argsstring>(uint8_t handle)</argsstring>
+        <name>sl_bt_advertiser_stop_periodic_advertising</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the periodic advertising on the given advertising set. Counterpart with <ref refid="a00039_1ga8ca4aec79e57a264c5bbec599d1cff86" kindref="member">sl_bt_advertiser_start_periodic_advertising</ref>.</para><para>This command does not affect the enable state of the advertising set, i.e., legacy or extended advertising is not stopped.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ga0da38bba08358af0f5c7f3bb402c1cd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_advertiser_delete_set</definition>
+        <argsstring>(uint8_t handle)</argsstring>
+        <name>sl_bt_advertiser_delete_set</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete an advertising set.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2155" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00039_1ga2d671f485b45f359ca183e091df4eeb8" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_create_set_id</name>
+        <initializer>0x01040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1402" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga979c8da38d967ade823dfe97b95c0a87" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_set_timing_id</name>
+        <initializer>0x03040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1403" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga596f5c62b1249768cd9500dc89f12813" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_set_phy_id</name>
+        <initializer>0x06040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1404" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga3ab00331e8a090631b74ec2944e05a23" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_set_channel_map_id</name>
+        <initializer>0x04040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1405" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga7e8f6bd8f9c46669454ba76e64f65a9f" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_set_tx_power_id</name>
+        <initializer>0x0b040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1406" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gad2e35e9baa03d823c2fef17fd6c798fe" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_set_report_scan_request_id</name>
+        <initializer>0x05040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1407" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gaf6dd7ad5d97df84b483177090acbda4a" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_set_random_address_id</name>
+        <initializer>0x10040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1408" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga5e67d8f105c1de9ce51a96412a661efd" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_clear_random_address_id</name>
+        <initializer>0x11040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1409" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gadaaaae42a14bc639baf4d48443930992" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_set_configuration_id</name>
+        <initializer>0x07040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1410" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gac03200fdc8aafad8d71820d01536943f" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_clear_configuration_id</name>
+        <initializer>0x08040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1411" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga6863973b91844ca86bd18a9a93a180e0" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_set_data_id</name>
+        <initializer>0x0f040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1412" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga19cf809ad70696ab2bc3c0d0951050f7" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_set_long_data_id</name>
+        <initializer>0x0e040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1413" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gaef34577898f11526adf9f895c19da78f" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_start_id</name>
+        <initializer>0x09040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1414" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gab4aa31e748b861e88797a7e625cf49dc" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_stop_id</name>
+        <initializer>0x0a040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1415" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga98ccef0005be337301bbdd5369a3eaa9" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_start_periodic_advertising_id</name>
+        <initializer>0x0c040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1416" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga444f39edbc21831b200007b67af2b8e7" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_stop_periodic_advertising_id</name>
+        <initializer>0x0d040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1417" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga62bd6dd712456c86fe773b0d10d5d89b" prot="public" static="no">
+        <name>sl_bt_cmd_advertiser_delete_set_id</name>
+        <initializer>0x02040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1418" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gad4c9917174b4b2c56e95c6935c320a4a" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_create_set_id</name>
+        <initializer>0x01040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1419" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gaff30f3608bb1422d02100dbeb2e72d17" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_set_timing_id</name>
+        <initializer>0x03040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1420" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gafe4c63621a8ae2d9a2e2036ab88c7711" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_set_phy_id</name>
+        <initializer>0x06040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1421" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gad9e89dcc739384b49efe00f5e64002ae" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_set_channel_map_id</name>
+        <initializer>0x04040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1422" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gadb1d731f70bfa6edc40e96605b5c949a" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_set_tx_power_id</name>
+        <initializer>0x0b040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1423" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gab8be629a089f22ba5ede891831ac718f" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_set_report_scan_request_id</name>
+        <initializer>0x05040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1424" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga865e27ce5f98fb858d4168f9b62f7dc2" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_set_random_address_id</name>
+        <initializer>0x10040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1425" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga20ea0ce49c67a64560ba47fcd3a3d911" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_clear_random_address_id</name>
+        <initializer>0x11040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1426" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga98aa9a90937526acafd4d1a1c36ea6de" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_set_configuration_id</name>
+        <initializer>0x07040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1427" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gaf44ab5e60cf9491767df4e41bc3378c0" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_clear_configuration_id</name>
+        <initializer>0x08040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1428" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga16133bc9314276d7378ef01baaf8516a" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_set_data_id</name>
+        <initializer>0x0f040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1429" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1ga42ce45ef00a4b616c6df7fca3b6e8919" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_set_long_data_id</name>
+        <initializer>0x0e040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1430" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gae6c7afc95c61c0787b526fc1df9c985a" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_start_id</name>
+        <initializer>0x09040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1431" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gad94f66a1cb07edad5864df41fc53d813" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_stop_id</name>
+        <initializer>0x0a040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1432" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gafddc59f5dfb0cfe301aa0bbc4830a53c" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_start_periodic_advertising_id</name>
+        <initializer>0x0c040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1433" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gac404a01746fca823e8902bc0b830f531" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_stop_periodic_advertising_id</name>
+        <initializer>0x0d040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1434" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00039_1gaed7fd565ecbeb652362a1717c0483f1b" prot="public" static="no">
+        <name>sl_bt_rsp_advertiser_delete_set_id</name>
+        <initializer>0x02040020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1435" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1435" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Advertiser. </para>    </briefdescription>
+    <detaileddescription>
+<para>The commands and events in this class are related to advertising functionalities in GAP peripheral and broadcaster roles. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00087" kind="group">
+    <compoundname>sl_btmesh_evt_test_replay_protection_list_entry_cleared</compoundname>
+    <title>sl_btmesh_evt_test_replay_protection_list_entry_cleared</title>
+    <innerclass refid="a00435" prot="public">sl_btmesh_evt_test_replay_protection_list_entry_cleared_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00087_1ga960609b6eac4fa3e5154eecd132fb1b1" prot="public" static="no">
+        <type>struct <ref refid="a00435" kindref="compound">sl_btmesh_evt_test_replay_protection_list_entry_cleared_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_test_replay_protection_list_entry_cleared_s sl_btmesh_evt_test_replay_protection_list_entry_cleared_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_test_replay_protection_list_entry_cleared_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="4820" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="4996" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00087_1ga2b1f8ffc2291ac51dbe6e6e16c5f58e1" prot="public" static="no">
+        <name>sl_btmesh_evt_test_replay_protection_list_entry_cleared_id</name>
+        <initializer>0x022200a8</initializer>
+        <briefdescription>
+<para>Identifier of the replay_protection_list_entry_cleared event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="4986" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="4986" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indication that a replay protection list entry has been cleared. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

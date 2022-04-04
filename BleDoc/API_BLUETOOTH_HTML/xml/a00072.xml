@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00072" kind="group">
+    <compoundname>sl_bt_gattdb_descriptor_properties</compoundname>
+    <title>GATT Descriptor Property Flags</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00072_1ga36212f3baef6b4659563846c2cd0bbaf" prot="public" static="no">
+        <name>SL_BT_GATTDB_DESCRIPTOR_READ</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A GATT client can read the descriptor value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="4686" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="4686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00072_1ga8175775cdc729f42df7ffbde47ba7923" prot="public" static="no">
+        <name>SL_BT_GATTDB_DESCRIPTOR_WRITE</name>
+        <initializer>0x2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A GATT client can write the descriptor value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="4689" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="4689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00072_1ga9fa472b104567226fc65db01d77b00e3" prot="public" static="no">
+        <name>SL_BT_GATTDB_DESCRIPTOR_LOCAL_ONLY</name>
+        <initializer>0x200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The descriptor is local only and should be invisible to GATT clients. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="4692" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="4692" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This enum defines the property flags for GATT characteristic descriptors. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

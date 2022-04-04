@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00077" kind="group">
+    <compoundname>sl_btmesh_generic_client_get_state_type</compoundname>
+    <title>Generic Client Get State Types</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00077_1ga31ea7710db08cc9da269905a3d0b5d12" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_ON_OFF</name>
+        <initializer>0x0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic on/off get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3773" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3773" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga865918e8f7a3bc55cfddf5e6b395c88e" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_ON_POWER_UP</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic on power up get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3776" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga63cd3e7041bc6699fed7a8e2fe5e188c" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_LEVEL</name>
+        <initializer>0x2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic level get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3779" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga39f1a986a276bc1be2706790e4d5823a" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_POWER_LEVEL</name>
+        <initializer>0x3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic power level get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3782" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga795a653cd62066343479728b481fd482" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_POWER_LEVEL_LAST</name>
+        <initializer>0x4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic power level last get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3785" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gad0b752c457b52d1673752c924a592138" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_POWER_LEVEL_DEFAULT</name>
+        <initializer>0x5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic power level default get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3788" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga55e11db6321b3a6eeab177a5df9c54a0" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_POWER_LEVEL_RANGE</name>
+        <initializer>0x6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic power level range get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3791" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga3c3df63eb30a8bc68cfc387dd8f0819e" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_TRANSITION_TIME</name>
+        <initializer>0x6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic transition time get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3794" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3794" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gac57bbd89eb2291fc3aa67e26d02eb7c6" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_BATTERY</name>
+        <initializer>0x8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic battery get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3797" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3797" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga6f55590e97eef9e7b9a61003e7fa6b08" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_LOCATION_GLOBAL</name>
+        <initializer>0x9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic global location get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3800" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3800" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga0bdea8e1656c84dc9676922d0a493a1c" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_LOCATION_LOCAL</name>
+        <initializer>0xa</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic local location get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3803" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga802c7313970943a3b8fe93afd36af1c5" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_PROPERTY_USER</name>
+        <initializer>0xb</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic user property get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3806" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3806" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gadb6028cf772c89f80bfe9e2dff39495b" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_PROPERTY_ADMIN</name>
+        <initializer>0xc</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic admin property get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3809" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3809" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga9292c7ce77f7d6192b92f3c341a25420" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_PROPERTY_MANUF</name>
+        <initializer>0xd</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic manufacturer property get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3812" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga6da817f47d414bf4c58bc596e1cef4d7" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_PROPERTY_LIST_USER</name>
+        <initializer>0xe</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic user property list get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3815" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3815" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gae12ff710d125e0039894ba9332d2f23f" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_PROPERTY_LIST_ADMIN</name>
+        <initializer>0xf</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic admin property list get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3818" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3818" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gad4990fba73825dcd696bc630df3a7732" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_PROPERTY_LIST_MANUF</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic manufacturer property list get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3821" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3821" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gab73155a859b468117f45ff5c462d217b" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_PROPERTY_LIST_CLIENT</name>
+        <initializer>0x11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic client property list get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3824" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga9eb8f47d8d5df49992afcd5b9a3d0334" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_LIGHTNESS_ACTUAL</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light actual lightness get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3827" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3827" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga890cfccbaec9e393cd64574313c591e0" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_LIGHTNESS_LINEAR</name>
+        <initializer>0x81</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light linear lightness get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3830" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3830" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gafa11963f92a04e2ecfdcaa9503983aff" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_LIGHTNESS_LAST</name>
+        <initializer>0x82</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light last lightness get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3833" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga21242678fc1c2be6bb7b1791b1ae6cfe" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_LIGHTNESS_DEFAULT</name>
+        <initializer>0x83</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light default lightness get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3836" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3836" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga8d3cddb99ae36e918f1ec4522f68ca66" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_LIGHTNESS_RANGE</name>
+        <initializer>0x84</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light lightness range get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3839" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3839" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gabb69f0ef72c953adf5a8f3f7a0e6541a" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_CTL</name>
+        <initializer>0x85</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light lightness, color temperature, and delta UV server state identifier. Not to be used by client get requests. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3843" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3843" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gaf695ac739293350df0e1e46994061efd" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_CTL_TEMPERATURE</name>
+        <initializer>0x86</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light color temperature and delta UV get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3846" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gaaadfeff625f626b00d7f1d3b2c355167" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_CTL_DEFAULT</name>
+        <initializer>0x87</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light lightness, color temperature, and delta UV default get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3849" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gafe045934099577b257a49a9cb6b3798e" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_CTL_RANGE</name>
+        <initializer>0x88</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light color temperature range get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3852" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga3b5081d103d7fe47113f77fe636e6c71" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_CTL_LIGHTNESS_TEMPERATURE</name>
+        <initializer>0x89</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light lightness and color temperature get request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3855" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gae5bd47ec97d3fe7299016a09b34cecc7" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_HSL</name>
+        <initializer>0x8a</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light lightness, color hue, and color saturation current value get request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3859" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gac19ba6f8ce5d5d6995389d8f9ed1d6e9" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_HSL_HUE</name>
+        <initializer>0x8b</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light color hue get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3862" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3862" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga521e779ac56e31fc168bd13153680a3d" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_HSL_SATURATION</name>
+        <initializer>0x8c</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light color saturation get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3865" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gabae4bd05ff3ec4faa939214cc3b3edbf" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_HSL_DEFAULT</name>
+        <initializer>0x8d</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light lightness, color hue, and color saturation default get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3868" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3868" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1ga8706b83cede2729975051a59691258e2" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_HSL_RANGE</name>
+        <initializer>0x8e</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light color hue and saturation range get request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3871" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3871" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00077_1gabc659d3b2ba9160569394cc812b6f6ae" prot="public" static="no">
+        <name>SL_BTMESH_GENERIC_CLIENT_STATE_HSL_TARGET</name>
+        <initializer>0x8f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light lightness, color hue, and color saturation target value get request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3875" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3875" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generic client get state type identifies the state which the client retrieves from the remote server model. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+What's new in Bluetooth Mesh SDK 2.1.1.0
+* Selected quality improvements and bug fixes
+
+What's new in Bluetooth Mesh SDK 2.1.0.0
+* Integration with Secure Vault
+* Addition of HSL models
+* Support for dynamic GATT database
+* Support for updated compiler versions
+
+
+
+
+

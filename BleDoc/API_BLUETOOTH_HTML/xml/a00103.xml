@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00103" kind="group">
+    <compoundname>sl_bt_utility_functions</compoundname>
+    <title>Utility Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00103_1gaff57fe1cdd8863d2d271224c2d7e2bb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_pop_event</definition>
+        <argsstring>(sl_bt_msg_t *event)</argsstring>
+        <name>sl_bt_pop_event</name>
+        <param>
+          <type><ref refid="a00027_1ga4133c50f6e7679f5ed2d48ad98d3690f" kindref="member">sl_bt_msg_t</ref> *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next event that requires processing by user application. Application is not blocked if no event is waiting.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pointer for storing the new event </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if a new event is returned, or SL_STATUS_NOT_FOUND if no event is waiting; other value indicates an error occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8865" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1ga29654e6399b4bf427978e604dee505c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl_bt_event_pending</definition>
+        <argsstring>(void)</argsstring>
+        <name>sl_bt_event_pending</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether events are in queue pending for processing. Call <ref refid="a00103_1gaff57fe1cdd8863d2d271224c2d7e2bb6" kindref="member">sl_bt_pop_event</ref> to process pending events.</para><para><simplesect kind="return"><para>true if event is pending; false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8873" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1ga9d60c2be2d9ba65176820c7430017e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_bt_event_pending_len</definition>
+        <argsstring>(void)</argsstring>
+        <name>sl_bt_event_pending_len</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether events are in queue pending for processing and return the next event length in bytes if events are pending. Call <ref refid="a00103_1gaff57fe1cdd8863d2d271224c2d7e2bb6" kindref="member">sl_bt_pop_event</ref> to process pending events.</para><para><simplesect kind="return"><para>the next event length if event is pending; 0 otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8882" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1ga16c8034e39e43154301ec3a5b66175f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_run</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run the Bluetooth stack to process scheduled tasks. Events for user application may be generated as a result of this operation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8889" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1ga41c3b9e1390cc0b3f89cbe69735ba1af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_handle_command</definition>
+        <argsstring>(uint32_t hdr, void *data)</argsstring>
+        <name>sl_bt_handle_command</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>hdr</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle an API command in binary format.</para><para>This is povided to NCP target applications for processing commands received from NCP transport.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the command header </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the command payload in a byte array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8900" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1gae8b189d315ce3b6bb4d9ddb637937a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* sli_bt_get_command_response</definition>
+        <argsstring>()</argsstring>
+        <name>sli_bt_get_command_response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stack internal function used by <ref refid="a00103_1ga576fad834a95429afdbe00c70cf22634" kindref="member">sl_bt_get_command_response()</ref> API. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8905" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1ga576fad834a95429afdbe00c70cf22634" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00027_1ga4133c50f6e7679f5ed2d48ad98d3690f" kindref="member">sl_bt_msg_t</ref> *</type>
+        <definition>static sl_bt_msg_t* sl_bt_get_command_response</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_get_command_response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the response to the command currently been handled.</para><para>This is provided to NCP target applications for processing commands received from NCP transport. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8913" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8913" bodyend="8916"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1gaca4c91c504be0d4ad392c5fdbb111ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_priority_handle</definition>
+        <argsstring>(void)</argsstring>
+        <name>sl_bt_priority_handle</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Priority message handler function if user application requires the use of PendSV interrupt.</para><para>If scheduler_callback function pointer in configuration struct is something else than NULL, then stack will not install its own PendSV IRQ handler but instead uses callback/handler functions.</para><para>When application receives call to the scheduler_callback function it must schedule the call to gecko_priority_handle function to later time to run on high priority thread. This callback may happen inside radio IRQ so processing must not block and has to happen as fast as possible.</para><para>Recommended implementation: High priority thread is loop that waits on binary semaphore and calls gecko_priority_handler. The scheduler_callback is simple function that only signals the semaphore. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8936" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1gacc04b66d2bca0df7a4faf723d2419c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_external_signal</definition>
+        <argsstring>(uint32_t signals)</argsstring>
+        <name>sl_bt_external_signal</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>signals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signals stack that external event has happened. Signals can be used to report status change from interrupt context or from other threads to application. Signals are bits that are automatically cleared after application has been notified.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>signals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a bitmask defining active signals that are reported back to the application by system_external_signal-event. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8948" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1ga3ae83713640241b5fe646774faa6b8f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_send_system_awake</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_send_system_awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signals stack to send system_awake event when application received wakeup signal. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8954" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1ga932da482b285833a9df22c36f389d8bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_send_system_error</definition>
+        <argsstring>(uint16_t reason, uint8_t data_len, const uint8_t *data)</argsstring>
+        <name>sl_bt_send_system_error</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>reason</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signals stack to send system_error event when in case of an error. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8959" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1ga2efa124d72e59697be4527c7d966f3c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_is_sensitive_message</definition>
+        <argsstring>(uint32_t message_header)</argsstring>
+        <name>sl_bt_is_sensitive_message</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>message_header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells if a SL_BT_API message is sensitive.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">message_header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The header of the SL_BT_API message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if the message is sensitive; otherwise 0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8967" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1gafe95b5828a4899cb3eb200d20bd50f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_send_rsp_user_message_to_target</definition>
+        <argsstring>(uint16_t result, uint8_t data_len, uint8_t *data)</argsstring>
+        <name>sl_bt_send_rsp_user_message_to_target</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sends the NCP host a message whose SL_BT_MSG_ID is gecko_rsp_user_message_to_target_id.</para><para>This a utility helping a NCP host and target application to exchange user data. Do not use it in SoC mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8976" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1gaae30388f753bb22a4cbd25677fd76288" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_send_evt_user_message_to_host</definition>
+        <argsstring>(uint8_t data_len, uint8_t *data)</argsstring>
+        <name>sl_bt_send_evt_user_message_to_host</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sends the NCP host a message whose SL_BT_MSG_ID is gecko_evt_user_message_to_host_id.</para><para>This a utility helping a NCP host and target application to exchange user data. Do not use it in SoC mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8985" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00103_1ga90eef151525addf229cf984e779814db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_send_rsp_user_manage_event_filter</definition>
+        <argsstring>(uint16_t result)</argsstring>
+        <name>sl_bt_send_rsp_user_manage_event_filter</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sends the NCP host a message whose SL_BT_MSG_ID is gecko_rsp_user_manage_event_filter_id.</para><para>This a utility helping a NCP host and target application to manage event filter. Do not use it in SoC mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8994" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Utility functions for applications on SoC. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

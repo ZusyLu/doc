@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00539" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_config_client_relay_status_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00539_1a3184663ac259a9193e801aa5dfba7129" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_config_client_relay_status_s::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Result code<itemizedlist>
+<listitem><para><bold>0:</bold> success</para></listitem><listitem><para><bold>Non-zero:</bold> an error has occurred </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6991" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00539_1a4d04904ed40a7df64df8fe9de5802753" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_config_client_relay_status_s::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6995" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6995" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00539_1a03c6c93a70a2c92b221c60e5b6d705c6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_config_client_relay_status_s::relay</definition>
+        <argsstring></argsstring>
+        <name>relay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Relay state of the node. Valid values are as follows:<itemizedlist>
+<listitem><para>0: Relaying disabled</para></listitem><listitem><para>1: Relaying enabled</para></listitem><listitem><para>2: Relaying not supported </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6996" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6996" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00539_1a6cbb0d3db9ae676518de9cd03cadbe64" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_config_client_relay_status_s::retransmit_count</definition>
+        <argsstring></argsstring>
+        <name>retransmit_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Relay retransmit count. Valid values range from 0 to 7; default value is 0 (no retransmissions). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7001" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7001" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00539_1a211908e4bc7b339bd350f000a7d1f1b0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_config_client_relay_status_s::retransmit_interval_ms</definition>
+        <argsstring></argsstring>
+        <name>retransmit_interval_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Relay retransmit interval in milliseconds. Valid values range from 10 ms to 320 ms, with a resolution of 10 ms. The value will be zero if the retransmission count is zero. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7004" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7004" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the relay_status event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6990" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6989" bodyend="7009"/>
+    <listofallmembers>
+      <member refid="a00539_1a4d04904ed40a7df64df8fe9de5802753" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_relay_status_s</scope><name>handle</name></member>
+      <member refid="a00539_1a03c6c93a70a2c92b221c60e5b6d705c6" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_relay_status_s</scope><name>relay</name></member>
+      <member refid="a00539_1a3184663ac259a9193e801aa5dfba7129" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_relay_status_s</scope><name>result</name></member>
+      <member refid="a00539_1a6cbb0d3db9ae676518de9cd03cadbe64" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_relay_status_s</scope><name>retransmit_count</name></member>
+      <member refid="a00539_1a211908e4bc7b339bd350f000a7d1f1b0" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_relay_status_s</scope><name>retransmit_interval_ms</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

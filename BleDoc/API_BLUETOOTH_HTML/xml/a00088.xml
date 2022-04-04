@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00088" kind="group">
+    <compoundname>sl_bt_evt_sm_bonded</compoundname>
+    <title>sl_bt_evt_sm_bonded</title>
+    <innerclass refid="a00291" prot="public">sl_bt_evt_sm_bonded_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00088_1gaa32ddd96b3a33338f10d417f333a6830" prot="public" static="no">
+        <type>struct <ref refid="a00291" kindref="compound">sl_bt_evt_sm_bonded_s</ref></type>
+        <definition>typedef struct sl_bt_evt_sm_bonded_s sl_bt_evt_sm_bonded_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_sm_bonded_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6316" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6563" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00088_1gae02c52eb31a5d9978b1bf9bbf054657a" prot="public" static="no">
+        <name>sl_bt_evt_sm_bonded_id</name>
+        <initializer>0x030f00a0</initializer>
+        <briefdescription>
+<para>Identifier of the bonded event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6536" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6536" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Triggered after the pairing or bonding procedure is successfully completed. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

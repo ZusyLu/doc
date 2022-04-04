@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00783" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_msg</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00783_1a40de2c53e3caffdfa60df3de327bfc9c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_msg::header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>API protocol header consisting of event identifier and data length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12523" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00783_1ae8500012654cc7b4a65166d96061e00b" prot="public" static="no" mutable="no">
+        <type>union sl_btmesh_msg::@0</type>
+        <definition>union sl_btmesh_msg::@0  sl_btmesh_msg::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Union of API event types </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12668" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of BTMESH API messages. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12521" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12521" bodyend="12669"/>
+    <listofallmembers>
+      <member refid="a00783_1ae8500012654cc7b4a65166d96061e00b" prot="public" virt="non-virtual"><scope>sl_btmesh_msg</scope><name>data</name></member>
+      <member refid="a00783_1a40de2c53e3caffdfa60df3de327bfc9c" prot="public" virt="non-virtual"><scope>sl_btmesh_msg</scope><name>header</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

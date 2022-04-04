@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00153" kind="group">
+    <compoundname>sl_btmesh_evt_lc_client_property_status</compoundname>
+    <title>sl_btmesh_evt_lc_client_property_status</title>
+    <innerclass refid="a00659" prot="public">sl_btmesh_evt_lc_client_property_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00153_1ga01f428b683fe65175526e92800414a0d" prot="public" static="no">
+        <type>struct <ref refid="a00659" kindref="compound">sl_btmesh_evt_lc_client_property_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_lc_client_property_status_s sl_btmesh_evt_lc_client_property_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_lc_client_property_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9734" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9890" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00153_1ga6132edf4e68a3d7867a2879bc6e75f62" prot="public" static="no">
+        <name>sl_btmesh_evt_lc_client_property_status_id</name>
+        <initializer>0x034c00a8</initializer>
+        <briefdescription>
+<para>Identifier of the property_status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9873" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9873" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicate an incoming LC Property Status message. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

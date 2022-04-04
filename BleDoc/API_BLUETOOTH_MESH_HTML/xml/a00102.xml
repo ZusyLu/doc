@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00102" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_netkey_list</compoundname>
+    <title>sl_btmesh_evt_config_client_netkey_list</title>
+    <innerclass refid="a00471" prot="public">sl_btmesh_evt_config_client_netkey_list_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00102_1gaba5d443148a68b2e5ba6e1c094f354be" prot="public" static="no">
+        <type>struct <ref refid="a00471" kindref="compound">sl_btmesh_evt_config_client_netkey_list_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_netkey_list_s sl_btmesh_evt_config_client_netkey_list_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_netkey_list_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6510" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00102_1gab9fa44aae0ba52ca733fab3b1f8e5154" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_netkey_list_id</name>
+        <initializer>0x022700a8</initializer>
+        <briefdescription>
+<para>Identifier of the netkey_list event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6498" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6498" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This event contains a list of key indices for network keys that are present on a node. </para>    </briefdescription>
+    <detaileddescription>
+<para>The list is requested using the <ref refid="a00099_1ga7d665912290bb65a964cd551de3e4986" kindref="member">sl_btmesh_config_client_list_netkeys</ref> command. More than one event may be generated. List contents are terminated by a <ref refid="a00103" kindref="compound">sl_btmesh_evt_config_client_netkey_list_end</ref> event. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

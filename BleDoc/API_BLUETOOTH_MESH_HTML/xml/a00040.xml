@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00040" kind="group">
+    <compoundname>sl_btmesh_evt_node_heartbeat_stop</compoundname>
+    <title>sl_btmesh_evt_node_heartbeat_stop</title>
+    <innerclass refid="a00291" prot="public">sl_btmesh_evt_node_heartbeat_stop_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00040_1ga14f7c33e345779ae245744133530fa1d" prot="public" static="no">
+        <type>struct <ref refid="a00291" kindref="compound">sl_btmesh_evt_node_heartbeat_stop_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_node_heartbeat_stop_s sl_btmesh_evt_node_heartbeat_stop_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_node_heartbeat_stop_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="126" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="763" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00040_1ga89f3bfa959dc56f6f7aa83d64b4e09de" prot="public" static="no">
+        <name>sl_btmesh_evt_node_heartbeat_stop_id</name>
+        <initializer>0x121400a8</initializer>
+        <briefdescription>
+<para>Identifier of the heartbeat_stop event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="752" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="752" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates end of heartbeat reception. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

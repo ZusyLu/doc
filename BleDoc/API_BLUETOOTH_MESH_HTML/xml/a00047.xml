@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00047" kind="group">
+    <compoundname>sl_btmesh_evt_prov_provisioning_suspended</compoundname>
+    <title>sl_btmesh_evt_prov_provisioning_suspended</title>
+    <innerclass refid="a00311" prot="public">sl_btmesh_evt_prov_provisioning_suspended_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00047_1ga64681095e175112b0be9e9dc1f3fc00e" prot="public" static="no">
+        <type>struct <ref refid="a00311" kindref="compound">sl_btmesh_evt_prov_provisioning_suspended_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_prov_provisioning_suspended_s sl_btmesh_evt_prov_provisioning_suspended_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_prov_provisioning_suspended_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1489" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1739" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00047_1ga25ced217304f9f8bdea8cdc3b34792dc" prot="public" static="no">
+        <name>sl_btmesh_evt_prov_provisioning_suspended_id</name>
+        <initializer>0x181500a8</initializer>
+        <briefdescription>
+<para>Identifier of the provisioning_suspended event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1727" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1727" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provisioning suspended. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

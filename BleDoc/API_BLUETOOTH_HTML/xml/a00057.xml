@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00057" kind="group">
+    <compoundname>sl_bt_evt_connection_closed</compoundname>
+    <title>sl_bt_evt_connection_closed</title>
+    <innerclass refid="a00215" prot="public">sl_bt_evt_connection_closed_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00057_1gac2ab4dc6cae85507ad24fb48481d5759" prot="public" static="no">
+        <type>struct <ref refid="a00215" kindref="compound">sl_bt_evt_connection_closed_s</ref></type>
+        <definition>typedef struct sl_bt_evt_connection_closed_s sl_bt_evt_connection_closed_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_connection_closed_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2650" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3098" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00057_1gab2ff7549250810d37eaa6f6e6828ed86" prot="public" static="no">
+        <name>sl_bt_evt_connection_closed_id</name>
+        <initializer>0x010600a0</initializer>
+        <briefdescription>
+<para>Identifier of the closed event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3087" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3087" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates that a connection was closed. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

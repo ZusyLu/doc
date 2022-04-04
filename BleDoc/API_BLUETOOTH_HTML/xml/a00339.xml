@@ -1,0 +1,827 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00339" kind="union" language="C++" prot="public">
+    <compoundname>sl_bt_msg.data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00339_1ae1260894f59eeae98c8440899de4df8d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8782" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a80cdac15945be6c10710665d2e378357" prot="public" static="no" mutable="no">
+        <type><ref refid="a00135" kindref="compound">sl_bt_evt_dfu_boot_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_dfu_boot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for dfu boot event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8783" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a59c3a5ad4070ab665d308e116e7afb07" prot="public" static="no" mutable="no">
+        <type><ref refid="a00139" kindref="compound">sl_bt_evt_dfu_boot_failure_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_dfu_boot_failure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for dfu boot_failure event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8784" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a14c98c43c426ee9fc5156ce9308e39d7" prot="public" static="no" mutable="no">
+        <type><ref refid="a00143" kindref="compound">sl_bt_evt_system_boot_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_system_boot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for system boot event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8785" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a6002f448ea03168af7716e495571e58f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00147" kindref="compound">sl_bt_evt_system_error_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_system_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for system error event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8786" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1adaa7a87e9ffe5a0bbd415efd15442fd3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00151" kindref="compound">sl_bt_evt_system_hardware_error_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_system_hardware_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for system hardware_error event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8787" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a19a2befbece82056e2c458a1cb0e388f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00155" kindref="compound">sl_bt_evt_system_external_signal_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_system_external_signal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for system external_signal event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8788" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1aa1129745097659fbc54c9c0d6682cf59" prot="public" static="no" mutable="no">
+        <type><ref refid="a00159" kindref="compound">sl_bt_evt_system_soft_timer_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_system_soft_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for system soft_timer event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8789" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a7cbb758c23cd09c4cfe59d347840995d" prot="public" static="no" mutable="no">
+        <type><ref refid="a00163" kindref="compound">sl_bt_evt_advertiser_timeout_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_advertiser_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for advertiser timeout event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8790" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a38d5af7435ce13540e12136ed70e3e6a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00167" kindref="compound">sl_bt_evt_advertiser_scan_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_advertiser_scan_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for advertiser scan_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8791" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ac6cd373933b7d9aba2a4c5c6f0c2b843" prot="public" static="no" mutable="no">
+        <type>sl_bt_evt_advertiser_periodic_advertising_status_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_advertiser_periodic_advertising_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for advertiser periodic_advertising_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8792" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1aea4bb3d64c47f404061d750eca2aa8ca" prot="public" static="no" mutable="no">
+        <type><ref refid="a00171" kindref="compound">sl_bt_evt_scanner_scan_report_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scanner_scan_report</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scanner scan_report event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8793" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ad3272e58a57bb550b0507613c58d3b30" prot="public" static="no" mutable="no">
+        <type><ref refid="a00175" kindref="compound">sl_bt_evt_sync_opened_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sync_opened</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sync opened event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8794" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a1503bf864307412bbc8fceeae5d67dab" prot="public" static="no" mutable="no">
+        <type><ref refid="a00179" kindref="compound">sl_bt_evt_sync_data_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sync_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sync data event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8795" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ae3b6225d4de441399951d2bcfcc59689" prot="public" static="no" mutable="no">
+        <type><ref refid="a00183" kindref="compound">sl_bt_evt_sync_closed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sync_closed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sync closed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8796" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a25182776a172f7bf1f195c0cf7e2fe32" prot="public" static="no" mutable="no">
+        <type><ref refid="a00187" kindref="compound">sl_bt_evt_connection_opened_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_connection_opened</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for connection opened event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8797" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a39428113ae7bfb67fa01a584f884fbc7" prot="public" static="no" mutable="no">
+        <type><ref refid="a00191" kindref="compound">sl_bt_evt_connection_parameters_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_connection_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for connection parameters event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8798" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a6df1f2648ba1af3d799d09ba5637118f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00195" kindref="compound">sl_bt_evt_connection_phy_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_connection_phy_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for connection phy_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8799" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a588cdb38de72b7ddbabd16dfaaaecc2a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00199" kindref="compound">sl_bt_evt_connection_rssi_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_connection_rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for connection rssi event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8800" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ad08a398ae489980120b4e0b64a8d149a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00203" kindref="compound">sl_bt_evt_connection_get_remote_tx_power_completed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_connection_get_remote_tx_power_completed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for connection get_remote_tx_power_completed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8801" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a2d7b506050899eb876019256bbbed1cc" prot="public" static="no" mutable="no">
+        <type><ref refid="a00207" kindref="compound">sl_bt_evt_connection_tx_power_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_connection_tx_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for connection tx_power event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8802" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a4c3683ee67eb477a8e1ae8f9a5f2347f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00211" kindref="compound">sl_bt_evt_connection_remote_tx_power_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_connection_remote_tx_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for connection remote_tx_power event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8803" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a201f7b6e310ea8263f6624fc4c117afe" prot="public" static="no" mutable="no">
+        <type><ref refid="a00215" kindref="compound">sl_bt_evt_connection_closed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_connection_closed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for connection closed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8804" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1abaebdf52e673bbd800d81804ee491e32" prot="public" static="no" mutable="no">
+        <type><ref refid="a00219" kindref="compound">sl_bt_evt_connection_remote_used_features_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_connection_remote_used_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for connection remote_used_features event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8805" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a1926b7f807e547811af8bde1877c2aad" prot="public" static="no" mutable="no">
+        <type><ref refid="a00223" kindref="compound">sl_bt_evt_gatt_mtu_exchanged_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_mtu_exchanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt mtu_exchanged event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8806" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a4449692bdf76b0f915e88dc49b43aeb3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00227" kindref="compound">sl_bt_evt_gatt_service_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt service event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8807" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a2bdc7e1d0f4345bc77bdfb86032d9e17" prot="public" static="no" mutable="no">
+        <type><ref refid="a00231" kindref="compound">sl_bt_evt_gatt_characteristic_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_characteristic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt characteristic event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8808" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a0abe6f7a12808ee50905e6ab553c1d91" prot="public" static="no" mutable="no">
+        <type><ref refid="a00235" kindref="compound">sl_bt_evt_gatt_descriptor_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_descriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt descriptor event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8809" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1acbc18ee686f33c68ebbabfbcd668e8fd" prot="public" static="no" mutable="no">
+        <type><ref refid="a00239" kindref="compound">sl_bt_evt_gatt_characteristic_value_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_characteristic_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt characteristic_value event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8810" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a113670d75da6834373160214ebb3370a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00243" kindref="compound">sl_bt_evt_gatt_descriptor_value_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_descriptor_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt descriptor_value event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8811" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a3c6d4bd779bdc8b814d277d674e05c96" prot="public" static="no" mutable="no">
+        <type><ref refid="a00247" kindref="compound">sl_bt_evt_gatt_procedure_completed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_procedure_completed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt procedure_completed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8812" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ae1f22176a12bfc8dac577902fe00ce5d" prot="public" static="no" mutable="no">
+        <type><ref refid="a00251" kindref="compound">sl_bt_evt_gatt_server_attribute_value_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_server_attribute_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt_server attribute_value event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8813" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a4a050dc4adfbfcc96b9c17411f674c0e" prot="public" static="no" mutable="no">
+        <type><ref refid="a00255" kindref="compound">sl_bt_evt_gatt_server_user_read_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_server_user_read_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt_server user_read_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8814" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ae24a3e6a6f48b653a1e4e7efb8f11772" prot="public" static="no" mutable="no">
+        <type><ref refid="a00259" kindref="compound">sl_bt_evt_gatt_server_user_write_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_server_user_write_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt_server user_write_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8815" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ac76d2500c0b8afcbbbcb6001315889b0" prot="public" static="no" mutable="no">
+        <type><ref refid="a00263" kindref="compound">sl_bt_evt_gatt_server_characteristic_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_server_characteristic_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt_server characteristic_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8816" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a1348b678cd156baab899fd82b4272658" prot="public" static="no" mutable="no">
+        <type><ref refid="a00267" kindref="compound">sl_bt_evt_gatt_server_execute_write_completed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_server_execute_write_completed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt_server execute_write_completed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8817" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ac087f0684a3c670978689cb17bf26e78" prot="public" static="no" mutable="no">
+        <type><ref refid="a00271" kindref="compound">sl_bt_evt_gatt_server_indication_timeout_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_gatt_server_indication_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for gatt_server indication_timeout event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8818" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a1a17fa830feeef547503fcb0bffd9045" prot="public" static="no" mutable="no">
+        <type><ref refid="a00275" kindref="compound">sl_bt_evt_test_dtm_completed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_test_dtm_completed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for test dtm_completed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8819" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a8b011fd0b62ab1d8b2e6dbb850b23d63" prot="public" static="no" mutable="no">
+        <type><ref refid="a00279" kindref="compound">sl_bt_evt_sm_passkey_display_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sm_passkey_display</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sm passkey_display event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8820" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1af2e52d995dc5dbc5fbb5411747dc88f8" prot="public" static="no" mutable="no">
+        <type><ref refid="a00283" kindref="compound">sl_bt_evt_sm_passkey_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sm_passkey_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sm passkey_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8821" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a99b12e67247fa689b51b20c7fbcab9b2" prot="public" static="no" mutable="no">
+        <type><ref refid="a00287" kindref="compound">sl_bt_evt_sm_confirm_passkey_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sm_confirm_passkey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sm confirm_passkey event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8822" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1af629e825c56d2c9bec01a660598ef7a4" prot="public" static="no" mutable="no">
+        <type><ref refid="a00291" kindref="compound">sl_bt_evt_sm_bonded_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sm_bonded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sm bonded event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8823" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a909b96190b704c032f4ddf6f994d7fbc" prot="public" static="no" mutable="no">
+        <type><ref refid="a00295" kindref="compound">sl_bt_evt_sm_bonding_failed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sm_bonding_failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sm bonding_failed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8824" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a90de02453237d9dda0d621490f71fcb8" prot="public" static="no" mutable="no">
+        <type><ref refid="a00299" kindref="compound">sl_bt_evt_sm_confirm_bonding_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sm_confirm_bonding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sm confirm_bonding event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8825" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ab84d84a548ff9ec05702f798c19f5df1" prot="public" static="no" mutable="no">
+        <type><ref refid="a00303" kindref="compound">sl_bt_evt_sm_list_bonding_entry_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sm_list_bonding_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sm list_bonding_entry event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8826" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ae44e9bfdd9e4234215dd63111d0d4805" prot="public" static="no" mutable="no">
+        <type>sl_bt_evt_l2cap_coc_connection_request_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_l2cap_coc_connection_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for l2cap coc_connection_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8827" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a1b8fac8ce94ef68fcae6d52958035a87" prot="public" static="no" mutable="no">
+        <type>sl_bt_evt_l2cap_coc_connection_response_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_l2cap_coc_connection_response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for l2cap coc_connection_response event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8828" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1aac97bc6a2c20b52cbc380300f4833606" prot="public" static="no" mutable="no">
+        <type>sl_bt_evt_l2cap_coc_le_flow_control_credit_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_l2cap_coc_le_flow_control_credit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for l2cap coc_le_flow_control_credit event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8829" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a352475f5eafa2775195c5c89852eec36" prot="public" static="no" mutable="no">
+        <type>sl_bt_evt_l2cap_coc_channel_disconnected_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_l2cap_coc_channel_disconnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for l2cap coc_channel_disconnected event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8830" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ac6d8d92ec7fe52ce53ff4aecd9075e79" prot="public" static="no" mutable="no">
+        <type>sl_bt_evt_l2cap_coc_data_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_l2cap_coc_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for l2cap coc_data event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8831" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1ae1cca19d77fe66083cd1fa42656fab28" prot="public" static="no" mutable="no">
+        <type>sl_bt_evt_l2cap_command_rejected_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_l2cap_command_rejected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for l2cap command_rejected event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8832" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a87435191cae9f363996d0a9a423ea89e" prot="public" static="no" mutable="no">
+        <type><ref refid="a00307" kindref="compound">sl_bt_evt_cte_receiver_dtm_iq_report_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_cte_receiver_dtm_iq_report</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for cte_receiver dtm_iq_report event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8833" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a0b8d1369376928a5e6757a5872f222d4" prot="public" static="no" mutable="no">
+        <type><ref refid="a00311" kindref="compound">sl_bt_evt_cte_receiver_connection_iq_report_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_cte_receiver_connection_iq_report</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for cte_receiver connection_iq_report event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8834" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a9e02024f216801621fe2ee6e60d8801f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00315" kindref="compound">sl_bt_evt_cte_receiver_connectionless_iq_report_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_cte_receiver_connectionless_iq_report</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for cte_receiver connectionless_iq_report event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8835" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a0317ce991bd51b76b0f6e444be5e1f11" prot="public" static="no" mutable="no">
+        <type><ref refid="a00319" kindref="compound">sl_bt_evt_cte_receiver_silabs_iq_report_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_cte_receiver_silabs_iq_report</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for cte_receiver silabs_iq_report event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8836" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1adbe9a87bae0f1ee6da6f72131f687b43" prot="public" static="no" mutable="no">
+        <type>sl_bt_evt_memory_profiler_ram_usage_entry_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_memory_profiler_ram_usage_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for memory_profiler ram_usage_entry event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8837" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a6aea8fb47c88275ed44717abe5ab637f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00323" kindref="compound">sl_bt_evt_user_message_to_host_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_user_message_to_host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for user message_to_host event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8838" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a666eb5250efa07e775220df62056960c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring>[SL_BGAPI_MAX_PAYLOAD_SIZE]</argsstring>
+        <name>payload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8839" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Union of API event types </para>    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8781" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8781" bodyend="8840"/>
+    <listofallmembers>
+      <member refid="a00339_1ac6cd373933b7d9aba2a4c5c6f0c2b843" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_advertiser_periodic_advertising_status</name></member>
+      <member refid="a00339_1a38d5af7435ce13540e12136ed70e3e6a" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_advertiser_scan_request</name></member>
+      <member refid="a00339_1a7cbb758c23cd09c4cfe59d347840995d" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_advertiser_timeout</name></member>
+      <member refid="a00339_1a201f7b6e310ea8263f6624fc4c117afe" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_connection_closed</name></member>
+      <member refid="a00339_1ad08a398ae489980120b4e0b64a8d149a" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_connection_get_remote_tx_power_completed</name></member>
+      <member refid="a00339_1a25182776a172f7bf1f195c0cf7e2fe32" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_connection_opened</name></member>
+      <member refid="a00339_1a39428113ae7bfb67fa01a584f884fbc7" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_connection_parameters</name></member>
+      <member refid="a00339_1a6df1f2648ba1af3d799d09ba5637118f" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_connection_phy_status</name></member>
+      <member refid="a00339_1a4c3683ee67eb477a8e1ae8f9a5f2347f" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_connection_remote_tx_power</name></member>
+      <member refid="a00339_1abaebdf52e673bbd800d81804ee491e32" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_connection_remote_used_features</name></member>
+      <member refid="a00339_1a588cdb38de72b7ddbabd16dfaaaecc2a" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_connection_rssi</name></member>
+      <member refid="a00339_1a2d7b506050899eb876019256bbbed1cc" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_connection_tx_power</name></member>
+      <member refid="a00339_1a0b8d1369376928a5e6757a5872f222d4" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_cte_receiver_connection_iq_report</name></member>
+      <member refid="a00339_1a9e02024f216801621fe2ee6e60d8801f" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_cte_receiver_connectionless_iq_report</name></member>
+      <member refid="a00339_1a87435191cae9f363996d0a9a423ea89e" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_cte_receiver_dtm_iq_report</name></member>
+      <member refid="a00339_1a0317ce991bd51b76b0f6e444be5e1f11" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_cte_receiver_silabs_iq_report</name></member>
+      <member refid="a00339_1a80cdac15945be6c10710665d2e378357" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_dfu_boot</name></member>
+      <member refid="a00339_1a59c3a5ad4070ab665d308e116e7afb07" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_dfu_boot_failure</name></member>
+      <member refid="a00339_1a2bdc7e1d0f4345bc77bdfb86032d9e17" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_characteristic</name></member>
+      <member refid="a00339_1acbc18ee686f33c68ebbabfbcd668e8fd" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_characteristic_value</name></member>
+      <member refid="a00339_1a0abe6f7a12808ee50905e6ab553c1d91" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_descriptor</name></member>
+      <member refid="a00339_1a113670d75da6834373160214ebb3370a" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_descriptor_value</name></member>
+      <member refid="a00339_1a1926b7f807e547811af8bde1877c2aad" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_mtu_exchanged</name></member>
+      <member refid="a00339_1a3c6d4bd779bdc8b814d277d674e05c96" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_procedure_completed</name></member>
+      <member refid="a00339_1ae1f22176a12bfc8dac577902fe00ce5d" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_server_attribute_value</name></member>
+      <member refid="a00339_1ac76d2500c0b8afcbbbcb6001315889b0" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_server_characteristic_status</name></member>
+      <member refid="a00339_1a1348b678cd156baab899fd82b4272658" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_server_execute_write_completed</name></member>
+      <member refid="a00339_1ac087f0684a3c670978689cb17bf26e78" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_server_indication_timeout</name></member>
+      <member refid="a00339_1a4a050dc4adfbfcc96b9c17411f674c0e" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_server_user_read_request</name></member>
+      <member refid="a00339_1ae24a3e6a6f48b653a1e4e7efb8f11772" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_server_user_write_request</name></member>
+      <member refid="a00339_1a4449692bdf76b0f915e88dc49b43aeb3" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_gatt_service</name></member>
+      <member refid="a00339_1a352475f5eafa2775195c5c89852eec36" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_l2cap_coc_channel_disconnected</name></member>
+      <member refid="a00339_1ae44e9bfdd9e4234215dd63111d0d4805" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_l2cap_coc_connection_request</name></member>
+      <member refid="a00339_1a1b8fac8ce94ef68fcae6d52958035a87" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_l2cap_coc_connection_response</name></member>
+      <member refid="a00339_1ac6d8d92ec7fe52ce53ff4aecd9075e79" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_l2cap_coc_data</name></member>
+      <member refid="a00339_1aac97bc6a2c20b52cbc380300f4833606" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_l2cap_coc_le_flow_control_credit</name></member>
+      <member refid="a00339_1ae1cca19d77fe66083cd1fa42656fab28" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_l2cap_command_rejected</name></member>
+      <member refid="a00339_1adbe9a87bae0f1ee6da6f72131f687b43" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_memory_profiler_ram_usage_entry</name></member>
+      <member refid="a00339_1aea4bb3d64c47f404061d750eca2aa8ca" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_scanner_scan_report</name></member>
+      <member refid="a00339_1af629e825c56d2c9bec01a660598ef7a4" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_sm_bonded</name></member>
+      <member refid="a00339_1a909b96190b704c032f4ddf6f994d7fbc" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_sm_bonding_failed</name></member>
+      <member refid="a00339_1a90de02453237d9dda0d621490f71fcb8" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_sm_confirm_bonding</name></member>
+      <member refid="a00339_1a99b12e67247fa689b51b20c7fbcab9b2" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_sm_confirm_passkey</name></member>
+      <member refid="a00339_1ab84d84a548ff9ec05702f798c19f5df1" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_sm_list_bonding_entry</name></member>
+      <member refid="a00339_1a8b011fd0b62ab1d8b2e6dbb850b23d63" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_sm_passkey_display</name></member>
+      <member refid="a00339_1af2e52d995dc5dbc5fbb5411747dc88f8" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_sm_passkey_request</name></member>
+      <member refid="a00339_1ae3b6225d4de441399951d2bcfcc59689" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_sync_closed</name></member>
+      <member refid="a00339_1a1503bf864307412bbc8fceeae5d67dab" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_sync_data</name></member>
+      <member refid="a00339_1ad3272e58a57bb550b0507613c58d3b30" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_sync_opened</name></member>
+      <member refid="a00339_1a14c98c43c426ee9fc5156ce9308e39d7" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_system_boot</name></member>
+      <member refid="a00339_1a6002f448ea03168af7716e495571e58f" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_system_error</name></member>
+      <member refid="a00339_1a19a2befbece82056e2c458a1cb0e388f" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_system_external_signal</name></member>
+      <member refid="a00339_1adaa7a87e9ffe5a0bbd415efd15442fd3" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_system_hardware_error</name></member>
+      <member refid="a00339_1aa1129745097659fbc54c9c0d6682cf59" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_system_soft_timer</name></member>
+      <member refid="a00339_1a1a17fa830feeef547503fcb0bffd9045" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_test_dtm_completed</name></member>
+      <member refid="a00339_1a6aea8fb47c88275ed44717abe5ab637f" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>evt_user_message_to_host</name></member>
+      <member refid="a00339_1ae1260894f59eeae98c8440899de4df8d" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>handle</name></member>
+      <member refid="a00339_1a666eb5250efa07e775220df62056960c" prot="public" virt="non-virtual"><scope>sl_bt_msg.data</scope><name>payload</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Overview</title>
+    <detaileddescription>
+<para>This document contains the full API reference for the Silicon Labs Bluetooth Mesh Software.</para><para>The Blue Gecko family of the Silicon Labs&apos; Bluetooth chipsets deliver a high performance, low energy and easy-to-use Bluetooth solution integrated into a small form factor package.</para><para>The ultra-low power operating modes and fast wake-up times of the Silicon Labs&apos; energy friendly 32-bit MCUs, combined with the low transmit and receive power consumption of the Bluetooth radio, result in a solution optimized for battery powered applications.</para><para><heading level="2">API Payload</heading>
+</para><para>The parameters of a Bluetooth Mesh API command, response, or event are passed between the application and firmware in a payload. For example, a parameter of uint32_t type uses 4 bytes of the payload space. A byte array parameter uses one byte to describe the length of the array. Data in the array is copied into the remaining free payload space.</para><para><heading level="2">API Payload Size</heading>
+</para><para>The maximum API payload size is 256 bytes for both NCP and SoC modes. When an application calls a command, the API library checks the payload length and returns error code SL_STATUS_COMMAND_TOO_LONG (0x49) if the payload of input parameters will cause an overflow. Error code SL_STATUS_WOULD_OVERFLOW (0x1d) is returned if the given size of an output parameter is too small for response data.</para><para><heading level="2">Decode API Binary Data</heading>
+</para><para>For decoding a message in binary format, see <ref refid="a00792_1decode_bgapi_message" kindref="member">Decode a BGAPI Message</ref>.</para><para><heading level="2">Deprecations</heading>
+</para><para>Deprecated commands, enumerations, and events are documented in this API reference manual. It is highly recommended to migrate to the replacements as early as possible. A deprecated command may not support new features although it remains functional on current Bluetooth Mesh stack. Deprecated items will be removed in some future release. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

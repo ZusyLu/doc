@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00051" kind="group">
+    <compoundname>sl_bt_evt_connection_parameters</compoundname>
+    <title>sl_bt_evt_connection_parameters</title>
+    <innerclass refid="a00191" prot="public">sl_bt_evt_connection_parameters_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00051_1ga96c59c7f4cdae7c6b73a1314e52bd23e" prot="public" static="no">
+        <type>struct <ref refid="a00191" kindref="compound">sl_bt_evt_connection_parameters_s</ref></type>
+        <definition>typedef struct sl_bt_evt_connection_parameters_s sl_bt_evt_connection_parameters_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_connection_parameters_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2650" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2845" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00051_1ga6bdd02c4329316e28b65677d379f7d60" prot="public" static="no">
+        <name>sl_bt_evt_connection_parameters_id</name>
+        <initializer>0x020600a0</initializer>
+        <briefdescription>
+<para>Identifier of the parameters event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2817" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2817" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Triggered whenever the connection parameters are changed and at any time a connection is established. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

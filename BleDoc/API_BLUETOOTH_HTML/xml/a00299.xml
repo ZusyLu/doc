@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00299" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_sm_confirm_bonding_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00299_1ab4832e5da634ce163b3f7f1177069e82" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_sm_confirm_bonding_s::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6607" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00299_1a97d466614a859507f1749f5257a689e5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_sm_confirm_bonding_s::bonding_handle</definition>
+        <argsstring></argsstring>
+        <name>bonding_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bonding handle for the request. Range: 0 to 31, or SL_BT_INVALID_BONDING_HANDLE (0xff).<itemizedlist>
+<listitem><para>NOTE! When the bonding handle is anything other than SL_BT_INVALID_BONDING_HANDLE (0xff), a bonding already exists for this connection. Overwriting the existing bonding is a potential security risk. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6608" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6608" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the confirm_bonding event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6606" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6605" bodyend="6615"/>
+    <listofallmembers>
+      <member refid="a00299_1a97d466614a859507f1749f5257a689e5" prot="public" virt="non-virtual"><scope>sl_bt_evt_sm_confirm_bonding_s</scope><name>bonding_handle</name></member>
+      <member refid="a00299_1ab4832e5da634ce163b3f7f1177069e82" prot="public" virt="non-virtual"><scope>sl_bt_evt_sm_confirm_bonding_s</scope><name>connection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00174" kind="group">
+    <compoundname>sl_btmesh_scene_setup_server</compoundname>
+    <title>Bluetooth Mesh Scene Setup Server Model</title>
+    <innergroup refid="a00175">sl_btmesh_evt_scene_setup_server_store</innergroup>
+    <innergroup refid="a00176">sl_btmesh_evt_scene_setup_server_delete</innergroup>
+    <innergroup refid="a00177">sl_btmesh_evt_scene_setup_server_publish</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00174_1ga8d5a8a215ab16189ef56dd0ba9585d1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_scene_setup_server_init</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_scene_setup_server_init</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Scene Setup Server model. Server does not have any internal configurations. The command only activates the model in the mesh stack.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the element.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11272" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00174_1ga6a05f33b74283e9e08564a81f184da1d" prot="public" static="no">
+        <name>sl_btmesh_cmd_scene_setup_server_init_id</name>
+        <initializer>0x00510028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11180" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00174_1ga391e328f1e8b0ddf215f6d26dddc1891" prot="public" static="no">
+        <name>sl_btmesh_rsp_scene_setup_server_init_id</name>
+        <initializer>0x00510028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11181" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Scene Setup Server Model. </para>    </briefdescription>
+    <detaileddescription>
+<para>Bluetooth Mesh Scene model Setup Server functionality. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

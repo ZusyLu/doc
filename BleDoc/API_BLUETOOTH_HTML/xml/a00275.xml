@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00275" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_test_dtm_completed_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00275_1a4fea45573de1277eb6de5e3708f421df" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_test_dtm_completed_s::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Command result </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6126" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00275_1a2bf9c16847d09a3d0bfff53c2df5db73" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_test_dtm_completed_s::number_of_packets</definition>
+        <argsstring></argsstring>
+        <name>number_of_packets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of packets</para><para>Only valid for <ref refid="a00082_1gae1ed3be291efaef0fcff2e5903cf5648" kindref="member">sl_bt_test_dtm_end</ref> command. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6127" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the dtm_completed event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6125" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6124" bodyend="6131"/>
+    <listofallmembers>
+      <member refid="a00275_1a2bf9c16847d09a3d0bfff53c2df5db73" prot="public" virt="non-virtual"><scope>sl_bt_evt_test_dtm_completed_s</scope><name>number_of_packets</name></member>
+      <member refid="a00275_1a4fea45573de1277eb6de5e3708f421df" prot="public" virt="non-virtual"><scope>sl_bt_evt_test_dtm_completed_s</scope><name>result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

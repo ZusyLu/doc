@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00116" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_beacon_status</compoundname>
+    <title>sl_btmesh_evt_config_client_beacon_status</title>
+    <innerclass refid="a00527" prot="public">sl_btmesh_evt_config_client_beacon_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00116_1ga60ec7457fd23636dada3756c11b9e0c5" prot="public" static="no">
+        <type>struct <ref refid="a00527" kindref="compound">sl_btmesh_evt_config_client_beacon_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_beacon_status_s sl_btmesh_evt_config_client_beacon_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_beacon_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6916" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00116_1gaa6abb2104fb9868a3f50ca0fbd82718e" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_beacon_status_id</name>
+        <initializer>0x102700a8</initializer>
+        <briefdescription>
+<para>Identifier of the beacon_status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6899" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6899" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Status event for <ref refid="a00099_1ga8a1183f616e2a2d59bc26401f3114900" kindref="member">sl_btmesh_config_client_get_beacon</ref> and <ref refid="a00099_1ga7186b849bbaf6a6c7848ea164367a994" kindref="member">sl_btmesh_config_client_set_beacon</ref> commands. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

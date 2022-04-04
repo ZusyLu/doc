@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00287" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_node_heartbeat_start_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00287_1aa8cf70ee9e0c4d5cfc400f29b87360b7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_node_heartbeat_start_s::src_addr</definition>
+        <argsstring></argsstring>
+        <name>src_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Source address for the heartbeat message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="736" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00287_1a3a5368d7e1c8905d5a213280667260e9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_node_heartbeat_start_s::dst_addr</definition>
+        <argsstring></argsstring>
+        <name>dst_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destination address for the heartbeat message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="737" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="737" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00287_1ae02a532f5e62889e1aee097982ef461d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_node_heartbeat_start_s::period_sec</definition>
+        <argsstring></argsstring>
+        <name>period_sec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Heartbeat subscription period in seconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="738" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="738" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the heartbeat_start event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="735" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="734" bodyend="739"/>
+    <listofallmembers>
+      <member refid="a00287_1a3a5368d7e1c8905d5a213280667260e9" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_heartbeat_start_s</scope><name>dst_addr</name></member>
+      <member refid="a00287_1ae02a532f5e62889e1aee097982ef461d" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_heartbeat_start_s</scope><name>period_sec</name></member>
+      <member refid="a00287_1aa8cf70ee9e0c4d5cfc400f29b87360b7" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_heartbeat_start_s</scope><name>src_addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

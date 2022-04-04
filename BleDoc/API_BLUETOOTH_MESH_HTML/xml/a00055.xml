@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00055" kind="group">
+    <compoundname>sl_btmesh_evt_prov_ddb_list</compoundname>
+    <title>sl_btmesh_evt_prov_ddb_list</title>
+    <innerclass refid="a00343" prot="public">sl_btmesh_evt_prov_ddb_list_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00055_1ga857f36d89b7974ca8c6e56cfe810cde1" prot="public" static="no">
+        <type>struct <ref refid="a00343" kindref="compound">sl_btmesh_evt_prov_ddb_list_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_prov_ddb_list_s sl_btmesh_evt_prov_ddb_list_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_prov_ddb_list_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1489" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1960" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00055_1gab1e6e4033163a913060eaeb310ccb4ea" prot="public" static="no">
+        <name>sl_btmesh_evt_prov_ddb_list_id</name>
+        <initializer>0x091500a8</initializer>
+        <briefdescription>
+<para>Identifier of the ddb_list event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1948" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1948" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provisioner&apos;s device database list entry. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

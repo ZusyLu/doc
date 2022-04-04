@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00078" kind="group">
+    <compoundname>sl_bt_evt_gatt_server_execute_write_completed</compoundname>
+    <title>sl_bt_evt_gatt_server_execute_write_completed</title>
+    <innerclass refid="a00267" prot="public">sl_bt_evt_gatt_server_execute_write_completed_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00078_1gacffc47c36b8916a8d51fa4257a875ce1" prot="public" static="no">
+        <type>struct <ref refid="a00267" kindref="compound">sl_bt_evt_gatt_server_execute_write_completed_s</ref></type>
+        <definition>typedef struct sl_bt_evt_gatt_server_execute_write_completed_s sl_bt_evt_gatt_server_execute_write_completed_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_gatt_server_execute_write_completed_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5183" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5461" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00078_1ga025eb202f4120d8040611db566c3d6e6" prot="public" static="no">
+        <name>sl_bt_evt_gatt_server_execute_write_completed_id</name>
+        <initializer>0x040a00a0</initializer>
+        <briefdescription>
+<para>Identifier of the execute_write_completed event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5450" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5450" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Execute write completed event indicates that the execute write command from a remote GATT client has completed with the given result. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

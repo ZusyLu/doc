@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00723" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_scene_server_compact_recall_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00723_1a6980410130a8bf67b1f87a036d4b7029" prot="public" static="no" mutable="no">
+        <type><ref refid="a00199" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_btmesh_evt_scene_server_compact_recall_s::states</definition>
+        <argsstring></argsstring>
+        <name>states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Byte array containind recalled states. Array consist of 5 byte chunks as follows:</para><para><itemizedlist>
+<listitem><para>Element id as 16bit unsigned integer in little endian format</para></listitem><listitem><para>Model id as 16bit unsigned integer in little endian format</para></listitem><listitem><para>Model-specific state type, identifying the kind of state recalled See get state types list for details.</para></listitem></itemizedlist>
+</para><para>after this event application can request recalled states with <ref refid="a00080_1gae8130c146fb7c2b915e89344760cc8c4" kindref="member">sl_btmesh_generic_server_get_cached_state</ref> command </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11093" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11093" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the compact_recall event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="236">
+        <label>sl_btmesh_evt_scene_server_compact_recall_s</label>
+        <link refid="a00723"/>
+        <childnode refid="237" relation="usage">
+          <edgelabel>states</edgelabel>
+        </childnode>
+      </node>
+      <node id="237">
+        <label>uint8array</label>
+        <link refid="a00199"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11092" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11091" bodyend="11107"/>
+    <listofallmembers>
+      <member refid="a00723_1a6980410130a8bf67b1f87a036d4b7029" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_server_compact_recall_s</scope><name>states</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

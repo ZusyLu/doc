@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00523" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_config_client_heartbeat_sub_status_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00523_1abed195cea7fcdb499eea748b678c14bd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_config_client_heartbeat_sub_status_s::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Result code<itemizedlist>
+<listitem><para><bold>0:</bold> success</para></listitem><listitem><para><bold>Non-zero:</bold> an error has occurred </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6871" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6871" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00523_1a87f9e150301be14f024784ac3cd19f09" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_config_client_heartbeat_sub_status_s::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6874" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00523_1ad2b39c90ff4e1473a33466449cd7536b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_config_client_heartbeat_sub_status_s::source_address</definition>
+        <argsstring></argsstring>
+        <name>source_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Source address for heartbeat messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6875" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6875" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00523_1abcab504fb3ed1e6ecf9d8259a8646af1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_config_client_heartbeat_sub_status_s::destination_address</definition>
+        <argsstring></argsstring>
+        <name>destination_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destination address for heartbeat messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6876" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6876" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00523_1af5df751a6d990fce1f9f71ba092ce62d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_config_client_heartbeat_sub_status_s::period_log</definition>
+        <argsstring></argsstring>
+        <name>period_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Heartbeat subscription remaining period logarithm-of-2 value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6877" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6877" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00523_1aef9aa9a509c69747111e9b8f3381f0ed" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_config_client_heartbeat_sub_status_s::count_log</definition>
+        <argsstring></argsstring>
+        <name>count_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Received heartbeat message count logarithm-of-2 value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6879" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6879" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00523_1a1da42309c8c890382e756d66025c10d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_config_client_heartbeat_sub_status_s::min_hops</definition>
+        <argsstring></argsstring>
+        <name>min_hops</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum hop value seen in received heartbeat messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6881" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6881" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00523_1a2718ae7dea82f13e602ebcf8fe807da5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_config_client_heartbeat_sub_status_s::max_hops</definition>
+        <argsstring></argsstring>
+        <name>max_hops</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum hop value seen in received heartbeat messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6883" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6883" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the heartbeat_sub_status event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6870" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6869" bodyend="6885"/>
+    <listofallmembers>
+      <member refid="a00523_1aef9aa9a509c69747111e9b8f3381f0ed" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_heartbeat_sub_status_s</scope><name>count_log</name></member>
+      <member refid="a00523_1abcab504fb3ed1e6ecf9d8259a8646af1" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_heartbeat_sub_status_s</scope><name>destination_address</name></member>
+      <member refid="a00523_1a87f9e150301be14f024784ac3cd19f09" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_heartbeat_sub_status_s</scope><name>handle</name></member>
+      <member refid="a00523_1a2718ae7dea82f13e602ebcf8fe807da5" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_heartbeat_sub_status_s</scope><name>max_hops</name></member>
+      <member refid="a00523_1a1da42309c8c890382e756d66025c10d4" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_heartbeat_sub_status_s</scope><name>min_hops</name></member>
+      <member refid="a00523_1af5df751a6d990fce1f9f71ba092ce62d" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_heartbeat_sub_status_s</scope><name>period_log</name></member>
+      <member refid="a00523_1abed195cea7fcdb499eea748b678c14bd" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_heartbeat_sub_status_s</scope><name>result</name></member>
+      <member refid="a00523_1ad2b39c90ff4e1473a33466449cd7536b" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_heartbeat_sub_status_s</scope><name>source_address</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

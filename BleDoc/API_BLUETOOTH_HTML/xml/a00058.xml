@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00058" kind="group">
+    <compoundname>sl_bt_evt_connection_remote_used_features</compoundname>
+    <title>sl_bt_evt_connection_remote_used_features</title>
+    <innerclass refid="a00219" prot="public">sl_bt_evt_connection_remote_used_features_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00058_1gaf21f98b79d85afa47af7dbc873acf5a0" prot="public" static="no">
+        <type>struct <ref refid="a00219" kindref="compound">sl_bt_evt_connection_remote_used_features_s</ref></type>
+        <definition>typedef struct sl_bt_evt_connection_remote_used_features_s sl_bt_evt_connection_remote_used_features_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_connection_remote_used_features_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2650" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00058_1ga171b4b561b00d7efcd575da0a022ed7f" prot="public" static="no">
+        <name>sl_bt_evt_connection_remote_used_features_id</name>
+        <initializer>0x080600a0</initializer>
+        <briefdescription>
+<para>Identifier of the remote_used_features event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3109" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List of link layer features supported by the remote device. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

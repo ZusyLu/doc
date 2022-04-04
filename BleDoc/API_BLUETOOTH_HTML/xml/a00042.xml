@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00042" kind="group">
+    <compoundname>sl_bt_scanner</compoundname>
+    <title>Scanner</title>
+    <innergroup refid="a00043">sl_bt_evt_scanner_scan_report</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00042_1ga3830ec233ae145d28d34258bbefc00f4" prot="public" static="no">
+        <name>sl_bt_scanner_discover_mode_t</name>
+        <enumvalue id="a00042_1gga3830ec233ae145d28d34258bbefc00f4a4d6ee89abb3c77ee093e5c62185c4270" prot="public">
+          <name>sl_bt_scanner_discover_limited</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Discover only limited discoverable devices. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00042_1gga3830ec233ae145d28d34258bbefc00f4a94cb7f575d29df9a18bf79b6359146c8" prot="public">
+          <name>sl_bt_scanner_discover_generic</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Discover limited and generic discoverable devices. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00042_1gga3830ec233ae145d28d34258bbefc00f4a8405c738e113754927319c2e905a59e6" prot="public">
+          <name>sl_bt_scanner_discover_observation</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Discover all devices. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>These values indicate which Bluetooth discovery mode to use when scanning for advertising devices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2185" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2184" bodyend="2191"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00042_1ga4b5ff0db2df23db10632f11940b8351f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_scanner_set_timing</definition>
+        <argsstring>(uint8_t phys, uint16_t scan_interval, uint16_t scan_window)</argsstring>
+        <name>sl_bt_scanner_set_timing</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>phys</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>scan_interval</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>scan_window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the scanning timing parameters on the specified PHYs. If the device is currently scanning for advertising devices on PHYs, new parameters will take effect when scanning is restarted.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">phys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PHYs for which the parameters are set.<itemizedlist>
+<listitem><para><bold>1:</bold> 1M PHY</para></listitem><listitem><para><bold>4:</bold> Coded PHY</para></listitem><listitem><para><bold>5:</bold> 1M PHY and Coded PHY </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">scan_interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Scan interval is defined as the time interval when the device starts its last scan until it begins the subsequent scan. In other words, how often to scan<itemizedlist>
+<listitem><para>Time = Value x 0.625 ms</para></listitem><listitem><para>Range: 0x0004 to 0xFFFF</para></listitem><listitem><para>Time Range: 2.5 ms to 40.96 s</para></listitem></itemizedlist>
+</para><para>Default value: 10 ms</para><para>A variable delay occurs when switching channels at the end of each scanning interval, which is included in the scanning interval time. During the switch time, advertising packets are not received by the device. The switch time variation is use case-dependent. For example, if scanning while keeping active connections, the channel switch time might be longer than when scanning without any active connections. Increasing the scanning interval reduces the amount of time in which the device can&apos;t receive advertising packets because it switches channels less often.</para><para>After every scan interval, the scanner changes the frequency at which it operates. It cycles through all three advertising channels in a round robin fashion. According to the specification, all three channels must be used by a scanner. </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">scan_window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Scan window defines the duration of the scan which must be less than or equal to the <computeroutput>scan_interval</computeroutput> <itemizedlist>
+<listitem><para>Time = Value x 0.625 ms</para></listitem><listitem><para>Range: 0x0004 to 0xFFFF</para></listitem><listitem><para>Time Range: 2.5 ms to 40.96 s</para></listitem></itemizedlist>
+</para><para>Default value: 10 ms Note that the packet reception is aborted if it&apos;s started just before the scan window ends. </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00042_1ga149edf29b897d6bc55249ee7cdbe68a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_scanner_set_mode</definition>
+        <argsstring>(uint8_t phys, uint8_t scan_mode)</argsstring>
+        <name>sl_bt_scanner_set_mode</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>phys</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>scan_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the scan mode on the specified PHYs. If the device is currently scanning for advertising devices on PHYs, new parameters will take effect when scanning is restarted.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">phys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PHYs for which the parameters are set.<itemizedlist>
+<listitem><para><bold>1:</bold> 1M PHY</para></listitem><listitem><para><bold>4:</bold> Coded PHY</para></listitem><listitem><para><bold>5:</bold> 1M PHY and Coded PHY </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">scan_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Scan mode. Values:<itemizedlist>
+<listitem><para><bold>0:</bold> Passive scanning</para></listitem><listitem><para><bold>1:</bold> Active scanning</para></listitem><listitem><para>In passive scanning mode, the device only listens to advertising packets and does not transmit packets.</para></listitem><listitem><para>In active scanning mode, the device sends out a scan request packet upon receiving an advertising packet from a remote device. Then, it listens to the scan response packet from the remote device.</para></listitem></itemizedlist>
+</para><para>Default value: 0 </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2365" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00042_1gac523df08a9e0ea5de94739609f27324f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_scanner_start</definition>
+        <argsstring>(uint8_t scanning_phy, uint8_t discover_mode)</argsstring>
+        <name>sl_bt_scanner_start</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>scanning_phy</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>discover_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the GAP discovery procedure to scan for advertising devices on the specified scanning PHYs. To cancel an ongoing discovery procedure, use the <ref refid="a00042_1gae85f6e0223de24f598843fb9684afbfd" kindref="member">sl_bt_scanner_stop</ref> command.</para><para>The invalid parameter error will be returned if the value of scanning PHYs is invalid or the device does not support a PHY.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">scanning_phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>The scanning PHYs.</para><para>In simultaneous scanning, the stack alternates the scanning on two PHYs by switching the PHY at every scan interval. When a timing parameter is set differently on 1M and Coded PHY, the stack chooses the most relaxed value for both PHYs during simultaneous scanning, i.e., the largest scan interval or the smallest scan window. If one PHY is set to passive scanning and the other to active scanning, passive scanning is chosen for simultaneous scanning.</para><para><itemizedlist>
+<listitem><para><bold>1:</bold> 1M PHY</para></listitem><listitem><para><bold>4:</bold> Coded PHY</para></listitem><listitem><para><bold>5:</bold> 1M PHY and Coded PHY. The stack performs simultaneous scanning on both PHYs. </para></listitem></itemizedlist>
+</para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">discover_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00042_1ga3830ec233ae145d28d34258bbefc00f4" kindref="member">sl_bt_scanner_discover_mode_t</ref>. Bluetooth discovery Mode. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_scanner_discover_limited (0x0):</bold> Discover only limited discoverable devices.</para></listitem><listitem><para><bold>sl_bt_scanner_discover_generic (0x1):</bold> Discover limited and generic discoverable devices.</para></listitem><listitem><para><bold>sl_bt_scanner_discover_observation (0x2):</bold> Discover all devices.</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00043" kindref="compound">sl_bt_evt_scanner_scan_report</ref> - This event is triggered each time an advertising packet is received. Packets are not filtered in any way, so multiple events will be received for every advertising device in range. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2408" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00042_1gae85f6e0223de24f598843fb9684afbfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_scanner_stop</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_scanner_stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop scanning for advertising devices. For more information about the discovery, see the <ref refid="a00042_1gac523df08a9e0ea5de94739609f27324f" kindref="member">sl_bt_scanner_start</ref> command.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2419" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00042_1gacb5825fe401bdc736e24030199849ad5" prot="public" static="no">
+        <name>sl_bt_cmd_scanner_set_timing_id</name>
+        <initializer>0x01050020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2170" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00042_1ga032708019de24926b052faf227a1a369" prot="public" static="no">
+        <name>sl_bt_cmd_scanner_set_mode_id</name>
+        <initializer>0x02050020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2171" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00042_1ga81c174b960a384f4bc963efcf68907eb" prot="public" static="no">
+        <name>sl_bt_cmd_scanner_start_id</name>
+        <initializer>0x03050020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2172" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00042_1gaf7f6df7466820ddbe1901c5313438283" prot="public" static="no">
+        <name>sl_bt_cmd_scanner_stop_id</name>
+        <initializer>0x05050020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2173" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00042_1ga15afeb7eb1c4ca57a80e7f4754de8c9f" prot="public" static="no">
+        <name>sl_bt_rsp_scanner_set_timing_id</name>
+        <initializer>0x01050020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2174" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00042_1ga14f13e43250b0ba8aa6310bb254708a8" prot="public" static="no">
+        <name>sl_bt_rsp_scanner_set_mode_id</name>
+        <initializer>0x02050020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2175" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00042_1ga0254492e9da2f8998ad8fc25cf6aa10d" prot="public" static="no">
+        <name>sl_bt_rsp_scanner_start_id</name>
+        <initializer>0x03050020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2176" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00042_1gadcfdeecf8700e43f07ad38b8bb925a4b" prot="public" static="no">
+        <name>sl_bt_rsp_scanner_stop_id</name>
+        <initializer>0x05050020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2177" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2177" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Scanner. </para>    </briefdescription>
+    <detaileddescription>
+<para>The commands and events in this class are related to scanning functionalities in GAP central and observer roles. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

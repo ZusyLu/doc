@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00037" kind="group">
+    <compoundname>sl_bt_evt_system_soft_timer</compoundname>
+    <title>sl_bt_evt_system_soft_timer</title>
+    <innerclass refid="a00159" prot="public">sl_bt_evt_system_soft_timer_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00037_1ga9b11a5daf47cc9ec8bb3af2daacb5d32" prot="public" static="no">
+        <type>struct <ref refid="a00159" kindref="compound">sl_bt_evt_system_soft_timer_s</ref></type>
+        <definition>typedef struct sl_bt_evt_system_soft_timer_s sl_bt_evt_system_soft_timer_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_system_soft_timer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="772" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00037_1gabae9bb31e70cb251e1a7d539416bc127" prot="public" static="no">
+        <name>sl_bt_evt_system_soft_timer_id</name>
+        <initializer>0x070100a0</initializer>
+        <briefdescription>
+<para>Identifier of the soft_timer event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="762" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates that a soft timer has lapsed. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

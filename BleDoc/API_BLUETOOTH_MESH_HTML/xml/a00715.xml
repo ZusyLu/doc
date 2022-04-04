@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00715" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_scene_server_recall_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00715_1a37a7890462991ad583d204547c6dec23" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_server_recall_s::destination_address</definition>
+        <argsstring></argsstring>
+        <name>destination_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address of the server or the group address to which it was published. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11039" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11039" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00715_1a5a48a78f164a9408791c08fe4010b96f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_server_recall_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the element which received the command. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11041" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00715_1af9fd28570269a539e456b5f5066b9fb7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_server_recall_s::selected_scene</definition>
+        <argsstring></argsstring>
+        <name>selected_scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scene of interest </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11043" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00715_1a4e05dd7e32792cdaa62a491ccc17fb59" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_server_recall_s::client_address</definition>
+        <argsstring></argsstring>
+        <name>client_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Device which sent the request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11044" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11044" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00715_1a4a4b61cc7ddb21a9289c8fe512cad18e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_server_recall_s::appkey_index</definition>
+        <argsstring></argsstring>
+        <name>appkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Appkey used by client_address. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11045" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11045" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00715_1af6f080bf695834db89b650d91d157ec1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_scene_server_recall_s::transition_time_ms</definition>
+        <argsstring></argsstring>
+        <name>transition_time_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time (in milliseconds) allotted for the transition to take place </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11046" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11046" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the recall event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11038" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11037" bodyend="11048"/>
+    <listofallmembers>
+      <member refid="a00715_1a4a4b61cc7ddb21a9289c8fe512cad18e" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_server_recall_s</scope><name>appkey_index</name></member>
+      <member refid="a00715_1a4e05dd7e32792cdaa62a491ccc17fb59" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_server_recall_s</scope><name>client_address</name></member>
+      <member refid="a00715_1a37a7890462991ad583d204547c6dec23" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_server_recall_s</scope><name>destination_address</name></member>
+      <member refid="a00715_1a5a48a78f164a9408791c08fe4010b96f" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_server_recall_s</scope><name>elem_index</name></member>
+      <member refid="a00715_1af9fd28570269a539e456b5f5066b9fb7" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_server_recall_s</scope><name>selected_scene</name></member>
+      <member refid="a00715_1af6f080bf695834db89b650d91d157ec1" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_server_recall_s</scope><name>transition_time_ms</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

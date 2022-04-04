@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00755" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_time_server_time_zone_offset_updated_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00755_1a6c63c0b41e41177a45227a309ea8e3ab" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_server_time_zone_offset_updated_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Server model element index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11854" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00755_1a16738e3f3397ad6d34f4267e300a81d8" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t sl_btmesh_evt_time_server_time_zone_offset_updated_s::time_zone_offset_current</definition>
+        <argsstring></argsstring>
+        <name>time_zone_offset_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current local time zone offset. Range is -64 to 191, representing -16 to 47.75 hours. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11855" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00755_1a650b4b9bb11b1e9c5356fba224e4c7c2" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t sl_btmesh_evt_time_server_time_zone_offset_updated_s::time_zone_offset_new</definition>
+        <argsstring></argsstring>
+        <name>time_zone_offset_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Upcoming local time zone offset. Range is -64 to 191, representing -16 to 47.75 hours. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11858" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00755_1ae7cac88a6f6f94cddd3ef9c5d3022615" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t sl_btmesh_evt_time_server_time_zone_offset_updated_s::tai_of_zone_change</definition>
+        <argsstring></argsstring>
+        <name>tai_of_zone_change</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Absolute TAI time when the Time Zone Offset will change from Current to New </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11861" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11861" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the time_zone_offset_updated event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11853" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11852" bodyend="11863"/>
+    <listofallmembers>
+      <member refid="a00755_1a6c63c0b41e41177a45227a309ea8e3ab" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_server_time_zone_offset_updated_s</scope><name>elem_index</name></member>
+      <member refid="a00755_1ae7cac88a6f6f94cddd3ef9c5d3022615" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_server_time_zone_offset_updated_s</scope><name>tai_of_zone_change</name></member>
+      <member refid="a00755_1a16738e3f3397ad6d34f4267e300a81d8" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_server_time_zone_offset_updated_s</scope><name>time_zone_offset_current</name></member>
+      <member refid="a00755_1a650b4b9bb11b1e9c5356fba224e4c7c2" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_server_time_zone_offset_updated_s</scope><name>time_zone_offset_new</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

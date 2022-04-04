@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00127" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_uuid_16_t</compoundname>
+    <includes refid="a00008" local="no">sl_bgapi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00127_1a7608458597cc609ff31993260f8dd242" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_uuid_16_t::data[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>16-bit UUID </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="118" column="1" bodyfile="include/sl_bgapi.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>16-bit UUID </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/sl_bgapi.h" line="117" column="1" bodyfile="include/sl_bgapi.h" bodystart="117" bodyend="119"/>
+    <listofallmembers>
+      <member refid="a00127_1a7608458597cc609ff31993260f8dd242" prot="public" virt="non-virtual"><scope>sl_bt_uuid_16_t</scope><name>data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

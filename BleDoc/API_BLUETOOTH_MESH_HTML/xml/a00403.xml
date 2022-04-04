@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00403" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_health_server_attention_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00403_1a36fb519b4d6be868fcc16adc48e1fd69" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_health_server_attention_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the element for which attention timer was set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3585" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00403_1a2b4dbabd72ed4d1bbce3f06586729c29" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_health_server_attention_s::timer_sec</definition>
+        <argsstring></argsstring>
+        <name>timer_sec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timer value in seconds. If zero, user attention is no longer required. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3587" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3587" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the attention event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3584" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3583" bodyend="3589"/>
+    <listofallmembers>
+      <member refid="a00403_1a36fb519b4d6be868fcc16adc48e1fd69" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_health_server_attention_s</scope><name>elem_index</name></member>
+      <member refid="a00403_1a2b4dbabd72ed4d1bbce3f06586729c29" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_health_server_attention_s</scope><name>timer_sec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00032" kind="group">
+    <compoundname>sl_btmesh_evt_node_reset</compoundname>
+    <title>sl_btmesh_evt_node_reset</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00032_1gaae8f1da2185b7bde0a054d8126530339" prot="public" static="no">
+        <name>sl_btmesh_evt_node_reset_id</name>
+        <initializer>0x0a1400a8</initializer>
+        <briefdescription>
+<para>Identifier of the reset event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="577" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provisioner has instructed the node to reset. </para>    </briefdescription>
+    <detaileddescription>
+<para>This event is generated when the Provisioner has ordered the node to be reset. Stack data has already been reset. This event is generated to inform the application that it should do its own cleanup duties and reset the hardware. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

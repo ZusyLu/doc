@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00543" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_config_client_network_transmit_status_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00543_1a95cddd3d59dec6cb716ff15ce7acd477" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_config_client_network_transmit_status_s::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Result code<itemizedlist>
+<listitem><para><bold>0:</bold> success</para></listitem><listitem><para><bold>Non-zero:</bold> an error has occurred </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7030" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7030" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00543_1a609e99e215b556ccd399aae019b3650d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_config_client_network_transmit_status_s::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7033" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00543_1aaf365580a1d087b16e7fa6af6db5b86d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_config_client_network_transmit_status_s::transmit_count</definition>
+        <argsstring></argsstring>
+        <name>transmit_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Network transmit count. Valid values range from 1 to 8; default value is 1 (single transmission; no retransmissions). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7034" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7034" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00543_1ac0a40d8507bfc0be88cd466583d466dd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_config_client_network_transmit_status_s::transmit_interval_ms</definition>
+        <argsstring></argsstring>
+        <name>transmit_interval_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Network transmit interval in milliseconds. Valid values range from 10 ms to 320 ms, with a resolution of 10 ms. The value will be zero if the transmission count is set to one. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7037" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7037" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the network_transmit_status event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7029" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7028" bodyend="7042"/>
+    <listofallmembers>
+      <member refid="a00543_1a609e99e215b556ccd399aae019b3650d" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_network_transmit_status_s</scope><name>handle</name></member>
+      <member refid="a00543_1a95cddd3d59dec6cb716ff15ce7acd477" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_network_transmit_status_s</scope><name>result</name></member>
+      <member refid="a00543_1aaf365580a1d087b16e7fa6af6db5b86d" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_network_transmit_status_s</scope><name>transmit_count</name></member>
+      <member refid="a00543_1ac0a40d8507bfc0be88cd466583d466dd" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_config_client_network_transmit_status_s</scope><name>transmit_interval_ms</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

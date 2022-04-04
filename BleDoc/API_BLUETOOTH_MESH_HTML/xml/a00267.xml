@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00267" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_node_ivrecovery_needed_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00267_1a8947f3f02f147331b71f953a7961a7d1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_node_ivrecovery_needed_s::node_iv_index</definition>
+        <argsstring></argsstring>
+        <name>node_iv_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current IV index of the node </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="599" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00267_1a22c2b2f122781c0c4b50c794c91678a2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_node_ivrecovery_needed_s::network_iv_index</definition>
+        <argsstring></argsstring>
+        <name>network_iv_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Received network IV index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="600" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the ivrecovery_needed event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="598" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="597" bodyend="601"/>
+    <listofallmembers>
+      <member refid="a00267_1a22c2b2f122781c0c4b50c794c91678a2" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_ivrecovery_needed_s</scope><name>network_iv_index</name></member>
+      <member refid="a00267_1a8947f3f02f147331b71f953a7961a7d1" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_node_ivrecovery_needed_s</scope><name>node_iv_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

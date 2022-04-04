@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00040" kind="group">
+    <compoundname>sl_bt_evt_advertiser_timeout</compoundname>
+    <title>sl_bt_evt_advertiser_timeout</title>
+    <innerclass refid="a00163" prot="public">sl_bt_evt_advertiser_timeout_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00040_1ga95dbf1e9bca7f7ad62bd5e4013dbb720" prot="public" static="no">
+        <type>struct <ref refid="a00163" kindref="compound">sl_bt_evt_advertiser_timeout_s</ref></type>
+        <definition>typedef struct sl_bt_evt_advertiser_timeout_s sl_bt_evt_advertiser_timeout_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_advertiser_timeout_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1387" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1534" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00040_1ga790f609c286c245fc6fba12b3d6345c5" prot="public" static="no">
+        <name>sl_bt_evt_advertiser_timeout_id</name>
+        <initializer>0x010400a0</initializer>
+        <briefdescription>
+<para>Identifier of the timeout event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1524" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1524" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates the advertising of an advertising set has stopped, because the advertiser has completed the configured number of advertising events or the advertising has reached the configured duration. </para>    </briefdescription>
+    <detaileddescription>
+<para>The maximum number of advertising events or advertising duration can be configured by the <computeroutput>maxevents</computeroutput> or <computeroutput>duration</computeroutput> parameter in the command <ref refid="a00039_1gaf75b70bbe86d5ce318e8e129aefb95cc" kindref="member">sl_bt_advertiser_set_timing</ref>. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

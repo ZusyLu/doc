@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00143" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_system_boot_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00143_1aeb43ee56e37953d93137aaee8917a313" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_system_boot_s::major</definition>
+        <argsstring></argsstring>
+        <name>major</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Major release version </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="654" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="654" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00143_1a9c53459fcf3ae220c3e9dfb2116cad71" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_system_boot_s::minor</definition>
+        <argsstring></argsstring>
+        <name>minor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minor release version </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="655" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="655" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00143_1adb343bad65200493c042335d01f44656" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_system_boot_s::patch</definition>
+        <argsstring></argsstring>
+        <name>patch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Patch release number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="656" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="656" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00143_1aa53312b842c0e111de2c1bf7848d457b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_system_boot_s::build</definition>
+        <argsstring></argsstring>
+        <name>build</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="657" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00143_1a451a5208c22bc5870960ecb2a29e5f6a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_bt_evt_system_boot_s::bootloader</definition>
+        <argsstring></argsstring>
+        <name>bootloader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bootloader version </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="658" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00143_1a4caa6fdba4196ba7096c8b92f2b3f513" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_system_boot_s::hw</definition>
+        <argsstring></argsstring>
+        <name>hw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hardware type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="659" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="659" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00143_1ae2cb5cff5d63469694676871677d9196" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_bt_evt_system_boot_s::hash</definition>
+        <argsstring></argsstring>
+        <name>hash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version hash </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="660" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="660" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the boot event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="653" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="652" bodyend="661"/>
+    <listofallmembers>
+      <member refid="a00143_1a451a5208c22bc5870960ecb2a29e5f6a" prot="public" virt="non-virtual"><scope>sl_bt_evt_system_boot_s</scope><name>bootloader</name></member>
+      <member refid="a00143_1aa53312b842c0e111de2c1bf7848d457b" prot="public" virt="non-virtual"><scope>sl_bt_evt_system_boot_s</scope><name>build</name></member>
+      <member refid="a00143_1ae2cb5cff5d63469694676871677d9196" prot="public" virt="non-virtual"><scope>sl_bt_evt_system_boot_s</scope><name>hash</name></member>
+      <member refid="a00143_1a4caa6fdba4196ba7096c8b92f2b3f513" prot="public" virt="non-virtual"><scope>sl_bt_evt_system_boot_s</scope><name>hw</name></member>
+      <member refid="a00143_1aeb43ee56e37953d93137aaee8917a313" prot="public" virt="non-virtual"><scope>sl_bt_evt_system_boot_s</scope><name>major</name></member>
+      <member refid="a00143_1a9c53459fcf3ae220c3e9dfb2116cad71" prot="public" virt="non-virtual"><scope>sl_bt_evt_system_boot_s</scope><name>minor</name></member>
+      <member refid="a00143_1adb343bad65200493c042335d01f44656" prot="public" virt="non-virtual"><scope>sl_bt_evt_system_boot_s</scope><name>patch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

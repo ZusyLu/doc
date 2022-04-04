@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00219" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_connection_remote_used_features_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00219_1acff454479ce80732cbe681f4fd9accbd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_connection_remote_used_features_s::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3116" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00219_1ae062cb18a149f2aa8cb1a6f130d40902" prot="public" static="no" mutable="no">
+        <type><ref refid="a00107" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_bt_evt_connection_remote_used_features_s::features</definition>
+        <argsstring></argsstring>
+        <name>features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This parameter is 8 bytes in little endian format and contains bit fields describing the supported link layer features of the remote device. Bit value 1 means that the feature is supported. The bits are explained in Bluetooth specification Vol 6, Part B, 4.6. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3117" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the remote_used_features event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="28">
+        <label>sl_bt_evt_connection_remote_used_features_s</label>
+        <link refid="a00219"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>features</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>uint8array</label>
+        <link refid="a00107"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3115" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3114" bodyend="3123"/>
+    <listofallmembers>
+      <member refid="a00219_1acff454479ce80732cbe681f4fd9accbd" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_remote_used_features_s</scope><name>connection</name></member>
+      <member refid="a00219_1ae062cb18a149f2aa8cb1a6f130d40902" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_remote_used_features_s</scope><name>features</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

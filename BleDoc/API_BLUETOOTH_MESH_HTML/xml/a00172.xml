@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00172" kind="group">
+    <compoundname>sl_btmesh_evt_scene_server_publish</compoundname>
+    <title>sl_btmesh_evt_scene_server_publish</title>
+    <innerclass refid="a00719" prot="public">sl_btmesh_evt_scene_server_publish_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00172_1ga595dd2b323ce1eadfabd25d2f5d2d286" prot="public" static="no">
+        <type>struct <ref refid="a00719" kindref="compound">sl_btmesh_evt_scene_server_publish_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_scene_server_publish_s sl_btmesh_evt_scene_server_publish_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_scene_server_publish_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10946" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11075" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00172_1gab20c5d468408cae65ea04aa73f889bb4" prot="public" static="no">
+        <name>sl_btmesh_evt_scene_server_publish_id</name>
+        <initializer>0x045000a8</initializer>
+        <briefdescription>
+<para>Identifier of the publish event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11062" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11062" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicate that the publishing period timer elapsed and the app should/can publish its state or any request. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00771" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_time_client_time_zone_status_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00771_1aefb64fb75861d7486525fe806c5eac03" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_time_zone_status_s::client_address</definition>
+        <argsstring></argsstring>
+        <name>client_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Client address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12219" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00771_1a1eb7a241e0e52a47dff2712fea589b88" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_time_zone_status_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Client model element index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12220" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00771_1ad5d785f00d1d8df8ffbac4d475a99d5e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_time_zone_status_s::server_address</definition>
+        <argsstring></argsstring>
+        <name>server_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unicast address of the server </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12221" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00771_1a8912f8f7253bad4a45ad6dbac0c0605c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_time_zone_status_s::appkey_index</definition>
+        <argsstring></argsstring>
+        <name>appkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>App key index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12222" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00771_1a7ce55564bfa027d5cfef397cd3467233" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t sl_btmesh_evt_time_client_time_zone_status_s::time_zone_offset_current</definition>
+        <argsstring></argsstring>
+        <name>time_zone_offset_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current local time zone offset. Range is -64 to 191, representing -16 to 47.75 hours. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12223" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00771_1a3acbbeb9032523e15bc50840c7125424" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t sl_btmesh_evt_time_client_time_zone_status_s::time_zone_offset_new</definition>
+        <argsstring></argsstring>
+        <name>time_zone_offset_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Upcoming local time zone offset </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12226" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00771_1aacda17ca9a8b70fa3d0e2a28cc71ad18" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t sl_btmesh_evt_time_client_time_zone_status_s::tai_of_zone_change</definition>
+        <argsstring></argsstring>
+        <name>tai_of_zone_change</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TAI seconds time of the upcoming Time Zone offset change </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12227" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the time_zone_status event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12218" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12217" bodyend="12229"/>
+    <listofallmembers>
+      <member refid="a00771_1a8912f8f7253bad4a45ad6dbac0c0605c" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_zone_status_s</scope><name>appkey_index</name></member>
+      <member refid="a00771_1aefb64fb75861d7486525fe806c5eac03" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_zone_status_s</scope><name>client_address</name></member>
+      <member refid="a00771_1a1eb7a241e0e52a47dff2712fea589b88" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_zone_status_s</scope><name>elem_index</name></member>
+      <member refid="a00771_1ad5d785f00d1d8df8ffbac4d475a99d5e" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_zone_status_s</scope><name>server_address</name></member>
+      <member refid="a00771_1aacda17ca9a8b70fa3d0e2a28cc71ad18" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_zone_status_s</scope><name>tai_of_zone_change</name></member>
+      <member refid="a00771_1a7ce55564bfa027d5cfef397cd3467233" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_zone_status_s</scope><name>time_zone_offset_current</name></member>
+      <member refid="a00771_1a3acbbeb9032523e15bc50840c7125424" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_zone_status_s</scope><name>time_zone_offset_new</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

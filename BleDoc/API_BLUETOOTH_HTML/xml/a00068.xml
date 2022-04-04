@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00068" kind="group">
+    <compoundname>sl_bt_gattdb_service_property_flags</compoundname>
+    <title>GATT Service Property Flags</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00068_1ga0351aafe5e0e3faaae95a1e286acd99b" prot="public" static="no">
+        <name>SL_BT_GATTDB_ADVERTISED_SERVICE</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The service should be advertised. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="4587" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="4587" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This enum defines GATT service property flags. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

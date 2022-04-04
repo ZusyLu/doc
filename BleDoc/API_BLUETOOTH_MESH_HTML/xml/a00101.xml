@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00101" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_netkey_status</compoundname>
+    <title>sl_btmesh_evt_config_client_netkey_status</title>
+    <innerclass refid="a00467" prot="public">sl_btmesh_evt_config_client_netkey_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00101_1ga060857e0c5b0c614141988bfb9814134" prot="public" static="no">
+        <type>struct <ref refid="a00467" kindref="compound">sl_btmesh_evt_config_client_netkey_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_netkey_status_s sl_btmesh_evt_config_client_netkey_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_netkey_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6482" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00101_1gaa41cca2a1a33dc327aaa739b0683ebff" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_netkey_status_id</name>
+        <initializer>0x012700a8</initializer>
+        <briefdescription>
+<para>Identifier of the netkey_status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6469" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="6469" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This event is created when a response for an <ref refid="a00099_1ga114fb59ae466106565a96868d93880df" kindref="member">sl_btmesh_config_client_add_netkey</ref> or a <ref refid="a00099_1ga09d2709771b5e7a9dcf1e4522aed11fa" kindref="member">sl_btmesh_config_client_remove_netkey</ref> request is received, or the request times out. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

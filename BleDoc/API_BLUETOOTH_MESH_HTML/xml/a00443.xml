@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00443" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_lpn_friendship_established_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00443_1ae6f71d45974f488b077c6732b0896522" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lpn_friendship_established_s::netkey_index</definition>
+        <argsstring></argsstring>
+        <name>netkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Network key index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5974" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5974" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00443_1a3895454bb5ba3b071e048bb8b9b63190" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lpn_friendship_established_s::friend_address</definition>
+        <argsstring></argsstring>
+        <name>friend_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Friend node address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5975" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5975" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the friendship_established event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="5973" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="5972" bodyend="5976"/>
+    <listofallmembers>
+      <member refid="a00443_1a3895454bb5ba3b071e048bb8b9b63190" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lpn_friendship_established_s</scope><name>friend_address</name></member>
+      <member refid="a00443_1ae6f71d45974f488b077c6732b0896522" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lpn_friendship_established_s</scope><name>netkey_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

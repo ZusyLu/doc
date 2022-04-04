@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00025" kind="group">
+    <compoundname>sl_btmesh_evt_node_config_set</compoundname>
+    <title>sl_btmesh_evt_node_config_set</title>
+    <innerclass refid="a00239" prot="public">sl_btmesh_evt_node_config_set_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00025_1ga5e8092fed29b12950edfd2b0c459d131" prot="public" static="no">
+        <type>struct <ref refid="a00239" kindref="compound">sl_btmesh_evt_node_config_set_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_node_config_set_s sl_btmesh_evt_node_config_set_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_node_config_set_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="126" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00025_1gabb6a5349954934fbf7550ed41ca5c8d8" prot="public" static="no">
+        <name>sl_btmesh_evt_node_config_set_id</name>
+        <initializer>0x031400a8</initializer>
+        <briefdescription>
+<para>Identifier of the config_set event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="388" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Informative; Configuration Client changes the State in the Configuration Server Model. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

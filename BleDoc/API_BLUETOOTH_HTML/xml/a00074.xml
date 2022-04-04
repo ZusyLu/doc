@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00074" kind="group">
+    <compoundname>sl_bt_evt_gatt_server_attribute_value</compoundname>
+    <title>sl_bt_evt_gatt_server_attribute_value</title>
+    <innerclass refid="a00251" prot="public">sl_bt_evt_gatt_server_attribute_value_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00074_1gafc55e8d12af933e822b7e1e517caba0d" prot="public" static="no">
+        <type>struct <ref refid="a00251" kindref="compound">sl_bt_evt_gatt_server_attribute_value_s</ref></type>
+        <definition>typedef struct sl_bt_evt_gatt_server_attribute_value_s sl_bt_evt_gatt_server_attribute_value_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_gatt_server_attribute_value_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5183" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5304" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00074_1gab27026943bd4dda821081d4aeac2cb3e" prot="public" static="no">
+        <name>sl_bt_evt_gatt_server_attribute_value_id</name>
+        <initializer>0x000a00a0</initializer>
+        <briefdescription>
+<para>Identifier of the attribute_value event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5288" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5288" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates that the value of an attribute in the local GATT database was changed by a remote GATT client. </para>    </briefdescription>
+    <detaileddescription>
+<para>The parameter <computeroutput>att_opcode</computeroutput> describes which GATT procedure was used to change the value. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

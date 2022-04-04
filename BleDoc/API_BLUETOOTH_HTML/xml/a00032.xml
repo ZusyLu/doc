@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00032" kind="group">
+    <compoundname>sl_bt_evt_system_boot</compoundname>
+    <title>sl_bt_evt_system_boot</title>
+    <innerclass refid="a00143" prot="public">sl_bt_evt_system_boot_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00032_1ga2323776cf08c2eb9f2e2cc56eaa9ef2e" prot="public" static="no">
+        <type>struct <ref refid="a00143" kindref="compound">sl_bt_evt_system_boot_s</ref></type>
+        <definition>typedef struct sl_bt_evt_system_boot_s sl_bt_evt_system_boot_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_system_boot_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00032_1gab87aa47a4d2e5a6c89bfb1cd838597af" prot="public" static="no">
+        <name>sl_bt_evt_system_boot_id</name>
+        <initializer>0x000100a0</initializer>
+        <briefdescription>
+<para>Identifier of the boot event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="647" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="647" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates that the device has started and the radio is ready. </para>    </briefdescription>
+    <detaileddescription>
+<para>This event carries the firmware build number and other software and hardware identification codes. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

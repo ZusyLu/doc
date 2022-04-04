@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00235" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_gatt_descriptor_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00235_1a963b1f27c457d8ce70f948f0185dd5e9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_gatt_descriptor_s::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3821" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3821" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00235_1a4d91feb5d985d6d7e81d96bc531c7f68" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_gatt_descriptor_s::descriptor</definition>
+        <argsstring></argsstring>
+        <name>descriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GATT characteristic descriptor handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3822" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3822" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00235_1abd8a978d82456c6372b6d8df49f17bc5" prot="public" static="no" mutable="no">
+        <type><ref refid="a00107" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_bt_evt_gatt_descriptor_s::uuid</definition>
+        <argsstring></argsstring>
+        <name>uuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Descriptor UUID in little endian format </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3823" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3823" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the descriptor event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="58">
+        <label>sl_bt_evt_gatt_descriptor_s</label>
+        <link refid="a00235"/>
+        <childnode refid="59" relation="usage">
+          <edgelabel>uuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="59">
+        <label>uint8array</label>
+        <link refid="a00107"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3820" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="3819" bodyend="3824"/>
+    <listofallmembers>
+      <member refid="a00235_1a963b1f27c457d8ce70f948f0185dd5e9" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_descriptor_s</scope><name>connection</name></member>
+      <member refid="a00235_1a4d91feb5d985d6d7e81d96bc531c7f68" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_descriptor_s</scope><name>descriptor</name></member>
+      <member refid="a00235_1abd8a978d82456c6372b6d8df49f17bc5" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_descriptor_s</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00048" kind="group">
+    <compoundname>sl_bt_connection</compoundname>
+    <title>Connection</title>
+    <innergroup refid="a00049">Transmit Power Reporting Constants</innergroup>
+    <innergroup refid="a00050">sl_bt_evt_connection_opened</innergroup>
+    <innergroup refid="a00051">sl_bt_evt_connection_parameters</innergroup>
+    <innergroup refid="a00052">sl_bt_evt_connection_phy_status</innergroup>
+    <innergroup refid="a00053">sl_bt_evt_connection_rssi</innergroup>
+    <innergroup refid="a00054">sl_bt_evt_connection_get_remote_tx_power_completed</innergroup>
+    <innergroup refid="a00055">sl_bt_evt_connection_tx_power</innergroup>
+    <innergroup refid="a00056">sl_bt_evt_connection_remote_tx_power</innergroup>
+    <innergroup refid="a00057">sl_bt_evt_connection_closed</innergroup>
+    <innergroup refid="a00058">sl_bt_evt_connection_remote_used_features</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00048_1gaa978c6a4744e442da21c790679af4eae" prot="public" static="no">
+        <name>sl_bt_connection_security_t</name>
+        <enumvalue id="a00048_1ggaa978c6a4744e442da21c790679af4eaea048c2dcf4e5b707bbdb22f97395f1be9" prot="public">
+          <name>sl_bt_connection_mode1_level1</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) No security </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00048_1ggaa978c6a4744e442da21c790679af4eaea4804c8d4c42f24c9133622678868feb4" prot="public">
+          <name>sl_bt_connection_mode1_level2</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Unauthenticated pairing with encryption </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00048_1ggaa978c6a4744e442da21c790679af4eaea908c437f430f6447244654ee94959dc4" prot="public">
+          <name>sl_bt_connection_mode1_level3</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Authenticated pairing with encryption </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00048_1ggaa978c6a4744e442da21c790679af4eaea2d9c2b4bb82bab1213dc99c8def2fdb6" prot="public">
+          <name>sl_bt_connection_mode1_level4</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x3) Authenticated Secure Connections pairing with encryption using a 128-bit strength encryption key </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Indicate the Bluetooth Security Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2698" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2697" bodyend="2708"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00048_1gaaac541dbe1a895990b3e8d2793107d0e" prot="public" static="no">
+        <name>sl_bt_connection_power_reporting_mode_t</name>
+        <enumvalue id="a00048_1ggaaac541dbe1a895990b3e8d2793107d0ea628e810e6741584889f9d95e6961df1c" prot="public">
+          <name>sl_bt_connection_power_reporting_disable</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x0) Disable transmit power reporting </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00048_1ggaaac541dbe1a895990b3e8d2793107d0ea8695f2a618e4c1622dc7321e99d6bd74" prot="public">
+          <name>sl_bt_connection_power_reporting_enable</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Enable transmit power reporting </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>These values define transmit power reporting modes in LE power control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2716" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2715" bodyend="2721"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00048_1ga817c9d6f24d206939cbd02f82c1313a7" prot="public" static="no">
+        <name>sl_bt_connection_tx_power_flag_t</name>
+        <enumvalue id="a00048_1gga817c9d6f24d206939cbd02f82c1313a7a731463b7b8e51685b9218b433e142188" prot="public">
+          <name>sl_bt_connection_tx_power_at_minimum</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1) Transmit power level is at minimum level. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00048_1gga817c9d6f24d206939cbd02f82c1313a7a249bb5e36ec28c4bab0d6e273e09dbbe" prot="public">
+          <name>sl_bt_connection_tx_power_at_maximum</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x2) Transmit power level is at maximum level. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Transmit power level flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2729" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2728" bodyend="2734"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00048_1gac2453ab6efcbfc71b3bb23b3fffce1df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_set_default_parameters</definition>
+        <argsstring>(uint16_t min_interval, uint16_t max_interval, uint16_t latency, uint16_t timeout, uint16_t min_ce_length, uint16_t max_ce_length)</argsstring>
+        <name>sl_bt_connection_set_default_parameters</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>min_interval</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>max_interval</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>latency</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>min_ce_length</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>max_ce_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default Bluetooth connection parameters. The values are valid for all subsequent connections initiated by this device. To change parameters of an already established connection, use the command <ref refid="a00048_1ga322a5f4020bef878c5fb309371d1f867" kindref="member">sl_bt_connection_set_parameters</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">min_interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Minimum value for the connection event interval. This must be set less than or equal to <computeroutput>max_interval</computeroutput>.<itemizedlist>
+<listitem><para>Time = Value x 1.25 ms</para></listitem><listitem><para>Range: 0x0006 to 0x0c80</para></listitem><listitem><para>Time Range: 7.5 ms to 4 s</para></listitem></itemizedlist>
+</para><para>Default value: 20 ms </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Maximum value for the connection event interval. This must be set greater than or equal to <computeroutput>min_interval</computeroutput>.<itemizedlist>
+<listitem><para>Time = Value x 1.25 ms</para></listitem><listitem><para>Range: 0x0006 to 0x0c80</para></listitem><listitem><para>Time Range: 7.5 ms to 4 s</para></listitem></itemizedlist>
+</para><para>Default value: 50 ms </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">latency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Peripheral latency, which defines how many connection intervals the peripheral can skip if it has no data to send<itemizedlist>
+<listitem><para>Range: 0x0000 to 0x01f4</para></listitem></itemizedlist>
+</para><para>Default value: 0 </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Supervision timeout, which defines the time that the connection is maintained although the devices can&apos;t communicate at the currently configured connection intervals.<itemizedlist>
+<listitem><para>Range: 0x000a to 0x0c80</para></listitem><listitem><para>Time = Value x 10 ms</para></listitem><listitem><para>Time Range: 100 ms to 32 s</para></listitem><listitem><para>The value in milliseconds must be larger than (1 + <computeroutput>latency</computeroutput>) * <computeroutput>max_interval</computeroutput> * 2, where <computeroutput>max_interval</computeroutput> is given in milliseconds</para></listitem></itemizedlist>
+</para><para>Set the supervision timeout at a value which allows communication attempts over at least a few connection intervals.</para><para>Default value: 1000 ms </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_ce_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Minimum value for the connection event length. This must be set be less than or equal to <computeroutput>max_ce_length</computeroutput>.<itemizedlist>
+<listitem><para>Time = Value x 0.625 ms</para></listitem><listitem><para>Range: 0x0000 to 0xffff</para></listitem></itemizedlist>
+</para><para>Default value: 0x0000</para><para>Value is not currently used and is reserved for future. Set to 0. </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_ce_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Maximum value for the connection event length. This must be set greater than or equal to <computeroutput>min_ce_length</computeroutput>.<itemizedlist>
+<listitem><para>Time = Value x 0.625 ms</para></listitem><listitem><para>Range: 0x0000 to 0xffff</para></listitem></itemizedlist>
+</para><para>Default value: 0xffff </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1gaff87bb1575d6eed0271deed1eb81d92b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_set_default_preferred_phy</definition>
+        <argsstring>(uint8_t preferred_phy, uint8_t accepted_phy)</argsstring>
+        <name>sl_bt_connection_set_default_preferred_phy</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>preferred_phy</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>accepted_phy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set default preferred and accepted PHYs. PHY settings will be used for all subsequent connections. Non-preferred PHY can also be set if the remote device does not accept any of the preferred PHYs.</para><para>The parameter <computeroutput>accepted_phy</computeroutput> is used to specify PHYs that the stack can accept in a remotely-initiated PHY update request. A PHY update will not happen if none of the accepted PHYs are present in the request.</para><para><bold>NOTE:</bold> 2M and Coded PHYs are not supported by all devices.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">preferred_phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Preferred PHYs. This parameter is a bitfield and multiple PHYs can be set.<itemizedlist>
+<listitem><para><bold>0x01:</bold> 1M PHY</para></listitem><listitem><para><bold>0x02:</bold> 2M PHY</para></listitem><listitem><para><bold>0x04:</bold> Coded PHY</para></listitem><listitem><para><bold>0xff:</bold> Any PHYs</para></listitem></itemizedlist>
+</para><para>Default: 0xff (no preference) </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">accepted_phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Accepted PHYs in remotely-initiated PHY update request. This parameter is a bitfield and multiple PHYs can be set.<itemizedlist>
+<listitem><para><bold>0x01:</bold> 1M PHY</para></listitem><listitem><para><bold>0x02:</bold> 2M PHY</para></listitem><listitem><para><bold>0x04:</bold> Coded PHY</para></listitem><listitem><para><bold>0xff:</bold> Any PHYs</para></listitem></itemizedlist>
+</para><para>Default: 0xff (all PHYs accepted) </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3240" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1gabb952445e50f64228b279fe9969001fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_open</definition>
+        <argsstring>(bd_addr address, uint8_t address_type, uint8_t initiating_phy, uint8_t *connection)</argsstring>
+        <name>sl_bt_connection_open</name>
+        <param>
+          <type><ref refid="a00115" kindref="compound">bd_addr</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>address_type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>initiating_phy</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>connection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connect to an advertising device with the specified initiating PHY on which connectable advertisements on primary advertising channels are received. The Bluetooth stack will enter a state where it continuously scans for the connectable advertising packets from the remote device, which matches the Bluetooth address given as a parameter. Scan parameters set in <ref refid="a00042_1ga4b5ff0db2df23db10632f11940b8351f" kindref="member">sl_bt_scanner_set_timing</ref> are used in this operation. Upon receiving the advertising packet, the module will send a connection request packet to the target device to initiate a Bluetooth connection. To cancel an ongoing connection process, use <ref refid="a00048_1ga7f55470c777dd3c65617d9493ea595c7" kindref="member">sl_bt_connection_close</ref> command with the handle received in response from this command.</para><para>A connection is opened in no-security mode. If the GATT client needs to read or write the attributes on GATT server requiring encryption or authentication, it must first encrypt the connection using an appropriate authentication method.</para><para>If a connection can&apos;t be established, for example, the remote device has gone out of range, has entered into deep sleep, or is not advertising, the stack will try to connect forever. In this case, the application will not get an event related to the connection request. To recover from this situation, the application can implement a timeout and call <ref refid="a00048_1ga7f55470c777dd3c65617d9493ea595c7" kindref="member">sl_bt_connection_close</ref> to cancel the connection request.</para><para>This command fails with the connection limit exceeded error if the number of connections attempted exceeds the configured MAX_CONNECTIONS value.</para><para>This command fails with the invalid parameter error if the initiating PHY value is invalid or the device does not support PHY.</para><para>Subsequent calls of this command have to wait for the ongoing command to complete. A received event <ref refid="a00050" kindref="compound">sl_bt_evt_connection_opened</ref> indicates that the connection opened successfully and a received event <ref refid="a00057" kindref="compound">sl_bt_evt_connection_closed</ref> indicates that connection failures have occurred.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the device to connect to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">address_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00038_1gac8d5431d3062e47c5d51b9fb9f36c104" kindref="member">sl_bt_gap_address_type_t</ref>. Address type of the device to connect to. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_public_address (0x0):</bold> Public device address</para></listitem><listitem><para><bold>sl_bt_gap_static_address (0x1):</bold> Static device address</para></listitem><listitem><para><bold>sl_bt_gap_random_resolvable_address (0x2):</bold> Private resolvable random address</para></listitem><listitem><para><bold>sl_bt_gap_random_nonresolvable_address (0x3):</bold> Private non-resolvable random address </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">initiating_phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00038_1ga05ce4496a6f87de7c67a9e32d816727c" kindref="member">sl_bt_gap_phy_t</ref>. The initiating PHY. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_phy_1m (0x1):</bold> 1M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_coded (0x4):</bold> Coded PHY, 125k (S=8) or 500k (S=2) </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle that will be assigned to the connection after the connection is established. This handle is valid only if the result code of this response is 0 (zero).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00050" kindref="compound">sl_bt_evt_connection_opened</ref> - This event is triggered after the connection is opened and indicates whether the devices are already bonded and the role of the device in this connection.</para></listitem><listitem><para><ref refid="a00051" kindref="compound">sl_bt_evt_connection_parameters</ref> - This event indicates the connection parameters and security mode of the connection. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3306" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1ga322a5f4020bef878c5fb309371d1f867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_set_parameters</definition>
+        <argsstring>(uint8_t connection, uint16_t min_interval, uint16_t max_interval, uint16_t latency, uint16_t timeout, uint16_t min_ce_length, uint16_t max_ce_length)</argsstring>
+        <name>sl_bt_connection_set_parameters</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>min_interval</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>max_interval</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>latency</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>min_ce_length</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>max_ce_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request a change in the connection parameters of a Bluetooth connection.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection Handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum value for the connection event interval. This must be set less than or equal to <computeroutput>max_interval</computeroutput>.<itemizedlist>
+<listitem><para>Time = Value x 1.25 ms</para></listitem><listitem><para>Range: 0x0006 to 0x0c80</para></listitem><listitem><para>Time Range: 7.5 ms to 4 s </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum value for the connection event interval. This must be set greater than or equal to <computeroutput>min_interval</computeroutput>.<itemizedlist>
+<listitem><para>Time = Value x 1.25 ms</para></listitem><listitem><para>Range: 0x0006 to 0x0c80</para></listitem><listitem><para>Time Range: 7.5 ms to 4 s </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">latency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Peripheral latency, which defines how many connection intervals the peripheral can skip if it has no data to send<itemizedlist>
+<listitem><para>Range: 0x0000 to 0x01f4</para></listitem></itemizedlist>
+</para><para>Use 0x0000 for default value </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Supervision timeout, which defines the time that the connection is maintained although the devices can&apos;t communicate at the currently configured connection intervals.<itemizedlist>
+<listitem><para>Range: 0x000a to 0x0c80</para></listitem><listitem><para>Time = Value x 10 ms</para></listitem><listitem><para>Time Range: 100 ms to 32 s</para></listitem><listitem><para>The value in milliseconds must be larger than (1 + <computeroutput>latency</computeroutput>) * <computeroutput>max_interval</computeroutput> * 2, where <computeroutput>max_interval</computeroutput> is given in milliseconds</para></listitem></itemizedlist>
+</para><para>Set the supervision timeout at a value which allows communication attempts over at least a few connection intervals. </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_ce_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Minimum value for the connection event length. This must be set less than or equal to <computeroutput>max_ce_length</computeroutput>.<itemizedlist>
+<listitem><para>Time = Value x 0.625 ms</para></listitem><listitem><para>Range: 0x0000 to 0xffff</para></listitem></itemizedlist>
+</para><para>Value is not currently used and is reserved for future. Set to 0. </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_ce_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Maximum value for the connection event length. This must be set greater than or equal to <computeroutput>min_ce_length</computeroutput>.<itemizedlist>
+<listitem><para>Time = Value x 0.625 ms</para></listitem><listitem><para>Range: 0x0000 to 0xffff</para></listitem></itemizedlist>
+</para><para>Use 0xffff for no limitation. </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00051" kindref="compound">sl_bt_evt_connection_parameters</ref> - Triggered after new connection parameters are applied on the connection. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3370" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1ga99cc41717415928e08b79e1cc3b1a04e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_set_preferred_phy</definition>
+        <argsstring>(uint8_t connection, uint8_t preferred_phy, uint8_t accepted_phy)</argsstring>
+        <name>sl_bt_connection_set_preferred_phy</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>preferred_phy</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>accepted_phy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets preferred and accepted PHYs for the given connection. Event <ref refid="a00052" kindref="compound">sl_bt_evt_connection_phy_status</ref> is received when PHY update procedure is completed. Non-preferred PHY can also be set if remote device does not accept any of the preferred PHYs.</para><para>The parameter <computeroutput>accepted_phy</computeroutput> is used for specifying the PHYs that the stack can accept in a remote initiated PHY update request. A PHY update will not occur if none of the accepted PHYs presents in the request.</para><para><bold>NOTE:</bold> 2M and Coded PHYs are not supported by all devices.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">preferred_phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Preferred PHYs. This parameter is a bitfield and multiple PHYs can be set.<itemizedlist>
+<listitem><para><bold>0x01:</bold> 1M PHY</para></listitem><listitem><para><bold>0x02:</bold> 2M PHY</para></listitem><listitem><para><bold>0x04:</bold> 125k Coded PHY (S=8)</para></listitem><listitem><para><bold>0x08:</bold> 500k Coded PHY (S=2)</para></listitem></itemizedlist>
+</para><para>Default: 0xff (no preference) </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">accepted_phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Accepted PHYs in remotely-initiated PHY update requests. This parameter is a bitfield and multiple PHYs can be set.<itemizedlist>
+<listitem><para><bold>0x01:</bold> 1M PHY</para></listitem><listitem><para><bold>0x02:</bold> 2M PHY</para></listitem><listitem><para><bold>0x04:</bold> Coded PHY</para></listitem><listitem><para><bold>0xff:</bold> Any PHYs</para></listitem></itemizedlist>
+</para><para>Default: 0xff (all PHYs accepted) </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00052" kindref="compound">sl_bt_evt_connection_phy_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3418" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1ga92c4ee2ce006445af24337077ba988e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_disable_slave_latency</definition>
+        <argsstring>(uint8_t connection, uint8_t disable)</argsstring>
+        <name>sl_bt_connection_disable_slave_latency</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>disable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Temporarily enable or disable peripheral latency. Used only when Bluetooth device is acting as peripheral. When peripheral latency is disabled, the peripheral latency connection parameter is not set to 0 but the device will wake up on every connection interval to receive and send packets.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection Handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">disable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 enable, 1 disable peripheral latency. Default: 0</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3435" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1ga00da23bd159c6a63460fe0fc2d6e338c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_get_rssi</definition>
+        <argsstring>(uint8_t connection)</argsstring>
+        <name>sl_bt_connection_get_rssi</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the latest RSSI value of a Bluetooth connection. The RSSI value will be reported in a <ref refid="a00053" kindref="compound">sl_bt_evt_connection_rssi</ref> event.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00053" kindref="compound">sl_bt_evt_connection_rssi</ref> - Triggered when this command has completed. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3452" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1ga13b32994ecfe0e7129182bba734ff5c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_read_channel_map</definition>
+        <argsstring>(uint8_t connection, size_t max_channel_map_size, size_t *channel_map_len, uint8_t *channel_map)</argsstring>
+        <name>sl_bt_connection_read_channel_map</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max_channel_map_size</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>channel_map_len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>channel_map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read channel map for a specified connection.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection Handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_channel_map_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of output buffer passed in <computeroutput>channel_map</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">channel_map_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On return, set to the length of output data written to <computeroutput>channel_map</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">channel_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>This parameter is 5 bytes and contains 37 1-bit fields. The nth field (in the range 0 to 36) contains the value for the link layer channel index n.<itemizedlist>
+<listitem><para><bold>0:</bold> Channel n is unused.</para></listitem><listitem><para><bold>1:</bold> Channel n is used.</para></listitem></itemizedlist>
+</para><para>The most significant bits are reserved for future use. </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3476" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1ga609a3741e23e5ff8eaf7a4794bc1953f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_set_power_reporting</definition>
+        <argsstring>(uint8_t connection, uint8_t mode)</argsstring>
+        <name>sl_bt_connection_set_power_reporting</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable the transmit power reporting for the local device on a connection. When transmit power reporting is enabled, event <ref refid="a00055" kindref="compound">sl_bt_evt_connection_tx_power</ref> is generated when transmit power on the local device changes.</para><para>By default power reporting for local device is enabled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle of the connection </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00048_1gaaac541dbe1a895990b3e8d2793107d0e" kindref="member">sl_bt_connection_power_reporting_mode_t</ref>. Transmit power reporting mode. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_connection_power_reporting_disable (0x0):</bold> Disable transmit power reporting</para></listitem><listitem><para><bold>sl_bt_connection_power_reporting_enable (0x1):</bold> Enable transmit power reporting</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00055" kindref="compound">sl_bt_evt_connection_tx_power</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3504" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1gacf6622b4231baa2c3a7bb89e2022e081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_set_remote_power_reporting</definition>
+        <argsstring>(uint8_t connection, uint8_t mode)</argsstring>
+        <name>sl_bt_connection_set_remote_power_reporting</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable the transmit power reporting for the remote device on a connection. When transmit power reporting is enabled, event <ref refid="a00056" kindref="compound">sl_bt_evt_connection_remote_tx_power</ref> is generated when transmit power on the remote device changes.</para><para>By default, power reporting for the remote device is disabled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle of the connection </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00048_1gaaac541dbe1a895990b3e8d2793107d0e" kindref="member">sl_bt_connection_power_reporting_mode_t</ref>. Transmit power reporting mode. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_connection_power_reporting_disable (0x0):</bold> Disable transmit power reporting</para></listitem><listitem><para><bold>sl_bt_connection_power_reporting_enable (0x1):</bold> Enable transmit power reporting</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00056" kindref="compound">sl_bt_evt_connection_remote_tx_power</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3530" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1ga3b6563e2c6cea4c88170a7716c30f094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_get_tx_power</definition>
+        <argsstring>(uint8_t connection, uint8_t phy, int8_t *current_level, int8_t *max_level)</argsstring>
+        <name>sl_bt_connection_get_tx_power</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>phy</declname>
+        </param>
+        <param>
+          <type>int8_t *</type>
+          <declname>current_level</declname>
+        </param>
+        <param>
+          <type>int8_t *</type>
+          <declname>max_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the transmit power of the local device on the given connection and PHY.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle of the connection </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00038_1ga1644548686ce4cbe4ff0c55b5760c24d" kindref="member">sl_bt_gap_phy_coding_t</ref>. The PHY. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_phy_coding_1m_uncoded (0x1):</bold> 1M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_coding_2m_uncoded (0x2):</bold> 2M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_coding_125k_coded (0x4):</bold> 125k Coded PHY (S=8)</para></listitem><listitem><para><bold>sl_bt_gap_phy_coding_500k_coded (0x8):</bold> 500k Coded PHY (S=2) </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">current_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current transmit power level of the PHY on the connection. Values:<itemizedlist>
+<listitem><para><bold>Range -127 to 20:</bold> The transmit power level in dBm</para></listitem><listitem><para><bold><ref refid="a00049_1gac9f8c677a74eeba96ff3314126676696" kindref="member">SL_BT_CONNECTION_TX_POWER_UNAVAILABLE</ref> (0x7F):</bold> Transmit power level is not available. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum transmit power level of the PHY on the connection. Values: Range -127 to +20 in dBm.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3554" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1ga8cadd42340a29a6e76442f7b4f085617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_get_remote_tx_power</definition>
+        <argsstring>(uint8_t connection, uint8_t phy)</argsstring>
+        <name>sl_bt_connection_get_remote_tx_power</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>phy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the transmit power of the remote device on the given connection and PHY. Transmit power levels are returned in event <ref refid="a00054" kindref="compound">sl_bt_evt_connection_get_remote_tx_power_completed</ref> after the operation completed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle of the connection </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum <ref refid="a00038_1ga1644548686ce4cbe4ff0c55b5760c24d" kindref="member">sl_bt_gap_phy_coding_t</ref>. The PHY. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_phy_coding_1m_uncoded (0x1):</bold> 1M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_coding_2m_uncoded (0x2):</bold> 2M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_coding_125k_coded (0x4):</bold> 125k Coded PHY (S=8)</para></listitem><listitem><para><bold>sl_bt_gap_phy_coding_500k_coded (0x8):</bold> 500k Coded PHY (S=2)</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00054" kindref="compound">sl_bt_evt_connection_get_remote_tx_power_completed</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3579" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1ga7f55470c777dd3c65617d9493ea595c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_close</definition>
+        <argsstring>(uint8_t connection)</argsstring>
+        <name>sl_bt_connection_close</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close a Bluetooth connection or cancel an ongoing connection establishment process. The parameter is a connection handle which is reported in <ref refid="a00050" kindref="compound">sl_bt_evt_connection_opened</ref> event or <ref refid="a00048_1gabb952445e50f64228b279fe9969001fe" kindref="member">sl_bt_connection_open</ref> command response.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle of the connection to be closed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00057" kindref="compound">sl_bt_evt_connection_closed</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3597" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00048_1gaa893d35e613cedf7f18971e98890757b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_connection_read_remote_used_features</definition>
+        <argsstring>(uint8_t connection)</argsstring>
+        <name>sl_bt_connection_read_remote_used_features</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read link layer features supported by the remote device.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection Handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00058" kindref="compound">sl_bt_evt_connection_remote_used_features</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="3611" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00048_1gab272df92c762bad1200018b16459e0c9" prot="public" static="no">
+        <name>sl_bt_cmd_connection_set_default_parameters_id</name>
+        <initializer>0x00060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2665" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gace21413ac481cdde8c3caff30c34bcd6" prot="public" static="no">
+        <name>sl_bt_cmd_connection_set_default_preferred_phy_id</name>
+        <initializer>0x01060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2666" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga6e784ca5d76de29af9bb409c1a396f58" prot="public" static="no">
+        <name>sl_bt_cmd_connection_open_id</name>
+        <initializer>0x04060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2667" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga8e73a14265c5756f301dc709ba986717" prot="public" static="no">
+        <name>sl_bt_cmd_connection_set_parameters_id</name>
+        <initializer>0x06060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2668" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga21202eaccfa9ba551fd2978ee19f179b" prot="public" static="no">
+        <name>sl_bt_cmd_connection_set_preferred_phy_id</name>
+        <initializer>0x08060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2669" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga8389e4a4b5c67f1dcd30ff567af49618" prot="public" static="no">
+        <name>sl_bt_cmd_connection_disable_slave_latency_id</name>
+        <initializer>0x03060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2670" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gac0b584155844c1f3455e58971b62e75d" prot="public" static="no">
+        <name>sl_bt_cmd_connection_get_rssi_id</name>
+        <initializer>0x02060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2671" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga0ae86d143e843c2a43ba50bce3053d5f" prot="public" static="no">
+        <name>sl_bt_cmd_connection_read_channel_map_id</name>
+        <initializer>0x07060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2672" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga29a895c59d576861bcc9e3c2a2b488f9" prot="public" static="no">
+        <name>sl_bt_cmd_connection_set_power_reporting_id</name>
+        <initializer>0x09060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2673" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2673" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gaa513f80152b43edd9d7b81dc855c36a9" prot="public" static="no">
+        <name>sl_bt_cmd_connection_set_remote_power_reporting_id</name>
+        <initializer>0x0a060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2674" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gad203d7ae6a1b8cbda20254399734ba88" prot="public" static="no">
+        <name>sl_bt_cmd_connection_get_tx_power_id</name>
+        <initializer>0x0b060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2675" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga384881ab1b1f6b0c3dbf3f006333aa02" prot="public" static="no">
+        <name>sl_bt_cmd_connection_get_remote_tx_power_id</name>
+        <initializer>0x0c060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2676" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga726cc237581c857fde36beea4bcb73db" prot="public" static="no">
+        <name>sl_bt_cmd_connection_close_id</name>
+        <initializer>0x05060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2677" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gaccb33ecbcc2f33f035efc14dd2f88475" prot="public" static="no">
+        <name>sl_bt_cmd_connection_read_remote_used_features_id</name>
+        <initializer>0x0d060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2678" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gaacc641b0b48b2e40eab2ff4901631606" prot="public" static="no">
+        <name>sl_bt_rsp_connection_set_default_parameters_id</name>
+        <initializer>0x00060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2679" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gaf90de792aa6927a7677067b4de9133f8" prot="public" static="no">
+        <name>sl_bt_rsp_connection_set_default_preferred_phy_id</name>
+        <initializer>0x01060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2680" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gab273558c255946eef11e3ec360b84062" prot="public" static="no">
+        <name>sl_bt_rsp_connection_open_id</name>
+        <initializer>0x04060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2681" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gac81a4e4aa1fd296e05bc6a5c4962ee77" prot="public" static="no">
+        <name>sl_bt_rsp_connection_set_parameters_id</name>
+        <initializer>0x06060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2682" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga58213660677fa6b5e01f0d8feb47d531" prot="public" static="no">
+        <name>sl_bt_rsp_connection_set_preferred_phy_id</name>
+        <initializer>0x08060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2683" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga5eef1df1d8fffc9913452def37ae1891" prot="public" static="no">
+        <name>sl_bt_rsp_connection_disable_slave_latency_id</name>
+        <initializer>0x03060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2684" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gab61ed1a1223aa02b9112ba9b15e56dfa" prot="public" static="no">
+        <name>sl_bt_rsp_connection_get_rssi_id</name>
+        <initializer>0x02060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2685" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gad911257a79432f555d4d39b620582b3e" prot="public" static="no">
+        <name>sl_bt_rsp_connection_read_channel_map_id</name>
+        <initializer>0x07060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2686" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga0e7232d8fa5bfc3d5098b800f9a3296a" prot="public" static="no">
+        <name>sl_bt_rsp_connection_set_power_reporting_id</name>
+        <initializer>0x09060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2687" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gaa441dc472637b52d3339024bbc7e2c07" prot="public" static="no">
+        <name>sl_bt_rsp_connection_set_remote_power_reporting_id</name>
+        <initializer>0x0a060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2688" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga423296b7fd437e5706dedccd7f9b8908" prot="public" static="no">
+        <name>sl_bt_rsp_connection_get_tx_power_id</name>
+        <initializer>0x0b060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2689" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga104f98cb10fa3373fee47ce5e54b35e2" prot="public" static="no">
+        <name>sl_bt_rsp_connection_get_remote_tx_power_id</name>
+        <initializer>0x0c060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2690" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1ga07f9bc4fa4a3c6c65a4227028e330655" prot="public" static="no">
+        <name>sl_bt_rsp_connection_close_id</name>
+        <initializer>0x05060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2691" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00048_1gaae12deda821ad98db69c49bb93c68d97" prot="public" static="no">
+        <name>sl_bt_rsp_connection_read_remote_used_features_id</name>
+        <initializer>0x0d060020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2692" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2692" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Connection. </para>    </briefdescription>
+    <detaileddescription>
+<para>The commands and events in this class are related to managing connection establishment, parameter setting, and disconnection procedures. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

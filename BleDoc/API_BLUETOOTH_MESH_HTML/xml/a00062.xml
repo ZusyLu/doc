@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00062" kind="group">
+    <compoundname>sl_btmesh_evt_prov_initialization_failed</compoundname>
+    <title>sl_btmesh_evt_prov_initialization_failed</title>
+    <innerclass refid="a00371" prot="public">sl_btmesh_evt_prov_initialization_failed_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00062_1gaf8a5a1c24ac5e4093c9d312d441fae01" prot="public" static="no">
+        <type>struct <ref refid="a00371" kindref="compound">sl_btmesh_evt_prov_initialization_failed_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_prov_initialization_failed_s sl_btmesh_evt_prov_initialization_failed_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_prov_initialization_failed_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1489" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00062_1gae2741efa784fa4d1000f561cee46b476" prot="public" static="no">
+        <name>sl_btmesh_evt_prov_initialization_failed_id</name>
+        <initializer>0x1b1500a8</initializer>
+        <briefdescription>
+<para>Identifier of the initialization_failed event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2130" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provisioner has not been initialized successfully and is not operational. </para>    </briefdescription>
+    <detaileddescription>
+<para>It is not possible to use the device as a Provisioner. See the result code for details. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00251" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_gatt_server_attribute_value_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00251_1ae48eb4edff8bb04f03962bc3822d5dfd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_gatt_server_attribute_value_s::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5295" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00251_1a5dd174c49dcf3b86a8fa23e8f59df630" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_gatt_server_attribute_value_s::attribute</definition>
+        <argsstring></argsstring>
+        <name>attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attribute Handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5296" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00251_1a4eb0cac5e74b4039c1e213daceec0186" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_gatt_server_attribute_value_s::att_opcode</definition>
+        <argsstring></argsstring>
+        <name>att_opcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum <ref refid="a00059_1ga459acca869ec6d9edd49c57ff6357dd8" kindref="member">sl_bt_gatt_att_opcode_t</ref>. Attribute opcode that informs the procedure from which the value was received. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5297" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00251_1a414e3bcde37e36b095adf26eb147c7a1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_gatt_server_attribute_value_s::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value offset </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5300" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00251_1afdc8839dddab51f89fca0b1ce1200796" prot="public" static="no" mutable="no">
+        <type><ref refid="a00107" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_bt_evt_gatt_server_attribute_value_s::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5301" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5301" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the attribute_value event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="68">
+        <label>sl_bt_evt_gatt_server_attribute_value_s</label>
+        <link refid="a00251"/>
+        <childnode refid="69" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="69">
+        <label>uint8array</label>
+        <link refid="a00107"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="5294" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="5293" bodyend="5302"/>
+    <listofallmembers>
+      <member refid="a00251_1a4eb0cac5e74b4039c1e213daceec0186" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_server_attribute_value_s</scope><name>att_opcode</name></member>
+      <member refid="a00251_1a5dd174c49dcf3b86a8fa23e8f59df630" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_server_attribute_value_s</scope><name>attribute</name></member>
+      <member refid="a00251_1ae48eb4edff8bb04f03962bc3822d5dfd" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_server_attribute_value_s</scope><name>connection</name></member>
+      <member refid="a00251_1a414e3bcde37e36b095adf26eb147c7a1" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_server_attribute_value_s</scope><name>offset</name></member>
+      <member refid="a00251_1afdc8839dddab51f89fca0b1ce1200796" prot="public" virt="non-virtual"><scope>sl_bt_evt_gatt_server_attribute_value_s</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

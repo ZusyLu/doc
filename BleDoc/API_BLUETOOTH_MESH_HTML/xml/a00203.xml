@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00203" kind="struct" language="C++" prot="public">
+    <compoundname>byte_array</compoundname>
+    <includes refid="a00008" local="no">sl_bgapi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00203_1a790d6cc715ab9351c45f9a54840c77b4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t byte_array::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes stored in <computeroutput>data</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="85" column="1" bodyfile="include/sl_bgapi.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00203_1aee7161a0b6630dcf56068a537ea76c57" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t byte_array::data[]</definition>
+        <argsstring>[]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="86" column="1" bodyfile="include/sl_bgapi.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Variable-length int8_t array. Maximum length: 65535. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/sl_bgapi.h" line="84" column="1" bodyfile="include/sl_bgapi.h" bodystart="84" bodyend="87"/>
+    <listofallmembers>
+      <member refid="a00203_1aee7161a0b6630dcf56068a537ea76c57" prot="public" virt="non-virtual"><scope>byte_array</scope><name>data</name></member>
+      <member refid="a00203_1a790d6cc715ab9351c45f9a54840c77b4" prot="public" virt="non-virtual"><scope>byte_array</scope><name>len</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

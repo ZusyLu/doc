@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00041" kind="group">
+    <compoundname>sl_bt_evt_advertiser_scan_request</compoundname>
+    <title>sl_bt_evt_advertiser_scan_request</title>
+    <innerclass refid="a00167" prot="public">sl_bt_evt_advertiser_scan_request_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00041_1ga4cda6e28813b3cef105fc6c9ac10cff4" prot="public" static="no">
+        <type>struct <ref refid="a00167" kindref="compound">sl_bt_evt_advertiser_scan_request_s</ref></type>
+        <definition>typedef struct sl_bt_evt_advertiser_scan_request_s sl_bt_evt_advertiser_scan_request_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_advertiser_scan_request_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1387" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1568" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00041_1ga305631e7dc877a0dca3820263d605a3d" prot="public" static="no">
+        <name>sl_bt_evt_advertiser_scan_request_id</name>
+        <initializer>0x020400a0</initializer>
+        <briefdescription>
+<para>Identifier of the scan_request event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1548" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1548" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Reports any scan request received in advertising mode if the scan request notification is enabled. </para>    </briefdescription>
+    <detaileddescription>
+<para>Do not confuse this event with the scan response. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00171" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_scanner_scan_report_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00171_1a3bce5fdb901374be536c7023448354ea" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_scanner_scan_report_s::packet_type</definition>
+        <argsstring></argsstring>
+        <name>packet_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>Bits 0..2</bold> : advertising packet type<itemizedlist>
+<listitem><para><bold>000</bold> : Connectable scannable undirected advertising</para></listitem><listitem><para><bold>001</bold> : Connectable undirected advertising</para></listitem><listitem><para><bold>010</bold> : Scannable undirected advertising</para></listitem><listitem><para><bold>011</bold> : Non-connectable non-scannable undirected advertising</para></listitem><listitem><para><bold>100</bold> : Scan Response. Note that this is received only if the device is in active scan mode.</para></listitem></itemizedlist>
+</para><para><bold>Bits 3..4</bold> : Reserved for future</para><para><bold>Bits 5..6</bold> : data completeness<itemizedlist>
+<listitem><para><bold>00:</bold> Complete</para></listitem><listitem><para><bold>01:</bold> Incomplete, more data to come in new events</para></listitem><listitem><para><bold>10:</bold> Incomplete, data truncated, no more to come</para></listitem></itemizedlist>
+</para><para><bold>Bit 7</bold> : legacy or extended advertising<itemizedlist>
+<listitem><para><bold>0:</bold> Legacy advertising PDUs used</para></listitem><listitem><para><bold>1:</bold> Extended advertising PDUs used </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2208" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1a0e661d2009e1c11b33b728d2b5573f19" prot="public" static="no" mutable="no">
+        <type><ref refid="a00115" kindref="compound">bd_addr</ref></type>
+        <definition>bd_addr sl_bt_evt_scanner_scan_report_s::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bluetooth address of the remote device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2235" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1ad7044021ee5c12c7c728e0e0e0004156" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_scanner_scan_report_s::address_type</definition>
+        <argsstring></argsstring>
+        <name>address_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advertiser address type. Values:<itemizedlist>
+<listitem><para><bold>0:</bold> Public address</para></listitem><listitem><para><bold>1:</bold> Random address</para></listitem><listitem><para><bold>255:</bold> No address provided (anonymous advertising) </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2236" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1adaf7ee5d03417e1ac10ee89c48e3e902" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_scanner_scan_report_s::bonding</definition>
+        <argsstring></argsstring>
+        <name>bonding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bonding handle if the remote advertising device has previously bonded with the local device. Values:<itemizedlist>
+<listitem><para><bold>SL_BT_INVALID_BONDING_HANDLE (0xff):</bold> No bonding</para></listitem><listitem><para><bold>Other:</bold> Bonding handle </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2241" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1a83526f3f717fa02821a4f25e60f17561" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_scanner_scan_report_s::primary_phy</definition>
+        <argsstring></argsstring>
+        <name>primary_phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum <ref refid="a00038_1ga05ce4496a6f87de7c67a9e32d816727c" kindref="member">sl_bt_gap_phy_t</ref>. The PHY on which advertising packets are transmitted on the primary advertising channel. Ignore this field if the report is for a legacy advertising PDU. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_phy_1m (0x1):</bold> 1M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_coded (0x4):</bold> Coded PHY, 125k (S=8) or 500k (S=2) </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2247" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1a6654c46bf454fef9319b9f1bf65422e8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_scanner_scan_report_s::secondary_phy</definition>
+        <argsstring></argsstring>
+        <name>secondary_phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum <ref refid="a00038_1ga05ce4496a6f87de7c67a9e32d816727c" kindref="member">sl_bt_gap_phy_t</ref>. The PHY on which advertising packets are transmitted on the secondary advertising channel. Ignore this field if the report is for a legacy advertising PDU. Values:<itemizedlist>
+<listitem><para><bold>sl_bt_gap_phy_1m (0x1):</bold> 1M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_2m (0x2):</bold> 2M PHY</para></listitem><listitem><para><bold>sl_bt_gap_phy_coded (0x4):</bold> Coded PHY, 125k (S=8) or 500k (S=2) </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2255" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1a2e3e8ff20f7f8083d71195962c20a163" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_scanner_scan_report_s::adv_sid</definition>
+        <argsstring></argsstring>
+        <name>adv_sid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advertising set identifier </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2264" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1af19e2dfb295c6d176b3e7a87f597f137" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t sl_bt_evt_scanner_scan_report_s::tx_power</definition>
+        <argsstring></argsstring>
+        <name>tx_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TX power value in the received packet header. Units: dBm<itemizedlist>
+<listitem><para>Valid value range: -127 to 126</para></listitem><listitem><para>Value 127: information unavailable </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2265" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1aa2bb743b1a93cd76269ee0aef362d945" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t sl_bt_evt_scanner_scan_report_s::rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signal strength indicator (RSSI) in the last received packet. Units: dBm<itemizedlist>
+<listitem><para>Range: -127 to +20 </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2269" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1aede425b88ecd9b7a8025fd159e477688" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_scanner_scan_report_s::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The channel number on which the last packet was received </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2272" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1ac7ae5cc12922c3744003d209c7489d6f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_scanner_scan_report_s::periodic_interval</definition>
+        <argsstring></argsstring>
+        <name>periodic_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The periodic advertising interval. Value 0 indicates no periodic advertising. Otherwise,<itemizedlist>
+<listitem><para>Range: 0x06 to 0xFFFF</para></listitem><listitem><para>Unit: 1.25 ms</para></listitem><listitem><para>Time range: 7.5 ms to 81.92 s </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2274" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00171_1a00a2c78b1e2b2c7d2d0843957ae106a3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00107" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_bt_evt_scanner_scan_report_s::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advertising or scan response data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2280" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the scan_report event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="87">
+        <label>bd_addr</label>
+        <link refid="a00115"/>
+      </node>
+      <node id="85">
+        <label>sl_bt_evt_scanner_scan_report_s</label>
+        <link refid="a00171"/>
+        <childnode refid="86" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="87" relation="usage">
+          <edgelabel>address</edgelabel>
+        </childnode>
+      </node>
+      <node id="86">
+        <label>uint8array</label>
+        <link refid="a00107"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2207" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2206" bodyend="2281"/>
+    <listofallmembers>
+      <member refid="a00171_1a0e661d2009e1c11b33b728d2b5573f19" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>address</name></member>
+      <member refid="a00171_1ad7044021ee5c12c7c728e0e0e0004156" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>address_type</name></member>
+      <member refid="a00171_1a2e3e8ff20f7f8083d71195962c20a163" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>adv_sid</name></member>
+      <member refid="a00171_1adaf7ee5d03417e1ac10ee89c48e3e902" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>bonding</name></member>
+      <member refid="a00171_1aede425b88ecd9b7a8025fd159e477688" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>channel</name></member>
+      <member refid="a00171_1a00a2c78b1e2b2c7d2d0843957ae106a3" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>data</name></member>
+      <member refid="a00171_1a3bce5fdb901374be536c7023448354ea" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>packet_type</name></member>
+      <member refid="a00171_1ac7ae5cc12922c3744003d209c7489d6f" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>periodic_interval</name></member>
+      <member refid="a00171_1a83526f3f717fa02821a4f25e60f17561" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>primary_phy</name></member>
+      <member refid="a00171_1aa2bb743b1a93cd76269ee0aef362d945" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>rssi</name></member>
+      <member refid="a00171_1a6654c46bf454fef9319b9f1bf65422e8" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>secondary_phy</name></member>
+      <member refid="a00171_1af19e2dfb295c6d176b3e7a87f597f137" prot="public" virt="non-virtual"><scope>sl_bt_evt_scanner_scan_report_s</scope><name>tx_power</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

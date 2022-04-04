@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00167" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_advertiser_scan_request_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00167_1ae72e79bcc9a843dee50edff7287f8d0d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_advertiser_scan_request_s::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advertising set handle where scan request was received </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1555" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00167_1a8758a891cf5ec5c684304ea275f75311" prot="public" static="no" mutable="no">
+        <type><ref refid="a00115" kindref="compound">bd_addr</ref></type>
+        <definition>bd_addr sl_bt_evt_advertiser_scan_request_s::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bluetooth address of the scanning device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1557" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00167_1a41706457c633741e3267967359e740d2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_advertiser_scan_request_s::address_type</definition>
+        <argsstring></argsstring>
+        <name>address_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scanner address type. Values:<itemizedlist>
+<listitem><para><bold>0:</bold> Public address</para></listitem><listitem><para><bold>1:</bold> Random address </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1558" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00167_1af62187d5e331c374a0866a4702d71740" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_advertiser_scan_request_s::bonding</definition>
+        <argsstring></argsstring>
+        <name>bonding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bonding handle if the remote scanning device has previously bonded with the local device. Values:<itemizedlist>
+<listitem><para><bold>SL_BT_INVALID_BONDING_HANDLE (0xff):</bold> No bonding</para></listitem><listitem><para><bold>Other:</bold> Bonding handle </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1561" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1561" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the scan_request event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>sl_bt_evt_advertiser_scan_request_s</label>
+        <link refid="a00167"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>address</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>bd_addr</label>
+        <link refid="a00115"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="1554" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="1553" bodyend="1566"/>
+    <listofallmembers>
+      <member refid="a00167_1a8758a891cf5ec5c684304ea275f75311" prot="public" virt="non-virtual"><scope>sl_bt_evt_advertiser_scan_request_s</scope><name>address</name></member>
+      <member refid="a00167_1a41706457c633741e3267967359e740d2" prot="public" virt="non-virtual"><scope>sl_bt_evt_advertiser_scan_request_s</scope><name>address_type</name></member>
+      <member refid="a00167_1af62187d5e331c374a0866a4702d71740" prot="public" virt="non-virtual"><scope>sl_bt_evt_advertiser_scan_request_s</scope><name>bonding</name></member>
+      <member refid="a00167_1ae72e79bcc9a843dee50edff7287f8d0d" prot="public" virt="non-virtual"><scope>sl_bt_evt_advertiser_scan_request_s</scope><name>handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

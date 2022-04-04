@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00089" kind="group">
+    <compoundname>sl_bt_evt_sm_bonding_failed</compoundname>
+    <title>sl_bt_evt_sm_bonding_failed</title>
+    <innerclass refid="a00295" prot="public">sl_bt_evt_sm_bonding_failed_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00089_1gac5ffc27a188f92736c36b1ac6a27aaa7" prot="public" static="no">
+        <type>struct <ref refid="a00295" kindref="compound">sl_bt_evt_sm_bonding_failed_s</ref></type>
+        <definition>typedef struct sl_bt_evt_sm_bonding_failed_s sl_bt_evt_sm_bonding_failed_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_sm_bonding_failed_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6316" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6585" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00089_1ga5b32fcfb3e11cbeb67bbf6ba8570355b" prot="public" static="no">
+        <name>sl_bt_evt_sm_bonding_failed_id</name>
+        <initializer>0x040f00a0</initializer>
+        <briefdescription>
+<para>Identifier of the bonding_failed event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="6574" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="6574" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This event is triggered if the pairing or bonding procedure fails. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

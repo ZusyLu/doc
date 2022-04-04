@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00124" kind="group">
+    <compoundname>sl_btmesh_evt_config_client_lpn_polltimeout_status</compoundname>
+    <title>sl_btmesh_evt_config_client_lpn_polltimeout_status</title>
+    <innerclass refid="a00559" prot="public">sl_btmesh_evt_config_client_lpn_polltimeout_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00124_1ga66678f9a49c266827f35427490ddc245" prot="public" static="no">
+        <type>struct <ref refid="a00559" kindref="compound">sl_btmesh_evt_config_client_lpn_polltimeout_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_config_client_lpn_polltimeout_status_s sl_btmesh_evt_config_client_lpn_polltimeout_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_config_client_lpn_polltimeout_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="6195" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00124_1ga3305f6702f9067313d27d8b3110208e1" prot="public" static="no">
+        <name>sl_btmesh_evt_config_client_lpn_polltimeout_status_id</name>
+        <initializer>0x182700a8</initializer>
+        <briefdescription>
+<para>Identifier of the lpn_polltimeout_status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="7146" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="7146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Status event for <ref refid="a00099_1gace4406c4040b221b699fbf8a24734a73" kindref="member">sl_btmesh_config_client_get_lpn_polltimeout</ref> command. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

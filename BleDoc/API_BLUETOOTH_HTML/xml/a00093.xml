@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00093" kind="group">
+    <compoundname>sl_bt_ota</compoundname>
+    <title>OTA</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00093_1ga4014311a5356b6e24be4afaad1878145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_ota_set_device_name</definition>
+        <argsstring>(size_t name_len, const uint8_t *name)</argsstring>
+        <name>sl_bt_ota_set_device_name</name>
+        <param>
+          <type>size_t</type>
+          <declname>name_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the device name to be used during the OTA update. The name is stored in the persistent store. Maximum name length is 17 bytes.</para><para>Default is &quot;OTA&quot; if a name is not set.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>name</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OTA device name</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7215" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00093_1ga38a718dcecffbf33113262533c574063" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_ota_set_advertising_data</definition>
+        <argsstring>(uint8_t packet_type, size_t adv_data_len, const uint8_t *adv_data)</argsstring>
+        <name>sl_bt_ota_set_advertising_data</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>packet_type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>adv_data_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>adv_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set advertising packets in OTA. Maximum 31 bytes of data can be set.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">packet_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This value selects whether data is intended for advertising packets or scan response packets.<itemizedlist>
+<listitem><para><bold>2:</bold> OTA advertising packets</para></listitem><listitem><para><bold>4:</bold> OTA scan response packets </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>adv_data</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to be set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00093_1ga2fed0d94cc58caeea76b111ab460d63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_ota_set_configuration</definition>
+        <argsstring>(uint32_t flags)</argsstring>
+        <name>sl_bt_ota_set_configuration</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set OTA configuration. The setting is stored in the persistent store.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>OTA configuration flags. This value is given as a bitmask. Flags:</para><para>Bit 0: Advertising address</para><para><itemizedlist>
+<listitem><para><bold>0:</bold> Use public device address</para></listitem><listitem><para><bold>1:</bold> Use a random address</para></listitem></itemizedlist>
+</para><para>Bit 1: Application update version check. Check the version number and product ID of the application upgrade before applying. If the version number of the current application can not be determined, this implementation will assume that it is OK to apply the new image. Note that this is not a security feature.</para><para><itemizedlist>
+<listitem><para><bold>0:</bold> Disable version check</para></listitem><listitem><para><bold>1:</bold> Enable version check</para></listitem></itemizedlist>
+</para><para>Bit 2 to 31: Reserved</para><para>Default value: 0 </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7264" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00093_1ga67295dbe0c1eb0d2a62c054bcd23779e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_ota_set_rf_path</definition>
+        <argsstring>(uint8_t enable, uint8_t antenna)</argsstring>
+        <name>sl_bt_ota_set_rf_path</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>antenna</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set RF path antenna for OTA. Should be used only if device has multiple antenna ports. The setting is stored in the persistent store.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If enabled antenna selection is used in OTA, otherwise default antenna is used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">antenna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set antenna used in OTA. Value should be come from RAIL_AntennaSel_t enum. See antenna path selection in RAIL rail_chip_specific.h.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7280" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00093_1gaaaa1851b07c7bd2c867c25335ea5476a" prot="public" static="no">
+        <name>sl_bt_cmd_ota_set_device_name_id</name>
+        <initializer>0x01100020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7193" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="7193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00093_1gad090781c4e07ded9e0a73cb6de71414a" prot="public" static="no">
+        <name>sl_bt_cmd_ota_set_advertising_data_id</name>
+        <initializer>0x02100020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7194" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="7194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00093_1ga919a29e5c97257697948802e7934633e" prot="public" static="no">
+        <name>sl_bt_cmd_ota_set_configuration_id</name>
+        <initializer>0x03100020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7195" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="7195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00093_1gaae10fab4a31d6594f106a7340a02dbc0" prot="public" static="no">
+        <name>sl_bt_cmd_ota_set_rf_path_id</name>
+        <initializer>0x04100020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7196" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="7196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00093_1ga259606cab34091c3e3861992eb45bcb1" prot="public" static="no">
+        <name>sl_bt_rsp_ota_set_device_name_id</name>
+        <initializer>0x01100020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7197" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="7197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00093_1ga1fdd175b3c5550c241dd2b173de14582" prot="public" static="no">
+        <name>sl_bt_rsp_ota_set_advertising_data_id</name>
+        <initializer>0x02100020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7198" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="7198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00093_1ga852e08781cdce21ac502314e41e63f45" prot="public" static="no">
+        <name>sl_bt_rsp_ota_set_configuration_id</name>
+        <initializer>0x03100020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7199" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="7199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00093_1ga57486c68d2c92cd865337562712b7168" prot="public" static="no">
+        <name>sl_bt_rsp_ota_set_rf_path_id</name>
+        <initializer>0x04100020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="7200" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="7200" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>OTA. </para>    </briefdescription>
+    <detaileddescription>
+<para>Commands for configuring OTA DFU. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

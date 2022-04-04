@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00044" kind="group">
+    <compoundname>sl_bt_sync</compoundname>
+    <title>Synchronization</title>
+    <innergroup refid="a00045">sl_bt_evt_sync_opened</innergroup>
+    <innergroup refid="a00046">sl_bt_evt_sync_data</innergroup>
+    <innergroup refid="a00047">sl_bt_evt_sync_closed</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00044_1gacf10b05b3679bf358e10775bee5bcd60" prot="public" static="no">
+        <name>sl_bt_sync_advertiser_clock_accuracy_t</name>
+        <enumvalue id="a00044_1ggacf10b05b3679bf358e10775bee5bcd60ad1fd26a5d7cce17adcfb968e80a73f31" prot="public">
+          <name>sl_bt_sync_clock_accuracy_500</name>
+          <initializer>= 0x1f4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1f4) Clock accuracy 500 ppm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00044_1ggacf10b05b3679bf358e10775bee5bcd60ac16d4c34f34fcada454bc3d9e72788a0" prot="public">
+          <name>sl_bt_sync_clock_accuracy_250</name>
+          <initializer>= 0xfa</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0xfa) Clock accuracy 250 ppm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00044_1ggacf10b05b3679bf358e10775bee5bcd60a13c496b240f1631d36d7c3f442d65adc" prot="public">
+          <name>sl_bt_sync_clock_accuracy_150</name>
+          <initializer>= 0x96</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x96) Clock accuracy 150 ppm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00044_1ggacf10b05b3679bf358e10775bee5bcd60a8ee87dbc3aa74cb7bd0de64e00df2cb0" prot="public">
+          <name>sl_bt_sync_clock_accuracy_100</name>
+          <initializer>= 0x64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x64) Clock accuracy 100 ppm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00044_1ggacf10b05b3679bf358e10775bee5bcd60a4f4e283b15a84c02aba61c2b20b6ef91" prot="public">
+          <name>sl_bt_sync_clock_accuracy_75</name>
+          <initializer>= 0x4b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x4b) Clock accuracy 75 ppm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00044_1ggacf10b05b3679bf358e10775bee5bcd60acb6c7e67037885dc1b4899e5605dab61" prot="public">
+          <name>sl_bt_sync_clock_accuracy_50</name>
+          <initializer>= 0x32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x32) Clock accuracy 50 ppm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00044_1ggacf10b05b3679bf358e10775bee5bcd60a6f02d76ce4e49796868cba41ae057ab6" prot="public">
+          <name>sl_bt_sync_clock_accuracy_30</name>
+          <initializer>= 0x1e</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x1e) Clock accuracy 30 ppm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00044_1ggacf10b05b3679bf358e10775bee5bcd60a3679e701ffeb40d8adf9d8ddf08bb86b" prot="public">
+          <name>sl_bt_sync_clock_accuracy_20</name>
+          <initializer>= 0x14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(0x14) Clock accuracy 20 ppm </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>These values indicate the advertiser clock accuracy in a periodic advertising synchronization. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2446" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2445" bodyend="2455"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00044_1ga04810b05dca2fa9feb04fa1ab6f11780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_sync_set_parameters</definition>
+        <argsstring>(uint16_t skip, uint16_t timeout, uint32_t flags)</argsstring>
+        <name>sl_bt_sync_set_parameters</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>skip</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure periodic advertiser synchronization parameters. The specified parameters take effect immediately for all advertisers that have not already established synchronization.</para><para>The application should determine skip and timeout values based on the periodic advertising interval provided by the advertiser. It is recommended to use a long enough timeout that allows multiple receives. If <computeroutput>skip</computeroutput> and <computeroutput>timeout</computeroutput> are used, select appropriate values so that they allow a few receiving attempts. Periodic advertising intervals are reported in event <ref refid="a00043" kindref="compound">sl_bt_evt_scanner_scan_report</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of periodic advertising packets that can be skipped after a successful receive.<itemizedlist>
+<listitem><para>Range: 0x0000 to 0x01F3</para></listitem><listitem><para>Default value: 0 </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum permitted time between successful receives. If this time is exceeded, synchronization is lost. Unit: 10 ms.<itemizedlist>
+<listitem><para>Range: 0x0A to 0x4000</para></listitem><listitem><para>Unit: 10 ms</para></listitem><listitem><para>Time range: 100 ms to 163.84 s</para></listitem><listitem><para>Default value: 1000 ms </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No flags defined currently</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2593" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00044_1ga31fae9594179cf055bc2d3cfaa4fc509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_sync_open</definition>
+        <argsstring>(bd_addr address, uint8_t address_type, uint8_t adv_sid, uint16_t *sync)</argsstring>
+        <name>sl_bt_sync_open</name>
+        <param>
+          <type><ref refid="a00115" kindref="compound">bd_addr</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>address_type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>adv_sid</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>sync</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start establishing synchronization with the specified periodic advertiser in parallel with other advertisers given in previous invocations of this command. The stack will internally enable scanning when needed so that synchronizations can occur. The scanning responses from the internal scanning are not passed to the application unless the application has also enabled scanning.</para><para>Advertisers that have not already synced before the invocation of this command will be synced using the <computeroutput>skip</computeroutput> and <computeroutput>timeout</computeroutput> values configured in the most recent invocation of command <ref refid="a00043" kindref="compound">sl_bt_evt_scanner_scan_report</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the advertiser </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">address_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertiser address type. Values:<itemizedlist>
+<listitem><para><bold>0:</bold> Public address</para></listitem><listitem><para><bold>1:</bold> Random address </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">adv_sid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Advertising set identifier </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">sync</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle that will be assigned to the periodic advertising synchronization after the synchronization is established. This handle is valid only if the result code of this response is SL_STATUS_OK.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00045" kindref="compound">sl_bt_evt_sync_opened</ref> - Triggered after the synchronization is established.</para></listitem><listitem><para><ref refid="a00046" kindref="compound">sl_bt_evt_sync_data</ref> - Indicates that a periodic advertisement packet is received.</para></listitem><listitem><para><ref refid="a00047" kindref="compound">sl_bt_evt_sync_closed</ref> - Triggered after periodic advertising synchronization was lost or explicitly closed, or a synchronization establishment procedure was canceled. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2631" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00044_1ga628b8ea37bf3347475eb01b0971981aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_sync_close</definition>
+        <argsstring>(uint16_t sync)</argsstring>
+        <name>sl_bt_sync_close</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>sync</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Closes a periodic advertising synchronization or cancels an ongoing attempt of establishing a synchronization.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sync</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Periodic advertising synchronization handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00047" kindref="compound">sl_bt_evt_sync_closed</ref> - Triggered after a periodic advertising synchronization has been closed or canceled. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2650" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00044_1gaad3e95702a3e279ed6968704af7d1b57" prot="public" static="no">
+        <name>sl_bt_cmd_sync_set_parameters_id</name>
+        <initializer>0x02420020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2433" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00044_1ga378b078c5bf199270b4132dee95b5588" prot="public" static="no">
+        <name>sl_bt_cmd_sync_open_id</name>
+        <initializer>0x00420020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2434" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00044_1gabccfebee751169c6680fdf8f97c49cb6" prot="public" static="no">
+        <name>sl_bt_cmd_sync_close_id</name>
+        <initializer>0x01420020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2435" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00044_1ga60fa8deeac51439419162e34be249b51" prot="public" static="no">
+        <name>sl_bt_rsp_sync_set_parameters_id</name>
+        <initializer>0x02420020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2436" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00044_1gad81d6d09ac625b786530d00387120c03" prot="public" static="no">
+        <name>sl_bt_rsp_sync_open_id</name>
+        <initializer>0x00420020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2437" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00044_1gacd0318ab43c4be4e0c0af910d54d46ab" prot="public" static="no">
+        <name>sl_bt_rsp_sync_close_id</name>
+        <initializer>0x01420020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2438" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2438" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Synchronization. </para>    </briefdescription>
+    <detaileddescription>
+<para>Provides periodic advertising synchronization feature. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

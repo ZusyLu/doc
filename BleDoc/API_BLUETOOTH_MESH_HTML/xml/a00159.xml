@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00159" kind="group">
+    <compoundname>sl_btmesh_evt_lc_server_ambient_lux_level_updated</compoundname>
+    <title>sl_btmesh_evt_lc_server_ambient_lux_level_updated</title>
+    <innerclass refid="a00679" prot="public">sl_btmesh_evt_lc_server_ambient_lux_level_updated_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00159_1ga721af62529dcc8bc2c3634d83bd4b115" prot="public" static="no">
+        <type>struct <ref refid="a00679" kindref="compound">sl_btmesh_evt_lc_server_ambient_lux_level_updated_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_lc_server_ambient_lux_level_updated_s sl_btmesh_evt_lc_server_ambient_lux_level_updated_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_lc_server_ambient_lux_level_updated_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10096" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10402" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00159_1gabd230f911df6dc42a53be9431e562284" prot="public" static="no">
+        <name>sl_btmesh_evt_lc_server_ambient_lux_level_updated_id</name>
+        <initializer>0x044d00a8</initializer>
+        <briefdescription>
+<para>Identifier of the ambient_lux_level_updated event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10386" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10386" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LC Ambient LuxLevel state has been updated. </para>    </briefdescription>
+    <detaileddescription>
+<para>The update is triggered by a reception of a sensor message. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

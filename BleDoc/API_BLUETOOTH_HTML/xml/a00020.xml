@@ -1,0 +1,942 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00020" kind="file" language="C++">
+    <compoundname>sl_bt_stack_init.h</compoundname>
+    <includes local="yes">sl_status.h</includes>
+    <includes refid="a00011" local="yes">sl_bt_api.h</includes>
+    <includes local="yes">sl_bt_stack_config.h</includes>
+    <incdepgraph>
+      <node id="42">
+        <label>stdbool.h</label>
+      </node>
+      <node id="37">
+        <label>sl_status.h</label>
+      </node>
+      <node id="40">
+        <label>stdint.h</label>
+      </node>
+      <node id="41">
+        <label>stddef.h</label>
+      </node>
+      <node id="43">
+        <label>sl_bgapi.h</label>
+        <link refid="a00008_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>string.h</label>
+      </node>
+      <node id="44">
+        <label>sl_bt_api_compatibility.h</label>
+        <link refid="a00014_source"/>
+      </node>
+      <node id="45">
+        <label>sl_bt_stack_config.h</label>
+      </node>
+      <node id="36">
+        <label>/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h</label>
+        <link refid="a00020"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>sl_bt_api.h</label>
+        <link refid="a00011_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00020_1a709cf9802f252d908ddd970bef039ca7" prot="public" static="no">
+        <name>SL_BT_BGAPI_CLASS</name>
+        <param><defname>class_name</defname></param>
+        <initializer>&amp;sli_bgapi_class_bt_ ## class_name ## _optimized</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="80" column="10" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="a00020_1a3150dd82498cbcb434e997f856953e06" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_dfu_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_dfu_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a848edd1a0a1f5db40c15b654d1e3dc16" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_dfu_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_dfu_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a929856f8f5e4429410ce0127bc7e26b9" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_system_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_system_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1af31e535623bb1efa8066c9bfcf2a6c70" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_system_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_system_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1aad69901726292a484d87f7367f8d10d6" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_gap_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_gap_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1ab2282c6604dc54a616519e63cfd9d3b8" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_gap_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_gap_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1aca3056bea8497964e9f54c5d29419e24" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_advertiser_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_advertiser_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a6edf5e441c67b2e8b0fc186da699b499" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_advertiser_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_advertiser_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1add7306c00f8cc307dffb6a77b6d6e4ed" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_scanner_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_scanner_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1ae2eaff74cdfddbb48e26bedb73643789" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_scanner_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_scanner_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a68ceb65b278038325a53d70726586593" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_sync_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_sync_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1ae7c2c8b650a3aa1c273772a23782aa75" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_sync_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_sync_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a277dc1243ff237df8ebf5b5581a50f2a" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_connection_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_connection_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a8c899bf55901ddaf026a0e295ac07d50" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_connection_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_connection_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1abbfa9d21eeb7fa0f070ee03c9509a072" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_gatt_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_gatt_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1adafcbf12dba60741bccf7a9d8f77387f" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_gatt_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_gatt_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a7a4616f95b00e2a070bce646d618ebd0" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_gattdb_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_gattdb_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1ac7cbc15e3715b5b9f45609e0db445cac" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_gattdb_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_gattdb_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a6b4a37a85d539dbb0109e2fa988bbcbd" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_gatt_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_gatt_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1ad1a668f9b66632475ca9c2820662807d" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_gatt_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_gatt_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a9fac630923e0be16498ffb7c29a8aabe" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_nvm_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_nvm_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a4914d17cc31613a17203e1059b3baf37" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_nvm_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_nvm_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a5de5eb338244ada4414819ac7fd65e9d" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_test_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_test_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a1f932eaea16bdd6bfff300386dca8775" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_test_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_test_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a6a2be0fd1f1d29ae064649fcc2e4dda7" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_sm_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_sm_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a7e09ffb22508480c98ca4b34dd2b0ef8" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_sm_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_sm_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a7347783f7e2d6c0f4e24e69ef2027eb6" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_ota_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_ota_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1aa64798d49c9a7310956db633886b08d5" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_ota_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_ota_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1af54c23c0c921a96e14a3bcdffb2fa62b" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_coex_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_coex_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1ae304d0278cfbc19d23fcc5014f6260e2" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_coex_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_coex_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1aae8a7a8b69950d37d92940f42274d6ee" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_l2cap_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_l2cap_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a5799bd550f0e4cca8a4d8a3c5cd171d9" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_l2cap_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_l2cap_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a796a24cf7ac935f606f56bdf15db2e31" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_cte_transmitter_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_cte_transmitter_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1acfe3a6a7f3265235b6d8100989bbed60" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_cte_transmitter_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_cte_transmitter_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a30efff12bab01b0fb7795f3b088738b5" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_cte_receiver_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_cte_receiver_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a276f9bba789c73832634177983da515c" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_cte_receiver_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_cte_receiver_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1aa23bfacf7efc7f6a75b1e7b6b9969d06" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_memory_profiler_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_memory_profiler_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00020_1a7072787bee076dd66c8fc029b2cd9661" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_bt_memory_profiler_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_bt_memory_profiler_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="104" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00020_1a68ea294d485d3ca6863a9018e24cc35b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_btctrl_init_afh</definition>
+        <argsstring>(uint32_t flags)</argsstring>
+        <name>sl_btctrl_init_afh</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1a999ba1653e850d03f4c45a3e405cb680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_btctrl_init_periodic_adv</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btctrl_init_periodic_adv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1afe6992fa6d4836af7c64a7e450879896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_btctrl_enable_even_connsch</definition>
+        <argsstring>()</argsstring>
+        <name>sl_btctrl_enable_even_connsch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1a1a85f4a711461903d500fd8b9c6f2337" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sli_bt_init_periodic_advertising</definition>
+        <argsstring>()</argsstring>
+        <name>sli_bt_init_periodic_advertising</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1a1da862eb61d4a8848e9ef81436320ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sli_bt_init_whitelisting</definition>
+        <argsstring>()</argsstring>
+        <name>sli_bt_init_whitelisting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1ab21723ba84549af746bbdfcb0912ebdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_memory_profiler_init</definition>
+        <argsstring>()</argsstring>
+        <name>sl_memory_profiler_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1a9dbef26f1d173e9c7da203c601a73a45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sli_bt_init_on_demand_start</definition>
+        <argsstring>()</argsstring>
+        <name>sli_bt_init_on_demand_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1a4448c131d7443f0dfa8ad6bdd3383151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sli_bgapi_init_rtos_adaptation</definition>
+        <argsstring>()</argsstring>
+        <name>sli_bgapi_init_rtos_adaptation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1a7f914b22d95800c79205d211fc4dfe0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_init_stack</definition>
+        <argsstring>(const sl_bt_configuration_t *config)</argsstring>
+        <name>sl_bt_init_stack</name>
+        <param>
+          <type>const sl_bt_configuration_t *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the Bluetooth stack. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer of a valid configuration parameters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if the initialization was successful; Other error code indicates a failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1ad28f8657238a9a7bfe99bcde0109924f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sl_bt_init_on_demand_start</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_init_on_demand_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the Bluetooth on-demand start feature.</para><para>This function is automatically called by code generated by the Universal Configurator if the feature is included in the project. The application is not expected to call this function directly. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="99" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1ad52e9d7e5e6e003f600a458aa198f101" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sl_bgapi_init_rtos_adaptation</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bgapi_init_rtos_adaptation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize BGAPI RTOS adaptation.</para><para>This function is automatically called by code generated by the Universal Configurator if the feature is included in the project. The application is not expected to call this function directly. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="111" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1a6353d7e9d79bd3c48fdf539f85d13069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sl_bt_init_multiprotocol</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_init_multiprotocol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize multiprotocol. Please note that multiprotocol version of RAIL is needed.</para><para>This function is automatically called by code generated by the Universal Configurator if the feature is included in the project. The application is not expected to call this function directly. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1aa08423975e05f38d9cd2559012a51603" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sl_bt_init_afh</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_init_afh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize and enable Adaptive Frequency Hopping (AFH) feature.</para><para>This function is automatically called by code generated by the Universal Configurator if the feature is included in the project. The application is not expected to call this function directly. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="133" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1a04ded70e18967c0b36aaca2c9afd586b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sl_bt_enable_even_scheduling</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_enable_even_scheduling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable even scheduling algorithm for Bluetooth</para><para>This function is automatically called by code generated by the Universal Configurator if the feature is included in the project. The application is not expected to call this function directly. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="145" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1add2b33747fe66844d91485e838f19346" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sl_bt_init_periodic_advertising</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_init_periodic_advertising</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize and enable Periodic Advertising feature.</para><para>This function is automatically called by code generated by the Universal Configurator if the feature is included in the project. The application is not expected to call this function directly. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="157" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" bodystart="157" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1a5f31d23654b37fd0da556cd9c83dc80b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sl_bt_init_whitelisting</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_init_whitelisting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize whitelisting feature.</para><para>This function is automatically called by code generated by the Universal Configurator if the feature is included in the project. The application is not expected to call this function directly. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="170" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="a00020_1a189886c587e57bb6dc6cd1bd355b087e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_init_classes</definition>
+        <argsstring>(const struct sli_bgapi_class *const *classes)</argsstring>
+        <name>sl_bt_init_classes</name>
+        <param>
+          <type>const struct sli_bgapi_class *const *</type>
+          <declname>classes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the BGAPI classes for bt stack.</para><para>This function is automatically called by code generated by the Universal Configurator if the feature is included in the project. The application is not expected to call this function directly.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">classes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL-terminated array of pointers to class declarations. The array must remain valid until the next system reboot.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if the initialization was successful; Other error code indicates a failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h" line="189" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>SL_BT_STACK_INIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_STACK_INIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sl_status.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sl_bt_api.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sl_bt_stack_config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Forward<sp/>declarations<sp/>of<sp/>BGAPI<sp/>class<sp/>declaration<sp/>structures<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_dfu_optimized;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_dfu_full;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_system_optimized;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_system_full;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_gap_optimized;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_gap_full;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_advertiser_optimized;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_advertiser_full;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_scanner_optimized;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_scanner_full;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_sync_optimized;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_sync_full;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_connection_optimized;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_connection_full;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_gatt_optimized;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_gatt_full;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_gattdb_optimized;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_gattdb_full;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_gatt_server_optimized;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_gatt_server_full;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_nvm_optimized;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_nvm_full;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_test_optimized;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_test_full;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_sm_optimized;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_sm_full;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_ota_optimized;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_ota_full;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_coex_optimized;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_coex_full;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_l2cap_optimized;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_l2cap_full;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_cte_transmitter_optimized;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_cte_transmitter_full;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_cte_receiver_optimized;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_cte_receiver_full;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_memory_profiler_optimized;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_bt_memory_profiler_full;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_btctrl_init_afh(uint32_t<sp/>flags);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_btctrl_init_periodic_adv();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_btctrl_enable_even_connsch();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sli_bt_init_periodic_advertising();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sli_bt_init_whitelisting();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_memory_profiler_init();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sli_bt_init_on_demand_start();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sli_bgapi_init_rtos_adaptation();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Macro<sp/>to<sp/>get<sp/>a<sp/>pointer<sp/>to<sp/>a<sp/>BGAPI<sp/>class<sp/>declaration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SL_BT_API_FULL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_BGAPI_CLASS(class_name)<sp/>&amp;sli_bgapi_class_bt_<sp/>##<sp/>class_name<sp/>##<sp/>_full</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_BGAPI_CLASS(class_name)<sp/>&amp;sli_bgapi_class_bt_<sp/>##<sp/>class_name<sp/>##<sp/>_optimized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">sl_status_t<sp/>sl_bt_init_stack(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sl_bt_configuration_t<sp/>*config);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_bt_init_on_demand_start()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>sli_bt_init_on_demand_start();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_bgapi_init_rtos_adaptation()</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>sli_bgapi_init_rtos_adaptation();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_bt_init_multiprotocol();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_bt_init_afh()</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>sl_btctrl_init_afh(1);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_bt_enable_even_scheduling()</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>sl_btctrl_enable_even_connsch();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_bt_init_periodic_advertising()</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>sl_btctrl_init_periodic_adv();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>sli_bt_init_periodic_advertising();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sl_bt_init_whitelisting()</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>sli_bt_init_whitelisting();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal">sl_status_t<sp/>sl_bt_init_classes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>sli_bgapi_class<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<sp/>classes);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_stack_init.h"/>
+  </compounddef>
+</doxygen>

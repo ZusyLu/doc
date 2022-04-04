@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00079" kind="group">
+    <compoundname>sl_btmesh_evt_generic_client_server_status</compoundname>
+    <title>sl_btmesh_evt_generic_client_server_status</title>
+    <innerclass refid="a00411" prot="public">sl_btmesh_evt_generic_client_server_status_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00079_1ga22ea1a48be54fb1b46f8caabe1ff5635" prot="public" static="no">
+        <type>struct <ref refid="a00411" kindref="compound">sl_btmesh_evt_generic_client_server_status_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_generic_client_server_status_s sl_btmesh_evt_generic_client_server_status_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_generic_client_server_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3681" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="4016" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00079_1ga855f54dd1e5b5f6d4e1ffb34e85c702a" prot="public" static="no">
+        <name>sl_btmesh_evt_generic_client_server_status_id</name>
+        <initializer>0x001e00a8</initializer>
+        <briefdescription>
+<para>Identifier of the server_status event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3985" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3985" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Status report sent by a server model. </para>    </briefdescription>
+    <detaileddescription>
+<para>This may be generated either because of a response to a get or set request was received by the client model or because the client model received a spontaneously generated status indication sent to an address the model was subscribed to. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

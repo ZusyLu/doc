@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00779" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_time_client_time_role_status_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00779_1a420c48bb050ef5242aa25c270368e463" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_time_role_status_s::client_address</definition>
+        <argsstring></argsstring>
+        <name>client_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Client address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12279" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00779_1a6a0c41df61c0a59b24e01ecf973c7986" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_time_role_status_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Client model element index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12280" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00779_1ad183d22d942f1751623f1217b0af3d52" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_time_role_status_s::server_address</definition>
+        <argsstring></argsstring>
+        <name>server_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unicast address of the server </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12281" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00779_1a3b4a47c11696984b8101dc6d4367c368" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_time_client_time_role_status_s::appkey_index</definition>
+        <argsstring></argsstring>
+        <name>appkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>App key index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12282" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00779_1aadf14c299ecab1a3fac03f9d6b4e0e41" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_time_client_time_role_status_s::time_role</definition>
+        <argsstring></argsstring>
+        <name>time_role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Time Role for the element </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12283" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12283" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the time_role_status event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12278" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12277" bodyend="12284"/>
+    <listofallmembers>
+      <member refid="a00779_1a3b4a47c11696984b8101dc6d4367c368" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_role_status_s</scope><name>appkey_index</name></member>
+      <member refid="a00779_1a420c48bb050ef5242aa25c270368e463" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_role_status_s</scope><name>client_address</name></member>
+      <member refid="a00779_1a6a0c41df61c0a59b24e01ecf973c7986" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_role_status_s</scope><name>elem_index</name></member>
+      <member refid="a00779_1ad183d22d942f1751623f1217b0af3d52" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_role_status_s</scope><name>server_address</name></member>
+      <member refid="a00779_1aadf14c299ecab1a3fac03f9d6b4e0e41" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_time_client_time_role_status_s</scope><name>time_role</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

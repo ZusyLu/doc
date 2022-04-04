@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00130" kind="group">
+    <compoundname>sl_btmesh_evt_sensor_server_get_column_request</compoundname>
+    <title>sl_btmesh_evt_sensor_server_get_column_request</title>
+    <innerclass refid="a00579" prot="public">sl_btmesh_evt_sensor_server_get_column_request_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00130_1ga9d6f3a31672ef8f2ff4b5568e82ded0b" prot="public" static="no">
+        <type>struct <ref refid="a00579" kindref="compound">sl_btmesh_evt_sensor_server_get_column_request_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_sensor_server_get_column_request_s sl_btmesh_evt_sensor_server_get_column_request_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_sensor_server_get_column_request_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8419" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8524" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00130_1gaeb3997ad00e1f411acd4b3c3bdc5a0af" prot="public" static="no">
+        <name>sl_btmesh_evt_sensor_server_get_column_request_id</name>
+        <initializer>0x024700a8</initializer>
+        <briefdescription>
+<para>Identifier of the get_column_request event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8506" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8506" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicate an incoming Sensor Column Get message to get Sensor Series Column state. </para>    </briefdescription>
+    <detaileddescription>
+<para>The event must be replied to by sending a Sensor Column Status message. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

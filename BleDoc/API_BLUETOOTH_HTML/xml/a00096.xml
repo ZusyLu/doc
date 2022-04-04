@@ -1,0 +1,685 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00096" kind="group">
+    <compoundname>sl_bt_cte_receiver</compoundname>
+    <title>CTE Receiver</title>
+    <innergroup refid="a00097">sl_bt_evt_cte_receiver_dtm_iq_report</innergroup>
+    <innergroup refid="a00098">sl_bt_evt_cte_receiver_connection_iq_report</innergroup>
+    <innergroup refid="a00099">sl_bt_evt_cte_receiver_connectionless_iq_report</innergroup>
+    <innergroup refid="a00100">sl_bt_evt_cte_receiver_silabs_iq_report</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00096_1ga8c9ade43479e0eeddff587b18f8f5b49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_cte_receiver_set_dtm_parameters</definition>
+        <argsstring>(uint8_t cte_length, uint8_t cte_type, uint8_t slot_durations, size_t switching_pattern_len, const uint8_t *switching_pattern)</argsstring>
+        <name>sl_bt_cte_receiver_set_dtm_parameters</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>cte_length</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cte_type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>slot_durations</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>switching_pattern_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>switching_pattern</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set CTE-related parameters of LE receiver test.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cte_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Expected CTE length in 8 us units<itemizedlist>
+<listitem><para><bold>0:</bold> No CTE</para></listitem><listitem><para><bold>0x02 to 0x14:</bold> Expected CTE length</para></listitem></itemizedlist>
+</para><para>Default: 0 (no CTE) </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cte_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Expected CTE type<itemizedlist>
+<listitem><para><bold>0:</bold> Expect AoA CTE</para></listitem><listitem><para><bold>1:</bold> Expect AoD CTE with 1 us slots</para></listitem><listitem><para><bold>2:</bold> Expect AoD CTE with 2 us slots</para></listitem></itemizedlist>
+</para><para>Default: 0 </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">slot_durations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Slot durations<itemizedlist>
+<listitem><para><bold>1:</bold> Switching and sampling slots are 1 us each</para></listitem><listitem><para><bold>2:</bold> Switching and sampling slots are 2 us each</para></listitem></itemizedlist>
+</para><para>Default: 1 </para></parblock></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switching_pattern_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>switching_pattern</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switching_pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Antenna switching pattern. Antennas will be switched in this order with the antenna switch pins during CTE. If the CTE is longer than the switching pattern, the pattern starts over. This can be an empty array if CTE is unused.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00097" kindref="compound">sl_bt_evt_cte_receiver_dtm_iq_report</ref> - Triggered when IQ samples have been received. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00096_1gaf192a0dacdc26d14dc03bce6933e423a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_cte_receiver_clear_dtm_parameters</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_cte_receiver_clear_dtm_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear CTE-related parameters that were previously set for LE receiver test. Default values will be restored for these parameters.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8303" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00096_1gab917c46b7cee63d8ccf2b2f57bb08bf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_cte_receiver_set_sync_cte_type</definition>
+        <argsstring>(uint8_t sync_cte_type)</argsstring>
+        <name>sl_bt_cte_receiver_set_sync_cte_type</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>sync_cte_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the sync CTE type to limit what types of periodic advertisers to sync to. The set parameter takes effect immediately for all advertisers that have not already established synchronization.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sync_cte_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parblock><para>Sync CTE type flags. This value can be a bitmask of multiple flags. Flags:<itemizedlist>
+<listitem><para><bold>1 (bit 0):</bold> Do not sync to packets with an AoA Constant Tone Extension</para></listitem><listitem><para><bold>2 (bit 1):</bold> Do not sync to packets with an AoD Constant Tone Extension with 1 us slots</para></listitem><listitem><para><bold>4 (bit 2):</bold> Do not sync to packets with an AoD Constant Tone Extension with 2 us slots</para></listitem><listitem><para><bold>8 (bit 3):</bold> Bit not used</para></listitem><listitem><para><bold>16 (bit 4):</bold> Do not sync to packets without a Constant Tone Extension</para></listitem></itemizedlist>
+</para><para>Default: 0 </para></parblock></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00096_1ga83b9c7f10f89dd5b39bc73fd89bcf2df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_cte_receiver_configure</definition>
+        <argsstring>(uint8_t flags)</argsstring>
+        <name>sl_bt_cte_receiver_configure</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8351" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00096_1ga85a539f4ab27fa956f3f456d77738dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_cte_receiver_enable_connection_cte</definition>
+        <argsstring>(uint8_t connection, uint16_t interval, uint8_t cte_length, uint8_t cte_type, uint8_t slot_durations, size_t switching_pattern_len, const uint8_t *switching_pattern)</argsstring>
+        <name>sl_bt_cte_receiver_enable_connection_cte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>interval</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cte_length</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cte_type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>slot_durations</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>switching_pattern_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>switching_pattern</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start IQ samplings on a connection. A CTE requests will be initiated periodically on the given connection and IQ sampling will be made on the received CTE responses.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Measurement interval. CTE requests may be sent less often. For example, if a connetion event is missed for some reason, the CTE request will be sent in the next connection event.<itemizedlist>
+<listitem><para><bold>0:</bold> No interval. The request is initiated only once.</para></listitem><listitem><para><bold>Other values N:</bold> Initiate the request every N-th connection events </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cte_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum CTE length requested in 8 us units.<itemizedlist>
+<listitem><para>Range: 0x02 to 0x14</para></listitem><listitem><para>Time Range: 16 us to 160 us </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cte_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested CTE type<itemizedlist>
+<listitem><para><bold>0:</bold> AoA CTE</para></listitem><listitem><para><bold>1:</bold> AoD CTE with 1 us slots</para></listitem><listitem><para><bold>2:</bold> AoD CTE with 2 us slots </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">slot_durations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Slot durations<itemizedlist>
+<listitem><para><bold>1:</bold> Switching and sampling slots are 1 us each</para></listitem><listitem><para><bold>2:</bold> Switching and sampling slots are 2 us each </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switching_pattern_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>switching_pattern</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switching_pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Antenna switching pattern. Antennas will be switched in this order with the antenna switch pins during CTE. If the CTE is longer than the switching pattern, the pattern starts over.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00098" kindref="compound">sl_bt_evt_cte_receiver_connection_iq_report</ref> - Triggered when IQ samples have been received. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8388" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00096_1ga5baac4de4263a7ab3f3d750f4631803b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_cte_receiver_disable_connection_cte</definition>
+        <argsstring>(uint8_t connection)</argsstring>
+        <name>sl_bt_cte_receiver_disable_connection_cte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the IQ sampling on a connection. CTEs will not be requested on the given connection.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8406" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00096_1ga8f7472ae5d7047fbe1d09d0d72247ece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_cte_receiver_enable_connectionless_cte</definition>
+        <argsstring>(uint16_t sync, uint8_t slot_durations, uint8_t cte_count, size_t switching_pattern_len, const uint8_t *switching_pattern)</argsstring>
+        <name>sl_bt_cte_receiver_enable_connectionless_cte</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>sync</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>slot_durations</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cte_count</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>switching_pattern_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>switching_pattern</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start IQ sampling on a periodic advertising synchronization. IQ samples are taken on each CTE found in the periodic advertisements.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sync</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Periodic advertising synchronization handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">slot_durations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Slot durations<itemizedlist>
+<listitem><para><bold>1:</bold> Switching and sampling slots are 1 us each</para></listitem><listitem><para><bold>2:</bold> Switching and sampling slots are 2 us each </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cte_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- <bold>0:</bold> Sample and report all available CTEs<itemizedlist>
+<listitem><para><bold>Other values:</bold> Maximum number of sampled CTEs in each periodic advertising interval </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switching_pattern_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>switching_pattern</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switching_pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Antenna switching pattern. Antennas will be switched in this order with the antenna switch pins during CTE. If the CTE is longer than the switching pattern, the pattern starts over.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00099" kindref="compound">sl_bt_evt_cte_receiver_connectionless_iq_report</ref> - Triggered when IQ samples have been received. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8432" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00096_1ga39810885827b3638f54e8a29fd8976cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_cte_receiver_disable_connectionless_cte</definition>
+        <argsstring>(uint16_t sync)</argsstring>
+        <name>sl_bt_cte_receiver_disable_connectionless_cte</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>sync</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop IQ sampling on a periodic advertising synchronization.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sync</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Periodic advertising synchronization handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8447" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00096_1ga25e401e84b119977021a8071f75c532e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_cte_receiver_enable_silabs_cte</definition>
+        <argsstring>(uint8_t slot_durations, uint8_t cte_count, size_t switching_pattern_len, const uint8_t *switching_pattern)</argsstring>
+        <name>sl_bt_cte_receiver_enable_silabs_cte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>slot_durations</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cte_count</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>switching_pattern_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>switching_pattern</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable IQ sampling of Silicon Labs CTE found in extended advertisements.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">slot_durations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Slot durations<itemizedlist>
+<listitem><para><bold>1:</bold> Switching and sampling slots are 1 us each</para></listitem><listitem><para><bold>2:</bold> Switching and sampling slots are 2 us each </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cte_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- <bold>0:</bold> Sample and report all available CTEs<itemizedlist>
+<listitem><para><bold>Other values:</bold> Maximum number of sampled CTEs in each extended advertising interval </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switching_pattern_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>switching_pattern</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switching_pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Antenna switching pattern. Antennas will be switched in this order with the antenna switch pins during CTE. If the CTE is longer than the switching pattern, the pattern starts over.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00100" kindref="compound">sl_bt_evt_cte_receiver_silabs_iq_report</ref> - Triggered when IQ samples of Silicon Labs CTE have been received. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8471" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00096_1gab20127723f93e1e16aeaa8b139a5fcf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_bt_cte_receiver_disable_silabs_cte</definition>
+        <argsstring>()</argsstring>
+        <name>sl_bt_cte_receiver_disable_silabs_cte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable IQ sampling of Silicon Labs CTE.</para><para><simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8484" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00096_1gaf6a0327ca1dc83bea8159bef90fc2295" prot="public" static="no">
+        <name>sl_bt_cmd_cte_receiver_set_dtm_parameters_id</name>
+        <initializer>0x05450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8054" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8054" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga2a6f13287031846a6a4f9aed371a6e61" prot="public" static="no">
+        <name>sl_bt_cmd_cte_receiver_clear_dtm_parameters_id</name>
+        <initializer>0x06450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8055" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8055" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga36fddfb07b43bbdc8dbf0057721a7e5a" prot="public" static="no">
+        <name>sl_bt_cmd_cte_receiver_set_sync_cte_type_id</name>
+        <initializer>0x09450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8056" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8056" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga57759147025e4083254ccc2cfdbd3fc6" prot="public" static="no">
+        <name>sl_bt_cmd_cte_receiver_configure_id</name>
+        <initializer>0x00450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8057" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8057" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1gacb9b22d74c1946c26b8e2883cc74ce3a" prot="public" static="no">
+        <name>sl_bt_cmd_cte_receiver_enable_connection_cte_id</name>
+        <initializer>0x01450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8058" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8058" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1gac4eea307fd2707f214de2b1e295d2be2" prot="public" static="no">
+        <name>sl_bt_cmd_cte_receiver_disable_connection_cte_id</name>
+        <initializer>0x02450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8059" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8059" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga708d8a0c11a2a377d73c5f15d13a5586" prot="public" static="no">
+        <name>sl_bt_cmd_cte_receiver_enable_connectionless_cte_id</name>
+        <initializer>0x03450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8060" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8060" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1gaf1764922c9afd239675320d590fde03e" prot="public" static="no">
+        <name>sl_bt_cmd_cte_receiver_disable_connectionless_cte_id</name>
+        <initializer>0x04450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8061" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8061" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga016490840ce64448d009bada6bc114c4" prot="public" static="no">
+        <name>sl_bt_cmd_cte_receiver_enable_silabs_cte_id</name>
+        <initializer>0x07450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8062" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8062" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1gadacf8227e8e2fff72b10086d2a1fc22a" prot="public" static="no">
+        <name>sl_bt_cmd_cte_receiver_disable_silabs_cte_id</name>
+        <initializer>0x08450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8063" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8063" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1gae07fc62d8d27c6da4a1269291c532106" prot="public" static="no">
+        <name>sl_bt_rsp_cte_receiver_set_dtm_parameters_id</name>
+        <initializer>0x05450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8064" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8064" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga126fcc8bf8022c3b15e04923b097e7b4" prot="public" static="no">
+        <name>sl_bt_rsp_cte_receiver_clear_dtm_parameters_id</name>
+        <initializer>0x06450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8065" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8065" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga2783575ec014eae5712a13ddccb49d92" prot="public" static="no">
+        <name>sl_bt_rsp_cte_receiver_set_sync_cte_type_id</name>
+        <initializer>0x09450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8066" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8066" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga7ed849a3c8dd9c0338195c8a278f27b5" prot="public" static="no">
+        <name>sl_bt_rsp_cte_receiver_configure_id</name>
+        <initializer>0x00450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8067" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8067" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1gac78c905e2461744e61f78f584f666af2" prot="public" static="no">
+        <name>sl_bt_rsp_cte_receiver_enable_connection_cte_id</name>
+        <initializer>0x01450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8068" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8068" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga6bf43690bcaba796bd7d5e16886c0d59" prot="public" static="no">
+        <name>sl_bt_rsp_cte_receiver_disable_connection_cte_id</name>
+        <initializer>0x02450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8069" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8069" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga20b89b097fc10c40f9637268b3bf2770" prot="public" static="no">
+        <name>sl_bt_rsp_cte_receiver_enable_connectionless_cte_id</name>
+        <initializer>0x03450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8070" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8070" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga3a74d69b436f118c2f77e1e749189b1d" prot="public" static="no">
+        <name>sl_bt_rsp_cte_receiver_disable_connectionless_cte_id</name>
+        <initializer>0x04450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8071" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8071" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga77878c495f5a127d36ec852c1fd943e9" prot="public" static="no">
+        <name>sl_bt_rsp_cte_receiver_enable_silabs_cte_id</name>
+        <initializer>0x07450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8072" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8072" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00096_1ga9ab99df88f6b281498930bc96f4cc3c3" prot="public" static="no">
+        <name>sl_bt_rsp_cte_receiver_disable_silabs_cte_id</name>
+        <initializer>0x08450020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8073" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8073" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CTE Receiver. </para>    </briefdescription>
+    <detaileddescription>
+<para>Commands and events in this class manage Constant Tone Extension (CTE) receiving.</para><para>CTE feature is only supported by specific devices. Commands from this class will return SL_STATUS_NOT_SUPPORTED on devices that do not support CTE. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

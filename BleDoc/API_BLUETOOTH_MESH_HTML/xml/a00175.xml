@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00175" kind="group">
+    <compoundname>sl_btmesh_evt_scene_setup_server_store</compoundname>
+    <title>sl_btmesh_evt_scene_setup_server_store</title>
+    <innerclass refid="a00727" prot="public">sl_btmesh_evt_scene_setup_server_store_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00175_1ga4c684922fb8a66f6c078f76c7e7220ae" prot="public" static="no">
+        <type>struct <ref refid="a00727" kindref="compound">sl_btmesh_evt_scene_setup_server_store_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_scene_setup_server_store_s sl_btmesh_evt_scene_setup_server_store_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_scene_setup_server_store_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11166" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00175_1gae4865b2fdc39c76034e862dd4ef7ab98" prot="public" static="no">
+        <name>sl_btmesh_evt_scene_setup_server_store_id</name>
+        <initializer>0x005100a8</initializer>
+        <briefdescription>
+<para>Identifier of the store event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11190" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Scene Store from the Client. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

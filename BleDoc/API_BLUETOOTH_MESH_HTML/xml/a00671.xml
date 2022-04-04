@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00671" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_lc_server_light_onoff_updated_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00671_1a0d5edfb99cd6c3d9f9cb2be678ed033e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_light_onoff_updated_s::destination_address</definition>
+        <argsstring></argsstring>
+        <name>destination_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message destination address if triggered by a message, 0 otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10326" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00671_1a3440744dbfb3a00158339a2cf2fb256d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_light_onoff_updated_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the element where the update happened </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10328" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00671_1a6988fe69edff26b1ded3d9fd7bf507e3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_light_onoff_updated_s::source_address</definition>
+        <argsstring></argsstring>
+        <name>source_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message source address if triggered by a message, 0 otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10330" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00671_1ae02563c3215f2fc2b8e1f46874d558c1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_light_onoff_updated_s::appkey_index</definition>
+        <argsstring></argsstring>
+        <name>appkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message appkey index if triggered by a message, 0xFFFF otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10332" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00671_1a45fd67eee9ebc21c18999ab31fc87807" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_lc_server_light_onoff_updated_s::onoff_state</definition>
+        <argsstring></argsstring>
+        <name>onoff_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The target value of the Light LC Light OnOff state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10334" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00671_1aa143c361d79536284daf0b603d61cbec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_lc_server_light_onoff_updated_s::onoff_trans_time_ms</definition>
+        <argsstring></argsstring>
+        <name>onoff_trans_time_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Amount of time (in milliseconds) the element will take to transition to the target state from the present state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10336" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10336" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the light_onoff_updated event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10325" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10324" bodyend="10339"/>
+    <listofallmembers>
+      <member refid="a00671_1ae02563c3215f2fc2b8e1f46874d558c1" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_light_onoff_updated_s</scope><name>appkey_index</name></member>
+      <member refid="a00671_1a0d5edfb99cd6c3d9f9cb2be678ed033e" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_light_onoff_updated_s</scope><name>destination_address</name></member>
+      <member refid="a00671_1a3440744dbfb3a00158339a2cf2fb256d" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_light_onoff_updated_s</scope><name>elem_index</name></member>
+      <member refid="a00671_1a45fd67eee9ebc21c18999ab31fc87807" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_light_onoff_updated_s</scope><name>onoff_state</name></member>
+      <member refid="a00671_1aa143c361d79536284daf0b603d61cbec" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_light_onoff_updated_s</scope><name>onoff_trans_time_ms</name></member>
+      <member refid="a00671_1a6988fe69edff26b1ded3d9fd7bf507e3" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_light_onoff_updated_s</scope><name>source_address</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

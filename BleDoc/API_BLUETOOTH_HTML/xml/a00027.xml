@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00027" kind="group">
+    <compoundname>sl_bt_common_types</compoundname>
+    <title>BT Common Types</title>
+    <innerclass refid="a00327" prot="public">sl_bt_msg</innerclass>
+    <innerclass refid="a00339" prot="public">sl_bt_msg.data</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00027_1ga4133c50f6e7679f5ed2d48ad98d3690f" prot="public" static="no">
+        <type>struct <ref refid="a00327" kindref="compound">sl_bt_msg</ref></type>
+        <definition>typedef struct sl_bt_msg sl_bt_msg_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_msg_t</name>
+        <briefdescription>
+<para>Type definition for the data structure of BT API messages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8761" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8846" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00027_1ga76283562c0c4db323438952f3f80cb5f" prot="public" static="no">
+        <name>SL_BT_INVALID_BONDING_HANDLE</name>
+        <initializer>((uint8_t) 0xFF)</initializer>
+        <briefdescription>
+<para>Value used to indicate an invalid bonding handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="51" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00027_1ga63e53f889ae8099ea5eabe3258a08087" prot="public" static="no">
+        <name>SL_BT_INVALID_ADVERTISING_SET_HANDLE</name>
+        <initializer>((uint8_t) 0xFF)</initializer>
+        <briefdescription>
+<para>Value used to indicate an invalid advertising set handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="56" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BT common types. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

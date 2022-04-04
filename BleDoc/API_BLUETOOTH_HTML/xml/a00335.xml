@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00335" kind="struct" language="C++" prot="public">
+    <compoundname>bgapi_device_type_queue_t</compoundname>
+    <includes refid="a00017" local="no">sl_bt_ncp_host.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00335_1ad31b29a521be7f3e750544fab17a9d02" prot="public" static="no" mutable="no">
+        <type>enum sl_bgapi_dev_types</type>
+        <definition>enum sl_bgapi_dev_types bgapi_device_type_queue_t::device_type</definition>
+        <argsstring></argsstring>
+        <name>device_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="163" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00335_1ade72aabe410c95b646de18b63f347dd0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t bgapi_device_type_queue_t::write_offset</definition>
+        <argsstring></argsstring>
+        <name>write_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="101" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00335_1ab9c7856c910f9f6654b534825d68935f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t bgapi_device_type_queue_t::read_offset</definition>
+        <argsstring></argsstring>
+        <name>read_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="102" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00335_1a7029c3d69c2871c0502c42b61701e076" prot="public" static="no" mutable="no">
+        <type><ref refid="a00027_1ga4133c50f6e7679f5ed2d48ad98d3690f" kindref="member">sl_bt_msg_t</ref> *</type>
+        <definition>sl_bt_msg_t* bgapi_device_type_queue_t::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="103" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00335_1aa24b79e39ef9a970442c7d05a0818b01" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t bgapi_device_type_queue_t::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="104" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure defining a device type and the event queue where events of that type should be stored. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>sl_bt_msg</label>
+        <link refid="a00327"/>
+      </node>
+      <node id="5">
+        <label>bgapi_device_type_queue_t</label>
+        <link refid="a00335"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" line="99" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_ncp_host.h" bodystart="99" bodyend="105"/>
+    <listofallmembers>
+      <member refid="a00335_1a7029c3d69c2871c0502c42b61701e076" prot="public" virt="non-virtual"><scope>bgapi_device_type_queue_t</scope><name>buffer</name></member>
+      <member refid="a00335_1ad31b29a521be7f3e750544fab17a9d02" prot="public" virt="non-virtual"><scope>bgapi_device_type_queue_t</scope><name>device_type</name></member>
+      <member refid="a00335_1aa24b79e39ef9a970442c7d05a0818b01" prot="public" virt="non-virtual"><scope>bgapi_device_type_queue_t</scope><name>len</name></member>
+      <member refid="a00335_1ab9c7856c910f9f6654b534825d68935f" prot="public" virt="non-virtual"><scope>bgapi_device_type_queue_t</scope><name>read_offset</name></member>
+      <member refid="a00335_1ade72aabe410c95b646de18b63f347dd0" prot="public" virt="non-virtual"><scope>bgapi_device_type_queue_t</scope><name>write_offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

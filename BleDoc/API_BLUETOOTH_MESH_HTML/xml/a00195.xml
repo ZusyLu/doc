@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00195" kind="group">
+    <compoundname>sl_bt_utility_functions</compoundname>
+    <title>Utility Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00195_1ga62a579373a4143ed089477885bdf2017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_pop_event</definition>
+        <argsstring>(sl_btmesh_msg_t *event)</argsstring>
+        <name>sl_btmesh_pop_event</name>
+        <param>
+          <type><ref refid="a00194_1gaa2348bae459cb6ea9f3e68412b93fc05" kindref="member">sl_btmesh_msg_t</ref> *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next event that requires processing by user application. Application is not blocked if no event is waiting.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pointer for storing the new event </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if a new event is returned, or SL_STATUS_NOT_FOUND if no event is waiting; other value indicates an error occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12693" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00195_1gace0d6dd25bace84cadfbe8fe8a576287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sl_btmesh_event_pending</definition>
+        <argsstring>(void)</argsstring>
+        <name>sl_btmesh_event_pending</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether events are in queue pending for processing. Call <ref refid="a00195_1ga62a579373a4143ed089477885bdf2017" kindref="member">sl_btmesh_pop_event</ref> to process pending events.</para><para><simplesect kind="return"><para>true if event is pending; false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12701" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00195_1gaa83ce5f2a39d2c9eef881a5f69b3de74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_event_pending_len</definition>
+        <argsstring>(void)</argsstring>
+        <name>sl_btmesh_event_pending_len</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether events are in queue pending for processing and return the next event length in bytes if events are pending. Call <ref refid="a00195_1ga62a579373a4143ed089477885bdf2017" kindref="member">sl_btmesh_pop_event</ref> to process pending events.</para><para><simplesect kind="return"><para>the next event length if event is pending; 0 otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12710" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Utility functions for applications on SoC. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

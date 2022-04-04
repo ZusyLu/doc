@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00663" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_lc_server_mode_updated_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00663_1a19002cc3fa0a4a3e18feec1cfd86cfa7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_mode_updated_s::destination_address</definition>
+        <argsstring></argsstring>
+        <name>destination_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message destination address if triggered by a message, 0 otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10250" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00663_1a62d7a615ddfd4a8fe3258e01a38484b7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_mode_updated_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index of the element where the update happened </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10252" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00663_1a413e0ad7a34c070a44528505b7c680c7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_mode_updated_s::client_address</definition>
+        <argsstring></argsstring>
+        <name>client_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message source address if triggered by a message, 0 otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10254" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00663_1a3a04728dd06009fb9a95b28d799e81fd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_lc_server_mode_updated_s::appkey_index</definition>
+        <argsstring></argsstring>
+        <name>appkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message appkey index if triggered by a message, 0xFFFF otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10256" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00663_1ac72f764d7c3c445ee2661c69af728e13" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_lc_server_mode_updated_s::mode_value</definition>
+        <argsstring></argsstring>
+        <name>mode_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The value the LC Mode state is being set to. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10258" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00663_1a8d4f3fa4b4fc9706591fbe9c1b1bfa30" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_lc_server_mode_updated_s::manual_override</definition>
+        <argsstring></argsstring>
+        <name>manual_override</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Light Control Mode state can be set to zero by a binding from Light Lightness Linear when it is modified by an action from the application or a Light Lightness Client command. In this case, the parameter is set to 0x01. In all other cases, this parameter is zero. For example, when LC Mode is modified by the application or by a LC Client command, this parameter will be set to 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10260" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10260" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the mode_updated event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10249" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="10248" bodyend="10270"/>
+    <listofallmembers>
+      <member refid="a00663_1a3a04728dd06009fb9a95b28d799e81fd" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_mode_updated_s</scope><name>appkey_index</name></member>
+      <member refid="a00663_1a413e0ad7a34c070a44528505b7c680c7" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_mode_updated_s</scope><name>client_address</name></member>
+      <member refid="a00663_1a19002cc3fa0a4a3e18feec1cfd86cfa7" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_mode_updated_s</scope><name>destination_address</name></member>
+      <member refid="a00663_1a62d7a615ddfd4a8fe3258e01a38484b7" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_mode_updated_s</scope><name>elem_index</name></member>
+      <member refid="a00663_1a8d4f3fa4b4fc9706591fbe9c1b1bfa30" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_mode_updated_s</scope><name>manual_override</name></member>
+      <member refid="a00663_1ac72f764d7c3c445ee2661c69af728e13" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_lc_server_mode_updated_s</scope><name>mode_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

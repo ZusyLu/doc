@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00339" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_prov_oob_display_input_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00339_1ac0f4fd6b66be02fc2ea5ee94ebdc87dc" prot="public" static="no" mutable="no">
+        <type><ref refid="a00211" kindref="compound">uuid_128</ref></type>
+        <definition>uuid_128 sl_btmesh_evt_prov_oob_display_input_s::uuid</definition>
+        <argsstring></argsstring>
+        <name>uuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UUID of the device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1930" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1930" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a03411202e66212e5eb4ba1e57ac18043" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_prov_oob_display_input_s::input_action</definition>
+        <argsstring></argsstring>
+        <name>input_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum <ref refid="a00021_1gad0c4eaa69364524d506105d7e6bb2e04" kindref="member">sl_btmesh_node_oob_input_action_t</ref>. Input action type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1931" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1931" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a32dd002598bdc742e7b0e93e95c6f5ee" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_prov_oob_display_input_s::input_size</definition>
+        <argsstring></argsstring>
+        <name>input_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of digits or characters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1933" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1933" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00339_1a46738d34686007f69ed671a9508d7527" prot="public" static="no" mutable="no">
+        <type><ref refid="a00199" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_btmesh_evt_prov_oob_display_input_s::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raw 16-byte array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1934" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1934" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the oob_display_input event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="205">
+        <label>sl_btmesh_evt_prov_oob_display_input_s</label>
+        <link refid="a00339"/>
+        <childnode refid="206" relation="usage">
+          <edgelabel>uuid</edgelabel>
+        </childnode>
+        <childnode refid="207" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="206">
+        <label>uuid_128</label>
+        <link refid="a00211"/>
+      </node>
+      <node id="207">
+        <label>uint8array</label>
+        <link refid="a00199"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1929" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1928" bodyend="1935"/>
+    <listofallmembers>
+      <member refid="a00339_1a46738d34686007f69ed671a9508d7527" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_oob_display_input_s</scope><name>data</name></member>
+      <member refid="a00339_1a03411202e66212e5eb4ba1e57ac18043" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_oob_display_input_s</scope><name>input_action</name></member>
+      <member refid="a00339_1a32dd002598bdc742e7b0e93e95c6f5ee" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_oob_display_input_s</scope><name>input_size</name></member>
+      <member refid="a00339_1ac0f4fd6b66be02fc2ea5ee94ebdc87dc" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_prov_oob_display_input_s</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

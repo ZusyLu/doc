@@ -1,0 +1,1989 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00791" kind="union" language="C++" prot="public">
+    <compoundname>sl_btmesh_msg.data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00791_1ae1260894f59eeae98c8440899de4df8d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12527" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ab52258709d0733b3ed0cce6e208acd07" prot="public" static="no" mutable="no">
+        <type><ref refid="a00227" kindref="compound">sl_btmesh_evt_node_initialized_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node initialized event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12528" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a799c8f360a7c0262db05c428dcbce5a3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00231" kindref="compound">sl_btmesh_evt_node_provisioned_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_provisioned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node provisioned event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12529" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a921d6b0f5ca916175b645c70871b20a0" prot="public" static="no" mutable="no">
+        <type><ref refid="a00235" kindref="compound">sl_btmesh_evt_node_config_get_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_config_get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node config_get event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12530" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a127332523a5fb50ed40e2aa30079bc67" prot="public" static="no" mutable="no">
+        <type><ref refid="a00239" kindref="compound">sl_btmesh_evt_node_config_set_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_config_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node config_set event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12531" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a7ae2ef409fc7e170bf3b3e4b6ebfecb4" prot="public" static="no" mutable="no">
+        <type><ref refid="a00243" kindref="compound">sl_btmesh_evt_node_display_output_oob_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_display_output_oob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node display_output_oob event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12532" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1afb524693ea0804d13847b0a36b9dad75" prot="public" static="no" mutable="no">
+        <type><ref refid="a00247" kindref="compound">sl_btmesh_evt_node_input_oob_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_input_oob_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node input_oob_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12533" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a114cfbdd257821dc77b3d305215244b2" prot="public" static="no" mutable="no">
+        <type><ref refid="a00251" kindref="compound">sl_btmesh_evt_node_provisioning_started_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_provisioning_started</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node provisioning_started event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12534" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a330d0a9159c68ec690646ee14cab2106" prot="public" static="no" mutable="no">
+        <type><ref refid="a00255" kindref="compound">sl_btmesh_evt_node_provisioning_failed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_provisioning_failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node provisioning_failed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12535" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a976d13ac7f1c95869cd3e2ce401d3488" prot="public" static="no" mutable="no">
+        <type><ref refid="a00259" kindref="compound">sl_btmesh_evt_node_key_added_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_key_added</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node key_added event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12536" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a495760ce0d98fe64fd339033a79090cb" prot="public" static="no" mutable="no">
+        <type><ref refid="a00263" kindref="compound">sl_btmesh_evt_node_model_config_changed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_model_config_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node model_config_changed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12537" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a3883c43da98d113cd6d4a21c45b2887a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00267" kindref="compound">sl_btmesh_evt_node_ivrecovery_needed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_ivrecovery_needed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node ivrecovery_needed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12538" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a31a923f00bdc2daeda4db8b6db7114cb" prot="public" static="no" mutable="no">
+        <type><ref refid="a00271" kindref="compound">sl_btmesh_evt_node_changed_ivupdate_state_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_changed_ivupdate_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node changed_ivupdate_state event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12539" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a7cbb5a287c25024516903975fb3c2722" prot="public" static="no" mutable="no">
+        <type><ref refid="a00275" kindref="compound">sl_btmesh_evt_node_key_removed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_key_removed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node key_removed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12540" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a326022ca69c8c1eef4b141d2f4b3d8d2" prot="public" static="no" mutable="no">
+        <type><ref refid="a00279" kindref="compound">sl_btmesh_evt_node_key_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_key_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node key_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12541" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a6f15f8c0c31b5240b851fd8f0a606beb" prot="public" static="no" mutable="no">
+        <type><ref refid="a00283" kindref="compound">sl_btmesh_evt_node_heartbeat_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_heartbeat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node heartbeat event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12542" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1af70c83440935b4bd07335268ce2b4faa" prot="public" static="no" mutable="no">
+        <type><ref refid="a00287" kindref="compound">sl_btmesh_evt_node_heartbeat_start_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_heartbeat_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node heartbeat_start event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12543" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aed8d89af2f8dfb4e9135b29c759c9de7" prot="public" static="no" mutable="no">
+        <type><ref refid="a00291" kindref="compound">sl_btmesh_evt_node_heartbeat_stop_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_heartbeat_stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node heartbeat_stop event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12544" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a45c10cc36d81ab64ca46251cbad396ee" prot="public" static="no" mutable="no">
+        <type><ref refid="a00295" kindref="compound">sl_btmesh_evt_node_beacon_received_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_beacon_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node beacon_received event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12545" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a71acb9f17757ea87dd8905c87ec045d3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00299" kindref="compound">sl_btmesh_evt_node_local_dcd_data_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_local_dcd_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node local_dcd_data event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12546" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a6a45738ce16f722d414765e0e2cd35e5" prot="public" static="no" mutable="no">
+        <type><ref refid="a00303" kindref="compound">sl_btmesh_evt_node_local_dcd_data_end_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_node_local_dcd_data_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for node local_dcd_data_end event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12547" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a4798ee35b4f6348d2f2894106fb2178c" prot="public" static="no" mutable="no">
+        <type><ref refid="a00307" kindref="compound">sl_btmesh_evt_prov_initialized_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov initialized event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12548" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ab4a34f359ed16318e94115c21dc65941" prot="public" static="no" mutable="no">
+        <type><ref refid="a00311" kindref="compound">sl_btmesh_evt_prov_provisioning_suspended_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_provisioning_suspended</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov provisioning_suspended event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12549" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1abba2e55dfec7b5bb6484eb9057fcbe57" prot="public" static="no" mutable="no">
+        <type><ref refid="a00315" kindref="compound">sl_btmesh_evt_prov_capabilities_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_capabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov capabilities event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12550" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a67cf2933f4213d6fdf901318573a262d" prot="public" static="no" mutable="no">
+        <type><ref refid="a00319" kindref="compound">sl_btmesh_evt_prov_provisioning_failed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_provisioning_failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov provisioning_failed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12551" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a687312fb1f014a8edc69dbf7a8e14de6" prot="public" static="no" mutable="no">
+        <type><ref refid="a00323" kindref="compound">sl_btmesh_evt_prov_device_provisioned_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_device_provisioned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov device_provisioned event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12552" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a86234813de2651d7a0e1197412813790" prot="public" static="no" mutable="no">
+        <type><ref refid="a00327" kindref="compound">sl_btmesh_evt_prov_unprov_beacon_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_unprov_beacon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov unprov_beacon event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12553" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a49a90c7b8bdf9365441d9da016fa0646" prot="public" static="no" mutable="no">
+        <type><ref refid="a00331" kindref="compound">sl_btmesh_evt_prov_oob_pkey_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_oob_pkey_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov oob_pkey_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12554" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a1d2b563d15e0d034c164aff1358c1069" prot="public" static="no" mutable="no">
+        <type><ref refid="a00335" kindref="compound">sl_btmesh_evt_prov_oob_auth_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_oob_auth_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov oob_auth_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12555" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1afcfa073e1b19be71bbf89fd78a374911" prot="public" static="no" mutable="no">
+        <type><ref refid="a00339" kindref="compound">sl_btmesh_evt_prov_oob_display_input_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_oob_display_input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov oob_display_input event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12556" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ac518ca806d7d392a069b56126c1367f5" prot="public" static="no" mutable="no">
+        <type><ref refid="a00343" kindref="compound">sl_btmesh_evt_prov_ddb_list_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_ddb_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov ddb_list event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12557" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a023a008a8080f76941c382ec525be205" prot="public" static="no" mutable="no">
+        <type><ref refid="a00347" kindref="compound">sl_btmesh_evt_prov_uri_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_uri</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov uri event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12558" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a3dea2953f12f8a82f60322fcf3c73454" prot="public" static="no" mutable="no">
+        <type><ref refid="a00351" kindref="compound">sl_btmesh_evt_prov_key_refresh_phase_update_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_key_refresh_phase_update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov key_refresh_phase_update event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12559" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1addaec9cd11fae90565514f012a3d1748" prot="public" static="no" mutable="no">
+        <type><ref refid="a00355" kindref="compound">sl_btmesh_evt_prov_key_refresh_node_update_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_key_refresh_node_update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov key_refresh_node_update event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12560" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a15313259ae499c08a4e0e7ba95aecd74" prot="public" static="no" mutable="no">
+        <type><ref refid="a00359" kindref="compound">sl_btmesh_evt_prov_key_refresh_complete_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_key_refresh_complete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov key_refresh_complete event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12561" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a6c050f08234073cf53fee4da889ad5d5" prot="public" static="no" mutable="no">
+        <type><ref refid="a00363" kindref="compound">sl_btmesh_evt_prov_add_ddb_entry_complete_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_add_ddb_entry_complete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov add_ddb_entry_complete event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12562" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a20a28fe8ca4f8b717b286ee05d8b0c75" prot="public" static="no" mutable="no">
+        <type><ref refid="a00367" kindref="compound">sl_btmesh_evt_prov_delete_ddb_entry_complete_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_delete_ddb_entry_complete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov delete_ddb_entry_complete event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12563" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aee8ef9a75c779153f7ae0d8b7684e65a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00371" kindref="compound">sl_btmesh_evt_prov_initialization_failed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_prov_initialization_failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for prov initialization_failed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12564" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ad9e4f2eee6327009d2e6c3c48b9feb1c" prot="public" static="no" mutable="no">
+        <type><ref refid="a00375" kindref="compound">sl_btmesh_evt_proxy_connected_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_proxy_connected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for proxy connected event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12565" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ade4ea65892d5f38ffa795aaf49f6d779" prot="public" static="no" mutable="no">
+        <type><ref refid="a00379" kindref="compound">sl_btmesh_evt_proxy_disconnected_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_proxy_disconnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for proxy disconnected event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12566" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a4a0e76b152e456988616bf9939faedd6" prot="public" static="no" mutable="no">
+        <type><ref refid="a00383" kindref="compound">sl_btmesh_evt_proxy_filter_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_proxy_filter_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for proxy filter_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12567" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a82cb142fb1c8ca7c2ffee6ce8ec1459b" prot="public" static="no" mutable="no">
+        <type><ref refid="a00387" kindref="compound">sl_btmesh_evt_vendor_model_receive_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_vendor_model_receive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for vendor_model receive event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12568" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a4443b5673ec0f6c8f1f78fd892cdd32a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00391" kindref="compound">sl_btmesh_evt_health_client_server_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_health_client_server_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for health_client server_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12569" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1abc33921135ab4d6c794166cee9a10119" prot="public" static="no" mutable="no">
+        <type><ref refid="a00395" kindref="compound">sl_btmesh_evt_health_client_server_status_period_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_health_client_server_status_period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for health_client server_status_period event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12570" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a5d4b0985cf26741e4b86b41c1c42a66f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00399" kindref="compound">sl_btmesh_evt_health_client_server_status_attention_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_health_client_server_status_attention</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for health_client server_status_attention event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12571" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aeb25cea43c32efa80858626414616ed7" prot="public" static="no" mutable="no">
+        <type><ref refid="a00403" kindref="compound">sl_btmesh_evt_health_server_attention_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_health_server_attention</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for health_server attention event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12572" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ad69de9a975502d44493119193e92139e" prot="public" static="no" mutable="no">
+        <type><ref refid="a00407" kindref="compound">sl_btmesh_evt_health_server_test_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_health_server_test_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for health_server test_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12573" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aeedf2d045dc03ae6b953512dc4ae9730" prot="public" static="no" mutable="no">
+        <type><ref refid="a00411" kindref="compound">sl_btmesh_evt_generic_client_server_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_generic_client_server_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for generic_client server_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12574" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a6516d5dd3edb56915b6b3195a0b28b86" prot="public" static="no" mutable="no">
+        <type><ref refid="a00415" kindref="compound">sl_btmesh_evt_generic_server_client_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_generic_server_client_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for generic_server client_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12575" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a2a7ad229ff9c143e1ac94e7d6f71c6ba" prot="public" static="no" mutable="no">
+        <type><ref refid="a00419" kindref="compound">sl_btmesh_evt_generic_server_state_changed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_generic_server_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for generic_server state_changed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12576" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a4bd243f2db3f2389068a7db5ef634fef" prot="public" static="no" mutable="no">
+        <type><ref refid="a00423" kindref="compound">sl_btmesh_evt_generic_server_state_recall_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_generic_server_state_recall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for generic_server state_recall event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12577" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1af43b49efe86267cc84f45a96408ddc65" prot="public" static="no" mutable="no">
+        <type><ref refid="a00427" kindref="compound">sl_btmesh_evt_test_local_heartbeat_subscription_complete_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_test_local_heartbeat_subscription_complete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for test local_heartbeat_subscription_complete event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12578" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aff457f8c681293c23ef970209615b5b3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00431" kindref="compound">sl_btmesh_evt_test_replay_protection_list_entry_set_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_test_replay_protection_list_entry_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for test replay_protection_list_entry_set event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12579" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a00c197fe65266d6380d75eb3972f71d1" prot="public" static="no" mutable="no">
+        <type><ref refid="a00435" kindref="compound">sl_btmesh_evt_test_replay_protection_list_entry_cleared_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_test_replay_protection_list_entry_cleared</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for test replay_protection_list_entry_cleared event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12580" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ae12c1769729765304402fc7f623e66c8" prot="public" static="no" mutable="no">
+        <type><ref refid="a00439" kindref="compound">sl_btmesh_evt_test_replay_protection_list_saved_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_test_replay_protection_list_saved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for test replay_protection_list_saved event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12581" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a50527a0b962ba38463bcbf65c285d205" prot="public" static="no" mutable="no">
+        <type><ref refid="a00443" kindref="compound">sl_btmesh_evt_lpn_friendship_established_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lpn_friendship_established</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lpn friendship_established event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12582" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ac81c90e7dd7095973b4fb961c9d47105" prot="public" static="no" mutable="no">
+        <type><ref refid="a00447" kindref="compound">sl_btmesh_evt_lpn_friendship_failed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lpn_friendship_failed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lpn friendship_failed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12583" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aa6acd0ef780c76da48c8c55a759a18c1" prot="public" static="no" mutable="no">
+        <type><ref refid="a00451" kindref="compound">sl_btmesh_evt_lpn_friendship_terminated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lpn_friendship_terminated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lpn friendship_terminated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12584" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a1c252698f5b761ff8c6510ba588c854e" prot="public" static="no" mutable="no">
+        <type><ref refid="a00455" kindref="compound">sl_btmesh_evt_friend_friendship_established_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_friend_friendship_established</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for friend friendship_established event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12585" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a4fb933049b897a605273d55025cc18a2" prot="public" static="no" mutable="no">
+        <type><ref refid="a00459" kindref="compound">sl_btmesh_evt_friend_friendship_terminated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_friend_friendship_terminated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for friend friendship_terminated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12586" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a87ad57f67a38c705734c6f1013758f52" prot="public" static="no" mutable="no">
+        <type><ref refid="a00463" kindref="compound">sl_btmesh_evt_config_client_request_modified_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_request_modified</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client request_modified event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12587" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ac9ef4a3c8c819020611ec2e52050b320" prot="public" static="no" mutable="no">
+        <type><ref refid="a00467" kindref="compound">sl_btmesh_evt_config_client_netkey_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_netkey_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client netkey_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12588" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1af123eeee9827a2a6379801dc1170b49d" prot="public" static="no" mutable="no">
+        <type><ref refid="a00471" kindref="compound">sl_btmesh_evt_config_client_netkey_list_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_netkey_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client netkey_list event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12589" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a68f80ee8385a873b42ccf05264a0232a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00475" kindref="compound">sl_btmesh_evt_config_client_netkey_list_end_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_netkey_list_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client netkey_list_end event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12590" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a16378781ea0a84333a2451b1c9bf151d" prot="public" static="no" mutable="no">
+        <type><ref refid="a00479" kindref="compound">sl_btmesh_evt_config_client_appkey_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_appkey_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client appkey_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12591" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1af5825de1baa78e28cdb27813fcb6363e" prot="public" static="no" mutable="no">
+        <type><ref refid="a00483" kindref="compound">sl_btmesh_evt_config_client_appkey_list_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_appkey_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client appkey_list event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12592" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a4a13bd592432169fb3c2f484d5ca0bda" prot="public" static="no" mutable="no">
+        <type><ref refid="a00487" kindref="compound">sl_btmesh_evt_config_client_appkey_list_end_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_appkey_list_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client appkey_list_end event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12593" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aebee8a4c854bbd7c802064b855930d6d" prot="public" static="no" mutable="no">
+        <type><ref refid="a00491" kindref="compound">sl_btmesh_evt_config_client_binding_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_binding_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client binding_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12594" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a88e27babdef45eb083f326d69fcdfa73" prot="public" static="no" mutable="no">
+        <type><ref refid="a00495" kindref="compound">sl_btmesh_evt_config_client_bindings_list_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_bindings_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client bindings_list event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12595" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a49448e2f43a09fcc7f15e2762b55e25e" prot="public" static="no" mutable="no">
+        <type><ref refid="a00499" kindref="compound">sl_btmesh_evt_config_client_bindings_list_end_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_bindings_list_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client bindings_list_end event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12596" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a442d227dfbe94115ef41ebc1b603b0fe" prot="public" static="no" mutable="no">
+        <type><ref refid="a00503" kindref="compound">sl_btmesh_evt_config_client_model_pub_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_model_pub_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client model_pub_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12597" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a245f42f1f32494314a8922664a7b984c" prot="public" static="no" mutable="no">
+        <type><ref refid="a00507" kindref="compound">sl_btmesh_evt_config_client_model_sub_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_model_sub_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client model_sub_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12598" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a59ee68fd8e2ce1eea7ff49454d4eb601" prot="public" static="no" mutable="no">
+        <type><ref refid="a00511" kindref="compound">sl_btmesh_evt_config_client_subs_list_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_subs_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client subs_list event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12599" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ab272e56f22fd7330ea8e59899853d600" prot="public" static="no" mutable="no">
+        <type><ref refid="a00515" kindref="compound">sl_btmesh_evt_config_client_subs_list_end_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_subs_list_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client subs_list_end event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12600" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ab31942d25a69236f1065f2c747a8871e" prot="public" static="no" mutable="no">
+        <type><ref refid="a00519" kindref="compound">sl_btmesh_evt_config_client_heartbeat_pub_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_heartbeat_pub_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client heartbeat_pub_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12601" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a5d82d546da53c27f8a95ba8aeaaa8069" prot="public" static="no" mutable="no">
+        <type><ref refid="a00523" kindref="compound">sl_btmesh_evt_config_client_heartbeat_sub_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_heartbeat_sub_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client heartbeat_sub_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12602" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ad9e255f528de7f2d3ee61e1bb6a89fc3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00527" kindref="compound">sl_btmesh_evt_config_client_beacon_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_beacon_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client beacon_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12603" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a0f03fcf0fe1755a1e81598c7619d90ff" prot="public" static="no" mutable="no">
+        <type><ref refid="a00531" kindref="compound">sl_btmesh_evt_config_client_default_ttl_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_default_ttl_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client default_ttl_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12604" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ad57bb98c933b4eab133525e4714ce62e" prot="public" static="no" mutable="no">
+        <type><ref refid="a00535" kindref="compound">sl_btmesh_evt_config_client_gatt_proxy_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_gatt_proxy_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client gatt_proxy_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12605" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a67dafb77b967d9c12e2977c8a7ae3092" prot="public" static="no" mutable="no">
+        <type><ref refid="a00539" kindref="compound">sl_btmesh_evt_config_client_relay_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_relay_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client relay_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12606" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1acb9182f6a2feabcc65158102bee04975" prot="public" static="no" mutable="no">
+        <type><ref refid="a00543" kindref="compound">sl_btmesh_evt_config_client_network_transmit_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_network_transmit_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client network_transmit_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12607" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1af8757eb9b63032770c7dd963f9535605" prot="public" static="no" mutable="no">
+        <type><ref refid="a00547" kindref="compound">sl_btmesh_evt_config_client_identity_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_identity_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client identity_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12608" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a2d736af2421cba7afd4e10c6ea748772" prot="public" static="no" mutable="no">
+        <type><ref refid="a00551" kindref="compound">sl_btmesh_evt_config_client_friend_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_friend_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client friend_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12609" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a775af938c90e2a8aaabad7251c7be226" prot="public" static="no" mutable="no">
+        <type><ref refid="a00555" kindref="compound">sl_btmesh_evt_config_client_key_refresh_phase_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_key_refresh_phase_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client key_refresh_phase_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12610" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a7f29b2e6485b28a4696c30c26ecb737b" prot="public" static="no" mutable="no">
+        <type><ref refid="a00559" kindref="compound">sl_btmesh_evt_config_client_lpn_polltimeout_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_lpn_polltimeout_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client lpn_polltimeout_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12611" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1add9911f4f2c23f4648c51caa59367343" prot="public" static="no" mutable="no">
+        <type><ref refid="a00563" kindref="compound">sl_btmesh_evt_config_client_dcd_data_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_dcd_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client dcd_data event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12612" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a607317b7174a7c8c938c309f2b3a3813" prot="public" static="no" mutable="no">
+        <type><ref refid="a00567" kindref="compound">sl_btmesh_evt_config_client_dcd_data_end_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_dcd_data_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client dcd_data_end event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12613" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1adc0d5cf1446e0aa608dd88b42320c94c" prot="public" static="no" mutable="no">
+        <type><ref refid="a00571" kindref="compound">sl_btmesh_evt_config_client_reset_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_config_client_reset_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for config_client reset_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12614" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1af8a0a9a7cd9b9faa2aa948aa4b1dee79" prot="public" static="no" mutable="no">
+        <type><ref refid="a00575" kindref="compound">sl_btmesh_evt_sensor_server_get_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_server_get_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_server get_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12615" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1afb2af7bcb73662cf2ea3fbab36ed41fc" prot="public" static="no" mutable="no">
+        <type><ref refid="a00579" kindref="compound">sl_btmesh_evt_sensor_server_get_column_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_server_get_column_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_server get_column_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12616" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a43f76912434f43a9bbc549113b4d69a4" prot="public" static="no" mutable="no">
+        <type><ref refid="a00583" kindref="compound">sl_btmesh_evt_sensor_server_get_series_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_server_get_series_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_server get_series_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12617" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1af7b2c51bd410ccb6c77b7d08675e9923" prot="public" static="no" mutable="no">
+        <type><ref refid="a00587" kindref="compound">sl_btmesh_evt_sensor_server_publish_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_server_publish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_server publish event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12618" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a054a3f6884cf7ce7eb8542e3f97c3635" prot="public" static="no" mutable="no">
+        <type><ref refid="a00591" kindref="compound">sl_btmesh_evt_sensor_setup_server_get_cadence_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_setup_server_get_cadence_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_setup_server get_cadence_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12619" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1acbca0986aebdee16410ace7156ba717f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00595" kindref="compound">sl_btmesh_evt_sensor_setup_server_set_cadence_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_setup_server_set_cadence_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_setup_server set_cadence_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12620" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a5e055a9277e70323e793403b52707bde" prot="public" static="no" mutable="no">
+        <type><ref refid="a00599" kindref="compound">sl_btmesh_evt_sensor_setup_server_get_settings_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_setup_server_get_settings_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_setup_server get_settings_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12621" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a6b37fd2572475162305ecfe88b4410c4" prot="public" static="no" mutable="no">
+        <type><ref refid="a00603" kindref="compound">sl_btmesh_evt_sensor_setup_server_get_setting_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_setup_server_get_setting_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_setup_server get_setting_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12622" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ad0fd9a2a20e87a1eb94c929cc6df26e1" prot="public" static="no" mutable="no">
+        <type><ref refid="a00607" kindref="compound">sl_btmesh_evt_sensor_setup_server_set_setting_request_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_setup_server_set_setting_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_setup_server set_setting_request event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12623" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a194e2f9fb2e1a333c655dc47bf7772aa" prot="public" static="no" mutable="no">
+        <type><ref refid="a00611" kindref="compound">sl_btmesh_evt_sensor_setup_server_publish_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_setup_server_publish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_setup_server publish event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12624" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a5413ff57290b02658d6d30669fee08c3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00615" kindref="compound">sl_btmesh_evt_sensor_client_descriptor_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_client_descriptor_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_client descriptor_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12625" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a05b013214180beea66fc5228d484adc6" prot="public" static="no" mutable="no">
+        <type><ref refid="a00619" kindref="compound">sl_btmesh_evt_sensor_client_cadence_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_client_cadence_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_client cadence_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12626" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a6b4779357ab6487380b15a2154a46df1" prot="public" static="no" mutable="no">
+        <type><ref refid="a00623" kindref="compound">sl_btmesh_evt_sensor_client_settings_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_client_settings_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_client settings_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12627" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1afb3c1f42a13fff25a4fa7c21039f14ff" prot="public" static="no" mutable="no">
+        <type><ref refid="a00627" kindref="compound">sl_btmesh_evt_sensor_client_setting_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_client_setting_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_client setting_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12628" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a320d83e4701054fcc8cc8c45842aaaf5" prot="public" static="no" mutable="no">
+        <type><ref refid="a00631" kindref="compound">sl_btmesh_evt_sensor_client_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_client_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_client status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12629" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ab849363a0cf3a117988b4a905d4f54d8" prot="public" static="no" mutable="no">
+        <type><ref refid="a00635" kindref="compound">sl_btmesh_evt_sensor_client_column_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_client_column_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_client column_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12630" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a67987cde08e8a51c692b59a1df38d5dc" prot="public" static="no" mutable="no">
+        <type><ref refid="a00639" kindref="compound">sl_btmesh_evt_sensor_client_series_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_client_series_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_client series_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12631" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ae7795b6425ddd22c209c7c872327d30f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00643" kindref="compound">sl_btmesh_evt_sensor_client_publish_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_sensor_client_publish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for sensor_client publish event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12632" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a5b91ffedf5d44672737d268363ba1116" prot="public" static="no" mutable="no">
+        <type><ref refid="a00647" kindref="compound">sl_btmesh_evt_lc_client_mode_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_client_mode_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_client mode_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12633" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a0390032b5f529ecb22530fccb53f72d9" prot="public" static="no" mutable="no">
+        <type><ref refid="a00651" kindref="compound">sl_btmesh_evt_lc_client_om_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_client_om_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_client om_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12634" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1af66264886154946ade07bbbb4d41f75f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00655" kindref="compound">sl_btmesh_evt_lc_client_light_onoff_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_client_light_onoff_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_client light_onoff_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12635" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a361bfbf4f9d56b1bf71ed118eee2d391" prot="public" static="no" mutable="no">
+        <type><ref refid="a00659" kindref="compound">sl_btmesh_evt_lc_client_property_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_client_property_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_client property_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12636" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a3066e4dfc4bcd0c96c240fb2556b648b" prot="public" static="no" mutable="no">
+        <type><ref refid="a00663" kindref="compound">sl_btmesh_evt_lc_server_mode_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_server_mode_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_server mode_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12637" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a891cef30fd22aa83ab3161f10a8e252a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00667" kindref="compound">sl_btmesh_evt_lc_server_om_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_server_om_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_server om_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12638" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a8d1d7a49f004f11b82fa59a5da518ab5" prot="public" static="no" mutable="no">
+        <type><ref refid="a00671" kindref="compound">sl_btmesh_evt_lc_server_light_onoff_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_server_light_onoff_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_server light_onoff_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12639" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a3daf2412d558e681a690268bee8b58e5" prot="public" static="no" mutable="no">
+        <type><ref refid="a00675" kindref="compound">sl_btmesh_evt_lc_server_occupancy_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_server_occupancy_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_server occupancy_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12640" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a7439ba95d88b1711ec3846fd8f5a68d8" prot="public" static="no" mutable="no">
+        <type><ref refid="a00679" kindref="compound">sl_btmesh_evt_lc_server_ambient_lux_level_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_server_ambient_lux_level_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_server ambient_lux_level_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12641" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a0a6f3840791e12a3a3efafb6facbe8f6" prot="public" static="no" mutable="no">
+        <type><ref refid="a00683" kindref="compound">sl_btmesh_evt_lc_server_linear_output_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_server_linear_output_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_server linear_output_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12642" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ae35651caeab9d96e1be6dca6e964131f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00687" kindref="compound">sl_btmesh_evt_lc_server_state_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_server_state_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_server state_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12643" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a16fdc7283b0cdb1e83eff0e65b254039" prot="public" static="no" mutable="no">
+        <type><ref refid="a00691" kindref="compound">sl_btmesh_evt_lc_server_regulator_debug_info_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_server_regulator_debug_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_server regulator_debug_info event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12644" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a48a6615577635a66c1fc906f66b8f44f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00695" kindref="compound">sl_btmesh_evt_lc_setup_server_set_property_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_lc_setup_server_set_property</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for lc_setup_server set_property event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12645" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a0877befa0f3d0f1fa41393e1347adb60" prot="public" static="no" mutable="no">
+        <type><ref refid="a00699" kindref="compound">sl_btmesh_evt_scene_client_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scene_client_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scene_client status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12646" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a17f20644a231561d2e69c4f2fd339c7b" prot="public" static="no" mutable="no">
+        <type><ref refid="a00703" kindref="compound">sl_btmesh_evt_scene_client_register_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scene_client_register_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scene_client register_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12647" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aa1cb94fa6f4990e2d2ed4280341024d8" prot="public" static="no" mutable="no">
+        <type><ref refid="a00707" kindref="compound">sl_btmesh_evt_scene_server_get_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scene_server_get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scene_server get event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12648" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a27d20044c5845b976649df8e90ae12c4" prot="public" static="no" mutable="no">
+        <type><ref refid="a00711" kindref="compound">sl_btmesh_evt_scene_server_register_get_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scene_server_register_get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scene_server register_get event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12649" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ab78e21c6c785f1447e8555208bd375df" prot="public" static="no" mutable="no">
+        <type><ref refid="a00715" kindref="compound">sl_btmesh_evt_scene_server_recall_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scene_server_recall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scene_server recall event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12650" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a888516e9c645225911994aafd71b77cb" prot="public" static="no" mutable="no">
+        <type><ref refid="a00719" kindref="compound">sl_btmesh_evt_scene_server_publish_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scene_server_publish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scene_server publish event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12651" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a7b4a5114211bc8f2e1cf3df01b56d777" prot="public" static="no" mutable="no">
+        <type><ref refid="a00723" kindref="compound">sl_btmesh_evt_scene_server_compact_recall_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scene_server_compact_recall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scene_server compact_recall event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12652" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aa735bcc9b315f40c9b5f5494ce4e1c08" prot="public" static="no" mutable="no">
+        <type><ref refid="a00727" kindref="compound">sl_btmesh_evt_scene_setup_server_store_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scene_setup_server_store</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scene_setup_server store event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12653" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a7dc8dc78e2ed93017af749c868e19756" prot="public" static="no" mutable="no">
+        <type><ref refid="a00731" kindref="compound">sl_btmesh_evt_scene_setup_server_delete_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scene_setup_server_delete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scene_setup_server delete event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12654" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a4a094b3967a18fdb5bb17b15b5393e5a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00735" kindref="compound">sl_btmesh_evt_scene_setup_server_publish_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scene_setup_server_publish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scene_setup_server publish event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12655" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aac811bf9e049ce43e6ca7b845c6032fe" prot="public" static="no" mutable="no">
+        <type><ref refid="a00739" kindref="compound">sl_btmesh_evt_scheduler_client_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scheduler_client_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scheduler_client status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12656" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1acef02152638c42c0c76bc8b90b9897db" prot="public" static="no" mutable="no">
+        <type><ref refid="a00743" kindref="compound">sl_btmesh_evt_scheduler_client_action_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scheduler_client_action_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scheduler_client action_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12657" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aeacf55837c4c9557a2ae49f3cea2fda4" prot="public" static="no" mutable="no">
+        <type><ref refid="a00747" kindref="compound">sl_btmesh_evt_scheduler_server_action_changed_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_scheduler_server_action_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for scheduler_server action_changed event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12658" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a40467059b73075b745000da120c33c7f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00751" kindref="compound">sl_btmesh_evt_time_server_time_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_time_server_time_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for time_server time_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12659" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a53bd2dd8dc2b89b9903cca25e71f2b5e" prot="public" static="no" mutable="no">
+        <type><ref refid="a00755" kindref="compound">sl_btmesh_evt_time_server_time_zone_offset_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_time_server_time_zone_offset_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for time_server time_zone_offset_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12660" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aef5f78dc02496df09dfbdf68980fb024" prot="public" static="no" mutable="no">
+        <type><ref refid="a00759" kindref="compound">sl_btmesh_evt_time_server_tai_utc_delta_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_time_server_tai_utc_delta_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for time_server tai_utc_delta_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12661" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a299327b2b86734d53a407ea36e6f30f9" prot="public" static="no" mutable="no">
+        <type><ref refid="a00763" kindref="compound">sl_btmesh_evt_time_server_time_role_updated_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_time_server_time_role_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for time_server time_role_updated event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12662" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1af5edb6f068579a1ba031d5748c353f32" prot="public" static="no" mutable="no">
+        <type><ref refid="a00767" kindref="compound">sl_btmesh_evt_time_client_time_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_time_client_time_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for time_client time_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12663" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a606827120c8de45321131b619d37bed5" prot="public" static="no" mutable="no">
+        <type><ref refid="a00771" kindref="compound">sl_btmesh_evt_time_client_time_zone_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_time_client_time_zone_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for time_client time_zone_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12664" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1ab1726cb90613404dd049ae11d0ab3f52" prot="public" static="no" mutable="no">
+        <type><ref refid="a00775" kindref="compound">sl_btmesh_evt_time_client_tai_utc_delta_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_time_client_tai_utc_delta_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for time_client tai_utc_delta_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12665" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1aca01d009e70ab36b8eee755fbd7a4a1a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00779" kindref="compound">sl_btmesh_evt_time_client_time_role_status_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>evt_time_client_time_role_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data field for time_client time_role_status event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12666" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00791_1a666eb5250efa07e775220df62056960c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring>[SL_BGAPI_MAX_PAYLOAD_SIZE]</argsstring>
+        <name>payload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12667" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Union of API event types </para>    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="12526" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="12526" bodyend="12668"/>
+    <listofallmembers>
+      <member refid="a00791_1af5825de1baa78e28cdb27813fcb6363e" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_appkey_list</name></member>
+      <member refid="a00791_1a4a13bd592432169fb3c2f484d5ca0bda" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_appkey_list_end</name></member>
+      <member refid="a00791_1a16378781ea0a84333a2451b1c9bf151d" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_appkey_status</name></member>
+      <member refid="a00791_1ad9e255f528de7f2d3ee61e1bb6a89fc3" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_beacon_status</name></member>
+      <member refid="a00791_1aebee8a4c854bbd7c802064b855930d6d" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_binding_status</name></member>
+      <member refid="a00791_1a88e27babdef45eb083f326d69fcdfa73" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_bindings_list</name></member>
+      <member refid="a00791_1a49448e2f43a09fcc7f15e2762b55e25e" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_bindings_list_end</name></member>
+      <member refid="a00791_1add9911f4f2c23f4648c51caa59367343" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_dcd_data</name></member>
+      <member refid="a00791_1a607317b7174a7c8c938c309f2b3a3813" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_dcd_data_end</name></member>
+      <member refid="a00791_1a0f03fcf0fe1755a1e81598c7619d90ff" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_default_ttl_status</name></member>
+      <member refid="a00791_1a2d736af2421cba7afd4e10c6ea748772" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_friend_status</name></member>
+      <member refid="a00791_1ad57bb98c933b4eab133525e4714ce62e" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_gatt_proxy_status</name></member>
+      <member refid="a00791_1ab31942d25a69236f1065f2c747a8871e" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_heartbeat_pub_status</name></member>
+      <member refid="a00791_1a5d82d546da53c27f8a95ba8aeaaa8069" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_heartbeat_sub_status</name></member>
+      <member refid="a00791_1af8757eb9b63032770c7dd963f9535605" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_identity_status</name></member>
+      <member refid="a00791_1a775af938c90e2a8aaabad7251c7be226" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_key_refresh_phase_status</name></member>
+      <member refid="a00791_1a7f29b2e6485b28a4696c30c26ecb737b" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_lpn_polltimeout_status</name></member>
+      <member refid="a00791_1a442d227dfbe94115ef41ebc1b603b0fe" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_model_pub_status</name></member>
+      <member refid="a00791_1a245f42f1f32494314a8922664a7b984c" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_model_sub_status</name></member>
+      <member refid="a00791_1af123eeee9827a2a6379801dc1170b49d" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_netkey_list</name></member>
+      <member refid="a00791_1a68f80ee8385a873b42ccf05264a0232a" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_netkey_list_end</name></member>
+      <member refid="a00791_1ac9ef4a3c8c819020611ec2e52050b320" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_netkey_status</name></member>
+      <member refid="a00791_1acb9182f6a2feabcc65158102bee04975" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_network_transmit_status</name></member>
+      <member refid="a00791_1a67dafb77b967d9c12e2977c8a7ae3092" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_relay_status</name></member>
+      <member refid="a00791_1a87ad57f67a38c705734c6f1013758f52" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_request_modified</name></member>
+      <member refid="a00791_1adc0d5cf1446e0aa608dd88b42320c94c" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_reset_status</name></member>
+      <member refid="a00791_1a59ee68fd8e2ce1eea7ff49454d4eb601" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_subs_list</name></member>
+      <member refid="a00791_1ab272e56f22fd7330ea8e59899853d600" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_config_client_subs_list_end</name></member>
+      <member refid="a00791_1a1c252698f5b761ff8c6510ba588c854e" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_friend_friendship_established</name></member>
+      <member refid="a00791_1a4fb933049b897a605273d55025cc18a2" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_friend_friendship_terminated</name></member>
+      <member refid="a00791_1aeedf2d045dc03ae6b953512dc4ae9730" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_generic_client_server_status</name></member>
+      <member refid="a00791_1a6516d5dd3edb56915b6b3195a0b28b86" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_generic_server_client_request</name></member>
+      <member refid="a00791_1a2a7ad229ff9c143e1ac94e7d6f71c6ba" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_generic_server_state_changed</name></member>
+      <member refid="a00791_1a4bd243f2db3f2389068a7db5ef634fef" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_generic_server_state_recall</name></member>
+      <member refid="a00791_1a4443b5673ec0f6c8f1f78fd892cdd32a" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_health_client_server_status</name></member>
+      <member refid="a00791_1a5d4b0985cf26741e4b86b41c1c42a66f" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_health_client_server_status_attention</name></member>
+      <member refid="a00791_1abc33921135ab4d6c794166cee9a10119" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_health_client_server_status_period</name></member>
+      <member refid="a00791_1aeb25cea43c32efa80858626414616ed7" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_health_server_attention</name></member>
+      <member refid="a00791_1ad69de9a975502d44493119193e92139e" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_health_server_test_request</name></member>
+      <member refid="a00791_1af66264886154946ade07bbbb4d41f75f" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_client_light_onoff_status</name></member>
+      <member refid="a00791_1a5b91ffedf5d44672737d268363ba1116" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_client_mode_status</name></member>
+      <member refid="a00791_1a0390032b5f529ecb22530fccb53f72d9" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_client_om_status</name></member>
+      <member refid="a00791_1a361bfbf4f9d56b1bf71ed118eee2d391" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_client_property_status</name></member>
+      <member refid="a00791_1a7439ba95d88b1711ec3846fd8f5a68d8" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_server_ambient_lux_level_updated</name></member>
+      <member refid="a00791_1a8d1d7a49f004f11b82fa59a5da518ab5" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_server_light_onoff_updated</name></member>
+      <member refid="a00791_1a0a6f3840791e12a3a3efafb6facbe8f6" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_server_linear_output_updated</name></member>
+      <member refid="a00791_1a3066e4dfc4bcd0c96c240fb2556b648b" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_server_mode_updated</name></member>
+      <member refid="a00791_1a3daf2412d558e681a690268bee8b58e5" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_server_occupancy_updated</name></member>
+      <member refid="a00791_1a891cef30fd22aa83ab3161f10a8e252a" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_server_om_updated</name></member>
+      <member refid="a00791_1a16fdc7283b0cdb1e83eff0e65b254039" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_server_regulator_debug_info</name></member>
+      <member refid="a00791_1ae35651caeab9d96e1be6dca6e964131f" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_server_state_updated</name></member>
+      <member refid="a00791_1a48a6615577635a66c1fc906f66b8f44f" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lc_setup_server_set_property</name></member>
+      <member refid="a00791_1a50527a0b962ba38463bcbf65c285d205" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lpn_friendship_established</name></member>
+      <member refid="a00791_1ac81c90e7dd7095973b4fb961c9d47105" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lpn_friendship_failed</name></member>
+      <member refid="a00791_1aa6acd0ef780c76da48c8c55a759a18c1" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_lpn_friendship_terminated</name></member>
+      <member refid="a00791_1a45c10cc36d81ab64ca46251cbad396ee" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_beacon_received</name></member>
+      <member refid="a00791_1a31a923f00bdc2daeda4db8b6db7114cb" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_changed_ivupdate_state</name></member>
+      <member refid="a00791_1a921d6b0f5ca916175b645c70871b20a0" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_config_get</name></member>
+      <member refid="a00791_1a127332523a5fb50ed40e2aa30079bc67" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_config_set</name></member>
+      <member refid="a00791_1a7ae2ef409fc7e170bf3b3e4b6ebfecb4" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_display_output_oob</name></member>
+      <member refid="a00791_1a6f15f8c0c31b5240b851fd8f0a606beb" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_heartbeat</name></member>
+      <member refid="a00791_1af70c83440935b4bd07335268ce2b4faa" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_heartbeat_start</name></member>
+      <member refid="a00791_1aed8d89af2f8dfb4e9135b29c759c9de7" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_heartbeat_stop</name></member>
+      <member refid="a00791_1ab52258709d0733b3ed0cce6e208acd07" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_initialized</name></member>
+      <member refid="a00791_1afb524693ea0804d13847b0a36b9dad75" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_input_oob_request</name></member>
+      <member refid="a00791_1a3883c43da98d113cd6d4a21c45b2887a" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_ivrecovery_needed</name></member>
+      <member refid="a00791_1a976d13ac7f1c95869cd3e2ce401d3488" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_key_added</name></member>
+      <member refid="a00791_1a7cbb5a287c25024516903975fb3c2722" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_key_removed</name></member>
+      <member refid="a00791_1a326022ca69c8c1eef4b141d2f4b3d8d2" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_key_updated</name></member>
+      <member refid="a00791_1a71acb9f17757ea87dd8905c87ec045d3" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_local_dcd_data</name></member>
+      <member refid="a00791_1a6a45738ce16f722d414765e0e2cd35e5" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_local_dcd_data_end</name></member>
+      <member refid="a00791_1a495760ce0d98fe64fd339033a79090cb" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_model_config_changed</name></member>
+      <member refid="a00791_1a799c8f360a7c0262db05c428dcbce5a3" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_provisioned</name></member>
+      <member refid="a00791_1a330d0a9159c68ec690646ee14cab2106" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_provisioning_failed</name></member>
+      <member refid="a00791_1a114cfbdd257821dc77b3d305215244b2" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_node_provisioning_started</name></member>
+      <member refid="a00791_1a6c050f08234073cf53fee4da889ad5d5" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_add_ddb_entry_complete</name></member>
+      <member refid="a00791_1abba2e55dfec7b5bb6484eb9057fcbe57" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_capabilities</name></member>
+      <member refid="a00791_1ac518ca806d7d392a069b56126c1367f5" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_ddb_list</name></member>
+      <member refid="a00791_1a20a28fe8ca4f8b717b286ee05d8b0c75" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_delete_ddb_entry_complete</name></member>
+      <member refid="a00791_1a687312fb1f014a8edc69dbf7a8e14de6" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_device_provisioned</name></member>
+      <member refid="a00791_1aee8ef9a75c779153f7ae0d8b7684e65a" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_initialization_failed</name></member>
+      <member refid="a00791_1a4798ee35b4f6348d2f2894106fb2178c" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_initialized</name></member>
+      <member refid="a00791_1a15313259ae499c08a4e0e7ba95aecd74" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_key_refresh_complete</name></member>
+      <member refid="a00791_1addaec9cd11fae90565514f012a3d1748" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_key_refresh_node_update</name></member>
+      <member refid="a00791_1a3dea2953f12f8a82f60322fcf3c73454" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_key_refresh_phase_update</name></member>
+      <member refid="a00791_1a1d2b563d15e0d034c164aff1358c1069" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_oob_auth_request</name></member>
+      <member refid="a00791_1afcfa073e1b19be71bbf89fd78a374911" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_oob_display_input</name></member>
+      <member refid="a00791_1a49a90c7b8bdf9365441d9da016fa0646" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_oob_pkey_request</name></member>
+      <member refid="a00791_1a67cf2933f4213d6fdf901318573a262d" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_provisioning_failed</name></member>
+      <member refid="a00791_1ab4a34f359ed16318e94115c21dc65941" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_provisioning_suspended</name></member>
+      <member refid="a00791_1a86234813de2651d7a0e1197412813790" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_unprov_beacon</name></member>
+      <member refid="a00791_1a023a008a8080f76941c382ec525be205" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_prov_uri</name></member>
+      <member refid="a00791_1ad9e4f2eee6327009d2e6c3c48b9feb1c" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_proxy_connected</name></member>
+      <member refid="a00791_1ade4ea65892d5f38ffa795aaf49f6d779" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_proxy_disconnected</name></member>
+      <member refid="a00791_1a4a0e76b152e456988616bf9939faedd6" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_proxy_filter_status</name></member>
+      <member refid="a00791_1a17f20644a231561d2e69c4f2fd339c7b" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scene_client_register_status</name></member>
+      <member refid="a00791_1a0877befa0f3d0f1fa41393e1347adb60" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scene_client_status</name></member>
+      <member refid="a00791_1a7b4a5114211bc8f2e1cf3df01b56d777" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scene_server_compact_recall</name></member>
+      <member refid="a00791_1aa1cb94fa6f4990e2d2ed4280341024d8" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scene_server_get</name></member>
+      <member refid="a00791_1a888516e9c645225911994aafd71b77cb" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scene_server_publish</name></member>
+      <member refid="a00791_1ab78e21c6c785f1447e8555208bd375df" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scene_server_recall</name></member>
+      <member refid="a00791_1a27d20044c5845b976649df8e90ae12c4" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scene_server_register_get</name></member>
+      <member refid="a00791_1a7dc8dc78e2ed93017af749c868e19756" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scene_setup_server_delete</name></member>
+      <member refid="a00791_1a4a094b3967a18fdb5bb17b15b5393e5a" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scene_setup_server_publish</name></member>
+      <member refid="a00791_1aa735bcc9b315f40c9b5f5494ce4e1c08" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scene_setup_server_store</name></member>
+      <member refid="a00791_1acef02152638c42c0c76bc8b90b9897db" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scheduler_client_action_status</name></member>
+      <member refid="a00791_1aac811bf9e049ce43e6ca7b845c6032fe" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scheduler_client_status</name></member>
+      <member refid="a00791_1aeacf55837c4c9557a2ae49f3cea2fda4" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_scheduler_server_action_changed</name></member>
+      <member refid="a00791_1a05b013214180beea66fc5228d484adc6" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_client_cadence_status</name></member>
+      <member refid="a00791_1ab849363a0cf3a117988b4a905d4f54d8" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_client_column_status</name></member>
+      <member refid="a00791_1a5413ff57290b02658d6d30669fee08c3" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_client_descriptor_status</name></member>
+      <member refid="a00791_1ae7795b6425ddd22c209c7c872327d30f" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_client_publish</name></member>
+      <member refid="a00791_1a67987cde08e8a51c692b59a1df38d5dc" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_client_series_status</name></member>
+      <member refid="a00791_1afb3c1f42a13fff25a4fa7c21039f14ff" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_client_setting_status</name></member>
+      <member refid="a00791_1a6b4779357ab6487380b15a2154a46df1" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_client_settings_status</name></member>
+      <member refid="a00791_1a320d83e4701054fcc8cc8c45842aaaf5" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_client_status</name></member>
+      <member refid="a00791_1afb2af7bcb73662cf2ea3fbab36ed41fc" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_server_get_column_request</name></member>
+      <member refid="a00791_1af8a0a9a7cd9b9faa2aa948aa4b1dee79" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_server_get_request</name></member>
+      <member refid="a00791_1a43f76912434f43a9bbc549113b4d69a4" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_server_get_series_request</name></member>
+      <member refid="a00791_1af7b2c51bd410ccb6c77b7d08675e9923" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_server_publish</name></member>
+      <member refid="a00791_1a054a3f6884cf7ce7eb8542e3f97c3635" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_setup_server_get_cadence_request</name></member>
+      <member refid="a00791_1a6b37fd2572475162305ecfe88b4410c4" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_setup_server_get_setting_request</name></member>
+      <member refid="a00791_1a5e055a9277e70323e793403b52707bde" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_setup_server_get_settings_request</name></member>
+      <member refid="a00791_1a194e2f9fb2e1a333c655dc47bf7772aa" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_setup_server_publish</name></member>
+      <member refid="a00791_1acbca0986aebdee16410ace7156ba717f" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_setup_server_set_cadence_request</name></member>
+      <member refid="a00791_1ad0fd9a2a20e87a1eb94c929cc6df26e1" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_sensor_setup_server_set_setting_request</name></member>
+      <member refid="a00791_1af43b49efe86267cc84f45a96408ddc65" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_test_local_heartbeat_subscription_complete</name></member>
+      <member refid="a00791_1a00c197fe65266d6380d75eb3972f71d1" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_test_replay_protection_list_entry_cleared</name></member>
+      <member refid="a00791_1aff457f8c681293c23ef970209615b5b3" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_test_replay_protection_list_entry_set</name></member>
+      <member refid="a00791_1ae12c1769729765304402fc7f623e66c8" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_test_replay_protection_list_saved</name></member>
+      <member refid="a00791_1ab1726cb90613404dd049ae11d0ab3f52" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_time_client_tai_utc_delta_status</name></member>
+      <member refid="a00791_1aca01d009e70ab36b8eee755fbd7a4a1a" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_time_client_time_role_status</name></member>
+      <member refid="a00791_1af5edb6f068579a1ba031d5748c353f32" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_time_client_time_status</name></member>
+      <member refid="a00791_1a606827120c8de45321131b619d37bed5" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_time_client_time_zone_status</name></member>
+      <member refid="a00791_1aef5f78dc02496df09dfbdf68980fb024" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_time_server_tai_utc_delta_updated</name></member>
+      <member refid="a00791_1a299327b2b86734d53a407ea36e6f30f9" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_time_server_time_role_updated</name></member>
+      <member refid="a00791_1a40467059b73075b745000da120c33c7f" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_time_server_time_updated</name></member>
+      <member refid="a00791_1a53bd2dd8dc2b89b9903cca25e71f2b5e" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_time_server_time_zone_offset_updated</name></member>
+      <member refid="a00791_1a82cb142fb1c8ca7c2ffee6ce8ec1459b" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>evt_vendor_model_receive</name></member>
+      <member refid="a00791_1ae1260894f59eeae98c8440899de4df8d" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>handle</name></member>
+      <member refid="a00791_1a666eb5250efa07e775220df62056960c" prot="public" virt="non-virtual"><scope>sl_btmesh_msg.data</scope><name>payload</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00099" kind="group">
+    <compoundname>sl_bt_evt_cte_receiver_connectionless_iq_report</compoundname>
+    <title>sl_bt_evt_cte_receiver_connectionless_iq_report</title>
+    <innerclass refid="a00315" prot="public">sl_bt_evt_cte_receiver_connectionless_iq_report_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00099_1gaa5e2f28a97b6dae962b21532392757a4" prot="public" static="no">
+        <type>struct <ref refid="a00315" kindref="compound">sl_bt_evt_cte_receiver_connectionless_iq_report_s</ref></type>
+        <definition>typedef struct sl_bt_evt_cte_receiver_connectionless_iq_report_s sl_bt_evt_cte_receiver_connectionless_iq_report_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_cte_receiver_connectionless_iq_report_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8036" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00099_1gab4d5669efcfb608e60075dac17be5888" prot="public" static="no">
+        <name>sl_bt_evt_cte_receiver_connectionless_iq_report_id</name>
+        <initializer>0x014500a0</initializer>
+        <briefdescription>
+<para>Identifier of the connectionless_iq_report event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8166" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>IQ sample report from connectionless CTE packets. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,601 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00067" kind="group">
+    <compoundname>sl_btmesh_vendor_model</compoundname>
+    <title>Bluetooth Mesh Vendor Model</title>
+    <innergroup refid="a00068">sl_btmesh_evt_vendor_model_receive</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00067_1ga105fd2e0c4f3d89439c2837b18513011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_vendor_model_send</definition>
+        <argsstring>(uint16_t destination_address, int8_t va_index, uint16_t appkey_index, uint16_t elem_index, uint16_t vendor_id, uint16_t model_id, uint8_t nonrelayed, uint8_t opcode, uint8_t final, size_t payload_len, const uint8_t *payload)</argsstring>
+        <name>sl_btmesh_vendor_model_send</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>destination_address</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>va_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vendor_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>model_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>nonrelayed</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>final</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>payload_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send vendor-specific data.</para><para>Note that, because of the bgapi event length restrictions, the message sent may need to be fragmented into several commands. If this is the case, the application must issue the commands in the correct order and mark the command carrying the last message fragment with the final flag set to a non-zero value. The stack will not start sending the message until the complete message is provided by the application. Fragments from multiple messages must not be interleaved.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">destination_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination address of the message. It can be a unicast address, a group address, or a virtual address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">va_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the destination Label UUID (used only is the destination address is a virtual address) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sending model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vendor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vendor ID of the sending model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model ID of the sending model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nonrelayed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the message is a response to a received message, set this parameter according to what was received in the receive event. Otherwise, set to non-zero if the message affects only devices in the immediate radio neighborhood. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message opcode </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">final</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates whether this payload chunk is the final one of the message or whether more will follow. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">payload_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>payload</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Payload data (either complete or partial; see final parameter).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00067_1gad7225b7616ef00438da350cf98d1a1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_vendor_model_set_publication</definition>
+        <argsstring>(uint16_t elem_index, uint16_t vendor_id, uint16_t model_id, uint8_t opcode, uint8_t final, size_t payload_len, const uint8_t *payload)</argsstring>
+        <name>sl_btmesh_vendor_model_set_publication</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vendor_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>model_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>final</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>payload_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the vendor model publication message.</para><para>The model publication message will be sent out when the model publication occurs either periodically (if the model is configured for periodic publishing) or explicitly (see <ref refid="a00067_1gaca36cddafa8635d9e265e0f4a8f8dd22" kindref="member">sl_btmesh_vendor_model_publish</ref>.</para><para>Note that, because of bgapi length requirements, the message may need to be fragmented over multiple commands. If this is the case, the application must issue the commands in the correct order and mark the command carrying the last message fragment with the final flag set to a non-zero value. The stack will not assign the message to the model until the complete message is provided by the application.</para><para>To disable publication, the publication message may be erased using the <ref refid="a00067_1ga26f23e7e004045f1839a689076273b1d" kindref="member">sl_btmesh_vendor_model_clear_publication</ref> command.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Publishing model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vendor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vendor ID of the model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model ID of the model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message opcode </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">final</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates whether this payload chunk is the final one of the message or whether more will follow. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">payload_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>payload</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Payload data (either complete or partial; see final parameter).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00067_1ga26f23e7e004045f1839a689076273b1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_vendor_model_clear_publication</definition>
+        <argsstring>(uint16_t elem_index, uint16_t vendor_id, uint16_t model_id)</argsstring>
+        <name>sl_btmesh_vendor_model_clear_publication</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vendor_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>model_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear the vendor model publication message.</para><para>Clearing the model publication message disables model publishing, which can be re-enabled by defining the publication message using the <ref refid="a00067_1gad7225b7616ef00438da350cf98d1a1d9" kindref="member">sl_btmesh_vendor_model_set_publication</ref> command.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Publishing model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vendor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vendor ID of the model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model ID of the model</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00067_1gaca36cddafa8635d9e265e0f4a8f8dd22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_vendor_model_publish</definition>
+        <argsstring>(uint16_t elem_index, uint16_t vendor_id, uint16_t model_id)</argsstring>
+        <name>sl_btmesh_vendor_model_publish</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vendor_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>model_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Publish the vendor model publication message.</para><para>Sends the stored publication message to the network using the application key and destination address stored in the model publication parameters.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Publishing model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vendor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vendor ID of the model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model ID of the model</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00067_1gafc0d7e89bb21cffd02d747b27292dbdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_vendor_model_init</definition>
+        <argsstring>(uint16_t elem_index, uint16_t vendor_id, uint16_t model_id, uint8_t publish, size_t opcodes_len, const uint8_t *opcodes)</argsstring>
+        <name>sl_btmesh_vendor_model_init</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vendor_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>model_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>publish</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>opcodes_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>opcodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the vendor model. This function has to be called before the model can be used. Note that the model can be deinitialized if it is no longer needed. See sl_btmesh_vendor_model_deinit.</para><para>Opcodes that the model is able to receive at initialization must be defined. This enables the stack to pass only valid messages up to the model during runtime. Per Mesh specification there are up to 64 opcodes per vendor, ranging from 0 to 63. Specifying opcodes outside of that range will result in an error response. Duplicate opcodes in the array do not result in an error, but will of course be recorded only once.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vendor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vendor ID of the model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model ID of the model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">publish</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates if the model is a publish model (non-zero) or not (zero). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opcodes_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>opcodes</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opcodes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of opcodes the model can handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00067_1gadafaaeb12156b59db7f727682aac080a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_vendor_model_deinit</definition>
+        <argsstring>(uint16_t elem_index, uint16_t vendor_id, uint16_t model_id)</argsstring>
+        <name>sl_btmesh_vendor_model_deinit</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vendor_id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>model_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialize the model. After this call, the model cannot be used until it is initialized again. See <ref refid="a00067_1gafc0d7e89bb21cffd02d747b27292dbdf" kindref="member">sl_btmesh_vendor_model_init</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vendor_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vendor ID of the model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model ID of the model</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3238" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00067_1gae77eb56f29d5c4ee5566fb100d1fd5cf" prot="public" static="no">
+        <name>sl_btmesh_cmd_vendor_model_send_id</name>
+        <initializer>0x00190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3008" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1ga979519efaeaacf0ad2b47db3245a81fd" prot="public" static="no">
+        <name>sl_btmesh_cmd_vendor_model_set_publication_id</name>
+        <initializer>0x01190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3009" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3009" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1ga89b613b0cc0e351bd08a8ea9407622f6" prot="public" static="no">
+        <name>sl_btmesh_cmd_vendor_model_clear_publication_id</name>
+        <initializer>0x02190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3010" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3010" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1gab349b9d8597ca7e3b997fcbd30454a3c" prot="public" static="no">
+        <name>sl_btmesh_cmd_vendor_model_publish_id</name>
+        <initializer>0x03190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3011" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3011" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1gad2b54d06bf4cd87af308a39d3d045a77" prot="public" static="no">
+        <name>sl_btmesh_cmd_vendor_model_init_id</name>
+        <initializer>0x04190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3012" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3012" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1gafde64314e899b23f2fdd29e40cfa7cce" prot="public" static="no">
+        <name>sl_btmesh_cmd_vendor_model_deinit_id</name>
+        <initializer>0x05190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3013" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3013" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1ga4b45ea6a757ebb69c8c64c498c25322d" prot="public" static="no">
+        <name>sl_btmesh_rsp_vendor_model_send_id</name>
+        <initializer>0x00190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3014" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3014" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1gaae74f79736dcef66c1b0ce0104be02c7" prot="public" static="no">
+        <name>sl_btmesh_rsp_vendor_model_set_publication_id</name>
+        <initializer>0x01190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3015" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3015" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1gad9b35b860e63806daa095c960619328b" prot="public" static="no">
+        <name>sl_btmesh_rsp_vendor_model_clear_publication_id</name>
+        <initializer>0x02190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3016" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3016" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1ga5a6378933864e364983c5fb4ec73e554" prot="public" static="no">
+        <name>sl_btmesh_rsp_vendor_model_publish_id</name>
+        <initializer>0x03190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3017" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3017" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1ga39e368bc94472d8d485f922af3c3ff64" prot="public" static="no">
+        <name>sl_btmesh_rsp_vendor_model_init_id</name>
+        <initializer>0x04190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3018" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3018" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00067_1ga937442e45a3b11325149e4fd5331ee60" prot="public" static="no">
+        <name>sl_btmesh_rsp_vendor_model_deinit_id</name>
+        <initializer>0x05190028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="3019" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="3019" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Vendor Model. </para>    </briefdescription>
+    <detaileddescription>
+<para>Vendor model API provides functionality to send and receive vendor-specific messages.</para><para>Throughout the API, the manipulated model is identified by its element address, vendor ID, and model ID.</para><para>The API has functions for sending, receiving, and publishing messages. The application has to implement additional complex functionality (state machines or other model-specific logic).</para><para>The stack will handle Mesh transaction layer segmentation and reassembly automatically if the messages sent are long enough to require it.</para><para>Note that as the application layer overhead for vendor messages is three bytes (vendor ID and opcode) and the access layer MIC is at least four bytes, the longest vendor application payload which can be sent using an unsegmented transport layer PDU is eight bytes. On the other hand, the longest vendor application payload which can be sent using transport layer segmentation is 377 bytes (fragmented into 32 segments). </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

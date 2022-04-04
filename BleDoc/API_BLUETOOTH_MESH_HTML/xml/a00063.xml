@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00063" kind="group">
+    <compoundname>sl_btmesh_proxy</compoundname>
+    <title>Bluetooth Mesh Proxy Connections</title>
+    <innergroup refid="a00064">sl_btmesh_evt_proxy_connected</innergroup>
+    <innergroup refid="a00065">sl_btmesh_evt_proxy_disconnected</innergroup>
+    <innergroup refid="a00066">sl_btmesh_evt_proxy_filter_status</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00063_1gad2bff52ecf0e55aa05ba4d1e007d805c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_proxy_connect</definition>
+        <argsstring>(uint8_t connection, uint32_t *handle)</argsstring>
+        <name>sl_btmesh_proxy_connect</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start connecting a proxy client to a proxy server. After the connection is complete, a <ref refid="a00064" kindref="compound">sl_btmesh_evt_proxy_connected</ref> event will be generated. LE-connection must be opened prior to opening the proxy connection.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If a connection attempt is successfully initiated, a valid proxy handle will be returned.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2892" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00063_1gabb4556fa4e44190cec2d778936822289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_proxy_disconnect</definition>
+        <argsstring>(uint32_t handle)</argsstring>
+        <name>sl_btmesh_proxy_disconnect</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disconnect. This call can be used also for a connection, which is not yet fully formed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Proxy handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2904" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00063_1ga35ba0c7745813861fbd5ea35bece4bdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_proxy_set_filter_type</definition>
+        <argsstring>(uint32_t handle, uint16_t netkey_index, uint8_t type)</argsstring>
+        <name>sl_btmesh_proxy_set_filter_type</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>netkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set up the proxy filtering type. At the proxy server side, this is a local configuration, while on the proxy client a proxy configuration PDU will be sent to the proxy server.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Proxy handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">netkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network key index used in encrypting the request to the proxy server </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter type: 0x00 to allow traffic from the given address, 0x01 to block traffic from the given address</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2921" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00063_1ga83f3d0d82844a6c2c435eb84cc89968e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_proxy_allow</definition>
+        <argsstring>(uint32_t handle, uint16_t netkey_index, uint16_t address)</argsstring>
+        <name>sl_btmesh_proxy_allow</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>netkey_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allow messages meant for the given address to be forwarded over the proxy connection to the proxy client. At the proxy server side, this is a local configuration, while on the proxy client a proxy configuration PDU will be sent to the proxy server.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Proxy handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">netkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network key index used in encrypting the request to the proxy server </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination address to allow. The address may be either a unicast address, a group address, or a virtual address.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2941" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00063_1ga1c5741fcc41be4a90b24f06337eda6d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_proxy_deny</definition>
+        <argsstring>(uint32_t handle, uint16_t netkey_index, uint16_t address)</argsstring>
+        <name>sl_btmesh_proxy_deny</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>netkey_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block messages meant for the given address from being forwarded over the proxy connection to the proxy client. At the proxy server side, this is a local configuration, while on the proxy client a proxy configuration PDU will be sent to the proxy server.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Proxy handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">netkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network key index used in encrypting the request to the proxy server </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination address to block. The address may be either a unicast address, a group address, or a virtual address.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2961" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00063_1gaaa2c7939e480187bb7915079e1f4a3d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_proxy_optimisation_toggle</definition>
+        <argsstring>(uint8_t enable)</argsstring>
+        <name>sl_btmesh_proxy_optimisation_toggle</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>In case of unicast address, if proxy identified the destination, the message will be forwarded only to that node, otherwise to all. This functionality could be enabled or disabled with this function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non zero - enable, otherwise disable</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2976" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00063_1ga3b01e34ee22b3c6b8a29b15ed4d825e2" prot="public" static="no">
+        <name>sl_btmesh_cmd_proxy_connect_id</name>
+        <initializer>0x00180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2798" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2798" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1gaf3e7527e2ef7fe739583e529fcad7ea5" prot="public" static="no">
+        <name>sl_btmesh_cmd_proxy_disconnect_id</name>
+        <initializer>0x01180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2799" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1ga443698bd96c8e3fbf5158ec0b619ed52" prot="public" static="no">
+        <name>sl_btmesh_cmd_proxy_set_filter_type_id</name>
+        <initializer>0x02180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2800" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2800" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1ga955b43297e4a1c37887a438e52fcd252" prot="public" static="no">
+        <name>sl_btmesh_cmd_proxy_allow_id</name>
+        <initializer>0x03180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2801" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1ga6e0a59435fbd9bde51861d01e773d76f" prot="public" static="no">
+        <name>sl_btmesh_cmd_proxy_deny_id</name>
+        <initializer>0x04180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2802" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1ga7fe762f57211d6ab622549dc7a60bf52" prot="public" static="no">
+        <name>sl_btmesh_cmd_proxy_optimisation_toggle_id</name>
+        <initializer>0x05180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2803" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1ga4e46abc2f7baebbe167b236e601b0722" prot="public" static="no">
+        <name>sl_btmesh_rsp_proxy_connect_id</name>
+        <initializer>0x00180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2804" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1gaccfee83e8f5d7a5d471c3f47a51e1483" prot="public" static="no">
+        <name>sl_btmesh_rsp_proxy_disconnect_id</name>
+        <initializer>0x01180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2805" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2805" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1ga0dee3125ee09e87f269c0ec130698374" prot="public" static="no">
+        <name>sl_btmesh_rsp_proxy_set_filter_type_id</name>
+        <initializer>0x02180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2806" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2806" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1gab77a2cc837dfe58071ff1bf4347acbfa" prot="public" static="no">
+        <name>sl_btmesh_rsp_proxy_allow_id</name>
+        <initializer>0x03180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2807" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2807" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1ga363578cc5840c8dd4cbc489d61fdd5b3" prot="public" static="no">
+        <name>sl_btmesh_rsp_proxy_deny_id</name>
+        <initializer>0x04180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2808" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2808" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00063_1ga38eb98c5d70e09f5300e4ac2bdb8f556" prot="public" static="no">
+        <name>sl_btmesh_rsp_proxy_optimisation_toggle_id</name>
+        <initializer>0x05180028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="2809" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="2809" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Proxy Connections. </para>    </briefdescription>
+    <detaileddescription>
+<para>Bluetooth mesh stack functions for GATT proxy connections </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

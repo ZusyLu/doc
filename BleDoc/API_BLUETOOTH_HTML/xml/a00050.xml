@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00050" kind="group">
+    <compoundname>sl_bt_evt_connection_opened</compoundname>
+    <title>sl_bt_evt_connection_opened</title>
+    <innerclass refid="a00187" prot="public">sl_bt_evt_connection_opened_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00050_1ga1e00c1de4e6b7f631f3b3b55ba86e04d" prot="public" static="no">
+        <type>struct <ref refid="a00187" kindref="compound">sl_bt_evt_connection_opened_s</ref></type>
+        <definition>typedef struct sl_bt_evt_connection_opened_s sl_bt_evt_connection_opened_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bt_evt_connection_opened_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2650" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2805" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00050_1gab0954438360a0ad230d641683fcf5c11" prot="public" static="no">
+        <name>sl_bt_evt_connection_opened_id</name>
+        <initializer>0x000600a0</initializer>
+        <briefdescription>
+<para>Identifier of the opened event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2770" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2770" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates that a new connection was opened. </para>    </briefdescription>
+    <detaileddescription>
+<para>This event does not indicate that the connection was established (i.e., that a data packet was received within 6 connection interval). If the connection does not get established, an <ref refid="a00057" kindref="compound">sl_bt_evt_connection_closed</ref> event may immediately follow. This event also reports whether the connected devices are already bonded and what the role of the Bluetooth device (central or peripheral) is. An open connection can be closed with <ref refid="a00048_1ga7f55470c777dd3c65617d9493ea595c7" kindref="member">sl_bt_connection_close</ref> command by giving the connection handle obtained from this event. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00050" kind="group">
+    <compoundname>sl_btmesh_evt_prov_device_provisioned</compoundname>
+    <title>sl_btmesh_evt_prov_device_provisioned</title>
+    <innerclass refid="a00323" prot="public">sl_btmesh_evt_prov_device_provisioned_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00050_1ga90df810e53e87477f2c25e079567c389" prot="public" static="no">
+        <type>struct <ref refid="a00323" kindref="compound">sl_btmesh_evt_prov_device_provisioned_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_prov_device_provisioned_s sl_btmesh_evt_prov_device_provisioned_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_prov_device_provisioned_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1489" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1824" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00050_1gab056357fc88100f471923e5e049b8617" prot="public" static="no">
+        <name>sl_btmesh_evt_prov_device_provisioned_id</name>
+        <initializer>0x021500a8</initializer>
+        <briefdescription>
+<para>Identifier of the device_provisioned event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="1810" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="1810" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Device provisioned successfully. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

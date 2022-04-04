@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00719" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_scene_server_publish_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00719_1a1de015c44cbd57ce1230a3020edc200c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_scene_server_publish_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Client model element index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11069" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11069" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00719_1aff3f1379387fc1bcea1b77ae594e33ac" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sl_btmesh_evt_scene_server_publish_s::period_ms</definition>
+        <argsstring></argsstring>
+        <name>period_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current publishing period that can be used to estimate the next tick, e.g., when the state should be reported at higher frequency. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11070" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11070" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the publish event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11068" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11067" bodyend="11073"/>
+    <listofallmembers>
+      <member refid="a00719_1a1de015c44cbd57ce1230a3020edc200c" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_server_publish_s</scope><name>elem_index</name></member>
+      <member refid="a00719_1aff3f1379387fc1bcea1b77ae594e33ac" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_scene_server_publish_s</scope><name>period_ms</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

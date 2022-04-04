@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00149" kind="group">
+    <compoundname>sl_btmesh_lc_client</compoundname>
+    <title>Bluetooth Mesh Light Control Client Model</title>
+    <innergroup refid="a00150">sl_btmesh_evt_lc_client_mode_status</innergroup>
+    <innergroup refid="a00151">sl_btmesh_evt_lc_client_om_status</innergroup>
+    <innergroup refid="a00152">sl_btmesh_evt_lc_client_light_onoff_status</innergroup>
+    <innergroup refid="a00153">sl_btmesh_evt_lc_client_property_status</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00149_1gac712f0975e07ae6b20e5df731dab2f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lc_client_init</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_lc_client_init</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the LC Client model. LC Client does not have any internal configuration. It only activates the model in the mesh stack.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the client element.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9904" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00149_1gac00438b86a2f181524b628d1ebc4ef76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lc_client_get_mode</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index)</argsstring>
+        <name>sl_btmesh_lc_client_get_mode</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the mode status.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to be queried. The address 0x0000 can be used to publish the message according to the model configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the client element. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Appkey used by server_address.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00150" kindref="compound">sl_btmesh_evt_lc_client_mode_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9921" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00149_1ga10991385f05fdd424d946d51c89f48ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lc_client_set_mode</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint8_t mode)</argsstring>
+        <name>sl_btmesh_lc_client_set_mode</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set mode</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to the model configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit 1 (0x02) defines whether a response is required. If set to 1, SET PROPERTY message will be sent. Zero will send SET PROPERTY UNACKNOWLEDGED. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mode value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00150" kindref="compound">sl_btmesh_evt_lc_client_mode_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9945" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00149_1ga864b5d4bf62bb47cd29b646059586db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lc_client_get_om</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index)</argsstring>
+        <name>sl_btmesh_lc_client_get_om</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the OM status.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to be queried. The address 0x0000 can be used to publish the message according to the model configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the client element. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Appkey used by server_address.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00151" kindref="compound">sl_btmesh_evt_lc_client_om_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9966" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00149_1ga75c3b1cda3bdf46ddfc91f9ef3860782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lc_client_set_om</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint8_t mode)</argsstring>
+        <name>sl_btmesh_lc_client_set_om</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set occupancy mode.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to the model configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit 1 (0x02) defines whether response is required. If set to 1, SET PROPERTY message will be sent. Zero will send SET PROPERTY UNACKNOWLEDGED. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mode value to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00151" kindref="compound">sl_btmesh_evt_lc_client_om_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9990" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00149_1gab76851dd8186510001369d682eb9322e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lc_client_get_light_onoff</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index)</argsstring>
+        <name>sl_btmesh_lc_client_get_light_onoff</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Light OnOff status.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to be queried. The address 0x0000 can be used to publish the message according to the model configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the client element. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Appkey used by server_address.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00152" kindref="compound">sl_btmesh_evt_lc_client_light_onoff_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10011" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00149_1ga50c4f92760fae0232661b884c7750980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lc_client_set_light_onoff</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint8_t target_state, uint8_t tid, uint32_t transition_time_ms, uint16_t message_delay_ms)</argsstring>
+        <name>sl_btmesh_lc_client_set_light_onoff</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>target_state</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>transition_time_ms</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>message_delay_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the Light OnOff.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to the model configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit 1 (0x02) defines whether response is required. If set to 1, SET PROPERTY message will be sent. Zero will send SET PROPERTY UNACKNOWLEDGED. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">target_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target value of the Light LC Light OnOff state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transaction identifier </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">transition_time_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transition time in milliseconds. Value of 0xFFFFFFFF will cause this parameter as well as the &quot;delay&quot; parameter to be omitted. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">message_delay_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message execution delay in milliseconds. If the &quot;transition_time&quot; is 0xFFFFFFFF, this parameter is ignored. If both the transition time and the delay are zero, the transition is immediate.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00152" kindref="compound">sl_btmesh_evt_lc_client_light_onoff_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10042" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00149_1ga15fef3935d0c4db74db28424e19cd2b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lc_client_get_property</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint16_t property_id)</argsstring>
+        <name>sl_btmesh_lc_client_get_property</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Property status.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to be queried. The address 0x0000 can be used to publish the message according to the model configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the client element. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Appkey used by server_address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property ID to query.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00153" kindref="compound">sl_btmesh_evt_lc_client_property_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10067" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00149_1gadd1a46c7fd96d12b7c76f2fdde14b03f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_lc_client_set_property</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint16_t property_id, size_t params_len, const uint8_t *params)</argsstring>
+        <name>sl_btmesh_lc_client_set_property</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>property_id</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>params_len</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a particular property.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address. The address 0x0000 can be used to publish the message according to the model configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit 1 (0x02) defines whether response is required. If set to 1, SET PROPERTY message will be sent. Zero will send SET PROPERTY UNACKNOWLEDGED. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">property_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property ID for the LC Server. Range: 0x0001 - 0x0ffff for a specific device property, the value 0x0000 is prohibited. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">params_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data in <computeroutput>params</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte array containing serialized fields of LC Property, excluding the property ID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00153" kindref="compound">sl_btmesh_evt_lc_client_property_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="10096" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00149_1ga43f3280a81977604f42b9db67f2c81fe" prot="public" static="no">
+        <name>sl_btmesh_cmd_lc_client_init_id</name>
+        <initializer>0x004c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9763" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1gada20ecb6ebd3836edcc1e45f2f1c2146" prot="public" static="no">
+        <name>sl_btmesh_cmd_lc_client_get_mode_id</name>
+        <initializer>0x014c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9764" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1gac3ce9ea7701abf0cb21e376ef86eb098" prot="public" static="no">
+        <name>sl_btmesh_cmd_lc_client_set_mode_id</name>
+        <initializer>0x024c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9765" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1ga0890879526a09c06861b247e256f40bf" prot="public" static="no">
+        <name>sl_btmesh_cmd_lc_client_get_om_id</name>
+        <initializer>0x044c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9766" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1gaa29e7827a3e50a71a9701a738bf34c03" prot="public" static="no">
+        <name>sl_btmesh_cmd_lc_client_set_om_id</name>
+        <initializer>0x054c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9767" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9767" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1gac9f9f8b9855e00c686a4906535119cac" prot="public" static="no">
+        <name>sl_btmesh_cmd_lc_client_get_light_onoff_id</name>
+        <initializer>0x074c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9768" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1gad87d66b8af0ecac85c2e4de5d7c9b960" prot="public" static="no">
+        <name>sl_btmesh_cmd_lc_client_set_light_onoff_id</name>
+        <initializer>0x084c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9769" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1gace4a8e56501e52f2fa72ff9f11f8e538" prot="public" static="no">
+        <name>sl_btmesh_cmd_lc_client_get_property_id</name>
+        <initializer>0x094c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9770" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9770" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1ga1e4fb0a042fbe9311c0677d29b2b66e1" prot="public" static="no">
+        <name>sl_btmesh_cmd_lc_client_set_property_id</name>
+        <initializer>0x0a4c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9771" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9771" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1gaa495d2313967c72e0b4cf45b88960b0c" prot="public" static="no">
+        <name>sl_btmesh_rsp_lc_client_init_id</name>
+        <initializer>0x004c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9772" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1gab7b752578cee319a757323d7877fa29f" prot="public" static="no">
+        <name>sl_btmesh_rsp_lc_client_get_mode_id</name>
+        <initializer>0x014c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9773" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9773" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1ga117aacbd31ccd90cba9c0e03da7c4d5a" prot="public" static="no">
+        <name>sl_btmesh_rsp_lc_client_set_mode_id</name>
+        <initializer>0x024c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9774" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1gab23f4e5f4bba40b468263f87c7a1d52c" prot="public" static="no">
+        <name>sl_btmesh_rsp_lc_client_get_om_id</name>
+        <initializer>0x044c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9775" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9775" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1ga4f55d4106db90aecaf0dd3e4bfc9c011" prot="public" static="no">
+        <name>sl_btmesh_rsp_lc_client_set_om_id</name>
+        <initializer>0x054c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9776" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1gaa5d2a96df5194cf63144c53872ff5f7b" prot="public" static="no">
+        <name>sl_btmesh_rsp_lc_client_get_light_onoff_id</name>
+        <initializer>0x074c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9777" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1ga49d05dd30c4065e8adc7ae63bc8d2914" prot="public" static="no">
+        <name>sl_btmesh_rsp_lc_client_set_light_onoff_id</name>
+        <initializer>0x084c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9778" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1ga8e7f08a2d07efebfe9322acab1d42456" prot="public" static="no">
+        <name>sl_btmesh_rsp_lc_client_get_property_id</name>
+        <initializer>0x094c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9779" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00149_1ga34b1743d4ad3f3c9e9b94633617ea45f" prot="public" static="no">
+        <name>sl_btmesh_rsp_lc_client_set_property_id</name>
+        <initializer>0x0a4c0028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9780" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9780" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Light Control Client Model. </para>    </briefdescription>
+    <detaileddescription>
+<para>Bluetooth Mesh LC Client model API provides functionality to send and receive messages to/from the LC Server and LC Setup Server models.</para><para>Throughout the API, the client model that&apos;s used is identified by its element address and model ID, while the server model responding to the client model requests is identified by its element address and model ID.</para><para>The API has functions for querying server model states and requesting server model state changes </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

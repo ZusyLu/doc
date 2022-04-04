@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00315" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_cte_receiver_connectionless_iq_report_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00315_1a81236587b38ed04941988cf6bfe89e7d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_cte_receiver_connectionless_iq_report_s::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Status of CTE IQ sampling </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8173" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00315_1a948a2358da76600a287482f9486fd3b2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_cte_receiver_connectionless_iq_report_s::sync</definition>
+        <argsstring></argsstring>
+        <name>sync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Periodic advertising synchronization handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8174" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00315_1a8ff7265e2f2d5b93aca058f3b7f36b84" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_cte_receiver_connectionless_iq_report_s::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The channel on which the CTE packet was received </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8175" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00315_1ac25145ea5fcf7aca5a9b4fd77d1a75ec" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t sl_bt_evt_cte_receiver_connectionless_iq_report_s::rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RSSI in the received CTE packet. Unit: dBm </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8177" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00315_1a5287ece838ec1ac25bf39f9ca3a93262" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_cte_receiver_connectionless_iq_report_s::rssi_antenna_id</definition>
+        <argsstring></argsstring>
+        <name>rssi_antenna_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The ID of the antenna on which RSSI was measured </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8178" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00315_1ae2ecffddbef66f6c61a1583c5fe481b4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_cte_receiver_connectionless_iq_report_s::cte_type</definition>
+        <argsstring></argsstring>
+        <name>cte_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The CTE type<itemizedlist>
+<listitem><para><bold>0:</bold> AoA CTE response</para></listitem><listitem><para><bold>1:</bold> AoD CTE response with 1us slots</para></listitem><listitem><para><bold>2:</bold> AoD CTE response with 2us slots </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8180" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00315_1a1559872f823adbfdf0a3bd8f6a50b536" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_cte_receiver_connectionless_iq_report_s::slot_durations</definition>
+        <argsstring></argsstring>
+        <name>slot_durations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slot durations<itemizedlist>
+<listitem><para><bold>1:</bold> Switching and sampling slots are 1 us each</para></listitem><listitem><para><bold>2:</bold> Switching and sampling slots are 2 us each </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8184" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00315_1a5d0e263d02a03a2bc01be8dc07c5270d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_bt_evt_cte_receiver_connectionless_iq_report_s::event_counter</definition>
+        <argsstring></argsstring>
+        <name>event_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The event counter of the periodic advertising train </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8189" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00315_1a77651d038c733f4e884295a290600e12" prot="public" static="no" mutable="no">
+        <type><ref refid="a00107" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_bt_evt_cte_receiver_connectionless_iq_report_s::samples</definition>
+        <argsstring></argsstring>
+        <name>samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IQ samples of the received CTE packet. I and Q samples follow each other alternately (I, Q, I, Q, ...) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8191" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8191" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the connectionless_iq_report event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="38">
+        <label>sl_bt_evt_cte_receiver_connectionless_iq_report_s</label>
+        <link refid="a00315"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>samples</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>uint8array</label>
+        <link refid="a00107"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="8172" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="8171" bodyend="8194"/>
+    <listofallmembers>
+      <member refid="a00315_1a8ff7265e2f2d5b93aca058f3b7f36b84" prot="public" virt="non-virtual"><scope>sl_bt_evt_cte_receiver_connectionless_iq_report_s</scope><name>channel</name></member>
+      <member refid="a00315_1ae2ecffddbef66f6c61a1583c5fe481b4" prot="public" virt="non-virtual"><scope>sl_bt_evt_cte_receiver_connectionless_iq_report_s</scope><name>cte_type</name></member>
+      <member refid="a00315_1a5d0e263d02a03a2bc01be8dc07c5270d" prot="public" virt="non-virtual"><scope>sl_bt_evt_cte_receiver_connectionless_iq_report_s</scope><name>event_counter</name></member>
+      <member refid="a00315_1ac25145ea5fcf7aca5a9b4fd77d1a75ec" prot="public" virt="non-virtual"><scope>sl_bt_evt_cte_receiver_connectionless_iq_report_s</scope><name>rssi</name></member>
+      <member refid="a00315_1a5287ece838ec1ac25bf39f9ca3a93262" prot="public" virt="non-virtual"><scope>sl_bt_evt_cte_receiver_connectionless_iq_report_s</scope><name>rssi_antenna_id</name></member>
+      <member refid="a00315_1a77651d038c733f4e884295a290600e12" prot="public" virt="non-virtual"><scope>sl_bt_evt_cte_receiver_connectionless_iq_report_s</scope><name>samples</name></member>
+      <member refid="a00315_1a1559872f823adbfdf0a3bd8f6a50b536" prot="public" virt="non-virtual"><scope>sl_bt_evt_cte_receiver_connectionless_iq_report_s</scope><name>slot_durations</name></member>
+      <member refid="a00315_1a81236587b38ed04941988cf6bfe89e7d" prot="public" virt="non-virtual"><scope>sl_bt_evt_cte_receiver_connectionless_iq_report_s</scope><name>status</name></member>
+      <member refid="a00315_1a948a2358da76600a287482f9486fd3b2" prot="public" virt="non-virtual"><scope>sl_bt_evt_cte_receiver_connectionless_iq_report_s</scope><name>sync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

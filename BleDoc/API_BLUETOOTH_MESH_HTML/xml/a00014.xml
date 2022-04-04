@@ -1,0 +1,873 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00014" kind="file" language="C++">
+    <compoundname>sl_btmesh_stack_init.h</compoundname>
+    <includes local="yes">sl_status.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h</label>
+        <link refid="a00014"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sl_status.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00014_1a636ad7fad9c920aae4ccc1b98a000f23" prot="public" static="no">
+        <name>SL_BTMESH_BGAPI_CLASS</name>
+        <param><defname>class_name</defname></param>
+        <initializer>&amp;sli_bgapi_class_btmesh_ ## class_name ## _optimized</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="87" column="10" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="a00014_1a2fdab31423cca47c2ed1b773195611ff" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_node_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_node_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a111b770fae54ce390497af16c2fc0992" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_node_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_node_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a850fb0bd128dda663c992c4b1ccee579" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_prov_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_prov_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a07c5b8c8fca79733b878937f1da6f729" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_prov_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_prov_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1ada343cf5d571921aa2aa2f49751f3414" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_proxy_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_proxy_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a529c2278ea8afc900ac5fe93ecb79c81" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_proxy_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_proxy_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1abf55e7b93f125a229b1c3e9ab63a4ba5" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_vendor_model_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_vendor_model_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a90e5bebea08ffac84b78010262486d91" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_vendor_model_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_vendor_model_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1af3084c352d6f939aa55b08855d7c0d5c" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_health_client_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_health_client_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a3cccefa40d5e26ab45c228a45cdf1067" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_health_client_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_health_client_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a2c34a9def6479e403d3aaaa97eea7917" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_health_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_health_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a0fde92db8f5a3a70cd59f146b85ca3a5" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_health_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_health_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1ac828aa46f1f78f0f02c945456ff20fa0" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_generic_client_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_generic_client_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a46bdb4a300849782b5150ce429b1b973" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_generic_client_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_generic_client_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1aa539d39f6e54b77f9c0fa8577fd360d5" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_generic_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_generic_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a754efb64eb4ef16d98e36cca0ebae3e2" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_generic_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_generic_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1ab30cf2f3c43ea56015caa94ac0264f07" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_test_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_test_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a3b7ec1cdd684a20e098289a2c68fc56a" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_test_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_test_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1ac97b1b9a4b2b291cf15caa017d3c592c" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_lpn_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_lpn_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a3f435d198a7f9c55b56ac8efd8c65d29" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_lpn_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_lpn_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1af40560e12b5176423e4759b496a2cd71" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_friend_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_friend_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a213427bfb1c429dda5b81d0179215465" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_friend_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_friend_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1adab53bd78ac9b23c14038a73ebb14ad4" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_proxy_client_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_proxy_client_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a5f81e841ddacf9d1fc12df87705fb9b7" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_proxy_client_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_proxy_client_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a2b5474c7ec35e3821df7ca577805ed28" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_proxy_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_proxy_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1af1a3bf9bfb4524e95f7ddab7987c24a8" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_proxy_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_proxy_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1aada73030fdba254c149ee98fd48fd8bb" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_config_client_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_config_client_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1ae16f84bb3166f8ca5462a5f7d4f83c47" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_config_client_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_config_client_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a54d7935bb029b23c359f38388d2ed27b" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_sensor_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_sensor_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1ae43ff69520541205529c9820efb72722" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_sensor_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_sensor_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a0342e3b6a9f76097d3b289fd8c1deabf" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_sensor_setup_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_sensor_setup_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a5f3a1b0fec62bc6355133a0a4ecf8ff6" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_sensor_setup_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_sensor_setup_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a48cd9fa323648823f1c22a188fc636fd" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_sensor_client_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_sensor_client_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a879c7f4903f88fa7b08ff3af93a7afa2" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_sensor_client_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_sensor_client_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a1b74171873be906890b1dcb26046b301" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_lc_client_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_lc_client_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a684ba5aca270dd372fc04e06a88258f8" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_lc_client_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_lc_client_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a86a2c02fd1e7e438d7de5edc76d632eb" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_lc_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_lc_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a679e72391158cc8535f9e2409463b4bd" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_lc_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_lc_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a413497843b24a86064cd823263a4b6f0" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_lc_setup_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_lc_setup_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a9898b9e5ddae1aeee5a0713f206a4953" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_lc_setup_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_lc_setup_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a445e149f05547af2d2b0141d6e52c5c1" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_scene_client_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_scene_client_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a65e99d0cd562a07be2e82bb04cec43d9" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_scene_client_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_scene_client_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1acd2f7aaa08202db61270045e9dee509b" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_scene_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_scene_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1af497df79b6da5389f2d936686b8ae548" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_scene_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_scene_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a21444c0246d8297950502553551339af" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_scene_setup_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_scene_setup_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1abe7eae9ebb4459d75f9dc17b27e315f3" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_scene_setup_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_scene_setup_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1aeb687f21b8735ffcea4e593c07a135ba" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_scheduler_client_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_scheduler_client_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1af29b0d3a72270155ad0ee18280e636b2" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_scheduler_client_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_scheduler_client_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1aaac01e9aa47b8426905b70dd9d26b54d" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_scheduler_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_scheduler_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a1663d0f2383f81a68463129b11f41a62" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_scheduler_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_scheduler_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1ac6c62ac39266536a6cb76a02d1e53c7c" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_time_server_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_time_server_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a3663a98ff1ad875ebcdc5aed9a54b34a" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_time_server_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_time_server_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1ac53cf31c0c70469b9908728a6f30e1be" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_time_client_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_time_client_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1af3c20d8a2abdeed0520755132db864e5" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_time_client_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_time_client_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1a9b31497f69035ffbcf122d065ce0520d" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_migration_optimized</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_migration_optimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00014_1ada4f62d82879d49ba65c01043e6d338a" prot="public" static="no" mutable="no">
+        <type>const struct sli_bgapi_class</type>
+        <definition>const struct sli_bgapi_class sli_bgapi_class_btmesh_migration_full</definition>
+        <argsstring></argsstring>
+        <name>sli_bgapi_class_btmesh_migration_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="12667" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00014_1a40495deb041e6277aa5993adcc702f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_init_classes</definition>
+        <argsstring>(const struct sli_bgapi_class *const *classes)</argsstring>
+        <name>sl_btmesh_init_classes</name>
+        <param>
+          <type>const struct sli_bgapi_class *const *</type>
+          <declname>classes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the BGAPI classes for btmesh stack.</para><para>This function is automatically called by code generated by the Universal Configurator if the feature is included in the project. The application is not expected to call this function directly.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">classes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL-terminated array of pointers to class declarations. The array must remain valid until the next system reboot.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if the initialization was successful; Other error code indicates a failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h" line="103" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>SL_BTMESH_STACK_INIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BTMESH_STACK_INIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sl_status.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Forward<sp/>declarations<sp/>of<sp/>BGAPI<sp/>class<sp/>declaration<sp/>structures<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_node_optimized;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_node_full;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_prov_optimized;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_prov_full;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_proxy_optimized;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_proxy_full;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_vendor_model_optimized;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_vendor_model_full;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_health_client_optimized;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_health_client_full;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_health_server_optimized;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_health_server_full;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_generic_client_optimized;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_generic_client_full;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_generic_server_optimized;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_generic_server_full;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_test_optimized;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_test_full;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_lpn_optimized;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_lpn_full;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_friend_optimized;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_friend_full;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_proxy_client_optimized;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_proxy_client_full;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_proxy_server_optimized;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_proxy_server_full;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_config_client_optimized;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_config_client_full;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_sensor_server_optimized;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_sensor_server_full;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_sensor_setup_server_optimized;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_sensor_setup_server_full;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_sensor_client_optimized;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_sensor_client_full;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_lc_client_optimized;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_lc_client_full;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_lc_server_optimized;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_lc_server_full;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_lc_setup_server_optimized;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_lc_setup_server_full;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_scene_client_optimized;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_scene_client_full;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_scene_server_optimized;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_scene_server_full;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_scene_setup_server_optimized;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_scene_setup_server_full;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_scheduler_client_optimized;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_scheduler_client_full;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_scheduler_server_optimized;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_scheduler_server_full;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_time_server_optimized;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_time_server_full;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_time_client_optimized;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_time_client_full;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_migration_optimized;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sli_bgapi_class<sp/>sli_bgapi_class_btmesh_migration_full;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Macro<sp/>to<sp/>get<sp/>a<sp/>pointer<sp/>to<sp/>a<sp/>BGAPI<sp/>class<sp/>declaration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SL_BT_API_FULL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BTMESH_BGAPI_CLASS(class_name)<sp/>&amp;sli_bgapi_class_btmesh_<sp/>##<sp/>class_name<sp/>##<sp/>_full</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BTMESH_BGAPI_CLASS(class_name)<sp/>&amp;sli_bgapi_class_btmesh_<sp/>##<sp/>class_name<sp/>##<sp/>_optimized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">sl_status_t<sp/>sl_btmesh_init_classes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>sli_bgapi_class<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<sp/>classes);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_stack_init.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00607" kind="struct" language="C++" prot="public">
+    <compoundname>sl_btmesh_evt_sensor_setup_server_set_setting_request_s</compoundname>
+    <includes refid="a00011" local="no">sl_btmesh_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00607_1a5d37f52d0f15590c88981cdc02147fce" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_sensor_setup_server_set_setting_request_s::server_address</definition>
+        <argsstring></argsstring>
+        <name>server_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address the request was directed to, either the server&apos;s unicast address, or a group address the server subscribes to. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8986" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8986" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00607_1ad9018b360a6a6236c51538480870b43b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_sensor_setup_server_set_setting_request_s::elem_index</definition>
+        <argsstring></argsstring>
+        <name>elem_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup Server model element index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8989" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8989" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00607_1aa87b600cdb185d0dc0c0656a4f3d6ad5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_sensor_setup_server_set_setting_request_s::client_address</definition>
+        <argsstring></argsstring>
+        <name>client_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Requesting client address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8990" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00607_1a4e9e50f2b6c6fdba6a56eb9a35f43a06" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_sensor_setup_server_set_setting_request_s::appkey_index</definition>
+        <argsstring></argsstring>
+        <name>appkey_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The application key index to use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8991" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00607_1a90a2b70a1d71488a5cb11587af037115" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_btmesh_evt_sensor_setup_server_set_setting_request_s::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bit 1 (0x02) defines whether response is required. If set to 1, the client sent the message with SET SETTING opcode and expects a SETTING STATUS message in return. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8992" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00607_1a4ed88fc64581da9eed223fb7cdbeae4a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_sensor_setup_server_set_setting_request_s::property_id</definition>
+        <argsstring></argsstring>
+        <name>property_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Property ID for the sensor. Range: 0x0001 - 0x0ffff for a specific device property, the value 0x0000 is prohibited. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8996" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8996" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00607_1a7a7c9f6b91233db3d536c237bd716ab0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t sl_btmesh_evt_sensor_setup_server_set_setting_request_s::setting_id</definition>
+        <argsstring></argsstring>
+        <name>setting_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sensor Setting Property ID field identifying the device property of a setting. Range: 0x0001 - 0xffff, 0x0000 is prohibited. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8999" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00607_1a4243b0bf7e07c04a9c337e5a8f77c83a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00199" kindref="compound">uint8array</ref></type>
+        <definition>uint8array sl_btmesh_evt_sensor_setup_server_set_setting_request_s::raw_value</definition>
+        <argsstring></argsstring>
+        <name>raw_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sensor Setting raw value. Size and representation depends on the type defined by the Sensor Setting Property ID. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="9002" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="9002" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the set_setting_request event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="303">
+        <label>sl_btmesh_evt_sensor_setup_server_set_setting_request_s</label>
+        <link refid="a00607"/>
+        <childnode refid="304" relation="usage">
+          <edgelabel>raw_value</edgelabel>
+        </childnode>
+      </node>
+      <node id="304">
+        <label>uint8array</label>
+        <link refid="a00199"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="8985" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="8984" bodyend="9005"/>
+    <listofallmembers>
+      <member refid="a00607_1a4e9e50f2b6c6fdba6a56eb9a35f43a06" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_sensor_setup_server_set_setting_request_s</scope><name>appkey_index</name></member>
+      <member refid="a00607_1aa87b600cdb185d0dc0c0656a4f3d6ad5" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_sensor_setup_server_set_setting_request_s</scope><name>client_address</name></member>
+      <member refid="a00607_1ad9018b360a6a6236c51538480870b43b" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_sensor_setup_server_set_setting_request_s</scope><name>elem_index</name></member>
+      <member refid="a00607_1a90a2b70a1d71488a5cb11587af037115" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_sensor_setup_server_set_setting_request_s</scope><name>flags</name></member>
+      <member refid="a00607_1a4ed88fc64581da9eed223fb7cdbeae4a" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_sensor_setup_server_set_setting_request_s</scope><name>property_id</name></member>
+      <member refid="a00607_1a4243b0bf7e07c04a9c337e5a8f77c83a" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_sensor_setup_server_set_setting_request_s</scope><name>raw_value</name></member>
+      <member refid="a00607_1a5d37f52d0f15590c88981cdc02147fce" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_sensor_setup_server_set_setting_request_s</scope><name>server_address</name></member>
+      <member refid="a00607_1a7a7c9f6b91233db3d536c237bd716ab0" prot="public" virt="non-virtual"><scope>sl_btmesh_evt_sensor_setup_server_set_setting_request_s</scope><name>setting_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

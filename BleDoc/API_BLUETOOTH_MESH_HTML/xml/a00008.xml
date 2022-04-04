@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00008" kind="file" language="C++">
+    <compoundname>sl_bgapi.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="a00011" local="yes">/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>include/sl_bgapi.h</label>
+        <link refid="a00008"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h</label>
+        <link refid="a00011_source"/>
+      </node>
+      <node id="4">
+        <label>include/sl_bgapi.h</label>
+        <link refid="a00008"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="a00199" prot="public">uint8array</innerclass>
+    <innerclass refid="a00203" prot="public">byte_array</innerclass>
+    <innerclass refid="a00207" prot="public">bd_addr</innerclass>
+    <innerclass refid="a00211" prot="public">uuid_128</innerclass>
+    <innerclass refid="a00215" prot="public">aes_key_128</innerclass>
+    <innerclass refid="a00219" prot="public">sl_bt_uuid_16_t</innerclass>
+    <innerclass refid="a00223" prot="public">sl_bt_uuid_64_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00008_1a7bb24fa997f25e432cedd558fedb4193" prot="public" static="no">
+        <name>SL_BGAPI_DEPRECATED</name>
+        <briefdescription>
+<para>Silicon Labs BGAPI types and macros. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="1">License</heading>
+</para><para><bold>Copyright 2019-2020 Silicon Laboratories Inc. www.silabs.com</bold></para><para>The licensor of this software is Silicon Laboratories Inc. Your use of this software is governed by the terms of Silicon Labs Master Software License Agreement (MSLA) available at www.silabs.com/about-us/legal/master-software-license-agreement. This software is distributed to you in Source Code format and is governed by the sections of the MSLA applicable to Source Code. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="32" column="12" bodyfile="include/sl_bgapi.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00008_1a1f3fe868a3f85c5efd50b209c77f1e96" prot="public" static="no">
+        <name>SL_BGAPI_MAX_PAYLOAD_SIZE</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum BGAPI command payload size. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="63" column="9" bodyfile="include/sl_bgapi.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga267fbf80cdc6fbc7990b9dbb9ee268e2" prot="public" static="no">
+        <name>SL_BT_TYPE_UINT8ARRARY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="73" column="9" bodyfile="include/sl_bgapi.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga253166438a8eef1a0f124c0d4e666a5a" prot="public" static="no">
+        <name>SL_BT_TYPE_BYTE_ARRARY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="82" column="9" bodyfile="include/sl_bgapi.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1gaafbfd975e4108e0800b2514e4620e3fe" prot="public" static="no">
+        <name>SL_BT_TYPE_BDADDR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="91" column="9" bodyfile="include/sl_bgapi.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1gadf14f7d846c7814be79f8a8c42598c47" prot="public" static="no">
+        <name>SL_BT_TYPE_UUID128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="99" column="9" bodyfile="include/sl_bgapi.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga90a686db62e237997747ce3c801932f9" prot="public" static="no">
+        <name>SL_BT_TYPE_AES_KEY128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="107" column="9" bodyfile="include/sl_bgapi.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga07ead9236e64f2f39c2cfb0552a1780c" prot="public" static="no">
+        <name>SL_BT_TYPE_UUID16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="115" column="9" bodyfile="include/sl_bgapi.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga244785a8656dadd8c2974431fddb4a92" prot="public" static="no">
+        <name>SL_BT_TYPE_UUID64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="123" column="9" bodyfile="include/sl_bgapi.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga6bb011435286a47a9c4de1f6ef519c12" prot="public" static="no">
+        <name>SL_BGAPI_MSG_HEADER_LEN</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+<para>The length of a BGAPI message header which is 4 bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="156" column="9" bodyfile="include/sl_bgapi.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga7a3cec618d880b1644cf9fac82757ca5" prot="public" static="no">
+        <name>SL_BGAPI_MSG_ID</name>
+        <param><defname>HDR</defname></param>
+        <initializer>((HDR) &amp; 0xffff00f8)</initializer>
+        <briefdescription>
+<para>Get the identifier of a BGAPI message including device type, class ID, message type and message ID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HDR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The header of the message as a uint32_t integer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="164" column="9" bodyfile="include/sl_bgapi.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00020_1ga0072fe93eccf2839b954ec5f04f17db4" prot="public" static="no">
+        <name>SL_BGAPI_MSG_LEN</name>
+        <param><defname>HDR</defname></param>
+        <initializer>((((HDR) &amp; 0x7) &lt;&lt; 8) | (((HDR) &amp; 0xff00) &gt;&gt; 8))</initializer>
+        <briefdescription>
+<para>Get the data payload length in a BGAPI message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HDR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The header of the message as a uint32_t integer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="171" column="9" bodyfile="include/sl_bgapi.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00008_1a41f5c362bad074d82588d1a75e8a8583" prot="public" static="no">
+        <name>SL_BGAPI_BIT_ENCRYPTED</name>
+        <initializer>(1 &lt;&lt; 6)</initializer>
+        <briefdescription>
+<para>The bit indicating whether data of a BGAPI message is encrypted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="179" column="9" bodyfile="include/sl_bgapi.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00008_1a6d6214448a73d76f19bbc958933f3125" prot="public" static="no">
+        <name>SL_BGAPI_MSG_ENCRYPTED</name>
+        <param><defname>HDR</defname></param>
+        <initializer>((HDR)&amp;SL_BGAPI_BIT_ENCRYPTED)</initializer>
+        <briefdescription>
+<para>Check whether data of a BGAPI message is encrypted. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HDR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The BGAPI header of the message as a uint32_t integer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="186" column="9" bodyfile="include/sl_bgapi.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00008_1abb491e1804cd51f1fc647aed80bb6b77" prot="public" static="no">
+        <name>sl_bgapi_msg_types</name>
+        <enumvalue id="a00008_1abb491e1804cd51f1fc647aed80bb6b77a6c0dd8c2d95aa65dc073b86877415406" prot="public">
+          <name>sl_bgapi_msg_type_cmd</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00008_1abb491e1804cd51f1fc647aed80bb6b77adb48e47f2e6730e731b0782277f721f5" prot="public">
+          <name>sl_bgapi_msg_type_rsp</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00008_1abb491e1804cd51f1fc647aed80bb6b77a687ff6681f9ce22708674d11a30737c7" prot="public">
+          <name>sl_bgapi_msg_type_evt</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="136" column="1" bodyfile="include/sl_bgapi.h" bodystart="136" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00008_1a26456af8ae059808bc9c3b935f7c5017" prot="public" static="no">
+        <name>sl_bgapi_dev_types</name>
+        <enumvalue id="a00008_1a26456af8ae059808bc9c3b935f7c5017a809fdd16fd77c8a24db40add1b67c147" prot="public">
+          <name>sl_bgapi_dev_type_bt</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00008_1a26456af8ae059808bc9c3b935f7c5017a02d532fab02eb2ae727c902fcd55791c" prot="public">
+          <name>sl_bgapi_dev_type_btmesh</name>
+          <initializer>= 0x28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="142" column="1" bodyfile="include/sl_bgapi.h" bodystart="142" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00008_1acab37437cd257a3dc087f5a839b34bda" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* sl_bgapi_handler) (const void *)</definition>
+        <argsstring>)(const void *)</argsstring>
+        <name>sl_bgapi_handler</name>
+        <briefdescription>
+<para>Internal function prototype for BGAPI command handlers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="134" column="1" bodyfile="include/sl_bgapi.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00008_1a21f0d227b8e121a887703c7e41f4d1f4" prot="public" static="no">
+        <type>enum sl_bgapi_msg_types</type>
+        <definition>typedef enum sl_bgapi_msg_types  sl_bgapi_msg_types_t</definition>
+        <argsstring></argsstring>
+        <name>sl_bgapi_msg_types_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="140" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00008_1a5c47af7bf1e68f0bcb7e001582f635d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sli_bgapi_set_cmd_handler_delegate</definition>
+        <argsstring>(void(*cmd_handler_delegate)(uint32_t, sl_bgapi_handler, const void *))</argsstring>
+        <name>sli_bgapi_set_cmd_handler_delegate</name>
+        <param>
+          <type>void(*)(uint32_t, sl_bgapi_handler, const void *)</type>
+          <declname>cmd_handler_delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal function for setting the command handler function. Used by API library.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cmd_handler_delegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to command handler delegate function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sl_bgapi.h" line="193" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#ifndef<sp/>SL_BGAPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BGAPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Macros<sp/>to<sp/>declare<sp/>deprecated<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__IAR_SYSTEMS_ICC__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>SL_BGAPI_DEPRECATED<sp/>_Pragma(&quot;deprecated&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__GNUC__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>SL_BGAPI_DEPRECATED<sp/>__attribute__((deprecated))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>SL_BGAPI_DEPRECATED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Compatibility<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PACKSTRUCT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*Default<sp/>packed<sp/>configuration*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKSTRUCT(decl)<sp/>decl<sp/>__attribute__((__packed__,<sp/>gcc_struct))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKSTRUCT(decl)<sp/>decl<sp/>__attribute__((__packed__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALIGNED<sp/>__attribute__((aligned(0x4)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>__IAR_SYSTEMS_ICC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKSTRUCT(decl)<sp/>__packed<sp/>decl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALIGNED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>_MSC_VER<sp/><sp/></highlight><highlight class="comment">/*msvc*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKSTRUCT(decl)<sp/>__pragma(pack(push,<sp/>1)<sp/>)<sp/>decl<sp/>__pragma(pack(pop)<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALIGNED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKSTRUCT(a)<sp/>a<sp/>PACKED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor">#ifndef<sp/>SL_BGAPI_MAX_PAYLOAD_SIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BGAPI_MAX_PAYLOAD_SIZE<sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor">#ifndef<sp/>SL_BT_TYPE_UINT8ARRARY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_TYPE_UINT8ARRARY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="a00199" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76" refid="a00199_1a4698938af444ec839076786df946394d" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="a00199_1a4698938af444ec839076786df946394d" kindref="member">len</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="a00199_1a6d9567b478549b3de2320751b34b533f" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/>data[];<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}<sp/><ref refid="a00199" kindref="compound">uint8array</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SL_BT_TYPE_BYTE_ARRARY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_TYPE_BYTE_ARRARY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="a00203" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85" refid="a00203_1a790d6cc715ab9351c45f9a54840c77b4" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="a00203_1a790d6cc715ab9351c45f9a54840c77b4" kindref="member">len</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="a00203_1aee7161a0b6630dcf56068a537ea76c57" refkind="member"><highlight class="normal"><sp/><sp/>int8_t<sp/><sp/><sp/>data[];<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}<sp/><ref refid="a00203" kindref="compound">byte_array</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SL_BT_TYPE_BDADDR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_TYPE_BDADDR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="a00207" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94" refid="a00207_1a47483c57b4bc71ced8f652233a3a4d43" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/>addr[6];<sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/><ref refid="a00207" kindref="compound">bd_addr</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SL_BT_TYPE_UUID128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_TYPE_UUID128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="a00211" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102" refid="a00211_1a9f76ac637112f3c966050df06d803513" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/>data[16];<sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}<sp/><ref refid="a00211" kindref="compound">uuid_128</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SL_BT_TYPE_AES_KEY128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_TYPE_AES_KEY128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="a00215" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110" refid="a00215_1ade9b32f16f9392c4a487027766105540" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/>data[16];<sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}<sp/><ref refid="a00215" kindref="compound">aes_key_128</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SL_BT_TYPE_UUID16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_TYPE_UUID16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="a00219" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118" refid="a00219_1a7608458597cc609ff31993260f8dd242" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/>data[2];<sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}<sp/><ref refid="a00219" kindref="compound">sl_bt_uuid_16_t</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SL_BT_TYPE_UUID64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SL_BT_TYPE_UUID64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="a00223" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126" refid="a00223_1a4b47b6b700f7c775bec3f8bb8195fb16" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/>data[8];<sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}<sp/><ref refid="a00223" kindref="compound">sl_bt_uuid_64_t</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>end<sp/>addtogroup<sp/>sl_bgapi_types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*sl_bgapi_handler)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>sl_bgapi_msg_types<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>sl_bgapi_msg_type_cmd<sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>sl_bgapi_msg_type_rsp<sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>sl_bgapi_msg_type_evt<sp/>=<sp/>0x80</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}<sp/>sl_bgapi_msg_types_t;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>sl_bgapi_dev_types<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>sl_bgapi_dev_type_bt<sp/>=<sp/>0x20,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>sl_bgapi_dev_type_btmesh<sp/>=<sp/>0x28,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="156" refid="a00020_1ga6bb011435286a47a9c4de1f6ef519c12" refkind="member"><highlight class="preprocessor">#define<sp/>SL_BGAPI_MSG_HEADER_LEN<sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="a00020_1ga7a3cec618d880b1644cf9fac82757ca5" refkind="member"><highlight class="preprocessor">#define<sp/>SL_BGAPI_MSG_ID(HDR)<sp/>((HDR)<sp/>&amp;<sp/>0xffff00f8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="a00020_1ga0072fe93eccf2839b954ec5f04f17db4" refkind="member"><highlight class="preprocessor">#define<sp/>SL_BGAPI_MSG_LEN(HDR)<sp/>((((HDR)<sp/>&amp;<sp/>0x7)<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((HDR)<sp/>&amp;<sp/>0xff00)<sp/>&gt;&gt;<sp/>8))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>end<sp/>addtogroup<sp/>sl_bgapi_types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor">#define<sp/>SL_BGAPI_BIT_ENCRYPTED<sp/>(1<sp/>&lt;&lt;<sp/>6)<sp/>//<sp/>Bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor">#define<sp/>SL_BGAPI_MSG_ENCRYPTED(HDR)<sp/>((HDR)&amp;SL_BGAPI_BIT_ENCRYPTED)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sli_bgapi_set_cmd_handler_delegate(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*cmd_handler_delegate)(uint32_t,</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sl_bgapi_handler,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*));</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/sl_bgapi.h"/>
+  </compounddef>
+</doxygen>

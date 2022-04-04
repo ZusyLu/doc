@@ -1,0 +1,1093 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00792" kind="page">
+    <compoundname>bgapi</compoundname>
+    <title>BGAPI</title>
+    <detaileddescription>
+<sect1 id="a00792_1bgapi_message_header_format">
+<title>BGAPI message header format</title>
+<para>The BGAPI message header is the first 4 bytes of a BGAPI message. It consists of device and message types, IDs, and data payload length.</para><sect2 id="a00792_1bgapi_message_header_byte1">
+<title>Byte 1</title>
+<para><itemizedlist>
+<listitem><para><bold>Bits 0 - 2</bold>: Highest 3 bits of the data payload length field</para></listitem><listitem><para><bold>Bits 3 - 5</bold>: <bold>Device type</bold><itemizedlist>
+<listitem><para>Bit value <bold>100</bold>: Bluetooth LE</para></listitem><listitem><para>Bit value <bold>101</bold>: Bluetooth Mesh</para></listitem></itemizedlist>
+</para></listitem><listitem><para><bold>Bit 6</bold>: Reserved</para></listitem><listitem><para><bold>Bit 7</bold>: <bold>Message type</bold><itemizedlist>
+<listitem><para>Bit value <bold>0</bold>: The message is a command or a response to command.</para></listitem><listitem><para>Bit value <bold>1</bold>: The message is an event.</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></sect2>
+<sect2 id="a00792_1bgapi_message_header_byte2">
+<title>Byte 2</title>
+<para>This byte is the lowest 8 bits of the data payload length field.</para></sect2>
+<sect2 id="a00792_1bgapi_message_header_byte3">
+<title>Byte 3</title>
+<para>This byte is the BGAPI <bold>class ID</bold>.</para></sect2>
+<sect2 id="a00792_1bgapi_message_header_byte4">
+<title>Byte 4</title>
+<para>This byte is the <bold>message ID</bold> of a command, response or event.</para><para>A device type, class ID, message type and message ID together construct a unique identifer of a message within the BGAPI protocol.</para></sect2>
+</sect1>
+<sect1 id="a00792_1bgapi_endianness">
+<title>Endianness</title>
+<para>BGAPI protocol stores data in little endian.</para><para><heading level="1">Concurrency</heading>
+</para><para>When the application runs in an RTOS, the Bluetooth RTOS adaptation component has a mechanism to synchronize the handling of individual BGAPI commands. Thus, individual BGAPI commands are safe to be called from multiple threads when the Bluetooth RTOS adaptation component is used.</para><para>BGAPI commands cannot be called from interrupt context. Calling a command from interrupt context may delay the radio activity. Furthermore, when commands are also called from the main event loop or an RTOS task simultaneously, concurrent BGAPI calls may cause memory issues in the stack.</para></sect1>
+<sect1 id="a00792_1bgapi_payload_length_calculation">
+<title>Payload Length Calculation</title>
+<para>Use <ref refid="a00020_1ga0072fe93eccf2839b954ec5f04f17db4" kindref="member">SL_BGAPI_MSG_LEN</ref> to calculate the payload length of a BGAPI message.</para></sect1>
+<sect1 id="a00792_1decode_bgapi_message">
+<title>Decode a BGAPI Message</title>
+<para>On an NCP host, a received API message is either a response or an event. As the message is in binary format, users may need to decode the binary to its corresponding named message definition. Following method can be used to decode a message binary received on NCP host:</para><para><itemizedlist>
+<listitem><para>Find out the device type from <ref refid="a00792_1bgapi_message_header_byte1" kindref="member">Byte 1</ref> of the message header. Go to the BGAPI message summary table according to the device type. The table may be the <ref refid="a00792_1bgapi_message_summary" kindref="member">BGAPI message summary</ref> in this document, or a table in another API reference manual. Bluetooth LE and Bluetooth Mesh APIs have separate API reference manuals.</para></listitem><listitem><para>Find out the message type of the message from bit 7 of the <ref refid="a00792_1bgapi_message_header_byte1" kindref="member">Byte 1</ref> in the message header.</para></listitem><listitem><para>Find out the class ID which is the <ref refid="a00792_1bgapi_message_header_byte3" kindref="member">Byte 3</ref> of the message header. Together with the message type, locate either the command or event message group for this class.</para></listitem><listitem><para>Locate the row in the message group according to the message ID which is the <ref refid="a00792_1bgapi_message_header_byte4" kindref="member">Byte 4</ref> of the message header.</para></listitem><listitem><para>If the row is a command, the decoded message is a response to this command. Go to the command documentation. The 5th and 6th bytes of the binary are the error code returned for the command. Rest data of the binary maps to the [out] parameters of the command in declaration order.</para></listitem><listitem><para>If the row is an event, go to the event documentation. Data starting from the 5th byte maps to the event data structure fields in declaration order.</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="a00792_1bgapi_message_summary">
+<title>BGAPI message summary</title>
+<para>The following table summarizes the class and message IDs of commands and events in the BGAPI protocol. A response message has the same class and message ID as the command it responds to.</para><para>The table also shows the minimum payload length for each message. Messages that have an array parameter can have longer payload length depending on the length of the array.</para><para><para><table rows="523" cols="5"><caption>BGAPI message header summary</caption>
+<row>
+<entry thead="yes"><para>Message Name </para></entry><entry thead="yes"><para>Class ID </para></entry><entry thead="yes"><para>Message ID </para></entry><entry thead="yes"><para>Minimum Payload Length  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021" kindref="compound">Mesh Node</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga95d84b256ddb120cbd48c35648e5b00e" kindref="member">cmd_node_init</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gae87cd83750a568083f7a235a8e1b0d7d" kindref="member">cmd_node_start_unprov_beaconing</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga25c3154c23ac8192590e5a018ede0228" kindref="member">cmd_node_stop_unprov_beaconing</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x16 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gae302577536fab537f3a2ea62b370ae29" kindref="member">cmd_node_get_rssi</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x17 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga9948884e4b4fa11d192b15eb7ad2a0d4" kindref="member">cmd_node_send_input_oob_request_response</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga629ac06ff8fbec7f28c948d94e670cd4" kindref="member">cmd_node_get_uuid</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gae57746b683cba799cded9e83d9ecf0fe" kindref="member">cmd_node_set_provisioning_data</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>41  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gad78cc7c6418b35449ab72056385897eb" kindref="member">cmd_node_init_oob</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga2cf647adb3961ae02c964226fe0f03c0" kindref="member">cmd_node_set_ivrecovery_mode</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga9d1eef990228049df3794a30e2134ce7" kindref="member">cmd_node_get_ivrecovery_mode</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga1cebc51ce7ae33d3adc527961e84c732" kindref="member">cmd_node_get_statistics</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga05f67e4289da6e815b3cee213515efcd" kindref="member">cmd_node_clear_statistics</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga4d43e04a74692574e9c2b7847d9430c3" kindref="member">cmd_node_set_net_relay_delay</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga755b45dce041edc63a7372739d4087f3" kindref="member">cmd_node_get_net_relay_delay</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gae68b8d67dc1adadc511575f37d1b1fc7" kindref="member">cmd_node_get_ivupdate_state</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gaeb0b09dd4620b91223a496217cd577c2" kindref="member">cmd_node_request_ivupdate</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga9ff86f761e6e9512818c702be9054aae" kindref="member">cmd_node_get_seq_remaining</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga24a711eb7a20d70f370d8c452f3202f1" kindref="member">cmd_node_save_replay_protection_list</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gaab7490b89de220f4ab50c68ec0fb10c8" kindref="member">cmd_node_set_uuid</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x11 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gac5b1b6c388383f605dcf382908570e74" kindref="member">cmd_node_get_replay_protection_list_status</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga28b3f785fb769b6167baf3c4116a55aa" kindref="member">cmd_node_get_element_address</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x12 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga1a910a1779017e93938c011e0a15fed6" kindref="member">cmd_node_send_static_oob_request_response</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x13 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga5c2961ee5781dbcd48887b7a605c8ef7" kindref="member">cmd_node_reset</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga123bd2d3afbf45fa3e7bf20989805a92" kindref="member">cmd_node_set_beacon_reporting</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga2436e5e1e8ab649d772a829cb15d93c4" kindref="member">cmd_node_set_iv_update_age</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gacb53a122602a8ed371a3fb75322b552e" kindref="member">cmd_node_get_key_count</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gae0f05fe1f073f9aa956ee5e77371c74b" kindref="member">cmd_node_get_key</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga86381cc2f042d9513d7c17007b4d1fbf" kindref="member">cmd_node_get_networks</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x1c </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga598bfa198887700c4e39a843ee32dfd3" kindref="member">cmd_node_get_element_seqnum</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x1d </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga42d915ca071f83e50566d5e5180d4452" kindref="member">cmd_node_set_model_option</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1ga73a683bbadf5e116f78c68eafec36340" kindref="member">cmd_node_get_local_dcd</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gae5bc8f6bcaaf2965c7d794e38f562856" kindref="member">cmd_node_erase_mesh_nvm</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x20 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00021_1gae49b3179adbd6cd2fd7ebdfcaabf6cf8" kindref="member">cmd_node_power_off</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x21 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00022" kindref="compound">evt_node_initialized</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00023" kindref="compound">evt_node_provisioned</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00024" kindref="compound">evt_node_config_get</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00025" kindref="compound">evt_node_config_set</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00026" kindref="compound">evt_node_display_output_oob</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00027" kindref="compound">evt_node_input_oob_request</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00028" kindref="compound">evt_node_provisioning_started</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00029" kindref="compound">evt_node_provisioning_failed</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00030" kindref="compound">evt_node_key_added</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00031" kindref="compound">evt_node_model_config_changed</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00032" kindref="compound">evt_node_reset</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00033" kindref="compound">evt_node_ivrecovery_needed</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00034" kindref="compound">evt_node_changed_ivupdate_state</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00035" kindref="compound">evt_node_static_oob_request</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00036" kindref="compound">evt_node_key_removed</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00037" kindref="compound">evt_node_key_updated</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00038" kindref="compound">evt_node_heartbeat</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00039" kindref="compound">evt_node_heartbeat_start</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x11 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00040" kindref="compound">evt_node_heartbeat_stop</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x12 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00041" kindref="compound">evt_node_beacon_received</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x13 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00042" kindref="compound">evt_node_local_dcd_data</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00043" kindref="compound">evt_node_local_dcd_data_end</ref> </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044" kindref="compound">Bluetooth Mesh Stack Provisioner</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gaef002829d183ece261eab2e7b28679bc" kindref="member">cmd_prov_init</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gadd4b87a0693257ccb624e553ecc3240e" kindref="member">cmd_prov_scan_unprov_beacons</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga651b792d1cb6a9bf64992fb25b98bd53" kindref="member">cmd_prov_create_provisioning_session</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x41 </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga5ecc8081c2ac8ef16b5c2c486cfe003a" kindref="member">cmd_prov_set_provisioning_suspend_event</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x42 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gac4ca3ae9490cc41c93169ba2e959758d" kindref="member">cmd_prov_provision_adv_device</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x43 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga09d2796362f838ff0271fcc92014271c" kindref="member">cmd_prov_provision_gatt_device</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x44 </para></entry><entry thead="no"><para>17  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga03e1d4fcbe7722c0a3d68cb3f0b0d3bd" kindref="member">cmd_prov_continue_provisioning</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x45 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga1b59b8b384ed32642461d918e26a9e9c" kindref="member">cmd_prov_abort_provisioning</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>17  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gae2c05ba910aac5fe390a4212e82b79fd" kindref="member">cmd_prov_set_device_address</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x46 </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga420ed2df250d81b5aac94f602f30bfa2" kindref="member">cmd_prov_create_network</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gaf757502e92df10d3e8b7fbc031026fcf" kindref="member">cmd_prov_create_appkey</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gacc5d865f9215aaab95a2dbc8c68c0197" kindref="member">cmd_prov_send_oob_pkey_response</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga215c71a58338df9f360ff384b5bb5389" kindref="member">cmd_prov_send_oob_auth_response</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga51cf70a32df1a84943bfc314baef1851" kindref="member">cmd_prov_set_oob_requirements</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>24  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gacbb1625ebdc7c1f5e13b7e6c5c59a625" kindref="member">cmd_prov_start_key_refresh</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga520859649c176ee70108dba46b6faffa" kindref="member">cmd_prov_get_key_refresh_exclusion</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gabedff9566e626d13fd7bee2e7b97ec0d" kindref="member">cmd_prov_set_key_refresh_exclusion</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga2e479483cf5dd4b465eca3b30f15137e" kindref="member">cmd_prov_get_ddb_entry</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x16 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga898cfc763539e0b31a92afed369e16c8" kindref="member">cmd_prov_delete_ddb_entry</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x17 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gafab73afa0dabc2b21828ecd51bbbb857" kindref="member">cmd_prov_add_ddb_entry</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>37  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga5b34525fe507e95b9160d4d4d3f46c73" kindref="member">cmd_prov_list_ddb_entries</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gaa179908d8e3cb3c99226437e4f52bbba" kindref="member">cmd_prov_initialize_network</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x37 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gafc2a3a9b26e05e58ab16b0c4189271f1" kindref="member">cmd_prov_get_key_refresh_appkey_exclusion</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x38 </para></entry><entry thead="no"><para>20  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga27928cca1c9db91fd0f0a7131aca2416" kindref="member">cmd_prov_set_key_refresh_appkey_exclusion</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x39 </para></entry><entry thead="no"><para>21  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gaa964db0081ed9b1892d00b5c9239fbb4" kindref="member">cmd_prov_stop_scan_unprov_beacons</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x3a </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gafccf949f86c480bce0b969a3120faf17" kindref="member">cmd_prov_update_device_netkey_index</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x3b </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga2d3e775608f4bf019537f461e5314e1d" kindref="member">cmd_prov_suspend_key_refresh</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x3c </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga2bdf18e1e7a266d338ad5b52cd4ffc81" kindref="member">cmd_prov_resume_key_refresh</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x3d </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga576a59e58d0efed29bb3e8dfa4fb4301" kindref="member">cmd_prov_get_key_refresh_phase</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x3e </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1gae87cdaaa177f8f9ffd3e023f11581014" kindref="member">cmd_prov_start_key_refresh_from_phase</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x3f </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga6699c2bd59a17cb2b3f2ad3d8bd1a727" kindref="member">cmd_prov_flush_key_refresh_state</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x40 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00044_1ga9bc517c1ff1ca39a300d727fec9112db" kindref="member">cmd_prov_test_identity</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x48 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00046" kindref="compound">evt_prov_initialized</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00047" kindref="compound">evt_prov_provisioning_suspended</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>17  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00048" kindref="compound">evt_prov_capabilities</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x17 </para></entry><entry thead="no"><para>27  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00049" kindref="compound">evt_prov_provisioning_failed</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>17  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00050" kindref="compound">evt_prov_device_provisioned</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00051" kindref="compound">evt_prov_unprov_beacon</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>31  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00052" kindref="compound">evt_prov_oob_pkey_request</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00053" kindref="compound">evt_prov_oob_auth_request</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00054" kindref="compound">evt_prov_oob_display_input</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00055" kindref="compound">evt_prov_ddb_list</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00056" kindref="compound">evt_prov_uri</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00057" kindref="compound">evt_prov_key_refresh_phase_update</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00058" kindref="compound">evt_prov_key_refresh_node_update</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00059" kindref="compound">evt_prov_key_refresh_complete</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x16 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00060" kindref="compound">evt_prov_add_ddb_entry_complete</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00061" kindref="compound">evt_prov_delete_ddb_entry_complete</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00062" kindref="compound">evt_prov_initialization_failed</ref> </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00063" kindref="compound">Bluetooth Mesh Proxy Connections</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00063_1gad2bff52ecf0e55aa05ba4d1e007d805c" kindref="member">cmd_proxy_connect</ref> </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00063_1gabb4556fa4e44190cec2d778936822289" kindref="member">cmd_proxy_disconnect</ref> </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00063_1ga35ba0c7745813861fbd5ea35bece4bdb" kindref="member">cmd_proxy_set_filter_type</ref> </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00063_1ga83f3d0d82844a6c2c435eb84cc89968e" kindref="member">cmd_proxy_allow</ref> </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00063_1ga1c5741fcc41be4a90b24f06337eda6d6" kindref="member">cmd_proxy_deny</ref> </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00063_1gaaa2c7939e480187bb7915079e1f4a3d5" kindref="member">cmd_proxy_optimisation_toggle</ref> </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00064" kindref="compound">evt_proxy_connected</ref> </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00065" kindref="compound">evt_proxy_disconnected</ref> </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00066" kindref="compound">evt_proxy_filter_status</ref> </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067" kindref="compound">Bluetooth Mesh Vendor Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga105fd2e0c4f3d89439c2837b18513011" kindref="member">cmd_vendor_model_send</ref> </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>15  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1gad7225b7616ef00438da350cf98d1a1d9" kindref="member">cmd_vendor_model_set_publication</ref> </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1ga26f23e7e004045f1839a689076273b1d" kindref="member">cmd_vendor_model_clear_publication</ref> </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1gaca36cddafa8635d9e265e0f4a8f8dd22" kindref="member">cmd_vendor_model_publish</ref> </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1gafc0d7e89bb21cffd02d747b27292dbdf" kindref="member">cmd_vendor_model_init</ref> </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00067_1gadafaaeb12156b59db7f727682aac080a" kindref="member">cmd_vendor_model_deinit</ref> </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00068" kindref="compound">evt_vendor_model_receive</ref> </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>17  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00069" kindref="compound">Bluetooth Mesh Health Client Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00069_1ga89ad95f4a97dec81ce8e420d846d9c6d" kindref="member">cmd_health_client_get</ref> </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00069_1gab0d83c2bcf0743aed915fe4f059fa6a9" kindref="member">cmd_health_client_clear</ref> </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00069_1ga3c5973c5b3d727a83831423fe5d788cf" kindref="member">cmd_health_client_test</ref> </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00069_1ga0d08cb4b4555eab090e32bd1250a93ce" kindref="member">cmd_health_client_get_period</ref> </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00069_1ga35ee8e700974bd68067db6144fd12e23" kindref="member">cmd_health_client_set_period</ref> </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00069_1gaf6e333f31aee299bc4db9cb5ac3d5ccf" kindref="member">cmd_health_client_get_attention</ref> </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00069_1gae1e286a8084c3b98fa3bd6273182eb44" kindref="member">cmd_health_client_set_attention</ref> </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00070" kindref="compound">evt_health_client_server_status</ref> </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>13  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00071" kindref="compound">evt_health_client_server_status_period</ref> </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00072" kindref="compound">evt_health_client_server_status_attention</ref> </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073" kindref="compound">Bluetooth Mesh Health Server Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1ga84fb70403447528fae667c65a616dcfa" kindref="member">cmd_health_server_set_fault</ref> </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1gadb2a3daad2ff3295e5bd1631091ceae0" kindref="member">cmd_health_server_clear_fault</ref> </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00073_1gaaaba6876271dfe06c7460072ff4f4499" kindref="member">cmd_health_server_send_test_response</ref> </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00074" kindref="compound">evt_health_server_attention</ref> </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00075" kindref="compound">evt_health_server_test_request</ref> </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076" kindref="compound">Bluetooth Mesh Generic Client Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1gabe841bfd63233326de29a6a0e5719b29" kindref="member">cmd_generic_client_get</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1gad5973c230902fa2109129e403c13dace" kindref="member">cmd_generic_client_set</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1ga84c0333d9d48efe3944f00dc429ddec5" kindref="member">cmd_generic_client_publish</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>15  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1gafae5eb4fcb33bc3b714c3b7a3cd47e9a" kindref="member">cmd_generic_client_get_params</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1ga8f6966cfeacdb21cab0e4c3e0e5fb7ca" kindref="member">cmd_generic_client_init</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1gaa08f8de80735241ae3c442790c772066" kindref="member">cmd_generic_client_init_common</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1ga35bedff94b81d8c5ff55c58421d8d346" kindref="member">cmd_generic_client_init_on_off</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1ga2e871bd63dab70fdc07e67b02b657ed2" kindref="member">cmd_generic_client_init_level</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1ga6d23bf92f385cd4457a3fc99f65d6a81" kindref="member">cmd_generic_client_init_default_transition_time</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1ga78a1d361b9580f9d592ea8cea8b0c11d" kindref="member">cmd_generic_client_init_power_on_off</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1gaa4723e8e7cd89477b1a10ba81d35039d" kindref="member">cmd_generic_client_init_power_level</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1ga746e1b9af11062d5bf3fd19f7b59ad6f" kindref="member">cmd_generic_client_init_battery</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1ga52691490bda19bb8ae1ecd23459a1857" kindref="member">cmd_generic_client_init_location</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1gabfaf3fe5066ad6fd409ca0dc4a2224ab" kindref="member">cmd_generic_client_init_property</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1ga9bac1ca0d20e3adce3a034a1877fb474" kindref="member">cmd_generic_client_init_lightness</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1gace43b46812467c4d2b974e669c143d58" kindref="member">cmd_generic_client_init_ctl</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00076_1ga22fef0d16b2e20072376f8a1ab7d1370" kindref="member">cmd_generic_client_init_hsl</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00079" kindref="compound">evt_generic_client_server_status</ref> </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080" kindref="compound">Bluetooth Mesh Generic Server Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga0678345f811000fcd403e78ae5ca7206" kindref="member">cmd_generic_server_respond</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga0bd0992c7beaed0c212f477616e628d8" kindref="member">cmd_generic_server_update</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1gae1fe13cf55a7c0b5e4d057430e09fbb9" kindref="member">cmd_generic_server_publish</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1gaf35cd70b432477e73c26750f5d473eef" kindref="member">cmd_generic_server_init</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga6a27639e863cbdbda9266609fb168ebe" kindref="member">cmd_generic_server_init_common</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1gaf59521a2b9dbb5bd296c01efa3d6e500" kindref="member">cmd_generic_server_init_on_off</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga9d0d494190a7d863f9b042c6185ad29f" kindref="member">cmd_generic_server_init_level</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1gad064b1f1979edbdd9b55fca682f9cd54" kindref="member">cmd_generic_server_init_default_transition_time</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga8e28e2dbf4f642e846caea852fd6f1ba" kindref="member">cmd_generic_server_init_power_on_off</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga080bd4f7e6cf18905726ad84e5aeaf4c" kindref="member">cmd_generic_server_init_power_level</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga4ebda347e82bf773c427045f4d474b4a" kindref="member">cmd_generic_server_init_battery</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga4fc2c69a955cb07e04a26cacd56c4b15" kindref="member">cmd_generic_server_init_location</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga948e3b473f5b62c2c0a518dd5061596b" kindref="member">cmd_generic_server_init_property</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1gaf5b1db8c9b73f953d65aaeec3d2c24cb" kindref="member">cmd_generic_server_init_lightness</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1ga715305e9bef1ffe96681e1df1f1a2fb4" kindref="member">cmd_generic_server_init_ctl</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1gae7ee85365e6dc02dd62120aa79eda463" kindref="member">cmd_generic_server_init_hsl</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00080_1gae8130c146fb7c2b915e89344760cc8c4" kindref="member">cmd_generic_server_get_cached_state</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x11 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00081" kindref="compound">evt_generic_server_client_request</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>20  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00082" kindref="compound">evt_generic_server_state_changed</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00083" kindref="compound">evt_generic_server_state_recall</ref> </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084" kindref="compound">Bluetooth Mesh Test Utilities</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga8f4b8557539779d94825e2c8f6a63fda" kindref="member">cmd_test_get_nettx</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga18f5bc6c31d9345ca737d417c4798914" kindref="member">cmd_test_set_nettx</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga30b9cb6f13929795cf574fe5541e27d4" kindref="member">cmd_test_get_relay</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga6d28aacccd931e6f8747b7d0b399a1d0" kindref="member">cmd_test_set_relay</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga93212741bd1fb13164226baa885ece9e" kindref="member">cmd_test_set_adv_scan_params</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga35f5248f750969e408d9e41e0178f712" kindref="member">cmd_test_set_ivupdate_test_mode</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga8f7281cd729b2654d43edb869e49bf94" kindref="member">cmd_test_get_ivupdate_test_mode</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gab274cbd0a736360905993845160e5849" kindref="member">cmd_test_set_segment_send_delay</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gab5b37d63b70f4f4fb812b5c9b11a6296" kindref="member">cmd_test_set_ivupdate_state</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga47d419afe3eafb5a5b38cd912e7996fe" kindref="member">cmd_test_send_beacons</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gad00fddfa9b30ec047c9b156e9fe0700a" kindref="member">cmd_test_bind_local_model_app</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga9521fcfd6baa3d55d72691a26cd5d995" kindref="member">cmd_test_unbind_local_model_app</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga7c705808a9cd5e98d3afbddfe965c77c" kindref="member">cmd_test_add_local_model_sub</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga2f90b73b1b3a2d608fc185787787a25f" kindref="member">cmd_test_remove_local_model_sub</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gad76b64de143c828ed53ca01622f52a28" kindref="member">cmd_test_add_local_model_sub_va</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaca0ef43c0e25a88bc27b6a104feba7fb" kindref="member">cmd_test_remove_local_model_sub_va</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga77aadc5fffcfc73fc9fddf450e94b465" kindref="member">cmd_test_get_local_model_sub</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gadf3fa910365ab985e89efe10e10220c3" kindref="member">cmd_test_set_local_model_pub</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x11 </para></entry><entry thead="no"><para>14  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaf73c4058291ae82edd1e734016272313" kindref="member">cmd_test_set_local_model_pub_va</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x12 </para></entry><entry thead="no"><para>13  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gad012490bf5c5a81e8c70a99d5297c45c" kindref="member">cmd_test_get_local_model_pub</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x13 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaf7c1183cf041eb96b907cd9e782434cc" kindref="member">cmd_test_set_local_heartbeat_subscription</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga76bb67464d151c5f43d12c407260ee1d" kindref="member">cmd_test_get_local_heartbeat_subscription</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gad08629599a4ad74da6b6aaa44101392d" kindref="member">cmd_test_get_local_heartbeat_publication</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x16 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gac427533212d48202582ab6ff22412167" kindref="member">cmd_test_set_local_heartbeat_publication</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x17 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga960fe7d90f955ee676f1a049b3e9cd1f" kindref="member">cmd_test_set_local_config</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gacb931d9bb69549961ab0c04bd12d8f08" kindref="member">cmd_test_get_local_config</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaddaa9f4f8f5a1118d8a45cc67eae7ebb" kindref="member">cmd_test_add_local_key</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>21  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaf4f3eb71014aa8db580487c294e620f7" kindref="member">cmd_test_remove_local_key</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga81fdba8cbb46b4bffc528e844b2d3fad" kindref="member">cmd_test_update_local_key</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x1c </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga2775c8a1c63e3cf236c5390c2cd0da56" kindref="member">cmd_test_set_sar_config</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x1d </para></entry><entry thead="no"><para>21  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga95d824a8c6aabd0b136427cd9126e3b4" kindref="member">cmd_test_set_adv_bearer_state</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga7afcd1758156dee5d1dbc8578a6fd587" kindref="member">cmd_test_prov_get_device_key</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaec1aa9c3e2e5b7f213b0017ea88190b6" kindref="member">cmd_test_prov_prepare_key_refresh</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x24 </para></entry><entry thead="no"><para>17  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga2305a05834a0f49ab37f91040496c860" kindref="member">cmd_test_cancel_segmented_tx</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x25 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaf04435b08c60c43a7f60ad421022c95f" kindref="member">cmd_test_set_iv_index</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x26 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaeadb16e64a5d6864033d50b8c7252b8b" kindref="member">cmd_test_set_element_seqnum</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga8eb930dc63edad2030a11524d3730fd1" kindref="member">cmd_test_get_local_model_app_bindings</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x29 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1gaee71c697de5d6a51fc8175975b1f9c12" kindref="member">cmd_test_get_replay_protection_list_entry</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x2a </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga2d1a18768430ee055e3096eae7bcd7fe" kindref="member">cmd_test_clear_replay_protection_list_entry</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x2b </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00084_1ga4ec014e2acbb82621b6d4131c45d4164" kindref="member">cmd_test_set_replay_protection_list_diagnostics</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x2c </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00085" kindref="compound">evt_test_local_heartbeat_subscription_complete</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00086" kindref="compound">evt_test_replay_protection_list_entry_set</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00087" kindref="compound">evt_test_replay_protection_list_entry_cleared</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00088" kindref="compound">evt_test_replay_protection_list_saved</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00089" kindref="compound">evt_test_replay_protection_list_full</ref> </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00090" kindref="compound">Bluetooth Mesh Low Power Node API</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00090_1ga15866453cb9d833a3024b22cd20e617c" kindref="member">cmd_lpn_init</ref> </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00090_1gae955b07623f13dec310d548aed1d57f2" kindref="member">cmd_lpn_deinit</ref> </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00090_1ga163e6dd51f57915dbb13ca702be2eb2e" kindref="member">cmd_lpn_establish_friendship</ref> </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00090_1gace3820fc4f512b5f5a3c2c8c203cd9c8" kindref="member">cmd_lpn_poll</ref> </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00090_1gaab4209ba3fb7fded532908883e2cfe42" kindref="member">cmd_lpn_terminate_friendship</ref> </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00090_1ga8f0fa382c33c7da57a7d073cf8ecba12" kindref="member">cmd_lpn_config</ref> </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00091" kindref="compound">evt_lpn_friendship_established</ref> </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00092" kindref="compound">evt_lpn_friendship_failed</ref> </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00093" kindref="compound">evt_lpn_friendship_terminated</ref> </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00094" kindref="compound">Bluetooth Mesh Friend Node API</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00094_1ga617eb83352488c1071a23407d69fa9f1" kindref="member">cmd_friend_init</ref> </para></entry><entry thead="no"><para>0x24 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00094_1ga83f3b895a936d4935270d27684e52b8c" kindref="member">cmd_friend_deinit</ref> </para></entry><entry thead="no"><para>0x24 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00095" kindref="compound">evt_friend_friendship_established</ref> </para></entry><entry thead="no"><para>0x24 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00096" kindref="compound">evt_friend_friendship_terminated</ref> </para></entry><entry thead="no"><para>0x24 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00097" kindref="compound">Bluetooth Mesh GATT Proxy Client</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00098" kindref="compound">Bluetooth Mesh GATT Proxy Server</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099" kindref="compound">Bluetooth Mesh Configuration Client</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga79d5cb461cbf221e74385ffe381bca0c" kindref="member">cmd_config_client_cancel_request</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gafe3d51666aaa3adadfb511fbd7172440" kindref="member">cmd_config_client_get_request_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gaee42b40675f7266f51baef613fe794a5" kindref="member">cmd_config_client_get_default_timeout</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x2e </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga87d9e7a3f12dd921dd794274738b82a2" kindref="member">cmd_config_client_set_default_timeout</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x2f </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga114fb59ae466106565a96868d93880df" kindref="member">cmd_config_client_add_netkey</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga09d2709771b5e7a9dcf1e4522aed11fa" kindref="member">cmd_config_client_remove_netkey</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga7d665912290bb65a964cd551de3e4986" kindref="member">cmd_config_client_list_netkeys</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga53fc4c71ac44d78b2e3dd92a9bd47278" kindref="member">cmd_config_client_add_appkey</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga3b6a630cb5a0e7129e06728cb5febafa" kindref="member">cmd_config_client_remove_appkey</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gae68315af648ff5f78dd3b928cf045695" kindref="member">cmd_config_client_list_appkeys</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga12c767b6b5014bba8e790cb47c1930f4" kindref="member">cmd_config_client_bind_model</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gabb0d1f130f4fff7268d390d74facde98" kindref="member">cmd_config_client_unbind_model</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga033df184a3316eb016c09c0f05fa2f6f" kindref="member">cmd_config_client_list_bindings</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gad18fdd68df4d029e3d8bac7c6a7ce240" kindref="member">cmd_config_client_get_model_pub</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga672868aeae0430ce06b1fc33e1e5cb59" kindref="member">cmd_config_client_set_model_pub</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>22  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gaa3e8e649012e446fa2c72ff4685d9cbb" kindref="member">cmd_config_client_set_model_pub_va</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>36  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gab98d2d951117ae647a4b298e9e3dc685" kindref="member">cmd_config_client_add_model_sub</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga7167ecedf3a8b740bcec4833970a23bf" kindref="member">cmd_config_client_add_model_sub_va</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>25  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga3885615b4b5be9f708e285551d4bc5c7" kindref="member">cmd_config_client_remove_model_sub</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga15ba5bf27f5751466fb3d0e6f550823d" kindref="member">cmd_config_client_remove_model_sub_va</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x11 </para></entry><entry thead="no"><para>25  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gaf0c4060db9d05d5e1a70d65b583ec406" kindref="member">cmd_config_client_set_model_sub</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x12 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga4504d4b7f82f4c6462136ff3c8fff06b" kindref="member">cmd_config_client_set_model_sub_va</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x13 </para></entry><entry thead="no"><para>25  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga6f4215eb6c1c8cdc349b87252e415c1e" kindref="member">cmd_config_client_clear_model_sub</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga3faa008bf996fca47428b0039cc35522" kindref="member">cmd_config_client_list_subs</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga7cf9831c10a817ff37a2f5b96a47e86d" kindref="member">cmd_config_client_get_heartbeat_pub</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x16 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga26fbd0e5eee92fdaa477c3ece967d5a1" kindref="member">cmd_config_client_set_heartbeat_pub</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x17 </para></entry><entry thead="no"><para>13  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga4f1816e58cd46924ac8a152e27dcb973" kindref="member">cmd_config_client_get_heartbeat_sub</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga14bb9c2ca5965a308777d2d7689c26c0" kindref="member">cmd_config_client_set_heartbeat_sub</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga8a1183f616e2a2d59bc26401f3114900" kindref="member">cmd_config_client_get_beacon</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga7186b849bbaf6a6c7848ea164367a994" kindref="member">cmd_config_client_set_beacon</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x1c </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gaa6c77addc0def03ded7582218de1c990" kindref="member">cmd_config_client_get_default_ttl</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x1d </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gac8c20af67085dc27c13cd2b2644bbf89" kindref="member">cmd_config_client_set_default_ttl</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x1e </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga40ee48a78a3c8ba4bc6199a8d1509dc2" kindref="member">cmd_config_client_get_gatt_proxy</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x1f </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga96a76d897a1e13638ad723e0188a4162" kindref="member">cmd_config_client_set_gatt_proxy</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x20 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gaa50d0cd5d00bc3356b6e4682ad81e2af" kindref="member">cmd_config_client_get_relay</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x21 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga43da584a18c9a1927460372e83a1ef30" kindref="member">cmd_config_client_set_relay</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x22 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga872df673dd5e7ea02cbf70b1cd41574e" kindref="member">cmd_config_client_get_network_transmit</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x23 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga16957a0bdd5bc35fd00606b56b0764a1" kindref="member">cmd_config_client_set_network_transmit</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x24 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gaf5e59203fc7e7a956a8c0f6f97f7072d" kindref="member">cmd_config_client_get_identity</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x25 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga64ff540800b1ba474b40fa4a8b53ff8f" kindref="member">cmd_config_client_set_identity</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x26 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga17765c438191f3e289b11847dbb79fa2" kindref="member">cmd_config_client_get_friend</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gaae6cd4fadac63392469689472dc62e64" kindref="member">cmd_config_client_set_friend</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x28 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga1b95802e860bab282d2ad442f793b618" kindref="member">cmd_config_client_get_key_refresh_phase</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x29 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1gace4406c4040b221b699fbf8a24734a73" kindref="member">cmd_config_client_get_lpn_polltimeout</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x2b </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga045d778bdf48c4b9fb6f23ec8d6c989d" kindref="member">cmd_config_client_get_dcd</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x2c </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00099_1ga21179ea9f9893325f92d2e4ee1253653" kindref="member">cmd_config_client_reset_node</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x2d </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00100" kindref="compound">evt_config_client_request_modified</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00101" kindref="compound">evt_config_client_netkey_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00102" kindref="compound">evt_config_client_netkey_list</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00103" kindref="compound">evt_config_client_netkey_list_end</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00104" kindref="compound">evt_config_client_appkey_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00105" kindref="compound">evt_config_client_appkey_list</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00106" kindref="compound">evt_config_client_appkey_list_end</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00107" kindref="compound">evt_config_client_binding_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00108" kindref="compound">evt_config_client_bindings_list</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00109" kindref="compound">evt_config_client_bindings_list_end</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00110" kindref="compound">evt_config_client_model_pub_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00111" kindref="compound">evt_config_client_model_sub_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0b </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00112" kindref="compound">evt_config_client_subs_list</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0c </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00113" kindref="compound">evt_config_client_subs_list_end</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0d </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00114" kindref="compound">evt_config_client_heartbeat_pub_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0e </para></entry><entry thead="no"><para>15  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00115" kindref="compound">evt_config_client_heartbeat_sub_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x0f </para></entry><entry thead="no"><para>14  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00116" kindref="compound">evt_config_client_beacon_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x10 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00117" kindref="compound">evt_config_client_default_ttl_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x11 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00118" kindref="compound">evt_config_client_gatt_proxy_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x12 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00119" kindref="compound">evt_config_client_relay_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x13 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00120" kindref="compound">evt_config_client_network_transmit_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x14 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00121" kindref="compound">evt_config_client_identity_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x15 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00122" kindref="compound">evt_config_client_friend_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x16 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00123" kindref="compound">evt_config_client_key_refresh_phase_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x17 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00124" kindref="compound">evt_config_client_lpn_polltimeout_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x18 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00125" kindref="compound">evt_config_client_dcd_data</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x19 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00126" kindref="compound">evt_config_client_dcd_data_end</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x1a </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00127" kindref="compound">evt_config_client_reset_status</ref> </para></entry><entry thead="no"><para>0x27 </para></entry><entry thead="no"><para>0x1b </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00128" kindref="compound">Bluetooth Mesh Sensor Server Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00128_1gaf2da67022eb108d7cf6b421d629c7d2a" kindref="member">cmd_sensor_server_init</ref> </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00128_1ga7a121e72b9c294bada6b8a759829fa4d" kindref="member">cmd_sensor_server_deinit</ref> </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00128_1ga3dfce522ea4d9514f48d6b12d2641ab3" kindref="member">cmd_sensor_server_send_descriptor_status</ref> </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00128_1gaf102ebbe73110b9ec7992af1a7b7d1a3" kindref="member">cmd_sensor_server_send_status</ref> </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00128_1ga4ef4e4c0a427091020a06e0ecf4152f8" kindref="member">cmd_sensor_server_send_column_status</ref> </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00128_1gaaff0ed019457e1f487891776f807fff5" kindref="member">cmd_sensor_server_send_series_status</ref> </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00129" kindref="compound">evt_sensor_server_get_request</ref> </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00130" kindref="compound">evt_sensor_server_get_column_request</ref> </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00131" kindref="compound">evt_sensor_server_get_series_request</ref> </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00132" kindref="compound">evt_sensor_server_publish</ref> </para></entry><entry thead="no"><para>0x47 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00133" kindref="compound">Bluetooth Mesh Sensor Setup Server</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00133_1ga3dfd8e34e61ae8c384985ebfedef3ea9" kindref="member">cmd_sensor_setup_server_send_cadence_status</ref> </para></entry><entry thead="no"><para>0x48 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00133_1ga234a942a83f295224e5419c2102c70ec" kindref="member">cmd_sensor_setup_server_send_settings_status</ref> </para></entry><entry thead="no"><para>0x48 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00133_1gaeba1504400f306848dc7af0241005db9" kindref="member">cmd_sensor_setup_server_send_setting_status</ref> </para></entry><entry thead="no"><para>0x48 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00134" kindref="compound">evt_sensor_setup_server_get_cadence_request</ref> </para></entry><entry thead="no"><para>0x48 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00135" kindref="compound">evt_sensor_setup_server_set_cadence_request</ref> </para></entry><entry thead="no"><para>0x48 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>14  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00136" kindref="compound">evt_sensor_setup_server_get_settings_request</ref> </para></entry><entry thead="no"><para>0x48 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00137" kindref="compound">evt_sensor_setup_server_get_setting_request</ref> </para></entry><entry thead="no"><para>0x48 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>13  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00138" kindref="compound">evt_sensor_setup_server_set_setting_request</ref> </para></entry><entry thead="no"><para>0x48 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>14  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00139" kindref="compound">evt_sensor_setup_server_publish</ref> </para></entry><entry thead="no"><para>0x48 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140" kindref="compound">Bluetooth Mesh Sensor Client</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1gace1470bf47a8a57bf4e7e2bc9be7ef93" kindref="member">cmd_sensor_client_init</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1gada122a809870e517797e448d0694a479" kindref="member">cmd_sensor_client_deinit</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1ga7beb20fefaa43f1288871bf71d23c9ad" kindref="member">cmd_sensor_client_get_descriptor</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1ga2c0412600fa128aa2f9a4a664c7fd2e8" kindref="member">cmd_sensor_client_get</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1ga2c48088fd1fcc6825a4c69c87b6473a8" kindref="member">cmd_sensor_client_get_column</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1ga831623f315c402d1834bf96221be94d3" kindref="member">cmd_sensor_client_get_series</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1gad2cc5ec56c7a86674558b09b3f11ad36" kindref="member">cmd_sensor_client_get_cadence</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1ga5f2d21f60ce060848adda5efdb896351" kindref="member">cmd_sensor_client_set_cadence</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1ga0c2e8d16490d4e41fc27bbe96e0e9fd6" kindref="member">cmd_sensor_client_get_settings</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1ga45880c69ebd1921d1949fd803e71b6d8" kindref="member">cmd_sensor_client_get_setting</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00140_1ga400688802a12a543a3e579aabbcc2599" kindref="member">cmd_sensor_client_set_setting</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00141" kindref="compound">evt_sensor_client_descriptor_status</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00142" kindref="compound">evt_sensor_client_cadence_status</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00143" kindref="compound">evt_sensor_client_settings_status</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00144" kindref="compound">evt_sensor_client_setting_status</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>14  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00145" kindref="compound">evt_sensor_client_status</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00146" kindref="compound">evt_sensor_client_column_status</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00147" kindref="compound">evt_sensor_client_series_status</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00148" kindref="compound">evt_sensor_client_publish</ref> </para></entry><entry thead="no"><para>0x49 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00149" kindref="compound">Bluetooth Mesh Light Control Client Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00149_1gac712f0975e07ae6b20e5df731dab2f90" kindref="member">cmd_lc_client_init</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00149_1gac00438b86a2f181524b628d1ebc4ef76" kindref="member">cmd_lc_client_get_mode</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00149_1ga10991385f05fdd424d946d51c89f48ea" kindref="member">cmd_lc_client_set_mode</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00149_1ga864b5d4bf62bb47cd29b646059586db8" kindref="member">cmd_lc_client_get_om</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00149_1ga75c3b1cda3bdf46ddfc91f9ef3860782" kindref="member">cmd_lc_client_set_om</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00149_1gab76851dd8186510001369d682eb9322e" kindref="member">cmd_lc_client_get_light_onoff</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00149_1ga50c4f92760fae0232661b884c7750980" kindref="member">cmd_lc_client_set_light_onoff</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>15  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00149_1ga15fef3935d0c4db74db28424e19cd2b5" kindref="member">cmd_lc_client_get_property</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00149_1gadd1a46c7fd96d12b7c76f2fdde14b03f" kindref="member">cmd_lc_client_set_property</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00150" kindref="compound">evt_lc_client_mode_status</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00151" kindref="compound">evt_lc_client_om_status</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00152" kindref="compound">evt_lc_client_light_onoff_status</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>14  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00153" kindref="compound">evt_lc_client_property_status</ref> </para></entry><entry thead="no"><para>0x4c </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154" kindref="compound">Bluetooth Mesh Light Control Server Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154_1ga468fe89ed06a495c7c306c76eb1c4599" kindref="member">cmd_lc_server_init</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154_1ga24f361e2c8df71e24e9d46714ac39b81" kindref="member">cmd_lc_server_deinit</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154_1ga14cad12e4d85e9d44a2e4982d05c1e66" kindref="member">cmd_lc_server_update_mode</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154_1ga1f3c47b84c1d217d5e67e5363c78d9e3" kindref="member">cmd_lc_server_update_om</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154_1ga93364a36cd39de569034a7c3929c9424" kindref="member">cmd_lc_server_update_light_onoff</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154_1ga4044f9c854b8112f5443d46b46715708" kindref="member">cmd_lc_server_init_all_properties</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154_1ga4c84ca4831f33dbdf2d8fb717087b416" kindref="member">cmd_lc_server_set_publish_mask</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154_1gaefc640c807a58834a0e18d9558ef65fe" kindref="member">cmd_lc_server_set_regulator_interval</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154_1ga519d1508deb9a91017934d68f4050dc5" kindref="member">cmd_lc_server_set_event_mask</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00154_1gab5c497fc3551fe03a89ebca3c09c714e" kindref="member">cmd_lc_server_get_lc_state</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00155" kindref="compound">evt_lc_server_mode_updated</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00156" kindref="compound">evt_lc_server_om_updated</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00157" kindref="compound">evt_lc_server_light_onoff_updated</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>13  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00158" kindref="compound">evt_lc_server_occupancy_updated</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00159" kindref="compound">evt_lc_server_ambient_lux_level_updated</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00160" kindref="compound">evt_lc_server_linear_output_updated</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>4  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00161" kindref="compound">evt_lc_server_state_updated</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00162" kindref="compound">evt_lc_server_regulator_debug_info</ref> </para></entry><entry thead="no"><para>0x4d </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00163" kindref="compound">Bluetooth Mesh Light Control Setup Server Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00163_1gafa32f35080d4e52c8dafbfe43b69a294" kindref="member">cmd_lc_setup_server_update_property</ref> </para></entry><entry thead="no"><para>0x4e </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>5  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00164" kindref="compound">evt_lc_setup_server_set_property</ref> </para></entry><entry thead="no"><para>0x4e </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>11  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00165" kindref="compound">Bluetooth Mesh Scene Client Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00165_1gaaa9975cbe9a0e0c11e91cc6bb7cbc8a8" kindref="member">cmd_scene_client_init</ref> </para></entry><entry thead="no"><para>0x4f </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00165_1ga2ab244a90b12cab918eab7959ad5003d" kindref="member">cmd_scene_client_get</ref> </para></entry><entry thead="no"><para>0x4f </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00165_1gaadb1b04f74e84329758f6b149d202592" kindref="member">cmd_scene_client_get_register</ref> </para></entry><entry thead="no"><para>0x4f </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00165_1ga04d5cc95e45e7a81ff2744c5cd4bac70" kindref="member">cmd_scene_client_recall</ref> </para></entry><entry thead="no"><para>0x4f </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00165_1ga208638c52b7e12e645c2a30b095083d3" kindref="member">cmd_scene_client_store</ref> </para></entry><entry thead="no"><para>0x4f </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00165_1gaaed73ae8997088b31029709308f58c37" kindref="member">cmd_scene_client_delete</ref> </para></entry><entry thead="no"><para>0x4f </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00166" kindref="compound">evt_scene_client_status</ref> </para></entry><entry thead="no"><para>0x4f </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>17  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00167" kindref="compound">evt_scene_client_register_status</ref> </para></entry><entry thead="no"><para>0x4f </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00168" kindref="compound">Bluetooth Mesh Scene Server Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00168_1gaf5088877c52d4b9a322fd2b330d954c9" kindref="member">cmd_scene_server_init</ref> </para></entry><entry thead="no"><para>0x50 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00168_1gad8fe12b1c23de82422051292731ee903" kindref="member">cmd_scene_server_deinit</ref> </para></entry><entry thead="no"><para>0x50 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00168_1ga1ef0e1f31ca55f5ea8862aa67ff8ca2b" kindref="member">cmd_scene_server_reset_register</ref> </para></entry><entry thead="no"><para>0x50 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00168_1ga1d3ae02563f09f5daa58ed1c872545e2" kindref="member">cmd_scene_server_enable_compact_recall_events</ref> </para></entry><entry thead="no"><para>0x50 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00169" kindref="compound">evt_scene_server_get</ref> </para></entry><entry thead="no"><para>0x50 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00170" kindref="compound">evt_scene_server_register_get</ref> </para></entry><entry thead="no"><para>0x50 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>8  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00171" kindref="compound">evt_scene_server_recall</ref> </para></entry><entry thead="no"><para>0x50 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>14  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00172" kindref="compound">evt_scene_server_publish</ref> </para></entry><entry thead="no"><para>0x50 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00173" kindref="compound">evt_scene_server_compact_recall</ref> </para></entry><entry thead="no"><para>0x50 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>1  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00174" kindref="compound">Bluetooth Mesh Scene Setup Server Model</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00174_1ga8d5a8a215ab16189ef56dd0ba9585d1f" kindref="member">cmd_scene_setup_server_init</ref> </para></entry><entry thead="no"><para>0x51 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00175" kindref="compound">evt_scene_setup_server_store</ref> </para></entry><entry thead="no"><para>0x51 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00176" kindref="compound">evt_scene_setup_server_delete</ref> </para></entry><entry thead="no"><para>0x51 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00177" kindref="compound">evt_scene_setup_server_publish</ref> </para></entry><entry thead="no"><para>0x51 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00178" kindref="compound">Bluetooth Mesh Scheduler Client</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00178_1ga41d3a5d97adae35f34ab9f1817b0fa3c" kindref="member">cmd_scheduler_client_init</ref> </para></entry><entry thead="no"><para>0x54 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00178_1ga14f1ce44c28108ce8d6e2d57e34a799b" kindref="member">cmd_scheduler_client_deinit</ref> </para></entry><entry thead="no"><para>0x54 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00178_1ga54e7d763b82cdb1d7b0225d24de30d81" kindref="member">cmd_scheduler_client_get</ref> </para></entry><entry thead="no"><para>0x54 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00178_1ga77f9b8da7f760e7e8e16ed5361af82f1" kindref="member">cmd_scheduler_client_get_action</ref> </para></entry><entry thead="no"><para>0x54 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00178_1gaff2e8d6dbf448a622a3f5c8a67a42230" kindref="member">cmd_scheduler_client_set_action</ref> </para></entry><entry thead="no"><para>0x54 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>23  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00179" kindref="compound">evt_scheduler_client_status</ref> </para></entry><entry thead="no"><para>0x54 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>10  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00180" kindref="compound">evt_scheduler_client_action_status</ref> </para></entry><entry thead="no"><para>0x54 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>24  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00181" kindref="compound">Bluetooth Mesh Scheduler Server</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00181_1gaf145789c8b88ffce0bd3a0d239f00288" kindref="member">cmd_scheduler_server_init</ref> </para></entry><entry thead="no"><para>0x55 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00181_1ga42334f82d7c6207ee9642a67f1b4e50f" kindref="member">cmd_scheduler_server_deinit</ref> </para></entry><entry thead="no"><para>0x55 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00181_1ga69610dfc2c0c2a8981803ef731be72a8" kindref="member">cmd_scheduler_server_get</ref> </para></entry><entry thead="no"><para>0x55 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00181_1ga15dbc67848b5d0ec30161d1b0b0dc38b" kindref="member">cmd_scheduler_server_get_action</ref> </para></entry><entry thead="no"><para>0x55 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00181_1ga0b3128bb286cd944f78ea2994fc0950e" kindref="member">cmd_scheduler_server_set_action</ref> </para></entry><entry thead="no"><para>0x55 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00182" kindref="compound">evt_scheduler_server_action_changed</ref> </para></entry><entry thead="no"><para>0x55 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183" kindref="compound">Bluetooth Mesh Time Server</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1ga1e92cd52232b7e9bd544a4ecc98869b8" kindref="member">cmd_time_server_init</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1ga749f0561873feb6055068034c674199e" kindref="member">cmd_time_server_deinit</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1gacbfd0299130038c505aeacd8fc9b0fa7" kindref="member">cmd_time_server_get_time</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1gab8926bff98b462efa9bd494e98844c2a" kindref="member">cmd_time_server_set_time</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1ga935570886b74ff1c8c21aa0152366ac3" kindref="member">cmd_time_server_get_time_zone_offset_new</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1gae362d240f61c9f338adefabede6cb372" kindref="member">cmd_time_server_set_time_zone_offset_new</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>12  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1gab3d3b12516209f65164eb02cb770467a" kindref="member">cmd_time_server_get_tai_utc_delta_new</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1ga3fef0dce8f57712d4ac5dd3ba22fc0e0" kindref="member">cmd_time_server_set_tai_utc_delta_new</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>14  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1ga277bd5e3049634b2bb1c405b7ca250c1" kindref="member">cmd_time_server_get_time_role</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1ga236902be405d451aac0caeb610882c27" kindref="member">cmd_time_server_set_time_role</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00183_1ga6cf75178a9d53eaefc35fbfa67432ec0" kindref="member">cmd_time_server_get_datetime</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x0a </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00184" kindref="compound">evt_time_server_time_updated</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>19  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00185" kindref="compound">evt_time_server_time_zone_offset_updated</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>14  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00186" kindref="compound">evt_time_server_tai_utc_delta_updated</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00187" kindref="compound">evt_time_server_time_role_updated</ref> </para></entry><entry thead="no"><para>0x52 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>3  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188" kindref="compound">Bluetooth Mesh Time Client</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188_1ga6464c862e49113f362c0945665ac5be3" kindref="member">cmd_time_client_init</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188_1gadf608d2ed07ec6536bf000925fc2b78d" kindref="member">cmd_time_client_deinit</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>2  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188_1gaf78e995b6bfbf064311409ea9295b60b" kindref="member">cmd_time_client_get_time</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188_1ga1a85979fc75c502322b6c652905b6956" kindref="member">cmd_time_client_set_time</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>23  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188_1ga5a726ddc5ebc4a02a870a437e67ff5c6" kindref="member">cmd_time_client_get_time_zone</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x04 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188_1ga2fb10abbdd0b29655f4228c09d249ea4" kindref="member">cmd_time_client_set_time_zone</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x05 </para></entry><entry thead="no"><para>16  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188_1ga19d6962934f52975065ae904db72b32d" kindref="member">cmd_time_client_get_tai_utc_delta</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x06 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188_1ga058d6548147dd55de973d33fc33d8775" kindref="member">cmd_time_client_set_tai_utc_delta</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x07 </para></entry><entry thead="no"><para>18  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188_1ga82c2e57f9488b3949834b2351f358e57" kindref="member">cmd_time_client_get_time_role</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x08 </para></entry><entry thead="no"><para>6  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00188_1ga25fdb7bee41c687b55850214cf378ec6" kindref="member">cmd_time_client_set_time_role</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x09 </para></entry><entry thead="no"><para>7  </para></entry></row>
+<row>
+<entry thead="no"><para>Events  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00189" kindref="compound">evt_time_client_time_status</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x00 </para></entry><entry thead="no"><para>25  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00190" kindref="compound">evt_time_client_time_zone_status</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>20  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00191" kindref="compound">evt_time_client_tai_utc_delta_status</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>24  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00192" kindref="compound">evt_time_client_time_role_status</ref> </para></entry><entry thead="no"><para>0x53 </para></entry><entry thead="no"><para>0x03 </para></entry><entry thead="no"><para>9  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00193" kindref="compound">Bluetooth Mesh Key migration</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>Commands  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00193_1ga6737d4092dacb27fde7d5fb9361de033" kindref="member">cmd_migration_migrate_keys</ref> </para></entry><entry thead="no"><para>0x60 </para></entry><entry thead="no"><para>0x01 </para></entry><entry thead="no"><para>0  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="a00193_1ga3aced8ba8e0d360272bd1a08160d5976" kindref="member">cmd_migration_migrate_ddb</ref> </para></entry><entry thead="no"><para>0x60 </para></entry><entry thead="no"><para>0x02 </para></entry><entry thead="no"><para>0  </para></entry></row>
+</table>
+</para> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

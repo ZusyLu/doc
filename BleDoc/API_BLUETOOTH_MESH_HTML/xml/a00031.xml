@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00031" kind="group">
+    <compoundname>sl_btmesh_evt_node_model_config_changed</compoundname>
+    <title>sl_btmesh_evt_node_model_config_changed</title>
+    <innerclass refid="a00263" prot="public">sl_btmesh_evt_node_model_config_changed_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00031_1ga7eb9f198ae6d641fdf59763560511fde" prot="public" static="no">
+        <type>struct <ref refid="a00263" kindref="compound">sl_btmesh_evt_node_model_config_changed_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_node_model_config_changed_s sl_btmesh_evt_node_model_config_changed_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_node_model_config_changed_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="126" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00031_1gad9bf95153cb4d76fa4a75e850868ad90" prot="public" static="no">
+        <name>sl_btmesh_evt_node_model_config_changed_id</name>
+        <initializer>0x091400a8</initializer>
+        <briefdescription>
+<para>Identifier of the model_config_changed event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="541" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Informative. </para>    </briefdescription>
+    <detaileddescription>
+<para>This event notifies that a remote Configuration Client has changed the configuration of a local model. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

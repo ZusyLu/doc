@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_77aa84dfa71e80635d8ff9e79714ebe9" kind="dir">
+    <compoundname>/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc</compoundname>
+    <innerfile refid="a00011">sl_bt_api.h</innerfile>
+    <innerfile refid="a00014">sl_bt_api_compatibility.h</innerfile>
+    <innerfile refid="a00017">sl_bt_ncp_host.h</innerfile>
+    <innerfile refid="a00020">sl_bt_stack_init.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00022" kind="group">
+    <compoundname>sl_btmesh_evt_node_initialized</compoundname>
+    <title>sl_btmesh_evt_node_initialized</title>
+    <innerclass refid="a00227" prot="public">sl_btmesh_evt_node_initialized_s</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00022_1gabdb1c244d9cc2ff9cbcfe16f9e31da35" prot="public" static="no">
+        <type>struct <ref refid="a00227" kindref="compound">sl_btmesh_evt_node_initialized_s</ref></type>
+        <definition>typedef struct sl_btmesh_evt_node_initialized_s sl_btmesh_evt_node_initialized_t</definition>
+        <argsstring></argsstring>
+        <name>sl_btmesh_evt_node_initialized_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="126" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00022_1ga7489e526ec8a69be700a57b89d8e4358" prot="public" static="no">
+        <name>sl_btmesh_evt_node_initialized_id</name>
+        <initializer>0x001400a8</initializer>
+        <briefdescription>
+<para>Identifier of the initialized event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="302" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Node is initialized and operational. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

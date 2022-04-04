@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00195" kind="struct" language="C++" prot="public">
+    <compoundname>sl_bt_evt_connection_phy_status_s</compoundname>
+    <includes refid="a00011" local="no">sl_bt_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00195_1ab7fd61e6abda1f9eddacd46886bd11ef" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_connection_phy_status_s::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2863" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00195_1a68b2128e8c1a9815f672f80b6ad54692" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sl_bt_evt_connection_phy_status_s::phy</definition>
+        <argsstring></argsstring>
+        <name>phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current active PHY. See values from <ref refid="a00048_1ga99cc41717415928e08b79e1cc3b1a04e" kindref="member">sl_bt_connection_set_preferred_phy</ref> command. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2864" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2864" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure of the phy_status event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" line="2862" column="1" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/btapi/inc/sl_bt_api.h" bodystart="2861" bodyend="2866"/>
+    <listofallmembers>
+      <member refid="a00195_1ab7fd61e6abda1f9eddacd46886bd11ef" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_phy_status_s</scope><name>connection</name></member>
+      <member refid="a00195_1a68b2128e8c1a9815f672f80b6ad54692" prot="public" virt="non-virtual"><scope>sl_bt_evt_connection_phy_status_s</scope><name>phy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

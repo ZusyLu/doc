@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="a00178" kind="group">
+    <compoundname>sl_btmesh_scheduler_client</compoundname>
+    <title>Bluetooth Mesh Scheduler Client</title>
+    <innergroup refid="a00179">sl_btmesh_evt_scheduler_client_status</innergroup>
+    <innergroup refid="a00180">sl_btmesh_evt_scheduler_client_action_status</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="a00178_1ga41d3a5d97adae35f34ab9f1817b0fa3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_scheduler_client_init</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_scheduler_client_init</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the Scheduler Client model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11375" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00178_1ga14f1ce44c28108ce8d6e2d57e34a799b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_scheduler_client_deinit</definition>
+        <argsstring>(uint16_t elem_index)</argsstring>
+        <name>sl_btmesh_scheduler_client_deinit</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialize the Scheduler Client model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11386" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00178_1ga54e7d763b82cdb1d7b0225d24de30d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_scheduler_client_get</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index)</argsstring>
+        <name>sl_btmesh_scheduler_client_get</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Scheduler Get message to get the Scheduler Register status of a Scheduler Server.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00179" kindref="compound">sl_btmesh_evt_scheduler_client_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11403" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00178_1ga77f9b8da7f760e7e8e16ed5361af82f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_scheduler_client_get_action</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t index)</argsstring>
+        <name>sl_btmesh_scheduler_client_get_action</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Scheduler Action Get message to get action defined by a Schedule Register state entry.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the Scheduler Register entry to get</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00180" kindref="compound">sl_btmesh_evt_scheduler_client_action_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11423" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="a00178_1gaff2e8d6dbf448a622a3f5c8a67a42230" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sl_status_t</type>
+        <definition>sl_status_t sl_btmesh_scheduler_client_set_action</definition>
+        <argsstring>(uint16_t server_address, uint16_t elem_index, uint16_t appkey_index, uint8_t flags, uint8_t index, uint8_t year, uint16_t month, uint8_t day, uint8_t hour, uint8_t minute, uint8_t second, uint8_t day_of_week, uint8_t action, uint32_t transition_time_ms, uint16_t scene_number)</argsstring>
+        <name>sl_btmesh_scheduler_client_set_action</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_address</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>elem_index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>appkey_index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>minute</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>day_of_week</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>transition_time_ms</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>scene_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a Scheduler Action Set message to set the given entry of the Scheduler Register state.</para><para>For the description of these fields, see <ulink url="#cls_mesh_scheduler_server">Scheduler Server</ulink></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">server_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination server model address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">elem_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client model element index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appkey_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application key index to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit 1 (0x02) defines whether response is required, othewise the unacknowledged message is used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the Scheduler Register entry to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scheduled year for the action </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scheduled month for the action </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scheduled day of the month for the action </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">hour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scheduled hour for the action </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">minute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scheduled minute for the action </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">second</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scheduled second for the action </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">day_of_week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scheduled days of the week for the action </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action to be performed at the scheduled time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">transition_time_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transition time for this action </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">scene_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scene number to be used for some actions</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SL_STATUS_OK if successful. Error code otherwise.</para></simplesect>
+<bold>Events</bold> <itemizedlist>
+<listitem><para><ref refid="a00180" kindref="compound">sl_btmesh_evt_scheduler_client_action_status</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11459" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="a00178_1gaa0d5300ef17eb544170569308b8fcfdc" prot="public" static="no">
+        <name>sl_btmesh_cmd_scheduler_client_init_id</name>
+        <initializer>0x00540028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11291" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00178_1ga79b8b88db4238ae3db71baace34776cb" prot="public" static="no">
+        <name>sl_btmesh_cmd_scheduler_client_deinit_id</name>
+        <initializer>0x01540028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11292" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00178_1ga7e0f701581f425e97a5feb971221b327" prot="public" static="no">
+        <name>sl_btmesh_cmd_scheduler_client_get_id</name>
+        <initializer>0x02540028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11293" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00178_1ga371e6b18f0bd49693348980deb501089" prot="public" static="no">
+        <name>sl_btmesh_cmd_scheduler_client_get_action_id</name>
+        <initializer>0x03540028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11294" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00178_1ga381ed3341ad39b00502d18d367131489" prot="public" static="no">
+        <name>sl_btmesh_cmd_scheduler_client_set_action_id</name>
+        <initializer>0x04540028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11295" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00178_1ga07f5e04a63131d97546883767a77128f" prot="public" static="no">
+        <name>sl_btmesh_rsp_scheduler_client_init_id</name>
+        <initializer>0x00540028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11296" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00178_1ga7fa0ccc17bda61619fc08a4d48cca3cf" prot="public" static="no">
+        <name>sl_btmesh_rsp_scheduler_client_deinit_id</name>
+        <initializer>0x01540028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11297" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00178_1ga2ef8e256c67236dd0e94d94188cc9916" prot="public" static="no">
+        <name>sl_btmesh_rsp_scheduler_client_get_id</name>
+        <initializer>0x02540028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11298" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00178_1ga50ec285d4bf18e1d5fa8f337168e48af" prot="public" static="no">
+        <name>sl_btmesh_rsp_scheduler_client_get_action_id</name>
+        <initializer>0x03540028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11299" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="a00178_1ga7b92b24cf810541cdb2d65ef5d24039a" prot="public" static="no">
+        <name>sl_btmesh_rsp_scheduler_client_set_action_id</name>
+        <initializer>0x04540028</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" line="11300" column="9" bodyfile="/mnt/raid/workspaces/ws.zxHljLWxg/overlay/super/protocol/bluetooth/build_release/btmesh_api/mesh_hal_gecko/inc/sl_btmesh_api.h" bodystart="11300" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth Mesh Scheduler Client. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class provides commands and messages to interface with the Scheduler Client model. Scheduler models uses multiple fields to define the occurrence of an event and the type of event to be triggered.</para><para>For the description of these fields, please see <ulink url="#cls_mesh_scheduler_server">Scheduler Server</ulink> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>
